@@ -1,0 +1,357 @@
+{
+  "source_commit": "aeb8ee1039aef31d71be61aefa05cf8a00c6c65e",
+  "date": "2026-09-07",
+  "targets": [
+    {
+      "target": "PROTON",
+      "total_k2": 9,
+      "retained_inner_cutoff": 0,
+      "retained_outer_cutoff": 1,
+      "Q_inner_cutoffs": {
+        "qqqgg": 1,
+        "qqqq-qbar": 1,
+        "qqqggg": 1,
+        "qqqq-qbar-g": 1
+      },
+      "Q_outer_cutoffs": {
+        "qqqgg": 2,
+        "qqqq-qbar": 2,
+        "qqqggg": 2,
+        "qqqq-qbar-g": 2
+      },
+      "raw_Q_dimensions": {
+        "qqqgg": 22230,
+        "qqqq-qbar": 130500,
+        "qqqggg": 43692,
+        "qqqq-qbar-g": 364800
+      },
+      "incoming_jz_twice": 1,
+      "outgoing_jz_twice": -1,
+      "b_GeV": 0.4,
+      "quark_mass_GeV": 0.35,
+      "gluon_mass_GeV": 0,
+      "coupling": 0.3,
+      "energy_out_GeV2": 1.39,
+      "energy_in_GeV2": 1.47,
+      "transfer_GeV": [
+        0.12,
+        0.16
+      ],
+      "total_pplus_GeV": 1.3,
+      "quadrature_order": 20,
+      "Wick": {
+        "boson_modes": 8,
+        "fermion_modes": 8,
+        "quark_flavors": 2,
+        "coincident_trace_GeV2": 0.05092958178940652,
+        "Gaussian_width_GeV": 0.8,
+        "normal_order_subtraction": true,
+        "finite_quark_mass2_per_gs2_GeV2": 0.011,
+        "finite_gluon_mass2_per_gs2_GeV2": -0.007,
+        "field_regulation_of_propagating_vertices": false
+      },
+      "probes": {
+        "seed": 20260907,
+        "outgoing_count": 2,
+        "incoming_count": 1,
+        "eigenstates": false,
+        "full_retained_matrix_norms": false
+      },
+      "inner_reference_errors": {
+        "outgoing": {
+          "H_probe": 1.0861706131008958e-16,
+          "norm_probe": 5.0633099630448106e-17
+        },
+        "incoming": {
+          "H_probe": 1.114559836903798e-16,
+          "norm_probe": 3.523657115334762e-17
+        }
+      },
+      "P_return_Ward_residual_norms": {
+        "2": 2.0340081371315858e-19,
+        "3": 4.941295336721299e-21,
+        "4": 3.015306427553922e-20
+      },
+      "currents": {
+        "raw": {
+          "retained_H_probe_norms": [
+            0.0014036471132022788,
+            0.0013383674466968256
+          ],
+          "P_return_coefficient_probe_norms": {
+            "2": [
+              0.00022308265284265327,
+              0.0002176854359280053
+            ],
+            "3": [
+              0.000002600418096553469,
+              0.000002388002851624331
+            ],
+            "4": [
+              0.00001815211497415443,
+              0.000017492462822505023
+            ]
+          },
+          "Q_return_coefficient_probe_norms": {
+            "2": [
+              0.00013608034415792415,
+              0.0001325886299073619
+            ],
+            "3": [
+              0.000002871706844305442,
+              0.0000024997497787512055
+            ],
+            "4": [
+              0.000011542342963843998,
+              0.000011128950643419101
+            ]
+          },
+          "summed_probe_norms": [
+            0.0014119683535209705,
+            0.0013451029555962182
+          ]
+        },
+        "two_norm": {
+          "retained_H_probe_norms": [
+            0.0014032311516682797,
+            0.001337971804323043
+          ],
+          "P_return_coefficient_probe_norms": {
+            "2": [
+              0.0002229492300624843,
+              0.0002175548274489393
+            ],
+            "3": [
+              0.0000025997444031087596,
+              0.0000023873785099221983
+            ],
+            "4": [
+              0.000018141183001812497,
+              0.000017481911601195285
+            ]
+          },
+          "Q_return_coefficient_probe_norms": {
+            "2": [
+              0.00013599257769284824,
+              0.00013250393821078572
+            ],
+            "3": [
+              0.0000028708451712874704,
+              0.000002499011210386259
+            ],
+            "4": [
+              0.00001153482013900413,
+              0.000011121786883110412
+            ]
+          },
+          "summed_probe_norms": [
+            0.0014115474803963839,
+            0.0013447034033279917
+          ]
+        }
+      },
+      "scope": "paired-Wick H2 finite oscillator P-H/P-return/Q-return correction through g4",
+      "finite_P_Q_oscillator_projector_transport_complete": true,
+      "common_field_regulator_complete": false,
+      "complete_physical_four_current": false,
+      "physical": false,
+      "continuum_convergence_established": false,
+      "quantum_execution": false,
+      "seconds": 309.5403578329715
+    },
+    {
+      "target": "NEUTRON",
+      "total_k2": 9,
+      "retained_inner_cutoff": 0,
+      "retained_outer_cutoff": 1,
+      "Q_inner_cutoffs": {
+        "qqqgg": 1,
+        "qqqq-qbar": 1,
+        "qqqggg": 1,
+        "qqqq-qbar-g": 1
+      },
+      "Q_outer_cutoffs": {
+        "qqqgg": 2,
+        "qqqq-qbar": 2,
+        "qqqggg": 2,
+        "qqqq-qbar-g": 2
+      },
+      "raw_Q_dimensions": {
+        "qqqgg": 22230,
+        "qqqq-qbar": 130500,
+        "qqqggg": 43692,
+        "qqqq-qbar-g": 364800
+      },
+      "incoming_jz_twice": 1,
+      "outgoing_jz_twice": -1,
+      "b_GeV": 0.4,
+      "quark_mass_GeV": 0.35,
+      "gluon_mass_GeV": 0,
+      "coupling": 0.3,
+      "energy_out_GeV2": 1.39,
+      "energy_in_GeV2": 1.47,
+      "transfer_GeV": [
+        0.12,
+        0.16
+      ],
+      "total_pplus_GeV": 1.3,
+      "quadrature_order": 20,
+      "Wick": {
+        "boson_modes": 8,
+        "fermion_modes": 8,
+        "quark_flavors": 2,
+        "coincident_trace_GeV2": 0.05092958178940652,
+        "Gaussian_width_GeV": 0.8,
+        "normal_order_subtraction": true,
+        "finite_quark_mass2_per_gs2_GeV2": 0.011,
+        "finite_gluon_mass2_per_gs2_GeV2": -0.007,
+        "field_regulation_of_propagating_vertices": false
+      },
+      "probes": {
+        "seed": 20260907,
+        "outgoing_count": 2,
+        "incoming_count": 1,
+        "eigenstates": false,
+        "full_retained_matrix_norms": false
+      },
+      "inner_reference_errors": {
+        "outgoing": {
+          "H_probe": 9.519366714411333e-17,
+          "norm_probe": 3.575366424572234e-17
+        },
+        "incoming": {
+          "H_probe": 4.120038741415109e-18,
+          "norm_probe": 4.336827377234736e-19
+        }
+      },
+      "P_return_Ward_residual_norms": {
+        "2": 1.2733697338320603e-19,
+        "3": 4.735210715294348e-21,
+        "4": 1.4890327424749884e-20
+      },
+      "currents": {
+        "raw": {
+          "retained_H_probe_norms": [
+            0.0007371661526392797,
+            0.0007037532384847866
+          ],
+          "P_return_coefficient_probe_norms": {
+            "2": [
+              0.00011238087396073148,
+              0.00010317996844859001
+            ],
+            "3": [
+              0.000004109357425942082,
+              0.000004113302333293192
+            ],
+            "4": [
+              0.000008430382152748393,
+              0.000007645832370601997
+            ]
+          },
+          "Q_return_coefficient_probe_norms": {
+            "2": [
+              0.0000640738365043286,
+              0.00004903618678332015
+            ],
+            "3": [
+              0.000002495348811271627,
+              0.000002526293394199504
+            ],
+            "4": [
+              0.000006647795289918217,
+              0.000005222346334297269
+            ]
+          },
+          "summed_probe_norms": [
+            0.0007386971602669133,
+            0.0007066825643627964
+          ]
+        },
+        "two_norm": {
+          "retained_H_probe_norms": [
+            0.0007368809192898004,
+            0.0007034820677953988
+          ],
+          "P_return_coefficient_probe_norms": {
+            "2": [
+              0.00011229476473616496,
+              0.00010310072311967442
+            ],
+            "3": [
+              0.000004107904541906177,
+              0.000004111846716289092
+            ],
+            "4": [
+              0.000008423851867553732,
+              0.000007639889813169633
+            ]
+          },
+          "Q_return_coefficient_probe_norms": {
+            "2": [
+              0.00006402772358858928,
+              0.00004899967204057508
+            ],
+            "3": [
+              0.0000024944228058717513,
+              0.00000252533504338767
+            ],
+            "4": [
+              0.0000066431222310410166,
+              0.0000052185988228638835
+            ]
+          },
+          "summed_probe_norms": [
+            0.0007384104801796006,
+            0.0007064089197854369
+          ]
+        }
+      },
+      "scope": "paired-Wick H2 finite oscillator P-H/P-return/Q-return correction through g4",
+      "finite_P_Q_oscillator_projector_transport_complete": true,
+      "common_field_regulator_complete": false,
+      "complete_physical_four_current": false,
+      "physical": false,
+      "continuum_convergence_established": false,
+      "quantum_execution": false,
+      "seconds": 314.73860229202546
+    }
+  ],
+  "verification": {
+    "new_distinct_tests": 87,
+    "independent_runs": [
+      {
+        "tests": 20,
+        "seconds": 483.39,
+        "scope": "initial Wick-Q tests before adding isolated Ward checks"
+      },
+      {
+        "tests": 3,
+        "seconds": 57.15,
+        "scope": "additional isolated Wick RSR Ward checks"
+      },
+      {
+        "tests": 49,
+        "seconds": 16.13,
+        "scope": "source vector actions"
+      },
+      {
+        "tests": 14,
+        "seconds": 1415.11,
+        "scope": "final P/Q source, norm, compatibility and unequal-probe tests"
+      },
+      {
+        "tests": 1,
+        "seconds": 708.18,
+        "scope": "same-helicity radial P shell2, Q outer3, Q5 inner2/Q6 inner1"
+      }
+    ],
+    "separate_legacy_tests": 173,
+    "separate_legacy_seconds": 150.47,
+    "collected_M2_tests": 1730,
+    "full_M2_suite_run": false,
+    "full_repository_suite_run": false
+  },
+  "maximum_inner_reference_probe_error": 1.114559836903798e-16,
+  "maximum_P_return_Ward_probe_error": 2.0340081371315858e-19
+}

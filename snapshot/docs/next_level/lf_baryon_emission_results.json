@@ -1,0 +1,204 @@
+{
+  "scope": "first-order free-reference baryon emission, not physical nucleons or a production Hamiltonian",
+  "inputs": {
+    "cell_lengths_GeV_minus1": [
+      25.132741228718345,
+      31.41592653589793,
+      31.41592653589793
+    ],
+    "quark_mass_GeV": 0.27,
+    "collective_mass_squared_GeV2": [
+      [
+        [
+          0.42250000000000004,
+          0.027
+        ],
+        [
+          0.027,
+          0.8281000000000001
+        ]
+      ],
+      [
+        [
+          0.12249999999999998,
+          -0.018
+        ],
+        [
+          -0.018,
+          0.30250000000000005
+        ]
+      ],
+      [
+        [
+          0.12249999999999998,
+          -0.018
+        ],
+        [
+          -0.018,
+          0.30250000000000005
+        ]
+      ],
+      [
+        [
+          0.12249999999999998,
+          -0.018
+        ],
+        [
+          -0.018,
+          0.30250000000000005
+        ]
+      ]
+    ],
+    "Yukawas": [
+      0.31,
+      -0.19
+    ],
+    "gs": 0.43,
+    "initial_each_quark_momentum_GeV": [
+      0.375,
+      0.2,
+      0
+    ],
+    "duration_GeV_minus1": 12
+  },
+  "derived_spin_map_real": [
+    [
+      -0.24244147505888403,
+      0.9701660327857663
+    ],
+    [
+      0.9701660327857663,
+      0.242441475058884
+    ]
+  ],
+  "derived_spin_map_imag": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "leaf_constraint_error": 1.1461507770817605e-14,
+  "cases": [
+    {
+      "species": "p",
+      "twice_canonical_input_spin": -1,
+      "seed_norm_squared": 1.0000000000000004,
+      "output_mask_groups": 2160,
+      "emission_coefficient_norm_squared_GeV2": 0.0026124350423796278,
+      "tensor_wave_error_GeV": 9.408323434459744e-18,
+      "total_charge_error_GeV": 4.503892345592596e-18,
+      "max_total_color_error_GeV": 5.1867919877296716e-18,
+      "missing_two_emitters_error_GeV": 0.03407465687365929,
+      "spin_relabelling_error_GeV": 0.012485135273890214,
+      "pulse_phi_norm_squared_coefficient": 0.0022313511767518474,
+      "pulse_gluon_norm_squared_coefficient": 0.015418359412331214
+    },
+    {
+      "species": "p",
+      "twice_canonical_input_spin": 1,
+      "seed_norm_squared": 1.0000000000000004,
+      "output_mask_groups": 2160,
+      "emission_coefficient_norm_squared_GeV2": 0.002612435042379629,
+      "tensor_wave_error_GeV": 7.764524227792954e-18,
+      "total_charge_error_GeV": 4.087518074281585e-18,
+      "max_total_color_error_GeV": 5.5685587425071e-18,
+      "missing_two_emitters_error_GeV": 0.034074656873659286,
+      "spin_relabelling_error_GeV": 0.012485135273890235,
+      "pulse_phi_norm_squared_coefficient": 0.002231351176751848,
+      "pulse_gluon_norm_squared_coefficient": 0.015418359412331217
+    },
+    {
+      "species": "n",
+      "twice_canonical_input_spin": -1,
+      "seed_norm_squared": 1.0000000000000004,
+      "output_mask_groups": 2160,
+      "emission_coefficient_norm_squared_GeV2": 0.0026124350423796304,
+      "tensor_wave_error_GeV": 9.451406633858066e-18,
+      "total_charge_error_GeV": 1.8011928080156757e-18,
+      "max_total_color_error_GeV": 5.553614005806954e-18,
+      "missing_two_emitters_error_GeV": 0.034074656873659244,
+      "spin_relabelling_error_GeV": 0.01248513527389021,
+      "pulse_phi_norm_squared_coefficient": 0.0022313511767518474,
+      "pulse_gluon_norm_squared_coefficient": 0.015418359412331214
+    },
+    {
+      "species": "n",
+      "twice_canonical_input_spin": 1,
+      "seed_norm_squared": 1.0000000000000004,
+      "output_mask_groups": 2160,
+      "emission_coefficient_norm_squared_GeV2": 0.0026124350423796278,
+      "tensor_wave_error_GeV": 7.746478031447208e-18,
+      "total_charge_error_GeV": 1.6831207525705439e-18,
+      "max_total_color_error_GeV": 5.565886431467773e-18,
+      "missing_two_emitters_error_GeV": 0.03407465687365928,
+      "spin_relabelling_error_GeV": 0.012485135273890231,
+      "pulse_phi_norm_squared_coefficient": 0.002231351176751847,
+      "pulse_gluon_norm_squared_coefficient": 0.015418359412331217
+    }
+  ],
+  "window_scan": [
+    {
+      "shell": 0,
+      "channel_routes": 2,
+      "output_mask_groups": 135,
+      "phi_norm_squared_coefficient": 0.00044882513742128217,
+      "gluon_norm_squared_coefficient": 0.0011224221561616724
+    },
+    {
+      "shell": 1,
+      "channel_routes": 18,
+      "output_mask_groups": 2295,
+      "phi_norm_squared_coefficient": 0.0026452459755659176,
+      "gluon_norm_squared_coefficient": 0.022008621060774974
+    },
+    {
+      "shell": 2,
+      "channel_routes": 50,
+      "output_mask_groups": 6615,
+      "phi_norm_squared_coefficient": 0.0026531054086643283,
+      "gluon_norm_squared_coefficient": 0.022814961636051623
+    },
+    {
+      "shell": 3,
+      "channel_routes": 98,
+      "output_mask_groups": 13095,
+      "phi_norm_squared_coefficient": 0.002653114482743574,
+      "gluon_norm_squared_coefficient": 0.022815088750846788
+    }
+  ],
+  "direct_time_wave_error": 5.784446651517297e-17,
+  "crossed_fermion_source_contact_components": [
+    {
+      "H_derivative_wrt_source_GeV_dimensionless_norm": 0.421345321940951,
+      "independent_instantaneous_error": 1.366121196934113e-16
+    },
+    {
+      "H_derivative_wrt_source_GeV_dimensionless_norm": 0,
+      "independent_instantaneous_error": 5.976122646337895e-19
+    },
+    {
+      "H_derivative_wrt_source_GeV_dimensionless_norm": 0.13403469394364806,
+      "independent_instantaneous_error": 9.647203637280155e-17
+    },
+    {
+      "H_derivative_wrt_source_GeV_dimensionless_norm": 0.13403469394364806,
+      "independent_instantaneous_error": 9.686720073863516e-17
+    }
+  ],
+  "qualifications": {
+    "complete_emitter_interference": true,
+    "independent_exterior_particle_and_graded_controls": true,
+    "unequal_momenta_and_variable_quark_number_tested": true,
+    "source_contact_is_not_complete_baryon_EM_response": true,
+    "full_quantum_bound_nucleon": false,
+    "composite_covariance_repaired": false,
+    "physical_matching_or_fit": false,
+    "global_Fock_or_continuum_completion": false,
+    "old_BLFQ_H2_model_rebuilt": false,
+    "public_push": false
+  }
+}

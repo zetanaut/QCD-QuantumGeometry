@@ -1,0 +1,55 @@
+{
+  "case": "Q5_shell2",
+  "parameters": {
+    "q5": 2,
+    "q6": 0,
+    "nb": 8,
+    "nf": 8,
+    "width": 0.8,
+    "muq": 0.011,
+    "mug": -0.007,
+    "target": "PROTON"
+  },
+  "energy_out_GeV2": 1.39,
+  "energy_in_GeV2": 1.47,
+  "transfer_GeV": [
+    0.12,
+    0.16
+  ],
+  "current_normalization": "g4 coefficient of Jplus/(2Pplus), before coupling multiplication",
+  "words_Frobenius": {
+    "Q5_qqqgg_quartic_square": 0.000006408200342879767,
+    "Q5_qqqgg_QQ_backflow": 0.002527728564623305,
+    "Q5_qqqgg_direct6_backflow": 0.000010839938515784928,
+    "Q5_qqqgg_iterated6_backflow": 0.000048699270886827125,
+    "Q5_qqqq-qbar_quartic_square": 0.000049300247758733836,
+    "Q5_qqqq-qbar_QQ_backflow": 0.0016570128073467218,
+    "Q5_qqqq-qbar_direct6_backflow": 0.000004294536749997301,
+    "Q5_qqqq-qbar_iterated6_backflow": 0.00000771566806273176,
+    "Q6_qqqggg_direct_square": 0.0000033139206681979247,
+    "Q6_qqqggg_iterated_square": 0.0000027573622450336545,
+    "Q6_qqqggg_direct_iterated_interference": 0.000002987305245844462,
+    "Q6_qqqq-qbar-g_direct_square": 0.00002808049495970058,
+    "Q6_qqqq-qbar-g_iterated_square": 0.00001119094717344405,
+    "Q6_qqqq-qbar-g_direct_iterated_interference": 0.000006014579096196211
+  },
+  "QQ_subdivision_Frobenius": {
+    "resolved_Q5_qqqgg_QQ_contact": 0.00007858030848283647,
+    "resolved_Q5_qqqgg_QQ_pair": 3.5746062495851467e-7,
+    "resolved_Q5_qqqgg_QQ_finite_Wick": 0.002488774874348842,
+    "resolved_Q5_qqqq-qbar_QQ_contact": 0.000036309007942691366,
+    "resolved_Q5_qqqq-qbar_QQ_pair": 0.0000036059451803744433,
+    "resolved_Q5_qqqq-qbar_QQ_finite_Wick": 0.0016614243744111313
+  },
+  "QQ_subdivision_is_not_added_again_to_the_raw_current": true,
+  "paired_normal_order_subtraction": true,
+  "finite_Wick_label_means": "Residual explicit mu_q^2 D_q + mu_g^2 D_g after exact paired normal-order subtraction; not the divergent Wick trace.",
+  "raw_plus_g4_Frobenius": 0.004011762426137281,
+  "normalized_plus_g4_Frobenius": 0.004009271322753472,
+  "terms_are_coherent_matrix_amplitudes_not_probabilities": true,
+  "finite_conditions_are_uncalibrated_test_values": true,
+  "physical": false,
+  "continuum_convergence_established": false,
+  "seconds": 202.4426862920518,
+  "full_matrix_file": "m2_gaussian_plus_resolution_Q5_shell2.npz"
+}

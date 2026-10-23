@@ -1,0 +1,107 @@
+{
+  "preedit_commit": "8ff38e8456aeb81c52d25f9a91e568f5e12fcc4d",
+  "scope": "Necessary test of scalarized two-point surface closure; exact SU(3) connection algebra; no binding solve",
+  "units": "d=1 GeV^4, ell=1 GeV^-1 are illustrative; S2 dimensionless, V GeV and dV/dR GeV^2",
+  "candidate": "C_AB(z)=delta_AB*d*exp(-z^2/ell^2); omit connector dependence and cumulants beyond quadratic surface action",
+  "string_slope_limit": 1.5707963267948966,
+  "static_rows": [
+    {
+      "R": 0.25,
+      "V": 0.054819344602777244,
+      "slope": 0.4340524786727599
+    },
+    {
+      "R": 0.5,
+      "V": 0.21276694615177644,
+      "slope": 0.817599296165926
+    },
+    {
+      "R": 1.0,
+      "V": 0.7635090507864466,
+      "slope": 1.3237113101525586
+    },
+    {
+      "R": 2.0,
+      "V": 2.2569020026252025,
+      "slope": 1.5634485578689474
+    },
+    {
+      "R": 4.0,
+      "V": 5.396958384589041,
+      "slope": 1.5707963025775245
+    }
+  ],
+  "finite_rectangle_check": {
+    "numerical_S2": 3.1223197583267606,
+    "analytic_S2": 3.1223197583267686
+  },
+  "closed_surfaces": [
+    {
+      "side_over_ell": 0.25,
+      "exact_S2": 0.0006954694377449846,
+      "numerical_S2": 0.0006954694377449848,
+      "integration_error": 2.168404344971009e-19,
+      "spurious_closed_surface_factor": 0.9993047723450703
+    },
+    {
+      "side_over_ell": 0.5,
+      "exact_S2": 0.03824928127300552,
+      "numerical_S2": 0.03824928127300552,
+      "integration_error": 0.0,
+      "spurious_closed_surface_factor": 0.9624729844933161
+    },
+    {
+      "side_over_ell": 1.0,
+      "exact_S2": 1.4075365073734818,
+      "numerical_S2": 1.4075365073734825,
+      "integration_error": 6.661338147750939e-16,
+      "spurious_closed_surface_factor": 0.244745469767896
+    },
+    {
+      "side_over_ell": 2.0,
+      "exact_S2": 19.09979252226978,
+      "numerical_S2": 19.09979252226979,
+      "integration_error": 1.0658141036401503e-14,
+      "spurious_closed_surface_factor": 5.070671804667883e-09
+    }
+  ],
+  "separated_surface_cross_terms": [
+    {
+      "distance": 0.0,
+      "pairing": 0.6798955529073195
+    },
+    {
+      "distance": 1.0,
+      "pairing": 0.2501195960584935
+    },
+    {
+      "distance": 2.0,
+      "pairing": 0.012452721429106728
+    },
+    {
+      "distance": 4.0,
+      "pairing": 7.65121648372725e-08
+    }
+  ],
+  "exact_SU3": {
+    "seed": 17,
+    "link_amplitude": 0.55,
+    "edges": 12,
+    "same_boundary_matrix_error": 2.270018072178288e-15,
+    "closed_product_identity_error": 2.257525941631654e-15,
+    "scalar_face_product_error": 0.26996553624872094,
+    "baryon_color_amplitude": {
+      "real": 0.20759262924699798,
+      "imag": 0.040728375676089446
+    },
+    "baryon_refactorization_error": 3.3081863473783437e-16,
+    "all_96_color_connection_tangent_max_error": 1.5806186903586575e-15,
+    "frozen_connector_spurious_tangent": 0.8957263782928244,
+    "quantum_vacuum_or_em_current": false
+  },
+  "conclusion": "Do not use this independent scalar two-point surface functional as an exact shared binding interaction; retain connection/ordered higher-correlator and source information. Two-point dominance in a qualified approximation is not excluded.",
+  "physical_nucleon_nuclear_prediction": false,
+  "physical_confinement_or_LF_covariance_proved": false,
+  "nonperturbative_action_selected": false,
+  "full_mass_metric_bilocal_matching_completed": false
+}

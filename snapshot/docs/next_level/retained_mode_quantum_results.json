@@ -1,0 +1,322 @@
+{
+  "scope": "Ordinary-time homogeneous eight-field quantum mechanics in a declared finite cell, not a light-front zero mode, a 3+1D quantum field calculation, a matched Wilsonian QCD action or a physical pion/nucleon model.",
+  "interpretation": "User selected action for retained quantum modes; each mode is quantized once. Subsequent exact projection changes representation, not which fluctuations are counted.",
+  "scale_boundary": "Cell volume and basis resolution declared. 2pi/L labels the first omitted spatial wavenumber, NOT a matched QCD renormalization scale. Omitted spatial/quark/gluon modes have not been integrated out to determine these coefficients.",
+  "physical_inputs": "Prior tree calibration reused without refitting solely as a reference; quantum matching not inferred. Canonical LF/quark/gluon and transverse C/D operators preserved separately, not all quantized in this pilot.",
+  "tree_reference": {
+    "vacuum_GeV": [
+      0.07609594369467992,
+      0.05206003604705443
+    ],
+    "quark_mass_insertion_GeV": 0.2843478671310942,
+    "scalar_pseudoscalar_weights_GeV_minus2": [
+      17.28411719280897,
+      477.34390715028565
+    ]
+  },
+  "quantum_cases": [
+    {
+      "volume_GeV_minus3": 1000,
+      "cell_side_fm": 1.9732698039999996,
+      "first_omitted_spatial_wavenumber_GeV": 0.6283185307179587,
+      "basis_frequency_GeV": 0.5,
+      "total_excitation_cutoff": 6,
+      "dimension": 3003,
+      "ground_energy_GeV_constant_removed": 1.1188948211877763,
+      "state_equation_residual_GeV": 1.3037598115819803e-14,
+      "sigma_expectations_GeV": [
+        0.014308411492501383,
+        0.009256953783270355
+      ],
+      "quark_mass_insertion_GeV": 0.05618218826077451,
+      "scalar_pseudoscalar_quark_susceptibilities_GeV_minus2": [
+        85.94317409096281,
+        91.01543837584384
+      ],
+      "source_PCAC_susceptibility_GeV2": 1.912352643248044,
+      "source_PCAC_Ward_error_GeV2": 2.6645352591003757e-15,
+      "max_linear_solve_residual": 1.9369668400987118e-9
+    },
+    {
+      "volume_GeV_minus3": 1000,
+      "cell_side_fm": 1.9732698039999996,
+      "first_omitted_spatial_wavenumber_GeV": 0.6283185307179587,
+      "basis_frequency_GeV": 0.5,
+      "total_excitation_cutoff": 8,
+      "dimension": 12870,
+      "ground_energy_GeV_constant_removed": 1.117085575934609,
+      "state_equation_residual_GeV": 1.9731052924074777e-14,
+      "sigma_expectations_GeV": [
+        0.014585780057031093,
+        0.009436153743827275
+      ],
+      "quark_mass_insertion_GeV": 0.057193493914920554,
+      "scalar_pseudoscalar_quark_susceptibilities_GeV_minus2": [
+        87.46421071901287,
+        92.75513494498654
+      ],
+      "source_PCAC_susceptibility_GeV2": 1.9494080021877338,
+      "source_PCAC_Ward_error_GeV2": 9.547918011776346e-15,
+      "max_linear_solve_residual": 1.8910571458885358e-9
+    },
+    {
+      "volume_GeV_minus3": 1000,
+      "cell_side_fm": 1.9732698039999996,
+      "first_omitted_spatial_wavenumber_GeV": 0.6283185307179587,
+      "basis_frequency_GeV": 0.5,
+      "total_excitation_cutoff": 10,
+      "dimension": 43758,
+      "ground_energy_GeV_constant_removed": 1.1167103521608168,
+      "state_equation_residual_GeV": 9.360221014255962e-14,
+      "sigma_expectations_GeV": [
+        0.014661000481373834,
+        0.009490933747825182
+      ],
+      "quark_mass_insertion_GeV": 0.057473935191946685,
+      "scalar_pseudoscalar_quark_susceptibilities_GeV_minus2": [
+        87.889301437561,
+        93.22952744637465
+      ],
+      "source_PCAC_susceptibility_GeV2": 1.9598490038545433,
+      "source_PCAC_Ward_error_GeV2": 1.9984014443252818e-15,
+      "max_linear_solve_residual": 1.5475256143034599e-9
+    },
+    {
+      "volume_GeV_minus3": 1000,
+      "cell_side_fm": 1.9732698039999996,
+      "first_omitted_spatial_wavenumber_GeV": 0.6283185307179587,
+      "basis_frequency_GeV": 0.5,
+      "total_excitation_cutoff": 12,
+      "dimension": 125970,
+      "ground_energy_GeV_constant_removed": 1.1166344758031679,
+      "state_equation_residual_GeV": 4.4946051595400117e-13,
+      "sigma_expectations_GeV": [
+        0.014683165296306479,
+        0.009503755947897647
+      ],
+      "quark_mass_insertion_GeV": 0.05755325183681709,
+      "scalar_pseudoscalar_quark_susceptibilities_GeV_minus2": [
+        88.0071876795714,
+        93.3675982416325
+      ],
+      "source_PCAC_susceptibility_GeV2": 1.9627151983644149,
+      "source_PCAC_Ward_error_GeV2": 2.2870594307278225e-14,
+      "max_linear_solve_residual": 2.141735974257946e-9
+    },
+    {
+      "volume_GeV_minus3": 1000,
+      "cell_side_fm": 1.9732698039999996,
+      "first_omitted_spatial_wavenumber_GeV": 0.6283185307179587,
+      "basis_frequency_GeV": 0.65,
+      "total_excitation_cutoff": 6,
+      "dimension": 3003,
+      "ground_energy_GeV_constant_removed": 1.1179243704721191,
+      "state_equation_residual_GeV": 4.4106596645149906e-14,
+      "sigma_expectations_GeV": [
+        0.014334435071451324,
+        0.009255509918357033
+      ],
+      "quark_mass_insertion_GeV": 0.056258815132711,
+      "scalar_pseudoscalar_quark_susceptibilities_GeV_minus2": [
+        86.07511621328936,
+        91.17013923728142
+      ],
+      "source_PCAC_susceptibility_GeV2": 1.9146721155854427,
+      "source_PCAC_Ward_error_GeV2": 1.2212453270876722e-14,
+      "max_linear_solve_residual": 2.0985985489967996e-9
+    },
+    {
+      "volume_GeV_minus3": 1000,
+      "cell_side_fm": 1.9732698039999996,
+      "first_omitted_spatial_wavenumber_GeV": 0.6283185307179587,
+      "basis_frequency_GeV": 0.65,
+      "total_excitation_cutoff": 8,
+      "dimension": 12870,
+      "ground_energy_GeV_constant_removed": 1.116827822264063,
+      "state_equation_residual_GeV": 5.847892980083648e-13,
+      "sigma_expectations_GeV": [
+        0.014632409642665947,
+        0.00946810317523208
+      ],
+      "quark_mass_insertion_GeV": 0.05736533210322993,
+      "scalar_pseudoscalar_quark_susceptibilities_GeV_minus2": [
+        87.71782255551291,
+        93.0484328355238
+      ],
+      "source_PCAC_susceptibility_GeV2": 1.955753103822725,
+      "source_PCAC_Ward_error_GeV2": 6.794564910705958e-14,
+      "max_linear_solve_residual": 1.9516935062838303e-9
+    },
+    {
+      "volume_GeV_minus3": 1000,
+      "cell_side_fm": 1.9732698039999996,
+      "first_omitted_spatial_wavenumber_GeV": 0.6283185307179587,
+      "basis_frequency_GeV": 0.65,
+      "total_excitation_cutoff": 10,
+      "dimension": 43758,
+      "ground_energy_GeV_constant_removed": 1.116641061222908,
+      "state_equation_residual_GeV": 2.4057715452962513e-14,
+      "sigma_expectations_GeV": [
+        0.014679425789029995,
+        0.009500528189499088
+      ],
+      "quark_mass_insertion_GeV": 0.05753880555658908,
+      "scalar_pseudoscalar_quark_susceptibilities_GeV_minus2": [
+        87.98461569807073,
+        93.34378485501122
+      ],
+      "source_PCAC_susceptibility_GeV2": 1.9621641626303281,
+      "source_PCAC_Ward_error_GeV2": 8.659739592076221e-15,
+      "max_linear_solve_residual": 1.935089544719986e-9
+    },
+    {
+      "volume_GeV_minus3": 1000,
+      "cell_side_fm": 1.9732698039999996,
+      "first_omitted_spatial_wavenumber_GeV": 0.6283185307179587,
+      "basis_frequency_GeV": 0.65,
+      "total_excitation_cutoff": 12,
+      "dimension": 125970,
+      "ground_energy_GeV_constant_removed": 1.1166128242722015,
+      "state_equation_residual_GeV": 6.956307198971277e-13,
+      "sigma_expectations_GeV": [
+        0.014686933823568945,
+        0.00950592151574104
+      ],
+      "quark_mass_insertion_GeV": 0.05756672298644787,
+      "scalar_pseudoscalar_quark_susceptibilities_GeV_minus2": [
+        88.02834356961063,
+        93.39104923694545
+      ],
+      "source_PCAC_susceptibility_GeV2": 1.9632015981363973,
+      "source_PCAC_Ward_error_GeV2": 3.26405569239796e-14,
+      "max_linear_solve_residual": 2.2856662550038187e-9
+    },
+    {
+      "volume_GeV_minus3": 500,
+      "cell_side_fm": 1.5661852813433412,
+      "first_omitted_spatial_wavenumber_GeV": 0.7916317428905746,
+      "basis_frequency_GeV": 0.5,
+      "total_excitation_cutoff": 10,
+      "dimension": 43758,
+      "ground_energy_GeV_constant_removed": 1.6619875393515215,
+      "state_equation_residual_GeV": 5.05813755272728e-13,
+      "sigma_expectations_GeV": [
+        0.005948198557845187,
+        0.004329673540443453
+      ],
+      "quark_mass_insertion_GeV": 0.02617426921397901,
+      "scalar_pseudoscalar_quark_susceptibilities_GeV_minus2": [
+        38.542241646509396,
+        38.761811587758
+      ],
+      "source_PCAC_susceptibility_GeV2": 0.8255052327980253,
+      "source_PCAC_Ward_error_GeV2": 3.4638958368304884e-14,
+      "max_linear_solve_residual": 1.2205909885292988e-9
+    },
+    {
+      "volume_GeV_minus3": 2000,
+      "cell_side_fm": 2.48616416318153,
+      "first_omitted_spatial_wavenumber_GeV": 0.49869674831640054,
+      "basis_frequency_GeV": 0.5,
+      "total_excitation_cutoff": 10,
+      "dimension": 43758,
+      "ground_energy_GeV_constant_removed": 0.42558246631688446,
+      "state_equation_residual_GeV": 2.3069043274618777e-14,
+      "sigma_expectations_GeV": [
+        0.03817595573688675,
+        0.02368954974456181
+      ],
+      "quark_mass_insertion_GeV": 0.14221741695522205,
+      "scalar_pseudoscalar_quark_susceptibilities_GeV_minus2": [
+        126.97848770756003,
+        239.38303748838229
+      ],
+      "source_PCAC_susceptibility_GeV2": 5.038370051441874,
+      "source_PCAC_Ward_error_GeV2": 1.6964207816272392e-13,
+      "max_linear_solve_residual": 3.894838765013376e-9
+    }
+  ],
+  "exact_elimination": {
+    "full_dimension": 165,
+    "retained_dimension": 35,
+    "retained_rule": "Second multiplet in its numerical oscillator vacuum; representation test, not physical high-energy selection.",
+    "full_energy_GeV": 1.1548747598305167,
+    "independent_reduced_energy_GeV": 1.1548747598305147,
+    "reconstructed_state_error": 3.732230170834447e-15,
+    "retained_naive_norm": 0.9210406740719224,
+    "physical_norm": 1.0000000000000004,
+    "full_source_means": [
+      48.35690865211927,
+      -7.700824842395685e-14
+    ],
+    "transported_source_means": [
+      48.35690865211933,
+      -6.885657700403827e-14
+    ],
+    "bare_projected_source_means": [
+      37.48112100766824,
+      -6.218439866015985e-14
+    ],
+    "response_comparisons": [
+      {
+        "euclidean_frequency_GeV": 0,
+        "full_susceptibility_GeV_minus2": [
+          [
+            79.04205936018506,
+            6.03523650277187e-14
+          ],
+          [
+            6.033292048792151e-14,
+            84.69220615945763
+          ]
+        ],
+        "elimination_max_error_GeV_minus2": 2.842170943040401e-14,
+        "omitted_direct_response_error_norm_GeV_minus2": 11.578421443760496
+      },
+      {
+        "euclidean_frequency_GeV": 0.2,
+        "full_susceptibility_GeV_minus2": [
+          [
+            58.68431199502446,
+            4.445571920066987e-14
+          ],
+          [
+            4.44674216440824e-14,
+            61.999786857158924
+          ]
+        ],
+        "elimination_max_error_GeV_minus2": 3.552713678800501e-14,
+        "omitted_direct_response_error_norm_GeV_minus2": 10.303614152113639
+      },
+      {
+        "euclidean_frequency_GeV": 0.5,
+        "full_susceptibility_GeV_minus2": [
+          [
+            25.267063678804465,
+            1.8934737471764987e-14
+          ],
+          [
+            1.8932836235429626e-14,
+            26.053563043925692
+          ]
+        ],
+        "elimination_max_error_GeV_minus2": 2.842170943040401e-14,
+        "omitted_direct_response_error_norm_GeV_minus2": 6.676384299534738
+      }
+    ],
+    "small_cell_node_schmidt_probabilities": [
+      0.9389296044916065,
+      0.0155948666837831,
+      0.015594866683783034,
+      0.015594866683783003,
+      0.01425903063457783,
+      0.000012044136298219552,
+      0.0000054840275526872685,
+      0.0000030788862051675856,
+      0.000003078886205167536,
+      0.000003078886205167525
+    ],
+    "schmidt_scope": "Exact state-information diagnostic at shell 3; cutoff-dependent, not converged physical entanglement, topological order or quantum advantage."
+  },
+  "decision": "Retained-mode interpretation passes the bounded quantum test. Carry source endpoints, direct response and energy-dependent normalization through elimination; do not add eliminated exchange beside explicit retained modes. Rematch coefficients after quantization and do not fit physical data to this homogeneous cell. Next define a bounded nonzero-momentum retained quark/collective interaction and gauged source calculation, using canonical LF amplitudes and shared fit directions, before p/n inference. This is not permission for a sigma-model or BLFQ repair campaign."
+}

@@ -1,0 +1,320 @@
+{
+  "inputs": {
+    "reference": "explicit nonzero-momentum TREE action, not quantum-cell continuation",
+    "order": "e*g_i*g_j and e*g_s^2; electric e and overall i stripped",
+    "quark_mass_GeV": 0.2843478671310942,
+    "gs_squared": 1.2,
+    "scalar_H_GeV2": [
+      [
+        0.8035875039651871,
+        -0.12
+      ],
+      [
+        -0.12,
+        0.36252195129969056
+      ]
+    ],
+    "pion_H_GeV2": [
+      [
+        0.10157631076582505,
+        -0.12
+      ],
+      [
+        -0.12,
+        0.19488340741422788
+      ]
+    ],
+    "yukawa": [
+      3,
+      1
+    ],
+    "C_GeV_minus2": [
+      [
+        1.7,
+        0.35
+      ],
+      [
+        0.35,
+        -0.2
+      ]
+    ],
+    "retained_content": "both full multiplets; comparison retains lowest scalar and pion eigenmodes",
+    "excluded_content": "no loop modes integrated; no physical UV split or QCD coefficients matched",
+    "source_subtraction": "difference of full and explicitly retained induced amplitudes and currents",
+    "external_order": "spin(-,+) x flavor(u,d) x color(0,1,2), 12 per quark",
+    "domain": "listed nonzero spacelike exchanges, off-pole quark lines and k+ != 0; not a fitted EFT window"
+  },
+  "cases": [
+    {
+      "variation": 0,
+      "outgoing_GeV": [
+        [
+          0.4180355362191143,
+          0.17,
+          -0.11,
+          0.23
+        ],
+        [
+          0.383345418052704,
+          -0.09,
+          0.16,
+          -0.18
+        ]
+      ],
+      "incoming_GeV": [
+        [
+          0.4300624484211594,
+          0.31,
+          0.04,
+          -0.08
+        ],
+        [
+          0.3813839398060731,
+          -0.21,
+          -0.06,
+          0.13
+        ]
+      ],
+      "Q2_exchanges_GeV2": [
+        0.1380553533828843,
+        0.15889615260308798
+      ],
+      "photon_q2_GeV2": -0.005198687039289195,
+      "soft_current_norm_GeV_inverse": 17126.28841776062,
+      "canonical_current_norm_GeV_inverse": 3520.331385200541,
+      "total_current_norm_GeV_inverse": 17484.349802893776,
+      "LF_component_relative": 4.328016754601008e-16,
+      "Ward_norm": 4.072296797222986e-13,
+      "Ward_relative": 3.1691315366188515e-16,
+      "omit_collective_current_Ward_norm": 17.453504129294213,
+      "omit_quark_instantaneous_soft_relative": 0.09696486776200008,
+      "omit_quark_instantaneous_canonical_relative": 0.04546918740834407,
+      "omit_gluon_instantaneous_canonical_relative": 1.3520667659330894,
+      "canonical_radiating_gluon_divergence": 2.1065000811460206e-15
+    },
+    {
+      "variation": 0.5,
+      "outgoing_GeV": [
+        [
+          0.4881892148972593,
+          0.23500000000000001,
+          -0.14500000000000002,
+          0.28500000000000003
+        ],
+        [
+          0.383345418052704,
+          -0.09,
+          0.16,
+          -0.18
+        ]
+      ],
+      "incoming_GeV": [
+        [
+          0.4300624484211594,
+          0.31,
+          0.04,
+          -0.08
+        ],
+        [
+          0.3813839398060731,
+          -0.21,
+          -0.06,
+          0.13
+        ]
+      ],
+      "Q2_exchanges_GeV2": [
+        0.169696279019033,
+        0.15889615260308798
+      ],
+      "photon_q2_GeV2": -0.002664402846141222,
+      "soft_current_norm_GeV_inverse": 6845.504520884766,
+      "canonical_current_norm_GeV_inverse": 738.8389970990294,
+      "total_current_norm_GeV_inverse": 6885.26072193989,
+      "LF_component_relative": 8.727591021883197e-16,
+      "Ward_norm": 2.716754668000417e-13,
+      "Ward_relative": 3.9685200374327566e-16,
+      "omit_collective_current_Ward_norm": 8.362707294544302,
+      "omit_quark_instantaneous_soft_relative": 0.4046651630739615,
+      "omit_quark_instantaneous_canonical_relative": 0.39256994037248094,
+      "omit_gluon_instantaneous_canonical_relative": 1.257714685392176,
+      "canonical_radiating_gluon_divergence": 1.5522819014829363e-15
+    },
+    {
+      "variation": 2,
+      "outgoing_GeV": [
+        [
+          0.7285284548608946,
+          0.43000000000000005,
+          -0.25,
+          0.45
+        ],
+        [
+          0.383345418052704,
+          -0.09,
+          0.16,
+          -0.18
+        ]
+      ],
+      "incoming_GeV": [
+        [
+          0.4300624484211594,
+          0.31,
+          0.04,
+          -0.08
+        ],
+        [
+          0.3813839398060731,
+          -0.21,
+          -0.06,
+          0.13
+        ]
+      ],
+      "Q2_exchanges_GeV2": [
+        0.29031804299991604,
+        0.15889615260308798
+      ],
+      "photon_q2_GeV2": -0.02064332644502334,
+      "soft_current_norm_GeV_inverse": 8036.95167541451,
+      "canonical_current_norm_GeV_inverse": 1129.393851142481,
+      "total_current_norm_GeV_inverse": 8115.917859610649,
+      "LF_component_relative": 7.925103764303777e-16,
+      "Ward_norm": 3.868709054349396e-13,
+      "Ward_relative": 1.0628236366700026e-16,
+      "omit_collective_current_Ward_norm": 81.60634066527905,
+      "omit_quark_instantaneous_soft_relative": 0.0790236491355069,
+      "omit_quark_instantaneous_canonical_relative": 0.06632654542250933,
+      "omit_gluon_instantaneous_canonical_relative": 1.2697462211970103,
+      "canonical_radiating_gluon_divergence": 1.987965856317107e-15
+    },
+    {
+      "variation": -1,
+      "outgoing_GeV": [
+        [
+          0.3137733410313923,
+          0.04000000000000001,
+          -0.039999999999999994,
+          0.12000000000000001
+        ],
+        [
+          0.383345418052704,
+          -0.09,
+          0.16,
+          -0.18
+        ]
+      ],
+      "incoming_GeV": [
+        [
+          0.4300624484211594,
+          0.31,
+          0.04,
+          -0.08
+        ],
+        [
+          0.3813839398060731,
+          -0.21,
+          -0.06,
+          0.13
+        ]
+      ],
+      "Q2_exchanges_GeV2": [
+        0.10577684350249122,
+        0.15889615260308798
+      ],
+      "photon_q2_GeV2": -0.04112919321450952,
+      "soft_current_norm_GeV_inverse": 5038.909623367787,
+      "canonical_current_norm_GeV_inverse": 929.468496494346,
+      "total_current_norm_GeV_inverse": 5123.916654127393,
+      "LF_component_relative": 7.262720498292088e-16,
+      "Ward_norm": 1.5320082198875403e-13,
+      "Ward_relative": 1.1527781083399937e-16,
+      "omit_collective_current_Ward_norm": 48.889548877475896,
+      "omit_quark_instantaneous_soft_relative": 0.42178936319512383,
+      "omit_quark_instantaneous_canonical_relative": 0.19036409524089806,
+      "omit_gluon_instantaneous_canonical_relative": 1.7449490163108112,
+      "canonical_radiating_gluon_divergence": 1.4680312012247278e-15
+    }
+  ],
+  "source_matching": {
+    "retained_scalar_mass_GeV": 0.5761836463363517,
+    "retained_pion_mass_GeV": 0.13957039000028879,
+    "residual_current_norm_GeV_inverse": 4459.312987467892,
+    "residual_Ward_norm": 1.244145732264912e-13,
+    "lost_heavy_light_source_coefficient_norm_GeV_minus3": 0.2090203049269895,
+    "zero_C_change_norm_GeV_inverse": 4.89418826342531,
+    "zero_C_change_Ward_norm": 1.251008626273817e-14
+  },
+  "boosts": [
+    {
+      "rapidity_vector": [
+        0.4,
+        0,
+        0
+      ],
+      "full_component_relative": 2.3234133724940983e-14
+    },
+    {
+      "rapidity_vector": [
+        0,
+        0,
+        0.7
+      ],
+      "full_component_relative": 1.3456339277671753e-14
+    },
+    {
+      "rapidity_vector": [
+        -0.3,
+        0.2,
+        0.15
+      ],
+      "full_component_relative": 5.1603771041718075e-15
+    }
+  ],
+  "signed_pair_route": {
+    "outgoing_GeV": [
+      [
+        1.2533370295104196,
+        0.9,
+        -0.2,
+        -0.8
+      ],
+      [
+        0.3625654555276915,
+        -0.05,
+        0.09,
+        -0.2
+      ]
+    ],
+    "incoming_GeV": [
+      [
+        0.3047190665875741,
+        0.04,
+        0.02,
+        0.1
+      ],
+      [
+        1.2533370295104196,
+        0.2,
+        -0.1,
+        1.2
+      ]
+    ],
+    "minimum_internal_plus_GeV": -1.2992624263827839,
+    "LF_component_relative": 8.406046307589519e-16,
+    "Ward_norm": 1.2288890725587847e-12
+  },
+  "maxima": {
+    "LF_component_relative": 8.727591021883197e-16,
+    "Ward_relative": 3.9685200374327566e-16,
+    "boost_component_relative": 2.3234133724940983e-14
+  },
+  "claims": {
+    "tree_amplitude_matching": true,
+    "independent_LF_quark_and_gluon": true,
+    "physical_nucleon": false,
+    "quantum_rematched_coefficients": false,
+    "quantum_spatial_field_solve": false,
+    "full_QCD_matching": false,
+    "old_covariance_repaired": false,
+    "regulator_or_BLFQ_H2_selected": false
+  }
+}

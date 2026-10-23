@@ -1,0 +1,363 @@
+{
+  "source_reports": [
+    "docs/next_level/m2_gaussian_cluster_four_current_Q5_Q6_shell1.json",
+    "docs/next_level/m2_gaussian_cluster_four_current_retained_shell1.json"
+  ],
+  "retained_dimensions": [
+    37,
+    204
+  ],
+  "fixed_Q_shells": [
+    1,
+    1
+  ],
+  "total_k2": 9,
+  "coupling": 0.3,
+  "energy_out_GeV2": 1.39,
+  "energy_in_GeV2": 1.47,
+  "transfer_GeV": [
+    0.12,
+    0.16
+  ],
+  "component_order": [
+    "plus",
+    "minus",
+    "x",
+    "y"
+  ],
+  "endpoint_metric_map_difference_Frobenius": 0.000021193615051298834,
+  "naive_normalized_raw_embedding_error_Frobenius": 0.000058168122815965266,
+  "Ward_boundary_Frobenius": 1.3159882326795949e-15,
+  "Ward_difference_residual_Frobenius": 1.4374474267848043e-15,
+  "comparisons": {
+    "raw_current": {
+      "stacked": {
+        "reference_Frobenius": 9.093615259436884,
+        "candidate_Frobenius": 9.224904807080962,
+        "difference_Frobenius": 0.15906003507096603,
+        "relative_difference": 0.017491397044305534
+      },
+      "components": {
+        "plus": {
+          "reference_Frobenius": 4.550637323735099,
+          "candidate_Frobenius": 4.550637323735097,
+          "difference_Frobenius": 6.14854266563451e-15,
+          "relative_difference": 1.3511388028145192e-15
+        },
+        "minus": {
+          "reference_Frobenius": 7.692601939350057,
+          "candidate_Frobenius": 7.847366106556662,
+          "difference_Frobenius": 0.15906003507096603,
+          "relative_difference": 0.020677013619712255
+        },
+        "x": {
+          "reference_Frobenius": 1.3408485762512599,
+          "candidate_Frobenius": 1.34084857625126,
+          "difference_Frobenius": 1.7431364697848824e-15,
+          "relative_difference": 1.3000248504259428e-15
+        },
+        "y": {
+          "reference_Frobenius": 1.0057529183479064,
+          "candidate_Frobenius": 1.0057529183479064,
+          "difference_Frobenius": 1.45548344088116e-15,
+          "relative_difference": 1.4471580587327557e-15
+        }
+      },
+      "transverse_along_transfer": {
+        "reference_Frobenius": 0.02314175055121348,
+        "candidate_Frobenius": 0.023141750551213907,
+        "difference_Frobenius": 5.391646413047751e-16,
+        "relative_difference": 2.3298351613962194e-14
+      },
+      "transverse_orthogonal_to_transfer": {
+        "reference_Frobenius": 1.6759708519487402,
+        "candidate_Frobenius": 1.67597085194874,
+        "difference_Frobenius": 2.2790722374859348e-15,
+        "relative_difference": 1.3598519537711153e-15
+      }
+    },
+    "normalized_current": {
+      "stacked": {
+        "reference_Frobenius": 9.090707699492633,
+        "candidate_Frobenius": 9.221958861801337,
+        "difference_Frobenius": 0.15901352446414083,
+        "relative_difference": 0.01749187518954279
+      },
+      "components": {
+        "plus": {
+          "reference_Frobenius": 4.549225369985938,
+          "candidate_Frobenius": 4.549225369985939,
+          "difference_Frobenius": 7.328682859694516e-15,
+          "relative_difference": 1.6109737952413578e-15
+        },
+        "minus": {
+          "reference_Frobenius": 7.690117286094383,
+          "candidate_Frobenius": 7.844836686957168,
+          "difference_Frobenius": 0.15901352446414083,
+          "relative_difference": 0.020677646198150483
+        },
+        "x": {
+          "reference_Frobenius": 1.340418308045459,
+          "candidate_Frobenius": 1.340418308045459,
+          "difference_Frobenius": 2.224936667824243e-15,
+          "relative_difference": 1.6598823326044772e-15
+        },
+        "y": {
+          "reference_Frobenius": 1.0054302045691643,
+          "candidate_Frobenius": 1.0054302045691639,
+          "difference_Frobenius": 1.801243976005452e-15,
+          "relative_difference": 1.7915156793775662e-15
+        }
+      },
+      "transverse_along_transfer": {
+        "reference_Frobenius": 0.023136783542397732,
+        "candidate_Frobenius": 0.023136783542398152,
+        "difference_Frobenius": 1.4173087893968381e-15,
+        "relative_difference": 6.125781428518989e-14
+      },
+      "transverse_orthogonal_to_transfer": {
+        "reference_Frobenius": 1.6754330264295119,
+        "candidate_Frobenius": 1.675433026429512,
+        "difference_Frobenius": 2.5156530015349877e-15,
+        "relative_difference": 1.5014942178238273e-15
+      }
+    },
+    "current_power_0": {
+      "stacked": {
+        "reference_Frobenius": 9.039759337940817,
+        "candidate_Frobenius": 9.170761291243853,
+        "difference_Frobenius": 0.1590693481938184,
+        "relative_difference": 0.017596635291626368
+      },
+      "components": {
+        "plus": {
+          "reference_Frobenius": 4.549346247321706,
+          "candidate_Frobenius": 4.549346247321705,
+          "difference_Frobenius": 6.005452854583344e-15,
+          "relative_difference": 1.3200694183518957e-15
+        },
+        "minus": {
+          "reference_Frobenius": 7.629765602831042,
+          "candidate_Frobenius": 7.7845319016131045,
+          "difference_Frobenius": 0.1590693481938184,
+          "relative_difference": 0.020848523594852685
+        },
+        "x": {
+          "reference_Frobenius": 1.3404177153647299,
+          "candidate_Frobenius": 1.34041771536473,
+          "difference_Frobenius": 1.759448063207883e-15,
+          "relative_difference": 1.3126117650042653e-15
+        },
+        "y": {
+          "reference_Frobenius": 1.0053132865235475,
+          "candidate_Frobenius": 1.0053132865235472,
+          "difference_Frobenius": 1.4018601297783678e-15,
+          "relative_difference": 1.3944510120085158e-15
+        }
+      },
+      "transverse_along_transfer": {
+        "reference_Frobenius": 2.6136330769049415e-16,
+        "candidate_Frobenius": 2.936935935669811e-16,
+        "difference_Frobenius": 2.9966408361354346e-16,
+        "relative_difference": 1.1465422834654548
+      },
+      "transverse_orthogonal_to_transfer": {
+        "reference_Frobenius": 1.6755221442059125,
+        "candidate_Frobenius": 1.6755221442059118,
+        "difference_Frobenius": 2.227026837157303e-15,
+        "relative_difference": 1.3291539266482016e-15
+      }
+    },
+    "current_power_1": {
+      "stacked": {
+        "reference_Frobenius": 0.34429429474621803,
+        "candidate_Frobenius": 0.3453924946612253,
+        "difference_Frobenius": 0.0026483513674489876,
+        "relative_difference": 0.007692115169672236
+      },
+      "components": {
+        "plus": {
+          "reference_Frobenius": 0,
+          "candidate_Frobenius": 0,
+          "difference_Frobenius": 0,
+          "relative_difference": null
+        },
+        "minus": {
+          "reference_Frobenius": 0.3355639201796427,
+          "candidate_Frobenius": 0.3366905975815753,
+          "difference_Frobenius": 0.0026483513674489876,
+          "relative_difference": 0.007892241114691962
+        },
+        "x": {
+          "reference_Frobenius": 0.046224994025394525,
+          "candidate_Frobenius": 0.04622499402539539,
+          "difference_Frobenius": 8.899472092094855e-16,
+          "relative_difference": 1.925251107053853e-14
+        },
+        "y": {
+          "reference_Frobenius": 0.06163332536719273,
+          "candidate_Frobenius": 0.06163332536719384,
+          "difference_Frobenius": 1.182514216184357e-15,
+          "relative_difference": 1.9186279648863574e-14
+        }
+      },
+      "transverse_along_transfer": {
+        "reference_Frobenius": 0.07704165670899088,
+        "candidate_Frobenius": 0.0770416567089923,
+        "difference_Frobenius": 1.4798793215331159e-15,
+        "relative_difference": 1.9208820068901915e-14
+      },
+      "transverse_orthogonal_to_transfer": {
+        "reference_Frobenius": 9.013606649120602e-18,
+        "candidate_Frobenius": 1.416848627702198e-17,
+        "difference_Frobenius": 1.5561727019194487e-17,
+        "relative_difference": 1.7264706154791813
+      }
+    },
+    "current_power_2": {
+      "stacked": {
+        "reference_Frobenius": 0.6935934659888306,
+        "candidate_Frobenius": 0.6934372813519107,
+        "difference_Frobenius": 0.0013439000832377774,
+        "relative_difference": 0.0019375904606047992
+      },
+      "components": {
+        "plus": {
+          "reference_Frobenius": 0.018350969346342606,
+          "candidate_Frobenius": 0.018350969346342595,
+          "difference_Frobenius": 2.4297488253170263e-17,
+          "relative_difference": 1.3240438580980363e-15
+        },
+        "minus": {
+          "reference_Frobenius": 0.6931997813835259,
+          "candidate_Frobenius": 0.6930435080256492,
+          "difference_Frobenius": 0.0013439000832377774,
+          "relative_difference": 0.0019386908642059124
+        },
+        "x": {
+          "reference_Frobenius": 0.00941373870056564,
+          "candidate_Frobenius": 0.009413738700565758,
+          "difference_Frobenius": 1.5125614400037791e-16,
+          "relative_difference": 1.606759533184084e-14
+        },
+        "y": {
+          "reference_Frobenius": 0.010981010880544742,
+          "candidate_Frobenius": 0.01098101088054492,
+          "difference_Frobenius": 2.0147232278559235e-16,
+          "relative_difference": 1.8347338416952537e-14
+        }
+      },
+      "transverse_along_transfer": {
+        "reference_Frobenius": 0.012715318727736732,
+        "candidate_Frobenius": 0.012715318727736968,
+        "difference_Frobenius": 2.518359521149649e-16,
+        "relative_difference": 1.98057128969657e-14
+      },
+      "transverse_orthogonal_to_transfer": {
+        "reference_Frobenius": 0.006893601811334694,
+        "candidate_Frobenius": 0.006893601811334692,
+        "difference_Frobenius": 9.211139681290585e-18,
+        "relative_difference": 1.336186790792778e-15
+      }
+    },
+    "current_power_3": {
+      "stacked": {
+        "reference_Frobenius": 0.000379596981295323,
+        "candidate_Frobenius": 0.00037959698129532283,
+        "difference_Frobenius": 4.666185714640027e-19,
+        "relative_difference": 1.2292473187529848e-15
+      },
+      "components": {
+        "plus": {
+          "reference_Frobenius": 0.0001767642201887142,
+          "candidate_Frobenius": 0.00017676422018871412,
+          "difference_Frobenius": 1.7642201205701638e-19,
+          "relative_difference": 9.98064041855685e-16
+        },
+        "minus": {
+          "reference_Frobenius": 0.00030099739060246547,
+          "candidate_Frobenius": 0.0003009973906024653,
+          "difference_Frobenius": 4.0172201847015234e-19,
+          "relative_difference": 1.3346362161681206e-15
+        },
+        "x": {
+          "reference_Frobenius": 0.00009814267125035003,
+          "candidate_Frobenius": 0.00009814267125035003,
+          "difference_Frobenius": 1.0347342564613211e-19,
+          "relative_difference": 1.0543163776557902e-15
+        },
+        "y": {
+          "reference_Frobenius": 0.00011232482183359939,
+          "candidate_Frobenius": 0.00011232482183359939,
+          "difference_Frobenius": 1.2050242718792608e-19,
+          "relative_difference": 1.0728031900770889e-15
+        }
+      },
+      "transverse_along_transfer": {
+        "reference_Frobenius": 0.00012827537026580683,
+        "candidate_Frobenius": 0.00012827537026580683,
+        "difference_Frobenius": 1.3368453036232173e-19,
+        "relative_difference": 1.0421683452194e-15
+      },
+      "transverse_orthogonal_to_transfer": {
+        "reference_Frobenius": 0.0000761201609514476,
+        "candidate_Frobenius": 0.00007612016095144759,
+        "difference_Frobenius": 8.644962407522011e-20,
+        "relative_difference": 1.1356994388170179e-15
+      }
+    },
+    "current_power_4": {
+      "stacked": {
+        "reference_Frobenius": 0.004088230008709945,
+        "candidate_Frobenius": 0.0040882300087099425,
+        "difference_Frobenius": 6.337799810992226e-18,
+        "relative_difference": 1.5502551953998647e-15
+      },
+      "components": {
+        "plus": {
+          "reference_Frobenius": 0.003278404335308323,
+          "candidate_Frobenius": 0.0032784043353083214,
+          "difference_Frobenius": 4.5071129592953484e-18,
+          "relative_difference": 1.3747886161428802e-15
+        },
+        "minus": {
+          "reference_Frobenius": 0.00211974155578208,
+          "candidate_Frobenius": 0.0021197415557820793,
+          "difference_Frobenius": 4.207734313828323e-18,
+          "relative_difference": 1.985022326118373e-15
+        },
+        "x": {
+          "reference_Frobenius": 0.0009643410708343406,
+          "candidate_Frobenius": 0.0009643410708343404,
+          "difference_Frobenius": 1.114195399741726e-18,
+          "relative_difference": 1.1553955684763404e-15
+        },
+        "y": {
+          "reference_Frobenius": 0.0007364995954790305,
+          "candidate_Frobenius": 0.0007364995954790303,
+          "difference_Frobenius": 9.524598531125088e-19,
+          "relative_difference": 1.2932252223343238e-15
+        }
+      },
+      "transverse_along_transfer": {
+        "reference_Frobenius": 0.00021021185170173726,
+        "candidate_Frobenius": 0.00021021185170173726,
+        "difference_Frobenius": 6.422254952218348e-19,
+        "relative_difference": 3.0551345703051397e-15
+      },
+      "transverse_orthogonal_to_transfer": {
+        "reference_Frobenius": 0.0011950716850644661,
+        "candidate_Frobenius": 0.0011950716850644657,
+        "difference_Frobenius": 1.3385093117033963e-18,
+        "relative_difference": 1.1200242867700382e-15
+      }
+    }
+  },
+  "finite_conditions_are_uncalibrated_test_values": true,
+  "physical": false,
+  "continuum_convergence_established": false,
+  "normalization": "Raw occupation-label E for H/N and each g coefficient; separate T_out/T_in for normalized current.",
+  "seconds": 138.66593600000488,
+  "full_matrix_file": "m2_gaussian_retained_resolution_P0_P1.npz",
+  "diagnostic_projection_note": "Relative ratios with near-zero reference projections are ill-conditioned; inspect the reported absolute norms. No matrix entries or small coefficients are discarded."
+}

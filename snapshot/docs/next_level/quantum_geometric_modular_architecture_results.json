@@ -1,0 +1,346 @@
+{
+  "scope": "reusable ordered SU3, shared neural-kernel response and fermionic nuclear-interpolator architecture",
+  "preedit_checkpoint": "6c409c266342d1ae5f557c3224f7b8556ea66ae1",
+  "gauge_cases": [
+    {
+      "seed": 0,
+      "functional_gauge_error": 0.0,
+      "current_covariance_error": 1.1312094951178082e-16,
+      "gauge_divergence_error": 2.1221913207314622e-17,
+      "tree_gauge_functional_error": 1.6653345369377348e-16,
+      "tree_gauge_Wilson_error": 1.085665291867152e-15,
+      "erased_holonomy_functional_error": 0.31280984810646023,
+      "erased_holonomy_current_error": 0.15355558535544642,
+      "omitted_current_term_divergence": 0.04839092889550633
+    },
+    {
+      "seed": 1,
+      "functional_gauge_error": 5.551115123125783e-17,
+      "current_covariance_error": 1.197856747520626e-16,
+      "gauge_divergence_error": 3.1003405872869983e-17,
+      "tree_gauge_functional_error": 5.551115123125783e-17,
+      "tree_gauge_Wilson_error": 3.002224531865041e-16,
+      "erased_holonomy_functional_error": 0.4803423609727731,
+      "erased_holonomy_current_error": 0.17573352530328987,
+      "omitted_current_term_divergence": 0.04442915646819896
+    },
+    {
+      "seed": 2,
+      "functional_gauge_error": 0.0,
+      "current_covariance_error": 1.0523250312413795e-16,
+      "gauge_divergence_error": 2.1406690301420434e-17,
+      "tree_gauge_functional_error": 1.1102230246251565e-16,
+      "tree_gauge_Wilson_error": 9.189778455511335e-16,
+      "erased_holonomy_functional_error": 0.28685677779767255,
+      "erased_holonomy_current_error": 0.11318897960812242,
+      "omitted_current_term_divergence": 0.034330880648231914
+    },
+    {
+      "seed": 3,
+      "functional_gauge_error": 5.551115123125783e-17,
+      "current_covariance_error": 3.5458369177827324e-16,
+      "gauge_divergence_error": 4.388840072347634e-17,
+      "tree_gauge_functional_error": 1.1102230246251565e-16,
+      "tree_gauge_Wilson_error": 4.484050470211362e-16,
+      "erased_holonomy_functional_error": 0.41869709638663105,
+      "erased_holonomy_current_error": 0.265286699392876,
+      "omitted_current_term_divergence": 0.06415926100209732
+    },
+    {
+      "seed": 4,
+      "functional_gauge_error": 0.0,
+      "current_covariance_error": 1.3743772210201532e-16,
+      "gauge_divergence_error": 3.3866779350734586e-17,
+      "tree_gauge_functional_error": 0.0,
+      "tree_gauge_Wilson_error": 9.682678848994769e-16,
+      "erased_holonomy_functional_error": 0.3231351960245324,
+      "erased_holonomy_current_error": 0.15936949440924836,
+      "omitted_current_term_divergence": 0.03013152342311665
+    },
+    {
+      "seed": 5,
+      "functional_gauge_error": 5.551115123125783e-17,
+      "current_covariance_error": 1.6471161437297327e-16,
+      "gauge_divergence_error": 4.807550981584724e-17,
+      "tree_gauge_functional_error": 0.0,
+      "tree_gauge_Wilson_error": 3.5005327124830286e-16,
+      "erased_holonomy_functional_error": 0.42859531972933873,
+      "erased_holonomy_current_error": 0.2556349178597153,
+      "omitted_current_term_divergence": 0.06279781607381581
+    },
+    {
+      "seed": 6,
+      "functional_gauge_error": 5.551115123125783e-17,
+      "current_covariance_error": 2.0673103641031376e-16,
+      "gauge_divergence_error": 5.134395539765895e-17,
+      "tree_gauge_functional_error": 5.551115123125783e-17,
+      "tree_gauge_Wilson_error": 5.026748538604307e-16,
+      "erased_holonomy_functional_error": 0.4295068712714262,
+      "erased_holonomy_current_error": 0.24702993056143596,
+      "omitted_current_term_divergence": 0.061125327265713646
+    },
+    {
+      "seed": 7,
+      "functional_gauge_error": 5.551115123125783e-17,
+      "current_covariance_error": 5.601338191164529e-16,
+      "gauge_divergence_error": 3.739963111615645e-17,
+      "tree_gauge_functional_error": 5.551115123125783e-17,
+      "tree_gauge_Wilson_error": 1.0325262988310307e-15,
+      "erased_holonomy_functional_error": 0.4251333192972063,
+      "erased_holonomy_current_error": 0.23880932385256365,
+      "omitted_current_term_divergence": 0.051445099480631765
+    },
+    {
+      "seed": 8,
+      "functional_gauge_error": 1.1102230246251565e-16,
+      "current_covariance_error": 2.222467172411249e-16,
+      "gauge_divergence_error": 3.531081246692559e-17,
+      "tree_gauge_functional_error": 0.0,
+      "tree_gauge_Wilson_error": 1.6401643046719713e-15,
+      "erased_holonomy_functional_error": 0.3879191187395478,
+      "erased_holonomy_current_error": 0.23452911880367774,
+      "omitted_current_term_divergence": 0.05918693404554555
+    },
+    {
+      "seed": 9,
+      "functional_gauge_error": 0.0,
+      "current_covariance_error": 2.7763908110290607e-16,
+      "gauge_divergence_error": 3.2729530506480276e-17,
+      "tree_gauge_functional_error": 0.0,
+      "tree_gauge_Wilson_error": 8.170897455506266e-16,
+      "erased_holonomy_functional_error": 0.3782863072703782,
+      "erased_holonomy_current_error": 0.23742434264112,
+      "omitted_current_term_divergence": 0.05863575593294428
+    },
+    {
+      "seed": 10,
+      "functional_gauge_error": 1.1102230246251565e-16,
+      "current_covariance_error": 2.9348976319866413e-16,
+      "gauge_divergence_error": 2.7468805823387096e-17,
+      "tree_gauge_functional_error": 1.1102230246251565e-16,
+      "tree_gauge_Wilson_error": 3.3306690738754696e-16,
+      "erased_holonomy_functional_error": 0.3501537507364302,
+      "erased_holonomy_current_error": 0.20319995927619988,
+      "omitted_current_term_divergence": 0.04605960305269359
+    },
+    {
+      "seed": 11,
+      "functional_gauge_error": 1.1102230246251565e-16,
+      "current_covariance_error": 2.9940713634917864e-16,
+      "gauge_divergence_error": 4.8969456229319225e-17,
+      "tree_gauge_functional_error": 1.1102230246251565e-16,
+      "tree_gauge_Wilson_error": 9.364165225365838e-16,
+      "erased_holonomy_functional_error": 0.4434034582677641,
+      "erased_holonomy_current_error": 0.29385240320202893,
+      "omitted_current_term_divergence": 0.07064585642077427
+    }
+  ],
+  "all_56_link_generator_derivatives": [
+    {
+      "step": 0.001,
+      "maximum_error": 3.755424107104721e-08
+    },
+    {
+      "step": 0.0001,
+      "maximum_error": 3.759806008196698e-10
+    },
+    {
+      "step": 1e-05,
+      "maximum_error": 1.314982844835555e-11
+    }
+  ],
+  "relative_holonomy_information": {
+    "elementary_loop_trace_difference": 1.8214596497756474e-17,
+    "commutator_trace_difference": 0.02032736320049925,
+    "shared_functional_difference": 0.018021412280771587,
+    "not_a_topological_order_invariant": true
+  },
+  "modular_spin_resolved_interpolators": [
+    {
+      "species": [
+        "p"
+      ],
+      "A": 1,
+      "Z": 1,
+      "spin": 0.5,
+      "magnetic": 0.5,
+      "sparse_coefficients": 9,
+      "norm": 1.0000000000000002,
+      "spin_Casimir_residual_norm": 1.1775693440128312e-16
+    },
+    {
+      "species": [
+        "n"
+      ],
+      "A": 1,
+      "Z": 0,
+      "spin": 0.5,
+      "magnetic": -0.5,
+      "sparse_coefficients": 9,
+      "norm": 1.0000000000000002,
+      "spin_Casimir_residual_norm": 0.0
+    },
+    {
+      "species": [
+        "p",
+        "n"
+      ],
+      "A": 2,
+      "Z": 1,
+      "spin": 1.0,
+      "magnetic": 0.0,
+      "sparse_coefficients": 162,
+      "norm": 1.0000000000000004,
+      "spin_Casimir_residual_norm": 0.0
+    },
+    {
+      "species": [
+        "p",
+        "n"
+      ],
+      "A": 2,
+      "Z": 1,
+      "spin": 0.0,
+      "magnetic": 0.0,
+      "sparse_coefficients": 162,
+      "norm": 1.0000000000000004,
+      "spin_Casimir_residual_norm": 0.0
+    },
+    {
+      "species": [
+        "p",
+        "n",
+        "n"
+      ],
+      "A": 3,
+      "Z": 1,
+      "spin": 0.5,
+      "magnetic": 0.5,
+      "sparse_coefficients": 1458,
+      "norm": 1.0000000000000007,
+      "spin_Casimir_residual_norm": 9.367506770274758e-17
+    },
+    {
+      "species": [
+        "p",
+        "p",
+        "n"
+      ],
+      "A": 3,
+      "Z": 2,
+      "spin": 1.5,
+      "magnetic": 0.5,
+      "sparse_coefficients": 2187,
+      "norm": 1.0000000000000007,
+      "spin_Casimir_residual_norm": 4.589122349847999e-16
+    },
+    {
+      "species": [
+        "p",
+        "p",
+        "n",
+        "n"
+      ],
+      "A": 4,
+      "Z": 2,
+      "spin": 0.0,
+      "magnetic": 0.0,
+      "sparse_coefficients": 26244,
+      "norm": 1.0000000000000013,
+      "spin_Casimir_residual_norm": 0.0
+    }
+  ],
+  "overlap_exchange": {
+    "separated_pn_norm": 1.0000000000000004,
+    "overlapping_pn_norm": 1.1111111111111116,
+    "repeated_identical_creator_norm": 0.0,
+    "nuclear_binding_or_medium_effect_prediction": false
+  },
+  "shared_neural_inference": {
+    "development_seeds": [
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109
+    ],
+    "reserved_seeds": [
+      500,
+      501,
+      502,
+      503,
+      504,
+      505,
+      506,
+      507,
+      508,
+      509,
+      510,
+      511
+    ],
+    "sigma": 1e-05,
+    "realizations": 100,
+    "true_coefficients": [
+      0.2,
+      -0.3,
+      0.4,
+      0.1
+    ],
+    "hidden_layers_trained": false,
+    "physical_data_used": false,
+    "same_functional_noise_in_both_comparisons": true,
+    "equal_measurement_budget": false,
+    "results": {
+      "functional_only": {
+        "measurements": 10,
+        "singular_values": [
+          7.24329721519396,
+          0.8015762896681958,
+          0.05035219622316571,
+          0.004886987270476226
+        ],
+        "condition": 1482.1600332280211,
+        "exact_coefficient_error": 3.615157064722331e-15,
+        "coefficient_RMSE": [
+          0.0019629625574518737,
+          0.0002787947343778472,
+          0.00022280714328276247,
+          0.0008429335329776123
+        ],
+        "reserved_functional_RMSE": 9.83627717227484e-06,
+        "reserved_current_RMSE": 5.4731525290433795e-06
+      },
+      "joint_functional_and_response": {
+        "measurements": 570,
+        "singular_values": [
+          8.602484258886854,
+          1.8992143095487366,
+          0.13988198544096153,
+          0.05320384731324514
+        ],
+        "condition": 161.6891389120512,
+        "exact_coefficient_error": 2.2241292817996476e-15,
+        "coefficient_RMSE": [
+          0.0001695100868066253,
+          2.6858915175780708e-05,
+          2.5500876014692375e-05,
+          9.300507475825066e-05
+        ],
+        "reserved_functional_RMSE": 3.189076688494878e-06,
+        "reserved_current_RMSE": 7.973989303938196e-07
+      }
+    }
+  },
+  "generated_physical_nucleon_predictions": false,
+  "nuclear_binding_solved": false,
+  "LF_current_or_Poincare_covariance_qualified": false,
+  "quantum_gauge_field_state_supplied": false,
+  "physical_topological_order_demonstrated": false,
+  "quantum_advantage": false,
+  "runtime_seconds": 0.6045490000396967
+}

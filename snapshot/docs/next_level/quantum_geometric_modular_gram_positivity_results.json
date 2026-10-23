@@ -1,0 +1,89 @@
+{
+  "scope": "common modular Gram map and role-sensitive positive finite transfer-kernel controls",
+  "preedit_checkpoint": "6c409c266342d1ae5f557c3224f7b8556ea66ae1",
+  "overlapping_cluster_Gram_controls": [
+    {
+      "spin": 0.0,
+      "columns": 2,
+      "physical_rank": 1,
+      "Gram_eigenvalues": [
+        0.0,
+        2.2222222222222237
+      ],
+      "null_image_norm": 0.0,
+      "isometry_error": 2.220446049250313e-16,
+      "unqualified_Euclidean_charge": 1.1111111111111116,
+      "common_map_charge": [
+        [
+          0.9999999999999997
+        ]
+      ]
+    },
+    {
+      "spin": 1.0,
+      "columns": 2,
+      "physical_rank": 1,
+      "Gram_eigenvalues": [
+        0.0,
+        2.222222222222223
+      ],
+      "null_image_norm": 0.0,
+      "isometry_error": 0.0,
+      "unqualified_Euclidean_charge": 1.1111111111111118,
+      "common_map_charge": [
+        [
+          1.0000000000000002
+        ]
+      ]
+    }
+  ],
+  "independent_full_carrier_operator_control": {
+    "cluster_columns": 3,
+    "physical_rank": 2,
+    "full_carrier_expectation": 0.7999999999999996,
+    "common_Gram_expectation": 0.7999999999999979,
+    "difference": 1.6653345369377348e-15,
+    "not_a_nuclear_form_factor": true
+  },
+  "temporal_versus_spatial_neural_placement": [
+    {
+      "seed": 81,
+      "configurations": 40,
+      "unrestricted_neural_temporal_min_eigenvalue": -0.3034121470950218,
+      "unrestricted_negative_count": 7,
+      "positive_character_min_eigenvalue": 0.054248916302047,
+      "with_same_neural_spatial_potential_min_eigenvalue": 0.053446084276809594,
+      "spatial_potential_offset": 0.08385145321044445
+    },
+    {
+      "seed": 192,
+      "configurations": 32,
+      "unrestricted_neural_temporal_min_eigenvalue": -0.19679151536498526,
+      "unrestricted_negative_count": 5,
+      "positive_character_min_eigenvalue": 0.05119365698543326,
+      "with_same_neural_spatial_potential_min_eigenvalue": 0.050591182283015027,
+      "spatial_potential_offset": 0.09846929709145545
+    },
+    {
+      "seed": 293,
+      "configurations": 64,
+      "unrestricted_neural_temporal_min_eigenvalue": -0.5038006783262061,
+      "unrestricted_negative_count": 9,
+      "positive_character_min_eigenvalue": 0.024527140403079198,
+      "with_same_neural_spatial_potential_min_eigenvalue": 0.02441698523979961,
+      "spatial_potential_offset": 0.08730786047411236
+    },
+    {
+      "seed": 394,
+      "configurations": 96,
+      "unrestricted_neural_temporal_min_eigenvalue": -0.8595931698683914,
+      "unrestricted_negative_count": 9,
+      "positive_character_min_eigenvalue": 0.022623600227690364,
+      "with_same_neural_spatial_potential_min_eigenvalue": 0.022362436742897982,
+      "spatial_potential_offset": 0.10500242003341638
+    }
+  ],
+  "negative_temporal_control_does_not_reject_spatial_potential": true,
+  "complete_LF_or_continuum_transfer_theory": false,
+  "physical_nucleon_or_nuclear_prediction": false
+}

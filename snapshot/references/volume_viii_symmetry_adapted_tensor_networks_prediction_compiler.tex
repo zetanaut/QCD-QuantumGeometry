@@ -1,0 +1,2827 @@
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.82in,headheight=15pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,bm,mathtools}
+\usepackage{stmaryrd}
+\usepackage{booktabs,longtable,tabularx,array,multirow}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{tikz-cd}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+\definecolor{navy}{HTML}{17324D}
+\definecolor{teal}{HTML}{147D92}
+\definecolor{orange}{HTML}{D47A27}
+\definecolor{softblue}{HTML}{EEF4F7}
+\definecolor{softgray}{HTML}{F3F5F6}
+\definecolor{darkgray}{HTML}{46545E}
+\definecolor{softorange}{HTML}{FFF4E8}
+\definecolor{softgreen}{HTML}{EDF7F0}
+\definecolor{softred}{HTML}{FCEEEE}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navy,
+  citecolor=teal,
+  urlcolor=teal,
+  pdftitle={Volume VIII: Symmetry-Adapted Tensor Networks and the Assumption-Conditioned Prediction Compiler},
+  pdfauthor={DeuteronWigner project}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{darkgray}DeuteronWigner formalism - Volume VIII}
+\fancyhead[R]{\small\color{darkgray}Tensor networks and prediction compiler}
+\fancyfoot[L]{\small\color{darkgray}30 July 2026}
+\fancyfoot[R]{\small\color{darkgray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=2pt,topsep=3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.16}
+\allowdisplaybreaks
+
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}[definition]{Axiom}
+\newtheorem{principle}[definition]{Design principle}
+\newtheorem{requirement}[definition]{Requirement}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{corollary}[definition]{Corollary}
+\newtheorem{remark}[definition]{Remark}
+\newtheorem{decision}[definition]{Model decision}
+
+\crefname{definition}{definition}{definitions}
+\crefname{axiom}{axiom}{axioms}
+\crefname{principle}{principle}{principles}
+\crefname{requirement}{requirement}{requirements}
+\crefname{proposition}{proposition}{propositions}
+\crefname{theorem}{theorem}{theorems}
+\crefname{lemma}{lemma}{lemmas}
+\crefname{corollary}{corollary}{corollaries}
+\crefname{remark}{remark}{remarks}
+\crefname{decision}{model decision}{model decisions}
+
+\newcommand{\kT}{\bm{k}_{T}}
+\newcommand{\pT}{\bm{p}_{T}}
+\newcommand{\qT}{\bm{q}_{T}}
+\newcommand{\DT}{\bm{\Delta}_{T}}
+\newcommand{\bD}{\bm{b}_{\Delta}}
+\newcommand{\bM}{\bm{b}_{\mathrm{TMD}}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\Ran}{\operatorname{Ran}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\Obj}{\operatorname{Obj}}
+\newcommand{\Hil}{\mathcal H}
+\newcommand{\LF}{\ensuremath{\mathrm{LF}}}
+\newcommand{\BLFQ}{\ensuremath{\mathrm{BLFQ}}}
+\newcommand{\TMD}{\ensuremath{\mathrm{TMD}}}
+\newcommand{\GTMD}{\ensuremath{\mathrm{GTMD}}}
+\newcommand{\GPD}{\ensuremath{\mathrm{GPD}}}
+\newcommand{\QCD}{\ensuremath{\mathrm{QCD}}}
+\newcommand{\EFT}{\ensuremath{\mathrm{EFT}}}
+\newcommand{\TTN}{\ensuremath{\mathrm{TTN}}}
+\newcommand{\MPS}{\ensuremath{\mathrm{MPS}}}
+\newcommand{\PEPS}{\ensuremath{\mathrm{PEPS}}}
+\newcommand{\TN}{\ensuremath{\mathrm{TN}}}
+\newcommand{\Amp}{\mathbf{Amp}}
+\newcommand{\Dens}{\mathbf{Dens}}
+\newcommand{\Match}{\mathbf{Match}}
+\newcommand{\Red}{\mathbf{Red}}
+\newcommand{\Proc}{\mathbf{Proc}}
+\newcommand{\Infer}{\mathbf{Infer}}
+\newcommand{\Assump}{\mathbf{Assump}}
+\newcommand{\PlanCat}{\mathbf{Plan}}
+\newcommand{\Prov}{\mathbf{Prov}}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\cM}{\mathcal M}
+\newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cV}{\mathcal V}
+\newcommand{\cW}{\mathcal W}
+\newcommand{\cE}{\mathcal E}
+\newcommand{\cG}{\mathcal G}
+\newcommand{\cK}{\mathcal K}
+\newcommand{\cQ}{\mathcal Q}
+\newcommand{\cP}{\mathcal P}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\cZ}{\mathcal Z}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\cN}{\mathcal N}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\cF}{\mathcal F}
+\newcommand{\cA}{\mathcal A}
+\newcommand{\cB}{\mathcal B}
+\newcommand{\cL}{\mathcal L}
+\newcommand{\cJ}{\mathcal J}
+\newcommand{\cI}{\mathcal I}
+\newcommand{\cH}{\mathcal H}
+\newcommand{\cT}{\mathcal T}
+\newcommand{\cX}{\mathcal X}
+\newcommand{\cY}{\mathcal Y}
+\newcommand{\cRho}{\mathcal R}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\bbone}{\bm 1}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\inner}[2]{\left\langle #1\middle|#2\right\rangle}
+\newcommand{\avg}[1]{\left\langle #1\right\rangle}
+\newcommand{\phys}{\mathrm{phys}}
+\newcommand{\eff}{\mathrm{eff}}
+\newcommand{\bare}{\mathrm{bare}}
+\newcommand{\ind}{\mathrm{ind}}
+\newcommand{\ct}{\mathrm{ct}}
+\newcommand{\reg}{\mathrm{reg}}
+\newcommand{\trunc}{\mathrm{trunc}}
+\newcommand{\ren}{\mathrm{ren}}
+\newcommand{\num}{\mathrm{num}}
+\newcommand{\proc}{\mathrm{proc}}
+\newcommand{\stat}{\mathrm{stat}}
+\newcommand{\calib}{\mathrm{cal}}
+\newcommand{\hold}{\mathrm{hold}}
+\newcommand{\pilot}{\mathrm{pilot}}
+\newcommand{\UV}{\mathrm{UV}}
+\newcommand{\IR}{\mathrm{IR}}
+\newcommand{\COM}{\mathrm{CM}}
+\newcommand{\Lz}{L_z}
+\newcommand{\Jz}{J^z}
+\newcommand{\chiTN}{\chi}
+\newcommand{\Aset}{\mathfrak A}
+\newcommand{\Pplan}{\mathfrak P}
+\newcommand{\Nstate}{\mathcal N_{\mathrm{state}}}
+\newcommand{\Nop}{\mathcal N_{\mathrm{op}}}
+\newcommand{\Kprov}{K_{\mathrm{prov}}}
+\newcommand{\Compiler}{\texttt{PredictionCompiler}}
+\newcommand{\AssumptionBundle}{\texttt{AssumptionBundle}}
+\newcommand{\PredictionPlan}{\texttt{PredictionPlan}}
+\newcommand{\TensorEdgeType}{\texttt{TensorEdgeType}}
+\newcommand{\SymTensor}{\texttt{SymmetryBlockTensor}}
+\newcommand{\FusionTree}{\texttt{FusionTree}}
+\newcommand{\StateTN}{\texttt{StateTensorNetwork}}
+\newcommand{\OperatorTN}{\texttt{OperatorTensorNetwork}}
+\newcommand{\ProvComplex}{\texttt{Provenance2Complex}}
+\newcommand{\ContractionPlan}{\texttt{ContractionPlan}}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{\vspace{-1.0cm}
+{\color{navy}\bfseries Volume VIII: Symmetry-Adapted Tensor Networks and the\\[2mm]
+Assumption-Conditioned Prediction Compiler}\\[4mm]
+\large Equivariant tensor blocks, topology-aware contraction graphs, variational light-front states,\\
+compositional provenance, and conditional GTMD/TMD prediction plans}
+\author{DeuteronWigner project}
+\date{30 July 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\begin{minipage}{0.94\textwidth}
+\colorbox{softblue}{\parbox{0.96\textwidth}{
+\textbf{Status and purpose.}
+Volumes~0--VII define the algebraic and geometric architecture, regulated
+light-front state spaces, common nucleon GTMD operators, dynamical Wilson-line
+phases, matched spin-1 nuclear structure, regulator-to-QCD matching,
+evolution, inference, and the selected microscopic Hamiltonian route.  C7/H0
+has established an exact symmetry-complete finite basis and Hamiltonian-term
+spine, while C8/H1 is the active implementation package for the first
+interacting valence eigenstate, renormalization-flow benchmark, and
+symmetry-adapted tree-tensor-network solver.  The present volume formalizes the
+missing compositional layer.  It defines how a typed bundle of scientific
+assumptions compiles into a symmetry-preserving tensor network, an executable
+operator-contraction plan, a provenance two-complex, and a conditional
+prediction ensemble.  The network is not permitted to invent dynamics, erase
+operator identities, or turn mutually exclusive model branches into additive
+contributions.  Its role is to make every choice, approximation, bond
+truncation, contraction, and reduction explicit so that one microscopic state
+can generate correlated quark, antiquark, gluon, nucleon, deuteron, and process
+predictions without introducing an independent coefficient for each named
+TMD.
+}}
+\end{minipage}
+\end{center}
+
+\begin{abstract}
+The original DeuteronWigner objective is an assumption-explicit generative
+model in which a regulated light-front Hamiltonian produces correlated proton,
+neutron, and deuteron states, common quark, antiquark, and gluon GTMDs, and all
+TMD, GPD, PDF, form-factor, Wilson-line, and process reductions.  This volume
+makes the tensor-network and compilation content of that objective precise.
+Three structures are kept distinct: a symmetry-adapted state tensor network, an
+operator and contraction network, and a provenance two-complex that records
+model choices, replacements, exclusions, matching identities, and
+no-double-counting cells.  Every tensor edge is a typed direct sum of
+representation and multiplicity spaces carrying Fock sector, parton species,
+color, flavor, helicity, orbital angular momentum, momentum basis, regulator,
+and scheme data.  Equivariant tensors factor into structural Clebsch--Gordan
+objects and reduced degeneracy tensors, so forbidden symmetry blocks are absent
+rather than numerically suppressed.  A finite light-front state admits an exact
+tree-tensor representation when every virtual bond contains the full symmetry-
+resolved Schmidt support; lower bond dimensions define a controlled variational
+truncation whose energy, state fidelity, current matrix elements, OAM content,
+and GTMD reductions must converge separately.  A frozen
+\texttt{AssumptionBundle} declares the Hamiltonian route, Fock content,
+regulators, induced interactions, tensor topology, bond policy, Wilson and
+nuclear options, matching scheme, process status, and inference role.  A
+fail-closed compiler computes dependency closure, rejects inconsistent or
+unsupported combinations, instantiates the physical tensor and operator
+networks, attaches provenance cells, chooses contraction and solver plans, and
+returns a versioned \texttt{PredictionPlan}.  Conditional predictions are
+written as distributions given the assumption bundle; within-branch posterior
+uncertainty is separated from between-branch structural uncertainty.  The
+document defines network gauge fixing, variational optimization, adaptive bond
+allocation, differentiable contractions, common-parent GTMD/TMD evaluation,
+open-system interfaces to Wilson, nuclear, matching, evolution, and inference
+layers, formal requirements, analytic benchmarks, negative tests, software
+schemas, and staged acceptance gates.  The resulting compiler is the intended
+execution layer for the geometric, topological, and tensor-network model
+proposed at the beginning of the project.
+\end{abstract}
+
+\tableofcontents
+
+\section{Scientific purpose and boundary}
+\label{sec:purpose}
+
+\subsection{The missing execution layer}
+
+The previous volumes define the objects that a predictive model must possess,
+but a user-facing generative system requires an additional map:
+\begin{equation}
+ \Aset
+ \xrightarrow{\;\Compiler\;}
+ \Pplan
+ \xrightarrow{\;\mathrm{execute}\;}
+ \left\{
+ |\Psi_N\rangle,
+ |\Psi_D\rangle,
+ W_{a/N},W_{a/D},
+ F_A,\cO_{\mathrm{process}}
+ \right\}.
+\label{eq:compiler-chain}
+\end{equation}
+Here \(\Aset\) is a complete typed assumption bundle and \(\Pplan\) is an
+executable prediction plan.  The first arrow is not numerical fitting.  It is a
+compilation step that determines whether the requested model is mathematically
+and physically admissible, which objects must be built, which alternatives are
+exclusive, which matching maps are required, and which predictions are
+actually licensed by the declared readiness state.
+
+C7/H0 provides the exact finite basis, color multiplicities, fermionic
+antisymmetry, free invariant-mass operator, and reduced sector-changing term
+interface.  C8/H1 is designed to add an interacting valence Hamiltonian,
+renormalization flow, Hamiltonian-consistent currents, state tracking, exact
+and Krylov solvers, and a symmetry-adapted tree tensor network.  This volume
+does not assume that C8 has succeeded.  It defines the formal contract that C8
+and all later microscopic packages must satisfy.
+
+\begin{definition}[Assumption-conditioned prediction system]
+An assumption-conditioned prediction system is a tuple
+\begin{equation}
+ \mathfrak S=
+ \left(
+ \AssumptionBundle,
+ \Compiler,
+ \PredictionPlan,
+ \Nstate,
+ \Nop,
+ \Kprov,
+ \cE
+ \right),
+\label{eq:system-tuple}
+\end{equation}
+where \(\cE\) is an execution semantics mapping every accepted plan to a
+versioned result envelope.  The system is \emph{traceable} when every numerical
+entry in the result envelope has a path to its state amplitudes, operators,
+parameters, matching maps, assumptions, and approximation manifests.
+\end{definition}
+
+\subsection{The original target, stated operationally}
+
+The final model should support a request such as:
+\begin{quote}
+Use the RSA--BLFQ Hamiltonian with the declared \(qqq\oplus qqqg\oplus
+qqqq\bar q\) Fock tower, induced confinement refitted at every resolution,
+Wilson order two with a specified rapidity regulator, the matched nuclear-EFT
+deuteron route, a stated TMD scheme and accuracy tuple, and a frozen inference
+posterior; then predict the full spin-1 TMD family and selected SIDIS or
+Drell--Yan observables.
+\end{quote}
+The system must not interpret this request as permission to combine every
+available model component.  It must prove compatibility, construct the
+corresponding state and operator networks, reject unsupported process maps,
+and preserve branch identity in the output.
+
+\subsection{Explicit nonclaims}
+
+This volume does not claim:
+\begin{itemize}
+ \item that low tensor-network rank is guaranteed for QCD;
+ \item that a tensor topology determines the Hamiltonian or its counterterms;
+ \item that network gauge freedom is a physical gauge symmetry;
+ \item that provenance homology supplies a physical amplitude;
+ \item that all model branches should be Bayesian-averaged;
+ \item that the C7 basis or C8 valence benchmark is a converged physical
+ nucleon;
+ \item that a successful tensor contraction supplies LF-to-QCD matching,
+ TMD evolution, nuclear dynamics, or process factorization;
+ \item that one scalar bond dimension can measure every truncation error.
+\end{itemize}
+
+\begin{principle}[Structure before compression]
+Symmetry, operator identity, color, statistics, Fock provenance, and map class
+are exact structural data.  They are imposed before any low-rank approximation.
+Bond truncation may reduce degeneracy spaces; it may not delete or merge
+required representation sectors silently.
+\end{principle}
+
+\section{Three networks that must remain distinct}
+\label{sec:three-networks}
+
+\subsection{State tensor network}
+
+The state network \(\Nstate\) represents a vector in a declared regulated
+physical Hilbert space:
+\begin{equation}
+ \Nstate(\Aset,\theta,\chi)
+ \longmapsto
+ |\Psi(\Aset,\theta,\chi)\rangle
+ \in \Hil_{\phys}^{(r)}.
+\label{eq:state-network}
+\end{equation}
+Its nodes are reduced amplitudes or isometric fusion maps; its edges carry
+physical and virtual representation labels; and its topology and bond spaces
+are approximation data.  The state network is the object optimized by the
+Rayleigh quotient.
+
+\subsection{Operator and contraction network}
+
+The operator network \(\Nop\) represents Hamiltonian terms, currents, GTMD
+insertions, Wilson interactions, nuclear maps, matching kernels, or process
+operators.  A contraction plan joins \(\Nop\) to one or more state networks:
+\begin{equation}
+ \cC_{\Pplan}
+ \left[
+ \Nstate^{\dagger},\Nop,\Nstate
+ \right]
+ =
+ \langle\Psi'|\widehat{\cO}|\Psi\rangle.
+\label{eq:operator-contraction}
+\end{equation}
+The contraction network may be a tree, a directed acyclic graph, or a general
+hypergraph even when the state ansatz itself is a tree.  Contraction order is a
+numerical optimization and must not change the physical operator.
+
+\subsection{Assumption and provenance network}
+
+The provenance complex \(\Kprov\) contains typed objects, physical or
+descriptive maps, and declared two-cells relating alternative paths.  It
+records why a tensor, term, or prediction is present.  It is not contracted as
+a quantum amplitude.  Its coefficients are identities, equivalence labels,
+subtractions, replacements, exclusions, and provenance records rather than
+wave-function amplitudes.
+
+\begin{requirement}[No network conflation]
+A state tensor, an operator tensor, and a provenance cell may refer to one
+another by immutable identifiers, but their numerical values and composition
+laws are different.  The software must reject any attempt to use a provenance
+edge as an amplitude, a contraction path as a Wilson path, or a virtual tensor
+gauge transformation as a QCD gauge transformation.
+\end{requirement}
+
+\subsection{Commuting architecture}
+
+The intended relations are summarized by
+\begin{equation}
+\begin{tikzcd}[column sep=large,row sep=large]
+ \Aset \arrow[r,"\Compiler"] \arrow[d,"\mathrm{provenance}"']
+ & \Pplan \arrow[r,"\mathrm{instantiate}"] \arrow[d]
+ & (\Nstate,\Nop,\cC) \arrow[d,"\mathrm{contract}"] \\
+ \Kprov \arrow[r,"\mathrm{certificate}"']
+ & \mathrm{Admissibility\ record} \arrow[r]
+ & \mathrm{Result\ envelope}
+\end{tikzcd}
+\label{eq:three-network-diagram}
+\end{equation}
+The bottom path certifies the upper path; it does not evaluate it.
+
+\section{The assumption bundle}
+\label{sec:assumption-bundle}
+
+\subsection{Six classes of declared choice}
+
+A complete assumption bundle is decomposed as
+\begin{equation}
+ \Aset=
+ \left(
+ \Aset_{\phys},
+ \Aset_{\reg},
+ \Aset_{\mathrm{alg}},
+ \Aset_{\num},
+ \Aset_{\proc},
+ \Aset_{\stat}
+ \right).
+\label{eq:assumption-decomposition}
+\end{equation}
+The classes have different scientific meanings:
+\begin{longtable}{L{0.17\textwidth}L{0.34\textwidth}L{0.39\textwidth}}
+\toprule
+Class & Examples & Interpretation\\
+\midrule
+\endhead
+\(\Aset_{\phys}\) & Hamiltonian terms, Fock sectors, current basis, chiral and nuclear sectors, Wilson order & Physical model content or controlled EFT truncation.\\
+\(\Aset_{\reg}\) & \(K,N_{\max},b,\lambda,\Lambda_{\UV},\Lambda_{\IR}\), endpoint and rapidity regulators & Resolution and regularization identity.\\
+\(\Aset_{\mathrm{alg}}\) & color fusion tree, permutation representation, tensor topology, operator basis, map class & Exact algebraic representation and compositional structure.\\
+\(\Aset_{\num}\) & eigensolver, bond policy, contraction path, quadrature, tolerances, precision & Numerical approximation and resource choices.\\
+\(\Aset_{\proc}\) & link map, color weights, hard channel, soft prescription, factorization and Glauber status & Process qualification and observable assembly.\\
+\(\Aset_{\stat}\) & calibration split, priors, discrepancy basis, posterior member, model-comparison rule & Inference and prediction semantics.\\
+\bottomrule
+\end{longtable}
+
+An exact convention or symmetry is not a selectable model branch.  For
+example, the light-front normalization and the anti-fundamental antiquark
+color action are fixed contracts.  By contrast, inclusion of an explicit
+\(qqqg\) sector versus its induced effective operator is a physical alternative
+subject to a no-double-counting relation.
+
+\subsection{Immutable identity}
+
+An \AssumptionBundle\ is frozen after validation.  Its identity is a content
+hash of canonical serialized fields and referenced source hashes:
+\begin{equation}
+ \mathrm{id}(\Aset)
+ =
+ \mathrm{SHA256}
+ \left[
+ \mathrm{canonical}(\Aset),
+ \{h_{\mathrm{source}}\}
+ \right].
+\label{eq:assumption-hash}
+\end{equation}
+Changing one regulator, Fock sector, Wilson order, tensor topology, or
+calibration role creates a new assumption identity.  Mutable aliases are not
+accepted as scientific provenance.
+
+\subsection{Choice axes and branch semantics}
+
+Every selectable field belongs to one of the following kinds:
+\begin{enumerate}
+ \item \textbf{Required singleton}: one exact convention or mandatory object.
+ \item \textbf{Exclusive branch}: exactly one of several physical descriptions.
+ \item \textbf{Optional additive mechanism}: included only when its source and
+ target types permit addition and no replacement relation forbids it.
+ \item \textbf{Nested truncation}: an ordered family such as Fock content,
+ basis size, Wilson order, or bond dimension.
+ \item \textbf{Continuous parameter}: a Hamiltonian, matching, or inference
+ coefficient owned by a declared operator.
+ \item \textbf{Diagnostic variation}: a noncentral alternative used for
+ convergence or sensitivity rather than composition.
+\end{enumerate}
+A branch choice is not a numerical coefficient.  Setting the coefficient of
+an excluded mechanism to zero does not make the branch relation disappear;
+the provenance and operator basis remain different.
+
+\subsection{Refinement order}
+
+A partial order \(\Aset\preceq\Aset'\) is permitted only when
+\(\Aset'\) refines \(\Aset\) along declared nested axes without changing an
+exclusive physical branch:
+\begin{equation}
+ \Aset\preceq\Aset'
+ \Longrightarrow
+ \begin{cases}
+ \cF_{\Aset}\subseteq\cF_{\Aset'},\\
+ r_{\Aset}\preceq r_{\Aset'},\\
+ \chi_e(\Aset)\leq\chi_e(\Aset')\quad\forall e,\\
+ \text{same branch identities and renormalization conditions}.
+ \end{cases}
+\label{eq:assumption-refinement}
+\end{equation}
+Changing from induced confinement to zero confinement is not a refinement; it
+creates a sibling branch.
+
+\section{Admissibility logic and compilation}
+\label{sec:compiler}
+
+\subsection{Typed predicates}
+
+Let \(\cR=\{R_1,\ldots,R_m\}\) be a finite set of admissibility rules.  Each
+rule is a typed predicate
+\begin{equation}
+ R_i:\Aset\times\cT_{\mathrm{repo}}
+ \longrightarrow
+ \{\mathrm{pass},\mathrm{fail},\mathrm{unresolved}\},
+\label{eq:typed-rule}
+\end{equation}
+where \(\cT_{\mathrm{repo}}\) denotes the available typed objects and
+readiness records.  Rules may encode:
+\begin{itemize}
+ \item dependencies, such as \(qqqg\Rightarrow\) adjoint color and gluon basis;
+ \item exclusions, such as explicit sector \(\perp\) induced replacement;
+ \item readiness gates, such as evolution requiring LF-to-QCD matching;
+ \item scheme compatibility;
+ \item exact quantum-number closure;
+ \item process factorization status;
+ \item required convergence axes.
+\end{itemize}
+
+\subsection{Dependency closure}
+
+The compiler first computes a least dependency closure
+\begin{equation}
+ \operatorname{Cl}(\Aset)
+ =
+ \bigcap
+ \left\{
+ B\supseteq\Aset\mid
+ B\text{ is closed under all dependency rules}
+ \right\}.
+\label{eq:dependency-closure}
+\end{equation}
+Closure may add required implementation objects, not new physical assumptions.
+For example, requesting a rank-two GTMD projection may add its projector,
+Bessel convention, and OAM blocks to the plan.  It may not silently add a
+missing physical Fock sector.
+
+\subsection{Compilation states}
+
+Compilation returns one of four states:
+\begin{equation}
+ \mathrm{Compile}(\Aset)=
+ \begin{cases}
+ \mathrm{REJECTED}(\mathfrak f),\\
+ \mathrm{PARTIAL}(\mathfrak g),\\
+ \mathrm{EXECUTABLE}(\Pplan),\\
+ \mathrm{VALIDATED}(\Pplan,\mathfrak c),
+ \end{cases}
+\label{eq:compile-states}
+\end{equation}
+where \(\mathfrak f\) is a structured failure certificate,
+\(\mathfrak g\) lists unresolved gates, and \(\mathfrak c\) is a validation
+certificate.  A partial plan may support diagnostic calculations but cannot be
+promoted to a physical prediction.
+
+\begin{theorem}[Compilation soundness]
+Assume that every plan node has a typed domain and codomain, every dependency
+is present, every exclusion and replacement relation is satisfied, every
+required readiness gate passes, and every operator/state identity is complete.
+Then any execution path generated by the compiler is type-correct and contains
+no pair of contributions declared equivalent-count-once or mutually exclusive
+by the active provenance complex.
+\end{theorem}
+
+\begin{proof}
+The compiler constructs the plan by topological ordering of the closed
+dependency graph.  Domain/codomain compatibility is checked at each edge.
+Before a sum or composition node is emitted, the active subgraph is reduced by
+all replacement, exclusion, and two-cell count rules.  Therefore no forbidden
+pair survives into the execution graph.  Induction over the ordered plan nodes
+establishes type correctness.  The theorem is a statement about the compiler;
+it does not prove that the physical Hamiltonian or factorization theorem is
+accurate.
+\end{proof}
+
+\subsection{Failure certificates}
+
+A failure certificate records:
+\begin{equation}
+ \mathfrak f=
+ \left(
+ \mathrm{rule\ id},
+ \mathrm{objects},
+ \mathrm{requested\ target},
+ \mathrm{minimal\ conflicting\ set},
+ \mathrm{repair\ classes},
+ \mathrm{provenance\ path}
+ \right).
+\label{eq:failure-certificate}
+\end{equation}
+The repair classes are restricted to scientifically meaningful actions such
+as adding a missing operator, selecting a different branch, completing a
+matching calculation, or downgrading the requested status.  ``Fit a new TMD
+coefficient'' is not a generic repair.
+
+\section{Prediction plans and execution semantics}
+\label{sec:prediction-plan}
+
+\subsection{Typed execution DAG}
+
+A \PredictionPlan\ is a directed acyclic graph
+\begin{equation}
+ \Pplan=(V_{\Pplan},E_{\Pplan},\tau,\pi),
+\label{eq:plan-dag}
+\end{equation}
+where \(\tau\) assigns a typed computational object to every node and \(\pi\)
+assigns provenance, readiness, approximation, and caching metadata.  Typical
+nodes are:
+\begin{equation}
+\begin{aligned}
+ \text{basis}&\to\text{Hamiltonian}\to\text{renormalization}\to
+ \text{solver}\to\text{state}\\
+ &\to\text{operator contraction}\to\text{GTMD}\to
+ \text{TMD/process result}.
+\end{aligned}
+\label{eq:plan-chain}
+\end{equation}
+The graph may branch to compute several observables from one state.  Shared
+nodes are evaluated once per microscopic member and reused by immutable
+content identity.
+
+\subsection{Execution semantics}
+
+The semantic map
+\begin{equation}
+ \llbracket\cdot\rrbracket:
+ \PlanCat\longrightarrow\mathbf{Result}
+\label{eq:execution-semantics}
+\end{equation}
+assigns to every executable plan a result envelope containing numerical arrays,
+uncertainties, residuals, source identities, assumption identity, and
+validation status.  The map is deterministic for fixed random seeds, numerical
+libraries, precision, and hardware policy, all of which belong to the
+execution manifest.
+
+\subsection{Readiness lattice}
+
+Readiness is a product of independent statuses rather than one boolean flag:
+\begin{equation}
+ \mathfrak r=
+ \left(
+ r_{\mathrm{state}},
+ r_{\mathrm{current}},
+ r_{\GTMD},
+ r_{\mathrm{Wilson}},
+ r_{\mathrm{nuclear}},
+ r_{\mathrm{match}},
+ r_{\mathrm{evol}},
+ r_{\mathrm{process}},
+ r_{\mathrm{infer}}
+ \right).
+\label{eq:readiness-product}
+\end{equation}
+A plan may be state-ready but not GTMD-ready, or GTMD-ready but not
+process-ready.  The compiler cannot infer a later status from an earlier one.
+
+\subsection{Caching and reproducibility}
+
+A cache key is
+\begin{equation}
+ \mathfrak h_v=
+ H\left(
+ \mathrm{node\ type},
+ \mathrm{inputs},
+ \mathrm{source\ hashes},
+ \Aset,
+ \mathrm{numerical\ manifest}
+ \right).
+\label{eq:cache-key}
+\end{equation}
+Cache reuse is allowed only when the full key matches.  Two tensors with equal
+values but different operator, scheme, or provenance identity are not
+interchangeable.
+
+\section{Symmetry-adapted tensor spaces}
+\label{sec:symmetric-tensors}
+
+\subsection{Representation and multiplicity decomposition}
+
+Let \(G\) denote a compact exact internal or kinematic symmetry represented on
+an edge space \(V_e\).  At finite truncation,
+\begin{equation}
+ V_e
+ \cong
+ \bigoplus_{q\in\widehat G_e}
+ \left(
+ D_{e,q}\otimes V_q
+ \right),
+\label{eq:edge-rep-decomposition}
+\end{equation}
+where \(V_q\) is an irreducible representation space and \(D_{e,q}\) is its
+degeneracy or multiplicity space.  Quantum numbers in \(q\) may combine exact
+charges from several commuting groups.  Representation dimensions are not
+bond dimensions: the adjustable variational freedom resides in the degeneracy
+spaces.
+
+For an invariant tensor
+\(T:\bigotimes_{i=1}^{n}V_{e_i}\rightarrow V_{e_0}\), equivariance requires
+\begin{equation}
+ T\left[\bigotimes_i U_{e_i}(g)\right]
+ =U_{e_0}(g)T,
+ \qquad g\in G.
+\label{eq:equivariance}
+\end{equation}
+The tensor decomposes into structural intertwiners and reduced tensors,
+\begin{equation}
+ T=
+ \bigoplus_{\bm q,\alpha}
+ P_{\bm q,\alpha}
+ \otimes
+ Q_{\bm q,\alpha},
+\label{eq:symmetric-tensor-decomposition}
+\end{equation}
+where \(Q_{\bm q,\alpha}\) contains Clebsch--Gordan and recoupling data fixed by
+symmetry, while \(P_{\bm q,\alpha}\) contains the dynamical variational
+parameters.  This is the tensor-network form of the Wigner--Eckart principle
+\cite{Singh2009,Weichselbaum2012}.
+
+\begin{proposition}[Symmetry closure under contraction]
+The contraction of equivariant tensors over a common representation-typed edge
+is equivariant.  Consequently, a network assembled only from admissible
+intertwiners lies in the requested exact symmetry sector without a numerical
+penalty term.
+\end{proposition}
+
+\begin{proof}
+The group action on the contracted edge appears once in a representation and
+once in its dual.  Their contraction is invariant.  Applying
+\cref{eq:equivariance} to the remaining external edges yields the equivariance
+condition for the composite tensor.
+\end{proof}
+
+\subsection{Multiple non-Abelian symmetries}
+
+The implementation may use a product of representation labels such as
+\begin{equation}
+ q=
+ \left(
+ R_c,
+ I,
+ S,
+ \Jz,
+ B,
+ Q,
+ \mathbb Z_2^{F},
+ \ldots
+ \right),
+\label{eq:compound-charge}
+\end{equation}
+provided unlike structures are not falsely promoted to one exact global group.
+Color is a gauge constraint, isospin may be approximate, and light-front
+rotations have kinematic and dynamical components.  The compound charge is a
+software label for compatible block structure, not a claim that all entries
+have the same physical status.
+
+For non-Abelian factors with outer multiplicity, the label \(\alpha\) in
+\cref{eq:symmetric-tensor-decomposition} is mandatory.  C7/H0 already shows why:
+there are two independent \(qqqg\) singlets and three independent
+\(qqqq\bar q\) singlets.  Dropping multiplicity labels erases physical color
+channels even if the total singlet label is retained.
+
+\subsection{Fermionic grading}
+
+Fermionic statistics are represented by a \(\mathbb Z_2\)-graded tensor
+category or an equivalent exact signed permutation implementation.  Swapping
+homogeneous objects \(x,y\) produces
+\begin{equation}
+ \sigma(x\otimes y)
+ =(-1)^{|x||y|}y\otimes x.
+\label{eq:graded-swap}
+\end{equation}
+Every network reordering, fusion-tree transformation, and contraction-path
+optimization must preserve this sign.  A bosonic contraction optimizer may be
+used only after all fermionic swaps have been made explicit in the graph.
+
+\subsection{Exact, approximate, and broken symmetries}
+
+The compiler classifies each symmetry as:
+\begin{equation}
+ \mathrm{status}(G)=
+ \mathrm{EXACT}\,|\,
+ \mathrm{CONTROLLED\_BREAKING}\,|\,
+ \mathrm{DIAGNOSTIC}\,|\,
+ \mathrm{UNAVAILABLE}.
+\label{eq:symmetry-status}
+\end{equation}
+Exact symmetries define absent blocks.  Controlled breaking adds explicit
+operator blocks with a declared power counting.  Diagnostic symmetries supply
+residuals but do not prune the basis.  This distinction is essential for
+isospin breaking and rotational restoration.
+
+\section{Physical tensor-edge types}
+\label{sec:edge-types}
+
+\subsection{No anonymous indices}
+
+A state-network edge is typed by
+\begin{equation}
+ e=
+ \left(
+ \begin{gathered}
+ \nu,
+ a,
+ R_c,
+ R_f,
+ \lambda,
+ \Lz,
+ \Jz,
+ \ell_T,
+ \mathbb Z_2^F,\\
+ x\text{-mode},
+ n,m\text{ transverse modes},
+ \alpha,
+ r,
+ \mathfrak s,
+ \mathrm{orientation}
+ \end{gathered}
+ \right).
+\label{eq:full-edge-type}
+\end{equation}
+Here \(\nu\) is the Fock or nuclear sector, \(a\) is the parton species,
+\(R_c,R_f\) are color and flavor representations, \(\lambda\) is parton
+helicity, \(\ell_T\) is a transverse tensor or harmonic label, \(\alpha\) is a
+basis or representation multiplicity, \(r\) is the regulator/truncation
+identity, and \(\mathfrak s\) carries any operator scheme data.  The orientation
+indicates whether the edge is incoming, outgoing, dual, bra, ket, or virtual.
+
+\begin{requirement}[Physical index ledger]
+Every tensor index must map to a physical degree of freedom, an exact
+representation multiplicity, or a declared numerical compression index.  An
+untyped array axis is not admissible in the central network.
+\end{requirement}
+
+\subsection{Direct sums over Fock sectors}
+
+The microscopic state is a direct sum, not one dense tensor with a sector
+label appended:
+\begin{equation}
+ |\Psi_N\rangle
+ =
+ \bigoplus_{\nu\in\cF_r}
+ |\psi_{N,\nu}\rangle,
+ \qquad
+ \cF_r=\{qqq,qqqg,qqqq\bar q,\ldots\}.
+\label{eq:fock-direct-sum}
+\end{equation}
+Each sector may have its own internal tree topology and symmetry blocks.
+Sector-changing Hamiltonian or operator terms are explicit maps between the
+corresponding network objects.  An absent sector is structurally zero; it is
+not represented by a fitted distribution attached downstream.
+
+\subsection{Momentum constraints}
+
+A Fock-sector leaf set carries
+\begin{equation}
+ x_i>0,
+ \qquad
+ \sum_i x_i=1,
+ \qquad
+ \sum_i\bm\kappa_{iT}=0.
+\label{eq:momentum-constraints-tn}
+\end{equation}
+The tensor network may use a constrained basis, Jacobi coordinates, or an
+explicit projector, but the constraint method is part of its identity.  A
+virtual bond cannot absorb a momentum mismatch without a declared recoil or
+matching map.
+
+\subsection{State edges versus operator edges}
+
+Operator networks carry additional labels:
+\begin{equation}
+ e_{\cO}=
+ \left(
+ e_{\mathrm{state}},
+ \Gamma,
+ P_{\mathrm{in}},P_{\mathrm{out}},
+ \gamma,
+ R_{\mathrm{link}},
+ \mu,\zeta,
+ \text{map class}
+ \right).
+\label{eq:operator-edge-type}
+\end{equation}
+A state tensor cannot be connected directly to an operator edge unless the
+momentum fiber, representation, regulator, Wilson-path, and scheme identities
+match or an explicit adapter is present.
+
+\section{Gauge, color, and Wilson-path structure}
+\label{sec:gauge-color}
+
+\subsection{Physical singlets and virtual representations}
+
+The hadron state satisfies
+\begin{equation}
+ Q^a_{\mathrm{color}}|\Psi_h\rangle=0.
+\label{eq:color-singlet-tn}
+\end{equation}
+This is enforced by color intertwiners at the network nodes.  Virtual edges may
+carry nontrivial color representations and multiplicities, but every open
+physical hadron boundary is projected to the declared singlet.  Gauge-invariant
+tensor-network constructions in lattice gauge theory provide a useful
+computational analogy: local constraints should be built into the tensor ansatz
+rather than restored by a penalty after optimization
+\cite{Tagliacozzo2014,Canals2024}.
+
+\subsection{Network gauge is not color gauge}
+
+For any internal bond, an invertible matrix \(X_e\) may be inserted with its
+inverse on the neighboring tensor without changing the represented state:
+\begin{equation}
+ A\longmapsto AX_e,
+ \qquad
+ B\longmapsto X_e^{-1}B.
+\label{eq:virtual-gauge}
+\end{equation}
+This is tensor-network parameter redundancy.  It is unrelated to the local
+QCD gauge transformation of quark, gluon, and Wilson-line fields.  Canonical
+forms fix \cref{eq:virtual-gauge}; they do not fix light-front gauge or determine
+a Wilson line.  The geometric structure of tensor-network gauge orbits can be
+used to define stable tangent spaces and optimization metrics
+\cite{Haegeman2014}.
+
+\subsection{Wilson paths remain operator data}
+
+An ordered gluon link pair
+\begin{equation}
+ \left(\gamma_1,\gamma_2,R_A,\cC_f\text{ or }\cC_d\right)
+\label{eq:ordered-link-network}
+\end{equation}
+is represented by operator-network nodes and path-typed edges.  It is not
+encoded in the topology of the state TTN.  Future/past reversal acts on the
+operator identity, endpoints, complex conjugation, and helicity phases; it is
+not a reversal of the TTN drawing.
+
+\subsection{Gauge-compatible contraction theorem}
+
+\begin{proposition}[Color closure]
+Let every state node and operator node be an admissible color intertwiner and
+let every contracted color edge pair a representation with its dual.  If all
+external hadron edges are singlets, the resulting scalar or hadron matrix
+element is color invariant.
+\end{proposition}
+
+\begin{proof}
+The tensor product of intertwiners is an intertwiner, and contraction with the
+dual evaluation map is invariant.  After all internal contractions, the only
+external representation is the singlet, on which the color action is trivial.
+\end{proof}
+
+\section{Network topology as a declared approximation}
+\label{sec:network-topology}
+
+\subsection{Tree ansatz for the first microscopic state}
+
+The first state ansatz is a symmetry-adapted tree tensor network
+\begin{equation}
+ \cT=(V_{\cT},E_{\cT}),
+ \qquad
+ \text{acyclic and connected},
+\label{eq:tree-graph}
+\end{equation}
+whose leaves are physical basis factors and whose internal nodes are fusion or
+variational tensors.  Tree networks admit exact canonical forms and efficient
+contraction when entanglement across each edge is controlled
+\cite{Shi2006,Gunst2018}.
+
+A representative three-quark fusion tree is
+\begin{equation}
+ \left(q_1\otimes q_2\right)
+ \xrightarrow{\ C_{12}\ }
+ \left(R_{12},I_{12},S_{12},L_{12},\alpha_{12}\right),
+ \qquad
+ \left(R_{12},\ldots\right)\otimes q_3
+ \xrightarrow{\ C_{(12)3}\ }
+ \left(\mathbf 1_c,I,\Jz\right).
+\label{eq:qqq-fusion-tree}
+\end{equation}
+The structural couplers and the dynamical reduced tensors remain separate.
+
+\subsection{Topology choices}
+
+Several topologies may represent the same finite Hilbert space:
+\begin{itemize}
+ \item parton-first trees, fusing particle slots before orbital modes;
+ \item color-first or spin-first fusion trees;
+ \item momentum-cluster trees, grouping strongly coupled basis regions;
+ \item sector trees, joining \(qqq\), \(qqqg\), and sea blocks through explicit
+ sector-changing maps;
+ \item operator-adapted trees optimized for a selected family of matrix
+ elements.
+\end{itemize}
+At full bond support these are changes of representation.  At truncated bond
+dimension they define different variational manifolds and are therefore
+assumption branches or diagnostic alternatives.
+
+\begin{definition}[Topology identity]
+A topology identity contains the graph, leaf ordering, fusion order,
+representation convention, edge orientations, fermion-swap record, and
+canonical-gauge convention.  Two diagrams that look similar but differ in any
+of these fields are not the same topology identity.
+\end{definition}
+
+\subsection{Hyperedges and interaction networks}
+
+Hamiltonian vertices and multi-field operators are naturally represented as
+hyperedges or high-valence tensors.  They need not be forced into the state
+fusion tree.  A structured open-system viewpoint is useful: state and operator
+subnetworks expose typed interfaces and compose only along matching boundaries,
+analogous to structured or decorated cospans
+\cite{Fong2015,BaezCourser2020,Courser2020}.
+
+\subsection{Loops and higher-dimensional ansatz classes}
+
+A looped tensor network or \PEPS-like ansatz may eventually be useful for
+sector-rich states, but it introduces more difficult gauge fixing,
+contraction, and canonical-form problems.  It is not adopted merely because it
+is more expressive.  The compiler may expose
+\begin{equation}
+ \mathrm{topology\ class}
+ =\TTN\,|\,\MPS\,|\,\PEPS\,|\,\mathrm{general\ hypergraph},
+\label{eq:topology-class}
+\end{equation}
+with independent readiness and contraction requirements.
+
+\section{Exact tensorization and canonical gauges}
+\label{sec:exact-tensorization}
+
+\subsection{Schmidt support on a tree}
+
+Cutting an edge \(e\) of a tree partitions the leaves into \(L_e\) and \(R_e\).
+Every finite state admits a Schmidt decomposition
+\begin{equation}
+ |\Psi\rangle
+ =
+ \sum_{s=1}^{r_e}
+ \sigma_{e,s}
+ |L_{e,s}\rangle|R_{e,s}\rangle,
+\label{eq:schmidt-edge}
+\end{equation}
+resolved further into symmetry sectors:
+\begin{equation}
+ \rho_{L_e}
+ =
+ \bigoplus_q
+ \rho_{L_e}^{(q)}\otimes\Id_{V_q}.
+\label{eq:symmetry-schmidt}
+\end{equation}
+The virtual edge must contain every \((q,s)\) with nonzero support for an exact
+representation.
+
+\begin{theorem}[Exact TTN representation]
+Let \(|\Psi\rangle\) be a finite-dimensional state and \(\cT\) a fixed tree on
+its physical factors.  If the bond space on every edge \(e\) has dimension at
+least the Schmidt rank \(r_e\), with all required symmetry sectors and
+multiplicities retained, then there exists a TTN on \(\cT\) representing
+\(|\Psi\rangle\) exactly.
+\end{theorem}
+
+\begin{proof}
+Choose a root and recursively perform Schmidt decompositions from the leaves
+toward the root.  Each decomposition defines an isometry from the child spaces
+to the retained Schmidt space.  The assumed bond dimensions contain the full
+support, so no singular value is discarded.  Symmetry-resolved decompositions
+preserve the structural intertwiners and factor only the degeneracy tensors.
+Contraction of the resulting isometries reconstructs the original coefficient
+tensor.
+\end{proof}
+
+\subsection{Canonical gauge}
+
+For an oriented tree with orthogonality center \(c\), tensors away from \(c\)
+are chosen isometric:
+\begin{equation}
+ \sum_{\mathrm{children},\mathrm{phys}}
+ A_v^{\dagger}A_v=\Id_{e(v\to c)}.
+\label{eq:tree-isometry}
+\end{equation}
+This makes the norm local to the center and stabilizes variational updates.
+Canonicalization records the virtual gauge transformations applied on every
+edge.  Degenerate Schmidt values require a deterministic basis convention or
+a subspace-valued identity rather than arbitrary vectors.
+
+\subsection{Phase and member identity}
+
+The exact state and its tensorized representation share one phase convention.
+Across resolutions or assumption branches, state identity is tracked by
+projected overlaps, principal angles, current fingerprints, and symmetry
+content.  Tensor canonicalization may not redefine the microscopic member
+identity independently at each observable.
+
+\subsection{Exact reconstruction gates}
+
+An exact tensorization must reproduce:
+\begin{equation}
+ \begin{aligned}
+ \norm{|\Psi_{\TN}\rangle-|\Psi_{\mathrm{exact}}\rangle}&=0,\\
+ \langle\Psi_{\TN}|\cM^2|\Psi_{\TN}\rangle
+ &=\langle\Psi_{\mathrm{exact}}|\cM^2|\Psi_{\mathrm{exact}}\rangle,\\
+ \langle\Psi_{\TN}|\cO_i|\Psi_{\TN}\rangle
+ &=\langle\Psi_{\mathrm{exact}}|\cO_i|\Psi_{\mathrm{exact}}\rangle
+ \end{aligned}
+\label{eq:exact-tn-gates}
+\end{equation}
+for a benchmark operator family containing charge, OAM-sensitive, color, and
+current observables, not energy alone.
+
+\section{Variational tree-tensor-network solver}
+\label{sec:variational-ttn}
+
+\subsection{Rayleigh--Ritz objective}
+
+For a normalized tensor-network state, the variational energy is
+\begin{equation}
+ E[\Nstate]
+ =
+ \frac{
+ \langle\Psi(\Nstate)|\cM^2|\Psi(\Nstate)\rangle
+ }{
+ \langle\Psi(\Nstate)|\Psi(\Nstate)\rangle
+ }.
+\label{eq:rayleigh-quotient}
+\end{equation}
+Optimization is restricted to the symmetry blocks and topology selected by the
+assumption bundle.  A compressed exact state is an initialization or
+representation benchmark; it is not a variational solver until
+\cref{eq:rayleigh-quotient} is minimized using tensor updates.
+
+\subsection{Local effective problem}
+
+With all tensors except \(A_v\) fixed, the objective becomes
+\begin{equation}
+ E(A_v)
+ =
+ \frac{A_v^{\dagger}H_{\eff}^{(v)}A_v}
+ {A_v^{\dagger}N_{\eff}^{(v)}A_v}.
+\label{eq:local-generalized-eigen}
+\end{equation}
+In a canonical tree gauge, \(N_{\eff}^{(v)}=\Id\) for a one-center update.
+The local optimum is the lowest admissible eigenvector of
+\(H_{\eff}^{(v)}\), resolved by symmetry block.  Sweeps move the orthogonality
+center through the tree and update every active tensor until energy, state,
+and observable residuals stabilize.
+
+\subsection{Variational bounds}
+
+\begin{proposition}[Upper bound]
+For a self-adjoint finite Hamiltonian \(\cM^2\), every normalized TTN state in
+the declared physical subspace satisfies
+\begin{equation}
+ E_{\TTN}\geq E_0,
+\label{eq:variational-upper-bound}
+\end{equation}
+where \(E_0\) is the exact ground-state eigenvalue in that finite subspace.
+\end{proposition}
+
+\begin{proposition}[Nested bond monotonicity]
+If the TTN variational manifolds satisfy
+\(\cV_{\chi}\subseteq\cV_{\chi'}\) for
+\(\chi\preceq\chi'\), then the globally minimized energies obey
+\begin{equation}
+ E_{\chi'}\leq E_{\chi}.
+\label{eq:bond-monotonicity}
+\end{equation}
+A numerical violation signals incomplete optimization, inconsistent symmetry
+spaces, or nonnested bond policies.
+\end{proposition}
+
+\subsection{Optimization routes}
+
+The implementation may combine:
+\begin{enumerate}
+ \item one-site or two-site tree sweeps;
+ \item direct local eigensolves;
+ \item Krylov updates using matrix-free environments;
+ \item gradient or natural-gradient optimization;
+ \item subspace expansion and controlled bond growth;
+ \item exact-state initialization on small towers.
+\end{enumerate}
+Every route records initialization, sweep ordering, stopping rule, local and
+global residuals, and whether the reported state is the best result over
+multiple starts.
+
+\subsection{Excited states and near degeneracy}
+
+Excited or symmetry-partner states may be obtained by block targeting,
+projected Hamiltonians, or penalty projectors:
+\begin{equation}
+ \cM_k^2
+ =
+ \cM^2+
+ \sum_{j<k}\mu_j|\Psi_j\rangle\langle\Psi_j|.
+\label{eq:excited-penalty}
+\end{equation}
+Near degeneracies are tracked as subspaces.  The compiler must not assign a
+persistent physical label solely from eigenvalue order.
+
+\subsection{Tensor-network solver certificate}
+
+A solver certificate contains:
+\begin{equation}
+ \mathfrak c_{\TN}=
+ \left(
+ \begin{gathered}
+ \text{topology},\ \text{symmetry blocks},\ \chi_e,\
+ \text{canonical gauge},\\
+ E,\ \norm{\cM^2\Psi-E\Psi},\
+ \text{sweep history},\ \text{discarded weights},\\
+ \text{exact/Krylov comparison},\
+ \text{observable residuals},\
+ \text{source and hardware hashes}
+ \end{gathered}
+ \right).
+\label{eq:tn-solver-certificate}
+\end{equation}
+Energy convergence without current, OAM, or state-fidelity convergence is
+insufficient.
+
+\section{Bond spaces, entanglement, and adaptive compression}
+\label{sec:bond-adaptation}
+
+\subsection{Symmetry-resolved Schmidt spectra}
+
+For each edge \(e\), let
+\begin{equation}
+ \{\sigma_{e,q,s}\}
+\label{eq:symmetry-schmidt-values}
+\end{equation}
+be the singular values in charge sector \(q\).  A truncation retains
+\(\chi_{e,q}\) values in each sector and has discarded weight
+\begin{equation}
+ \eps_e
+ =
+ \sum_q\sum_{s>\chi_{e,q}}
+ \sigma_{e,q,s}^{2}.
+\label{eq:discarded-weight}
+\end{equation}
+The total bond dimension is
+\begin{equation}
+ \chi_e=\sum_q \chi_{e,q}\dim V_q,
+\label{eq:physical-bond-dimension}
+\end{equation}
+but computational storage is controlled primarily by the degeneracy
+dimensions \(\chi_{e,q}\).
+
+\subsection{Required-sector floor}
+
+A bond policy first allocates a required floor
+\begin{equation}
+ \chi_{e,q}\geq \chi_{e,q}^{\min}
+\label{eq:required-sector-floor}
+\end{equation}
+for representation sectors needed by exact constraints or requested
+observables.  Remaining resources may be allocated by Schmidt weight,
+observable sensitivity, or error estimates.  A small singular value does not
+justify deleting the only block capable of supporting a requested OAM or color
+interference without first downgrading the prediction plan.
+
+\subsection{Adaptive objective}
+
+For a resource budget \(B\), one possible allocation solves
+\begin{equation}
+ \min_{\{\chi_{e,q}\}}
+ \left[
+ \sum_e w_e\eps_e
+ +\sum_i \lambda_i\delta\cO_i^2
+ \right]
+ \quad\text{subject to}\quad
+ \operatorname{cost}(\{\chi_{e,q}\})\leq B.
+\label{eq:adaptive-bond-objective}
+\end{equation}
+The observable terms prevent energy-dominated compression from erasing
+spin--orbit, tensor, or GTMD-sensitive directions.  The weights and target
+observables belong to the assumption bundle.
+
+\subsection{Entanglement diagnostics}
+
+The edge entropy is
+\begin{equation}
+ S_e=-\sum_{q,s}\sigma_{e,q,s}^{2}
+ \ln\sigma_{e,q,s}^{2}.
+\label{eq:edge-entropy}
+\end{equation}
+It is a diagnostic of the chosen bipartition, not a universal physical
+observable.  Comparison across topologies requires a map between cuts.  High
+entropy or slow Schmidt decay identifies where tree topology or bond support
+may be inadequate.
+
+\subsection{Independent network truncation uncertainty}
+
+Tensor-network uncertainty is reported separately from basis and Fock
+uncertainty:
+\begin{equation}
+ \delta_{\TN}\cO
+ =
+ \cO(\chi,\cT)-
+ \cO(\chi',\cT')
+\label{eq:tn-truncation-error}
+\end{equation}
+for nested bond dimensions and controlled topology variations.  It may not be
+absorbed into Hamiltonian EFT discrepancy or posterior parameter uncertainty.
+
+\begin{principle}[Observable convergence]
+Bond convergence is claimed for a set of matched observables and state
+residuals, not from the energy or discarded weight alone.
+\end{principle}
+
+\section{Tensor operators and contraction planning}
+\label{sec:operator-networks}
+
+\subsection{Hamiltonian operator network}
+
+The Hamiltonian is a sum of typed operator subnetworks,
+\begin{equation}
+ \cM^2=
+ \sum_{a=1}^{N_{\mathrm{term}}}
+ c_a\cO_a,
+\label{eq:hamiltonian-sum-network}
+\end{equation}
+where each \(\cO_a\) retains source/target sector, symmetry, regulator,
+Hermitian partner, and parameter ownership.  The operator representation may
+be a tree tensor operator, a sum of factored terms, or a general hypergraph.
+The state topology does not force the Hamiltonian into the same topology.
+
+\subsection{Shared environments}
+
+For several observables evaluated on one state, contraction environments are
+reused only when their tensor and operator identities match.  A common
+left/right or tree environment reduces repeated cost while preserving one
+microscopic member.  Shared environments are especially useful for the family
+of helicity and transverse-rank projectors derived from one GTMD parent.
+
+\subsection{Off-forward matrix elements}
+
+A GTMD contraction joins different momentum fibers:
+\begin{equation}
+ W_{\Lambda'\Lambda}^{[\Gamma,\gamma]}
+ (x,\kT,\DT)
+ =
+ \cC\left[
+ {\Nstate}_{P',\Lambda'}^{\dagger},
+ {\Nop}_{\Gamma,\gamma}(P',P),
+ {\Nstate}_{P,\Lambda}
+ \right].
+\label{eq:gtmd-tn-contraction}
+\end{equation}
+The bra and ket may share a state bundle but use the exact symmetric recoil map
+from Volume~II.  Their canonical gauges need not be identical; the contraction
+plan records the transition and phase conventions.
+
+\subsection{Density and completely positive contractions}
+
+Forward Gram correlators may be evaluated by contracting an amplitude network
+with its conjugate over unresolved states.  A completely positive nuclear or
+detector map is represented only after a justified partial trace.  The
+double-layer network is therefore distinct from a Wigner quasidistribution or
+an off-forward GTMD, for which pointwise positivity is not required.
+
+\subsection{Contraction-order optimization}
+
+For irregular operator networks, contraction order can alter computational
+cost by orders of magnitude while leaving the scalar invariant.  The
+\ContractionPlan\ stores a hypergraph path, slicing policy, memory estimate,
+fermionic swap ledger, and deterministic optimizer seed.  Hypergraph-based
+contraction-path optimization is an admissible numerical tool
+\cite{GrayKourtis2021}; it is not a physical model choice unless an
+approximate contraction is introduced.
+
+\subsection{Approximate contraction}
+
+If contraction is truncated, sampled, or distributed with finite tolerance,
+its approximation record contains:
+\begin{equation}
+ \mathfrak a_{\cC}=
+ \left(
+ \text{method},\text{error estimator},\text{bias test},
+ \text{resource budget},\text{seed},\text{validation oracle}
+ \right).
+\label{eq:approx-contraction-record}
+\end{equation}
+Approximate contraction uncertainty is numerical, separate from the state
+ansatz and physical truncation.
+
+\section{Common-parent GTMD and TMD predictions}
+\label{sec:tmd-predictions}
+
+\subsection{The tensor-network parent chain}
+
+For one microscopic member and assumption bundle,
+\begin{equation}
+ \Aset
+ \longmapsto
+ |\Psi_N(\Aset)\rangle
+ \longmapsto
+ W_{q/N},W_{\bar q/N},W_{g/N}
+ \longmapsto
+ \{F_A\}
+\label{eq:tn-parent-chain}
+\end{equation}
+is evaluated by one state network and a family of typed operator networks.
+The named functions are coordinates on the parent correlator:
+\begin{equation}
+ F_A^{a/N}
+ =
+ \Tr\left[
+ P_A^{a}
+ W_{a/N}
+ \right].
+\label{eq:named-tmd-projection}
+\end{equation}
+No tensor-network parameter is owned by a named TMD unless the corresponding
+operator is explicitly present in the Hamiltonian or current basis.
+
+\subsection{Common reductions}
+
+The same off-forward contraction must support
+\begin{equation}
+ \begin{aligned}
+ \mathsf T[W]&=W\big|_{\DT=0},\\
+ \mathsf G[W]&=\int\dd^2\kT\,W,\\
+ \mathsf F[W]&=\int\dd x\,\dd^2\kT\,W,\\
+ \mathsf W[W]&=\int\frac{\dd^2\DT}{(2\pi)^2}
+ e^{-i\bD\cdot\DT}W.
+ \end{aligned}
+\label{eq:common-reductions-tn}
+\end{equation}
+These are regulated reductions until the matching objects of Volume~V are
+applied.  Closure failure is traced to the state, operator, recoil, matching,
+or numerical network rather than repaired independently in each output.
+
+\subsection{Transverse rank}
+
+A projection request carries its harmonic \(m\), Bessel order \(J_{|m|}\),
+extracted mass powers, and Fourier phase.  The compiler uses these labels to
+select the required OAM and helicity blocks before contraction.  If the current
+state network lacks a required block, the result is unavailable rather than
+zero by default.
+
+\subsection{T-even and link-odd routes}
+
+At zeroth Wilson order, a real Hamiltonian state supplies the T-even common
+parent.  Link-odd projections require the Volume~III rescattering operator
+network and its cut ledger:
+\begin{equation}
+ W_{\mathrm{odd}}
+ =
+ \frac12
+ \left(
+ W^{[+]}-\Theta^{-1}W^{[-]}\Theta
+ \right).
+\label{eq:link-odd-tn}
+\end{equation}
+The same state tensors are reused, but the operator and path networks differ.
+A universal scalar phase multiplying all spin projectors is not an admissible
+network node.
+
+\subsection{Conditional prediction object}
+
+A prediction is stored as
+\begin{equation}
+ \mathfrak F_A=
+ \left(
+ F_A,
+ \Aset,
+ \text{member},
+ \text{operator id},
+ \text{network ids},
+ \text{residuals},
+ \text{matching status},
+ \text{readiness}
+ \right).
+\label{eq:conditional-prediction-object}
+\end{equation}
+The phrase ``the model predicts \(F_A\)'' is incomplete unless the assumption
+bundle and readiness status are supplied.
+
+\section{Open interfaces to Wilson, nuclear, matching, and process layers}
+\label{sec:open-interfaces}
+
+\subsection{Why one category is insufficient}
+
+The state tensor network lives in the amplitude layer \(\Amp\); density and
+partial-trace maps live in \(\Dens\); regulator and scheme conversions live in
+\(\Match\); GTMD/TMD/GPD/current reductions live in \(\Red\); and hard-process
+assembly lives in \(\Proc\).  The prediction compiler coordinates these layers
+without identifying their morphisms.
+
+An open subsystem exposes a typed boundary.  Schematically,
+\begin{equation}
+ X_{\mathrm{in}}
+ \longrightarrow
+ N
+ \longleftarrow
+ X_{\mathrm{out}},
+\label{eq:structured-cospan}
+\end{equation}
+where the apex \(N\) carries the internal network and its assumption
+``decoration.''  Structured and decorated cospan formalisms motivate this
+interface discipline, while double categories distinguish system composition
+from transformations between systems
+\cite{Fong2015,Courser2017,BaezCourser2020,Courser2020}.
+
+\subsection{Wilson interface}
+
+The Wilson plugin consumes:
+\begin{equation}
+ \left(
+ \text{microscopic state bundle},
+ \text{gauge-field vertex basis},
+ \text{path identity},
+ \text{cut and pole policy},
+ \text{Wilson order}
+ \right)
+\label{eq:wilson-plugin-input}
+\end{equation}
+and returns an operator network with a phase budget.  It does not modify the
+state topology silently.  Higher Wilson order may require new Fock sectors,
+in which case the compiler must recompile the state plan rather than insert a
+larger phase into the old state.
+
+\subsection{Nuclear interface}
+
+The nuclear plugin consumes correlated proton and neutron microscopic members,
+complete helicity matrices, matched nucleon operators, and shared phase/soft
+metadata.  It returns a spin-1 nuclear state network and nuclear operator
+network.  Partonic Wilson staples and coherent nuclear rescattering retain
+separate interfaces and an explicit overlap relation when they share a soft
+region.
+
+\subsection{Matching and evolution interface}
+
+The matching plugin requires a closed regulated operator basis and produces
+\begin{equation}
+ \widetilde{\bm W}^{\QCD}
+ =
+ \bm Z_{\LF\to\QCD}
+ \otimes_x
+ \widetilde{\bm W}^{\LF}
+ +\bm\Delta_{\trunc}.
+\label{eq:matching-plugin}
+\end{equation}
+The result remains attached to the originating state-network member.  Evolution
+acts on the matched operator coordinates, not on arbitrary internal TTN bonds.
+
+\subsection{Process interface}
+
+A process plugin supplies hard factors, fragmentation functions, link and
+color maps, soft prescription, \(W+Y\) accuracy, and factorization/Glauber
+status.  A TMD tensor network cannot be consumed by a process marked
+\texttt{BROKEN} or \texttt{UNASSESSED} as though universal factorization held.
+
+\section{Provenance two-complex and topological audit}
+\label{sec:provenance-complex}
+
+\subsection{Cells and physical meaning}
+
+For an assumption bundle \(\Aset\), construct a finite cellular complex
+\(\Kprov(\Aset)\):
+\begin{itemize}
+ \item \(0\)-cells are typed states, operators, schemes, networks, and results;
+ \item oriented \(1\)-cells are derivations, transitions, reductions,
+ matching maps, replacements, or execution steps;
+ \item \(2\)-cells are attached only when a physical identity declares two
+ paths equivalent, subtractive, replacing, or count-once.
+\end{itemize}
+The chain condition is
+\begin{equation}
+ C_2(\Kprov)
+ \xrightarrow{\partial_2}
+ C_1(\Kprov)
+ \xrightarrow{\partial_1}
+ C_0(\Kprov),
+ \qquad
+ \partial_1\partial_2=0.
+\label{eq:prov-chain}
+\end{equation}
+
+\subsection{Examples of two-cells}
+
+The required cells include:
+\begin{enumerate}
+ \item explicit \(qqqg\) propagation versus the induced operator obtained by
+ eliminating that sector;
+ \item a cut represented in an eikonal denominator versus the same physical
+ on-shell support represented in a light-front resolvent;
+ \item unsubtracted collinear overlap versus the half-soft subtraction of the
+ same rapidity region;
+ \item explicit nuclear \(NN\pi\) content versus pion dressing already
+ contained in the matched nucleon state;
+ \item alternative tensor topologies that are exactly gauge-equivalent at full
+ bond support but distinct at finite rank.
+\end{enumerate}
+A two-cell may carry a coefficient, sign, matching remainder, tolerance, and
+validity domain.
+
+\subsection{Path quotient and count-once semantics}
+
+Let \(\cP(s,t)\) denote formal source-to-target paths.  Declared two-cells
+generate an equivalence/subtraction relation \(\sim\).  The composition engine
+works on the quotient presentation
+\begin{equation}
+ \cP_{\mathrm{phys}}(s,t)
+ =
+ \cP(s,t)/{\sim}
+\label{eq:path-quotient}
+\end{equation}
+together with additive and exclusive branch labels.
+
+\begin{proposition}[Count-once reduction]
+If two active paths represent the same contribution and a valid count-once
+cell identifies them, then the compiled observable contains one representative
+of the equivalence class plus any declared matching remainder, independent of
+which representative is selected for numerical execution.
+\end{proposition}
+
+\begin{proof}
+The cell boundary is \(p_1-p_2-r\), where \(r\) is an optional remainder path.
+The compiler normalizes the active graph by the corresponding rewrite rule
+before emitting an additive node.  Therefore either \(p_1\) or \(p_2+r\) is
+present, but not both.  Equality holds within the cell's declared domain and
+tolerance.
+\end{proof}
+
+\subsection{Homology as an obstruction signal}
+
+The group
+\begin{equation}
+ H_1(\Kprov)
+ =
+ \Ker\partial_1/\operatorname{im}\partial_2
+\label{eq:prov-homology-v8}
+\end{equation}
+identifies closed provenance cycles not resolved by existing two-cells.  A
+nontrivial class may indicate a missing subtraction, unresolved alternative,
+unitarity relation, or genuinely distinct interference mechanism.  It is an
+audit result, not a topological value of the physical amplitude.
+
+\subsection{Higher cells}
+
+Three-cells may eventually express coherence among several two-cell relations,
+such as compatibility of sector elimination, operator matching, and soft
+subtraction.  They are introduced only when independent pairwise cells produce
+a concrete coherence ambiguity.  Decorative higher category theory is not a
+deliverable.
+
+\section{Differentiable networks and microscopic sensitivities}
+\label{sec:differentiation}
+
+\subsection{Differentiation through contractions}
+
+For network parameters \(\theta_a\), automatic differentiation gives
+\begin{equation}
+ J_{ia}
+ =
+ \frac{\partial\cO_i}{\partial\theta_a}
+\label{eq:tn-jacobian}
+\end{equation}
+through tensor contractions, provided decomposition and gauge-fixing steps have
+stable derivative rules.  Differentiable tensor-network programming can
+provide efficient gradients and higher derivatives
+\cite{Liao2019}.
+
+\subsection{Eigenstate derivatives}
+
+For a nondegenerate normalized eigenstate,
+\begin{equation}
+ \cM^2(\theta)|\Psi_n\rangle
+ =E_n|\Psi_n\rangle,
+\label{eq:eigenproblem-derivative}
+\end{equation}
+Hellmann--Feynman gives
+\begin{equation}
+ \frac{\partial E_n}{\partial\theta_a}
+ =
+ \langle\Psi_n|
+ \frac{\partial\cM^2}{\partial\theta_a}
+ |\Psi_n\rangle.
+\label{eq:hellmann-feynman}
+\end{equation}
+The orthogonal state derivative satisfies
+\begin{equation}
+ Q_n
+ \left(\cM^2-E_n\right)
+ Q_n
+ |\partial_a\Psi_n\rangle
+ =
+ -Q_n
+ \left(
+ \partial_a\cM^2-\partial_a E_n
+ \right)
+ |\Psi_n\rangle,
+\label{eq:implicit-state-derivative}
+\end{equation}
+where \(Q_n=\Id-|\Psi_n\rangle\langle\Psi_n|\).  Near degeneracies require
+subspace derivatives rather than \cref{eq:implicit-state-derivative} for an
+arbitrary eigenvector.
+
+\subsection{Gauge-aware tangent vectors}
+
+Because tensor parameters contain virtual gauge redundancy, raw parameter
+derivatives are not unique.  The implementation chooses a horizontal tangent
+gauge or canonical-center convention so that
+\begin{equation}
+ \delta|\Psi\rangle
+ =
+ \sum_v
+ \frac{\partial|\Psi\rangle}{\partial A_v}\delta A_v
+\label{eq:tn-tangent}
+\end{equation}
+contains no pure virtual-gauge direction.  This is the practical role of the
+tensor-manifold geometry discussed for matrix-product states
+\cite{Haegeman2014,Haegeman2013}.
+
+\subsection{Differentiating SVD and truncation}
+
+A singular-value crossing or exact degeneracy makes individual singular
+vectors nondifferentiable.  The compiler therefore records block-subspace
+projectors and either:
+\begin{itemize}
+ \item differentiates the invariant retained subspace;
+ \item freezes the truncation pattern within a local neighborhood;
+ \item uses a smooth spectral filter for a diagnostic route;
+ \item marks the derivative unavailable.
+\end{itemize}
+It may not return an unstable gradient without a degeneracy warning.
+
+\subsection{Adjoint and covariance propagation}
+
+For parameter covariance \(C_{\theta}\), the linearized observable covariance
+is
+\begin{equation}
+ C_{\cO}^{\mathrm{param}}
+ =JC_{\theta}J^{\mathsf T}.
+\label{eq:jacobian-covariance}
+\end{equation}
+The same member identity and tensor network are used for all observables.  For
+large parameter sets, adjoint contractions compute selected gradients without
+forming the full Jacobian.
+
+\section{Conditional predictions and uncertainty semantics}
+\label{sec:conditional-uncertainty}
+
+\subsection{Within-assumption prediction}
+
+For a fixed assumption bundle,
+\begin{equation}
+ p(F_A\mid\Aset,\cD_{\calib})
+ =
+ \int\dd\Theta\,\dd\nu\,
+ p(F_A\mid\Theta,\nu,\Aset)
+ p(\Theta,\nu\mid\Aset,\cD_{\calib}),
+\label{eq:conditional-posterior-prediction}
+\end{equation}
+where \(\Theta\) contains shared microscopic parameters and \(\nu\) contains
+controlled truncation and numerical choices.  The posterior does not contain
+an independent parameter for every named TMD.
+
+\subsection{Between-assumption uncertainty}
+
+If a declared model-comparison rule assigns weights to complete branches, the
+law of total covariance gives
+\begin{equation}
+ \Cov(F\mid\cD)
+ =
+ \mathbb E_{\Aset}
+ \left[
+ \Cov(F\mid\Aset,\cD)
+ \right]
+ +
+ \Cov_{\Aset}
+ \left[
+ \mathbb E(F\mid\Aset,\cD)
+ \right].
+\label{eq:total-covariance-assumptions}
+\end{equation}
+The second term is structural branch variation.  It is reported separately
+unless a scientifically justified model-averaging procedure is declared.
+Mutually exclusive mechanisms cannot be combined component by component merely
+to widen a band.
+
+\subsection{Tensor-network uncertainty axes}
+
+At minimum, report:
+\begin{enumerate}
+ \item bond-dimension truncation;
+ \item topology choice;
+ \item variational optimization residual;
+ \item contraction approximation;
+ \item basis and Fock truncation;
+ \item Hamiltonian EFT and regulator uncertainty;
+ \item Wilson, matching, evolution, nuclear, and process uncertainty;
+ \item posterior parameter and data uncertainty.
+\end{enumerate}
+A small bond error does not imply a small Fock-sector error, and an exact
+contraction does not imply physical completeness.
+
+\subsection{Prediction versus scenario}
+
+An output is a prediction relative to \(\Aset\) only if its normalization and
+shape were not directly calibrated as a named observable.  Across assumption
+branches, the scientifically correct language may be ``conditional prediction''
+or ``model scenario.''  The result envelope stores this status explicitly.
+
+\section{Compiler algorithm and proof objects}
+\label{sec:compiler-algorithm}
+
+\subsection{Compilation pipeline}
+
+A reference compiler executes the following stages:
+\begin{enumerate}
+ \item canonicalize and hash the assumption bundle;
+ \item load exact conventions and repository capabilities;
+ \item compute dependency closure;
+ \item solve branch, exclusion, replacement, and readiness constraints;
+ \item construct the provenance subcomplex and normalize count-once paths;
+ \item instantiate the physical Hilbert and symmetry-block tensor spaces;
+ \item select state topology and bond policy;
+ \item instantiate Hamiltonian, current, GTMD, Wilson, nuclear, matching, and
+ process operator networks requested by the target;
+ \item choose solver and contraction plans;
+ \item emit validation gates and holdout observables;
+ \item create an immutable prediction-plan identity.
+\end{enumerate}
+
+\subsection{Pseudocode}
+
+\begin{verbatim}
+def compile(bundle, target, repository):
+    A = canonicalize_and_hash(bundle)
+    capability = repository.capability_snapshot()
+    A_closed = dependency_closure(A, capability)
+    certificate = solve_admissibility(A_closed, target)
+    if certificate.failed:
+        return Rejected(certificate)
+    K = build_provenance_complex(A_closed, target)
+    K_normal = normalize_count_once_paths(K)
+    state_spec = instantiate_state_network_spec(A_closed)
+    operator_specs = instantiate_required_operators(A_closed, target)
+    readiness = evaluate_readiness(state_spec, operator_specs, capability)
+    plan = build_execution_dag(
+        state_spec, operator_specs, K_normal, readiness, target
+    )
+    return Executable(plan) if readiness.sufficient else Partial(plan)
+\end{verbatim}
+
+\subsection{Compilation certificate}
+
+A certificate records every rule evaluated and the minimal evidence used:
+\begin{equation}
+ \mathfrak c_{\mathrm{compile}}
+ =
+ \left(
+ \Aset,
+ \mathrm{target},
+ \{R_i\mapsto s_i\},
+ \Kprov,
+ \mathrm{readiness},
+ \Pplan,
+ \mathrm{source\ hashes}
+ \right).
+\label{eq:compile-certificate}
+\end{equation}
+This permits independent replay without rerunning the physical solver.
+
+\subsection{Semantic versioning}
+
+Changing a numerical tolerance may create a new execution version without
+changing the scientific assumption identity.  Changing a Fock sector,
+Hamiltonian branch, Wilson order, tensor topology, matching scheme, or
+calibration role creates a new scientific version.  The two version layers are
+stored separately.
+
+\section{Software architecture}
+\label{sec:software}
+
+\subsection{Core objects}
+
+\begin{longtable}{L{0.27\textwidth}L{0.65\textwidth}}
+\toprule
+Object & Responsibility\\
+\midrule
+\endhead
+\AssumptionBundle & Frozen scientific, regulator, algebraic, numerical, process, and inference choices with canonical identity.\\
+\texttt{ChoiceAxis} & Singleton, exclusive, additive, nested, continuous, or diagnostic assumption semantics.\\
+\texttt{AdmissibilityRule} & Typed dependency, exclusion, compatibility, readiness, or convergence predicate.\\
+\texttt{CompilationCertificate} & Rule outcomes, minimal evidence, failure or readiness state, and plan identity.\\
+\TensorEdgeType & Full physical/virtual representation, momentum, regulator, parity, and orientation identity.\\
+\SymTensor & Structural intertwiners plus reduced degeneracy tensors; forbidden blocks absent.\\
+\FusionTree & Leaf order, fusion order, recoupling convention, multiplicities, fermion swaps, and topology hash.\\
+\texttt{BondSpace} & Per-edge, per-symmetry-sector degeneracy support and required-sector floors.\\
+\texttt{BondDimensionPolicy} & Fixed, nested, adaptive, or observable-weighted allocation with cost and error records.\\
+\StateTN & Canonical-gauge state tensors, microscopic member identity, topology, and solver certificate.\\
+\OperatorTN & Hamiltonian, current, GTMD, Wilson, nuclear, matching, or process tensor network.\\
+\texttt{VariationalTTNSolver} & Local effective solves, sweeps, subspace targeting, convergence, and multistart control.\\
+\ContractionPlan & Hypergraph contraction order, slicing, memory, fermion swaps, approximation, and reproducibility.\\
+\PredictionPlan & Typed execution DAG from assumptions and targets to result envelopes.\\
+\ProvComplex & Typed graph, two-cells, path normalization, homology diagnostics, and count-once enforcement.\\
+\texttt{ConditionalPrediction} & Result, assumption identity, member, operator, residual, covariance, and readiness.\\
+\shortstack[l]{\texttt{CompilerCapability}\\\texttt{Snapshot}} & Repository objects, source hashes, supported schemes, solvers, and readiness gates.\\
+\bottomrule
+\end{longtable}
+
+\subsection{Serialization}
+
+All central objects require deterministic serialization, schema versioning,
+source hashes, and round-trip tests.  Floating arrays are referenced by content
+hash and immutable storage location rather than embedded redundantly in every
+manifest.
+
+\subsection{Distributed realization}
+
+A distributed network stores ownership of tensor blocks, contraction tasks,
+communication topology, deterministic reduction order, and precision.  Load
+balancing may repartition blocks but cannot merge distinct physical identities.
+Communication-aware contraction is a numerical optimization; its result must
+match a serial oracle on smaller instances.
+
+\subsection{Quantum simulation}
+
+A quantum tensor-network or variational circuit backend is admissible only when
+it represents the same typed Hilbert space, Hamiltonian, state topology, and
+operator matrix elements and is benchmarked against exact or classical TTN
+results.  A generic entangling circuit with no map to the microscopic tensor
+blocks is outside this architecture.
+
+\section{Formal requirements}
+\label{sec:requirements}
+
+The following identifiers are stable normative requirements for the first
+implementation.  A requirement may be satisfied at validation-only scope
+without implying physical prediction readiness.
+
+\begin{longtable}{L{0.15\textwidth}L{0.77\textwidth}}
+\toprule
+ID & Requirement\\
+\midrule
+\endhead
+V8.SEP.1 & State, operator/contraction, and provenance networks are distinct typed objects with different composition laws.\\
+V8.SEP.2 & Tensor virtual gauge, QCD gauge, Wilson-path geometry, and provenance topology cannot be aliased.\\
+V8.ASSUMP.1 & Every scientific run is generated from one frozen, content-addressed \AssumptionBundle.\\
+V8.ASSUMP.2 & Choice axes distinguish required singleton, exclusive branch, additive mechanism, nested truncation, continuous parameter, and diagnostic variation.\\
+V8.ASSUMP.3 & Refinement relations are declared only for nested choices; sibling physical branches remain incomparable.\\
+V8.COMP.1 & Compilation computes dependency closure without silently adding missing physical dynamics.\\
+V8.COMP.2 & Exclusion, replacement, scheme, readiness, factorization, and no-double-counting rules fail closed.\\
+V8.COMP.3 & Rejected and partial compilations return structured minimal failure certificates.\\
+V8.COMP.4 & Every executable plan has deterministic identity, source hashes, environment, and replayable rule outcomes.\\
+V8.EDGE.1 & Every state and operator index has a complete \TensorEdgeType; anonymous axes are forbidden.\\
+V8.SYM.1 & Exact symmetries are represented by invariant tensors and absent forbidden blocks, not penalties.\\
+V8.SYM.2 & Structural intertwiners and reduced degeneracy tensors are stored separately.\\
+V8.SYM.3 & Outer multiplicity labels are retained for every repeated irrep coupling.\\
+V8.FERM.1 & Fermionic swaps and antisymmetry are exact and preserved by topology changes and contraction optimization.\\
+V8.COLOR.1 & Every hadron state network is annihilated by the total color generator within tolerance.\\
+V8.COLOR.2 & Ordered gluon links and \(f/d\) color contractions remain operator identities independent of state topology.\\
+V8.TOP.1 & The state topology, fusion convention, leaf order, and canonical gauge form a versioned topology identity.\\
+V8.TOP.2 & Finite-rank results from different topologies are distinct approximation branches.\\
+V8.TN.1 & Exact tensorization reproduces the finite exact state and benchmark observables at full Schmidt support.\\
+V8.TN.2 & A claimed variational solver minimizes the Rayleigh quotient and is not merely an SVD compression.\\
+V8.TN.3 & Nested bond spaces give nonincreasing globally optimized variational energies.\\
+V8.TN.4 & Bond manifests retain per-edge, per-symmetry-sector support, Schmidt spectra, discarded weight, and required-sector floors.\\
+V8.TN.5 & Bond convergence is demonstrated for energy, residual, state identity, currents, OAM, and requested GTMD-sensitive observables.\\
+V8.OP.1 & Hamiltonian, current, GTMD, Wilson, nuclear, matching, and process operator networks retain complete source/target and scheme identity.\\
+V8.OP.2 & Off-forward contractions use typed incoming and outgoing momentum fibers and one authoritative recoil map.\\
+V8.OP.3 & Shared contraction environments never merge different microscopic members or operator identities.\\
+V8.PROV.1 & Every prediction has a provenance path from assumptions, state amplitudes, operators, matching, and numerical approximations.\\
+V8.PROV.2 & Count-once, subtraction, replacement, and alternative relations are executable two-cells.\\
+V8.PROV.3 & Nontrivial provenance homology is reported as an unresolved audit signal, not a physical invariant.\\
+V8.GTMD.1 & Named TMDs are typed projections of common GTMD parents; named-function-specific latent coefficients are prohibited by default.\\
+V8.GTMD.2 & TMD, GPD, PDF, current, and Wigner reductions share state, normalization, recoil, and operator ancestry.\\
+V8.GTMD.3 & Missing OAM, helicity, Fock, or Wilson blocks produce an unavailable status rather than an assumed physical zero.\\
+V8.OPEN.1 & Wilson, nuclear, matching/evolution, process, and inference layers compose through typed open interfaces and independent readiness gates.\\
+V8.DIFF.1 & Automatic or adjoint derivatives carry tensor-gauge, eigenspace, decomposition, and truncation validity records.\\
+V8.UNC.1 & Tensor-rank, topology, basis, Fock, physical, matching, evolution, nuclear, process, and statistical uncertainties remain separately identified.\\
+V8.UNC.2 & Within-assumption posterior uncertainty is distinct from between-assumption structural variation.\\
+V8.PRED.1 & Every result states whether it is a validation object, conditional prediction, fitted quantity, comparison, or physical process prediction.\\
+V8.REGR.1 & New tensor-network and compiler packages cannot alter accepted production artifacts or registries unless a separate migration work package authorizes it.\\
+\bottomrule
+\end{longtable}
+
+\section{Analytic and finite-dimensional benchmarks}
+\label{sec:benchmarks}
+
+\subsection{Benchmark TN-A: exact tensorization of the H0 basis}
+
+Tensorize the C7 \(qqq\), \(qqqg\), and \(qqqq\bar q\) finite states on at
+least two fusion trees.  At full bond support, reproduce the exact state,
+color-generator residuals, antisymmetry, free mass, and reduced-vertex matrix
+elements.  Recoupling between trees must be unitary within each complete
+multiplicity space.
+
+\subsection{Benchmark TN-B: structural versus degeneracy tensors}
+
+Construct an invariant tensor with a repeated non-Abelian irrep channel.
+Verify \cref{eq:symmetric-tensor-decomposition}, reconstruct the dense tensor,
+and demonstrate that deleting the multiplicity label fails.  Repeat with a
+fermionic swap crossing the fusion tree.
+
+\subsection{Benchmark TN-C: canonical gauge}
+
+Apply random invertible transformations on every virtual edge of an exact TTN.
+Canonicalize to a deterministic center gauge and show state equality, norm
+closure, identical observables, and deterministic serialization.  A degenerate
+Schmidt block must be represented by a stable subspace identity.
+
+\subsection{Benchmark TN-D: H1 variational upper bound}
+
+For every small C8/H1 Hamiltonian block, compare exact, Krylov, exact-state TTN,
+and variational TTN solutions.  Verify the upper bound, nested-bond energy
+monotonicity, residual convergence, and multistart stability.
+
+\subsection{Benchmark TN-E: observable-sensitive compression}
+
+Choose a state for which a low-weight \(L_z\neq0\) block has a small effect on
+energy but a leading effect on an OAM-sensitive current.  An energy-only bond
+policy must miss the observable, while the required-sector or observable-
+weighted policy retains it.
+
+\subsection{Benchmark TN-F: common operator environment}
+
+From one state network, evaluate charge, a current at nonzero transfer, a T-even
+GTMD component, and an OAM moment.  Compare shared-environment and independent
+contractions.  All values and microscopic-member identities must agree.
+
+\subsection{Benchmark TN-G: common-parent reduction closure}
+
+Construct a finite off-forward parent and verify the TMD, regulated GPD, PDF,
+current, and Wigner routes using the same state, recoil, operator, and
+normalization.  Inject a rank, mass, Fourier-phase, or momentum-fiber mismatch
+and require rejection before contraction.
+
+\subsection{Benchmark TN-H: Wilson operator plugin}
+
+Attach the C5/C6 validation Wilson network to a compatible analytic state TTN.
+Verify zero-coupling, no-cut, no-OAM, future/past, ordered-link, \(f/d\), and
+soft-overlap limits.  The state topology must remain unchanged and the Wilson
+path must remain operator metadata.
+
+\subsection{Benchmark TN-I: provenance two-cell normalization}
+
+Create two execution paths representing an explicit sector and its induced
+operator, together with a matching remainder.  Verify that the compiler emits
+one representative plus the remainder, that removing the two-cell produces a
+double-counting failure, and that a genuinely distinct interference path is
+not removed.
+
+\subsection{Benchmark TN-J: assumption compiler}
+
+Compile the H1 branches:
+\begin{equation}
+ \begin{array}{ll}
+ \text{A}:&\text{induced confinement + color-spin},\\
+ \text{B}:&\text{zero confinement + color-spin},\\
+ \text{C}:&\text{induced confinement + no color-spin}.
+ \end{array}
+\label{eq:h1-branches-benchmark}
+\end{equation}
+Each plan must have a distinct identity and share only legitimately common
+nodes.  Attempting to add A and B as simultaneous Hamiltonian mechanisms must
+fail.
+
+\subsection{Benchmark TN-K: differentiable contraction}
+
+Compare automatic, adjoint, finite-difference, and analytic derivatives for a
+small tensor contraction and a nondegenerate eigenstate.  Test a singular-value
+crossing and require a subspace derivative or unavailable status rather than an
+unstable vector derivative.
+
+\subsection{Benchmark TN-L: conditional uncertainty}
+
+Generate two assumption branches with known within-branch covariance and
+between-branch displacement.  Verify \cref{eq:total-covariance-assumptions},
+while also demonstrating the default report that keeps branch predictions
+separate when no averaging rule is declared.
+
+\subsection{Benchmark TN-M: contraction-plan invariance}
+
+Contract one irregular operator network using several exact paths and slicing
+schemes.  Verify identical values, explicit cost differences, deterministic
+fermion signs, and agreement with a dense oracle.  An approximate route must
+return a separate error record.
+
+\section{Mandatory negative tests}
+\label{sec:negative-tests}
+
+At minimum, the implementation must reject or detect the following failures.
+Stable identifiers should be assigned in the machine-readable manifest.
+
+\begin{longtable}{L{0.10\textwidth}L{0.82\textwidth}}
+\toprule
+ID & Deliberate failure\\
+\midrule
+\endhead
+N01 & Use a state tensor as a provenance relation.\\
+N02 & Interpret a virtual tensor gauge transform as a QCD gauge transform.\\
+N03 & Treat a contraction path as a Wilson path.\\
+N04 & Mutate a frozen assumption bundle in place.\\
+N05 & Reuse an assumption identity after changing one field.\\
+N06 & Treat sibling physical branches as nested refinements.\\
+N07 & Add two exclusive confinement branches to one Hamiltonian.\\
+N08 & Select an explicit Fock sector together with its induced replacement.\\
+N09 & Add a benchmark-only mechanism to a central plan.\\
+N10 & Compile evolution without LF-to-QCD matching.\\
+N11 & Compile a physical process with broken or unassessed factorization.\\
+N12 & Promote a partial plan to validated status.\\
+N13 & Add a missing physical sector through dependency closure.\\
+N14 & Return an unstructured compiler error without rule identity.\\
+N15 & Connect edges with matching dimensions but different physical types.\\
+N16 & Omit an outer multiplicity label in a repeated irrep channel.\\
+N17 & Store forbidden symmetry blocks densely and call them symmetry preserving.\\
+N18 & Use a bosonic swap where a fermionic crossing is required.\\
+N19 & Apply the fundamental generator to an antiquark edge.\\
+N20 & Construct a color-singlet \(qqq\) times a free gluon.\\
+N21 & Merge the two \(qqqg\) singlet multiplicities.\\
+N22 & Remove one of the three \(qqqq\bar q\) singlet channels.\\
+N23 & Change topology without updating leaf order and swap ledger.\\
+N24 & Compare finite-rank topologies as though exactly equivalent.\\
+N25 & Claim exact tensorization with a bond smaller than the Schmidt rank.\\
+N26 & Delete the only symmetry sector required by a requested observable.\\
+N27 & Call SVD compression a variational solver without Rayleigh optimization.\\
+N28 & Return a variational energy below the exact finite-space ground state.\\
+N29 & Violate nested-bond energy monotonicity without a convergence warning.\\
+N30 & Converge energy while current or OAM errors remain above tolerance and declare completion.\\
+N31 & Change an eigenstate label by eigenvalue ordering through an avoided crossing.\\
+N32 & Canonicalize a degenerate Schmidt block with nondeterministic vectors and no subspace identity.\\
+N33 & Reuse a contraction environment across different microscopic members.\\
+N34 & Reuse a contraction environment across different operator schemes.\\
+N35 & Apply a forward operator to incompatible off-forward fibers.\\
+N36 & Reimplement the recoil map inside one projector.\\
+N37 & Apply a scalar \(J_0\) transform to a rank-one or rank-two result.\\
+N38 & Use \(\bD\) as \(\bM\) or vice versa.\\
+N39 & Introduce a named-TMD-specific tensor parameter with no operator owner.\\
+N40 & Interpret a missing amplitude block as a physical zero.\\
+N41 & Apply the C5/C6 Wilson sign by process name rather than path identity.\\
+N42 & Reverse only one member of an ordered gluon link pair when full reversal is required.\\
+N43 & Mix \(f\)- and \(d\)-type gluon channels without a process color map.\\
+N44 & Count the same cut in both eikonal and resolvent paths without a two-cell.\\
+N45 & Omit the soft-overlap subtraction.\\
+N46 & Apply the soft-overlap subtraction twice.\\
+N47 & Treat provenance homology as a numerical amplitude.\\
+N48 & Remove a genuinely distinct interference path using an unrelated count-once cell.\\
+N49 & Differentiate a degenerate eigenvector as though nondegenerate.\\
+N50 & Differentiate through an SVD crossing without a validity record.\\
+N51 & Propagate raw tensor-parameter covariance including pure gauge directions.\\
+N52 & Merge bond, basis, Fock, and Hamiltonian uncertainties into one unlabeled band.\\
+N53 & Average mutually exclusive branches without a declared model-comparison rule.\\
+N54 & Add separate branch components rather than average complete predictions.\\
+N55 & Use a cached tensor whose source hash differs.\\
+N56 & Reuse a cache entry after changing numerical precision or tolerance.\\
+N57 & Lose deterministic reduction order in a distributed contraction.\\
+N58 & Report an approximate contraction without an error estimator.\\
+N59 & Connect a valence-only state to antiquark or gluon prediction readiness.\\
+N60 & Connect a nucleon state to nuclear readiness without correlated proton/neutron members and nuclear operators.\\
+N61 & Connect an unmatched regulated GTMD to TMD evolution.\\
+N62 & Attach a process hard factor from a different scheme.\\
+N63 & Modify one of the accepted 216 production reduction routes from the tensor-network package.\\
+N64 & Modify an authoritative production artifact or pinned historical manifest.\\
+N65 & Treat an oscillator scale as a TMD nonperturbative width.\\
+N66 & Treat bond dimension as a physical parameter to be fitted to data without convergence control.\\
+N67 & Insert a generic neural tensor with indices lacking physical interpretation.\\
+N68 & Use a quantum circuit with no exact map to the typed Fock basis.\\
+N69 & Promote a validation-only result to a physical prediction.\\
+N70 & Omit assumption identity from a released TMD table.\\
+N71 & Omit the compiler certificate from a released prediction plan.\\
+N72 & Claim completion from test count alone while a formal acceptance gate remains unresolved.\\
+\bottomrule
+\end{longtable}
+
+\section{Staged implementation program}
+\label{sec:staged-program}
+
+\subsection{P0: compiler spine during H1}
+
+While C8/H1 is being implemented:
+\begin{enumerate}
+ \item implement frozen \texttt{H1AssumptionBundle} and
+ \texttt{H1PredictionPlan};
+ \item implement the general \AssumptionBundle, choice-axis, rule, certificate,
+ and prediction-plan interfaces without connecting them to production;
+ \item tensorize the exact H1 benchmark eigenvectors on one or more symmetry-
+ adapted trees;
+ \item establish full-rank reconstruction, canonical gauge, and serialization;
+ \item construct the first provenance subcomplex for the H1 branches.
+\end{enumerate}
+The output remains valence-only and validation-only.
+
+\subsection{P1: variational H1 tensor network}
+
+After exact H1 diagonalization is stable:
+\begin{enumerate}
+ \item implement local TTN effective Hamiltonians and sweeps;
+ \item verify upper bounds and nested-bond monotonicity;
+ \item add observable-sensitive bond policies;
+ \item compare exact, Krylov, and TTN states and currents;
+ \item export the first tensor-network solver certificate.
+\end{enumerate}
+This stage validates the state engine, not a physical nucleon.
+
+\subsection{P2: H2 dynamical gluon and sector network}
+
+Extend the state network to
+\begin{equation}
+ \Hil_{qqq}\oplus\Hil_{qqqg}
+\label{eq:p2-fock-space}
+\end{equation}
+with canonical quark--gluon vertices, instantaneous partners, sector-dependent
+renormalization, complete color multiplicities, and a shared current.  The
+network topology must permit intersector amplitude flow without hiding it in a
+single effective valence tensor.
+
+\subsection{P3: H3 light sea and chiral network}
+
+Add \(qqqu\bar u\) and \(qqqd\bar d\) sectors, complete antisymmetry, chiral
+interactions, and current/PCAC constraints.  Compare explicit sectors with
+induced operators through provenance two-cells.  The assumption compiler must
+support explicit-sector and induced-sector branches without simultaneous
+counting.
+
+\subsection{P4: microscopic common GTMD contraction}
+
+Attach the Volume~II operator bundle to the microscopic tensor state:
+\begin{enumerate}
+ \item nonzero-transfer quark, antiquark, and gluon matrix elements;
+ \item complete helicity matrices;
+ \item common TMD/GPD/PDF/current reductions;
+ \item OAM and spin--orbit moments;
+ \item tensor-network, basis, Fock, and regulator convergence.
+\end{enumerate}
+This is the first stage that may earn \texttt{GTMD\_OVERLAP\_READY}.
+
+\subsection{P5: Wilson, nuclear, matching, and inference plugins}
+
+Connect the validated microscopic state to:
+\begin{enumerate}
+ \item the C5/C6 Wilson and cut engine, extended to higher order;
+ \item the matched spin-1 nuclear state of Volume~IV;
+ \item the LF-to-QCD and evolution machinery of Volume~V;
+ \item the shared posterior and withheld-validation system of Volume~VI.
+\end{enumerate}
+Every plugin connection requires a fresh compilation certificate and
+provenance complex.
+
+\subsection{P6: distributed prediction service}
+
+Only after the previous stages close, build a distributed service that accepts
+assumption and target requests and returns conditional prediction ensembles.
+The service must expose the plan, source hashes, residuals, readiness, and
+uncertainty decomposition together with the numerical results.
+
+\section{Risk register and safeguards}
+\label{sec:risks}
+
+\begin{longtable}{L{0.22\textwidth}L{0.34\textwidth}L{0.35\textwidth}}
+\toprule
+Risk & Failure mode & Required safeguard\\
+\midrule
+\endhead
+Decorative tensor networks & Dense arrays are redrawn as diagrams without symmetry blocks, variational compression, or convergence. & Require typed block tensors, exact reconstruction, a true Rayleigh solver, and bond manifests.\\
+Low-rank overconfidence & Energy converges while OAM, color, sea, or GTMD-sensitive blocks are lost. & Observable-sensitive bond floors and independent convergence for requested matrix elements.\\
+Topology bias & One fusion tree suppresses correlations favored by another. & Full-rank equivalence tests, finite-rank topology variants, and explicit topology uncertainty.\\
+Gauge conflation & Virtual tensor gauge is mistaken for QCD gauge or Wilson-path freedom. & Separate types, APIs, tests, and documentation; no cross-casting.\\
+Multiplicity loss & Repeated color or spin irreps are merged. & Exact outer-multiplicity indices and C7 color-count benchmarks.\\
+Fermion-sign corruption & Contraction optimizer reorders legs without graded swaps. & Explicit swap ledger and dense-oracle tests.\\
+Compiler overreach & Dependency closure silently adds missing physical dynamics. & Closure may add only required implementation objects; missing physics yields partial or rejected plans.\\
+Branch laundering & Mutually exclusive model choices are added as uncertainty components. & Choice-axis semantics and plan-level exclusion rules.\\
+Named-function migration & A failed TMD receives its own tensor parameter. & Parameter ownership tied to Hamiltonian, current, Wilson, matching, or discrepancy operators.\\
+Provenance formalism without enforcement & Two-cells are documented but not used by composition. & Executable graph normalization and deliberate double-counting injections.\\
+Homology overstatement & Audit cycles are described as topological QCD observables. & Limited-topology principle and no amplitude map from homology.\\
+Differentiation instability & Gradients cross singular-value or eigenvalue degeneracies. & Subspace derivatives, validity domains, and unavailable status.\\
+Cache contamination & Equal-shape tensors from different schemes or members are reused. & Full content-addressed keys including source and assumption hashes.\\
+Distributed nondeterminism & Parallel reductions change results or phases. & Deterministic ordering, reproducible seeds, and serial benchmark oracles.\\
+Compiler/test circularity & The same implementation generates both result and expected benchmark. & Independent analytic, dense, exact-diagonalization, and alternate-contraction oracles.\\
+Quantum-backend substitution & A generic circuit is called the microscopic state. & Exact basis and Hamiltonian map plus classical small-space validation.\\
+Production contamination & Validation networks enter the accepted phenomenological boundary. & Disjoint provenance roots, immutable artifact hashes, and fail-closed production gates.\\
+\bottomrule
+\end{longtable}
+
+\section{Final acceptance criteria}
+\label{sec:acceptance}
+
+The tensor-network and prediction-compiler layer is accepted at its first full
+microscopic scope only when all of the following hold:
+\begin{enumerate}
+ \item Every run begins from one frozen, content-addressed assumption bundle.
+ \item Compilation returns a replayable certificate and a typed prediction
+ plan or a structured failure.
+ \item The state, operator, and provenance networks remain distinct.
+ \item Exact symmetries are structural and all required multiplicities and
+ fermion signs close.
+ \item Full-rank TTN tensorization reproduces exact finite-space states and a
+ nontrivial operator family.
+ \item The variational TTN solver satisfies upper-bound and nested-bond tests.
+ \item Bond convergence is shown for energy, residual, current, OAM, and
+ requested GTMD-sensitive quantities.
+ \item At least two network topologies are compared at full and truncated rank.
+ \item The compiler supports exclusive and nested assumption axes without
+ ambiguity.
+ \item Explicit-sector and induced-operator alternatives are enforced by
+ executable provenance cells.
+ \item All released predictions contain assumption, operator, network,
+ microscopic-member, scheme, and readiness identities.
+ \item One microscopic state network produces quark, antiquark, and gluon
+ parents without named-function-specific parameters.
+ \item TMD, GPD, PDF, current, and Wigner reductions close from the common
+ parent within declared matching and numerical tolerances.
+ \item Link-odd contractions use explicit Wilson operator networks and retain
+ path and color identities.
+ \item Nuclear, matching, evolution, process, and inference plugins remain
+ fail-closed until their independent gates pass.
+ \item Automatic or adjoint derivatives agree with independent benchmarks and
+ carry degeneracy validity records.
+ \item Tensor-network, basis, Fock, physical, matching, and statistical
+ uncertainties are reported separately.
+ \item At least one withheld observable family is predicted from shared
+ microscopic parameters and network members.
+ \item The complete negative-test suite passes, including production-isolation
+ and immutable-artifact gates.
+ \item Removing all present phenomenological named-TMD inputs does not make the
+ microscopic tensor-network calculation undefined.
+\end{enumerate}
+
+\section{Recommended implementation boundary after C8}
+\label{sec:next-boundary}
+
+If C8/H1 completes successfully, the next package should be split into two
+coordinated but independently gated work streams.
+
+\subsection{C9A: general compiler and tensor-network core}
+
+Implement:
+\begin{itemize}
+ \item general \AssumptionBundle, \texttt{ChoiceAxis}, and
+ \texttt{AdmissibilityRule};
+ \item general \PredictionPlan\ and compilation certificate;
+ \item \TensorEdgeType, \SymTensor, \FusionTree, and bond manifests;
+ \item exact H1 tensorization and canonicalization;
+ \item variational TTN sweeps and observable-sensitive compression;
+ \item H1 branch provenance and conditional result envelopes.
+\end{itemize}
+This package remains valence-only and disconnected from production TMDs.
+
+\subsection{C9B/H2: dynamical \texorpdfstring{\(qqqg\)}{qqqg} sector}
+
+Implement the first interacting sector extension with canonical quark--gluon
+vertices, instantaneous partners, sector-dependent renormalization, current and
+Ward closure, gluon/OAM exports, and a microscopic state interface compatible
+with C5/C6.  C9B must consume the C9A tensor/compiler interfaces rather than
+create another state representation.
+
+\subsection{Why the split is useful}
+
+The compiler and TTN engine are reusable mathematical infrastructure, while H2
+introduces new physical dynamics and counterterms.  Separate commits and
+acceptance manifests make it possible to diagnose whether a failure arises in
+the tensor representation or in the Hamiltonian model.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+The geometric and topological proposal becomes an executable predictive model
+only when the model choices, quantum state, operator contractions, provenance,
+and uncertainty are compiled together.  This volume supplies that missing
+layer.
+
+The central object is not a tensor network by itself.  It is the chain
+\begin{equation}
+ \boxed{
+ \Aset
+ \longrightarrow
+ \Pplan
+ \longrightarrow
+ \Nstate
+ \longrightarrow
+ \{\Nop\}
+ \longrightarrow
+ \{W_{a/h},F_A,\cO_{\mathrm{process}}\}
+ }
+\label{eq:final-chain}
+\end{equation}
+with an accompanying provenance complex and validation certificate.  The state
+network carries the microscopic amplitudes; the operator network carries the
+Hamiltonian, currents, GTMDs, Wilson lines, and process insertions; the
+provenance complex carries assumption and no-double-counting relations.  Their
+separation prevents elegant notation from replacing dynamics, while their
+typed composition makes the consequences of each declared model choice
+computable and auditable.
+
+Symmetry-adapted tensors ensure that color, flavor, spin, OAM, statistics, and
+Fock identity survive compression.  Variational TTNs make bond rank an explicit
+numerical truncation with upper bounds and observable-level convergence.
+The assumption compiler turns alternative Hamiltonians, sectors, Wilson paths,
+nuclear models, matching schemes, and process qualifications into distinct
+prediction plans rather than an undifferentiated sum.  The two-complex records
+where different computational paths are equivalent, subtractive, replacing,
+or genuinely distinct.  Conditional ensembles then state precisely which TMD
+predictions follow from which assumptions.
+
+The immediate task is not to claim a complete tensor-network solution of QCD.
+It is to validate this execution layer on the C8/H1 interacting valence state,
+then enlarge the same state and compiler through \(qqqg\), light-sea, GTMD,
+Wilson, nuclear, matching, evolution, and inference stages.  When those layers
+close, the project will realize the objective set at the beginning: a
+geometric, compositional, tensor-network model in which scientifically
+admissible assumptions generate correlated and falsifiable predictions for the
+full spin-1 TMD system.
+
+\appendix
+
+\section{Assumption-bundle schema}
+\label{app:assumption-schema}
+
+\begin{verbatim}
+{
+  "assumption_bundle_id": "sha256:...",
+  "scope": "validation|microscopic|physical",
+  "physics": {
+    "hamiltonian_route": "RSA_BLFQ_EFT",
+    "fock_sectors": ["qqq", "qqqg", "qqquubar", "qqqddbar"],
+    "interaction_terms": ["..."],
+    "current_basis": "...",
+    "wilson_order": 0,
+    "nuclear_route": "MATCHED_HADRONIC_EFT"
+  },
+  "regulators": {
+    "K": "...", "Nmax": "...", "b_GeV": "...",
+    "lambda_GeV": "...", "uv": "...", "ir": "...",
+    "endpoint_policy": "...", "rapidity_regulator": "..."
+  },
+  "algebra": {
+    "symmetry_contract": "...",
+    "color_fusion_tree": "...",
+    "fermion_order": "...",
+    "tensor_topology": "...",
+    "operator_basis_version": "..."
+  },
+  "numerics": {
+    "solver": ["EXACT", "KRYLOV", "TTN"],
+    "bond_policy": "...",
+    "contraction_policy": "...",
+    "precision": "...", "tolerances": {"...": "..."}
+  },
+  "process": {
+    "target_observables": ["..."],
+    "factorization_status": "...",
+    "scheme": "...", "accuracy_manifest": "..."
+  },
+  "inference": {
+    "calibration_partition": "...",
+    "holdout_partition": "...",
+    "posterior_member_set": "...",
+    "model_averaging_rule": null
+  },
+  "source_hashes": {"...": "sha256:..."},
+  "schema_version": "V8.1"
+}
+\end{verbatim}
+
+\section{Prediction-plan schema}
+\label{app:plan-schema}
+
+\begin{verbatim}
+{
+  "prediction_plan_id": "sha256:...",
+  "assumption_bundle_id": "sha256:...",
+  "target_id": "...",
+  "compilation_certificate_id": "...",
+  "nodes": [
+    {
+      "node_id": "...",
+      "type": "basis|hamiltonian|solver|state|operator|reduction|result",
+      "inputs": ["..."],
+      "object_id": "...",
+      "provenance_node_id": "...",
+      "readiness_required": ["..."],
+      "cache_key": "sha256:..."
+    }
+  ],
+  "edges": [{"source": "...", "target": "...", "map_id": "..."}],
+  "validation_gates": ["..."],
+  "holdout_observables": ["..."],
+  "execution_manifest_id": "...",
+  "status": "REJECTED|PARTIAL|EXECUTABLE|VALIDATED"
+}
+\end{verbatim}
+
+\section{Symmetry-block tensor schema}
+\label{app:tensor-schema}
+
+\begin{verbatim}
+{
+  "tensor_id": "sha256:...",
+  "role": "state|operator|isometry|environment",
+  "edge_types": ["..."],
+  "fusion_tree_id": "...",
+  "canonical_gauge": "...",
+  "blocks": [
+    {
+      "charge_tuple": ["..."],
+      "outer_multiplicity": "...",
+      "structural_tensor_id": "...",
+      "degeneracy_shape": ["..."],
+      "data_hash": "sha256:..."
+    }
+  ],
+  "fermion_swap_ledger_id": "...",
+  "resolution_id": "...",
+  "microscopic_member_id": "...",
+  "schema_version": "V8.1"
+}
+\end{verbatim}
+
+\section{Bond and solver manifest}
+\label{app:bond-schema}
+
+\begin{verbatim}
+{
+  "state_tensor_network_id": "...",
+  "topology_id": "...",
+  "orthogonality_center": "...",
+  "edges": [
+    {
+      "edge_id": "...",
+      "sector_dimensions": {"charge": "chi_degeneracy"},
+      "required_floors": {"charge": "minimum"},
+      "schmidt_values_hash": "...",
+      "discarded_weight": "...",
+      "entropy": "..."
+    }
+  ],
+  "solver": {
+    "route": "EXACT|KRYLOV|VARIATIONAL_TTN",
+    "energy": "...",
+    "residual": "...",
+    "sweeps": "...",
+    "initialization": "...",
+    "multistart_manifest": "..."
+  },
+  "observable_errors": {"...": "..."},
+  "exact_oracle_id": "..."
+}
+\end{verbatim}
+
+\section{Provenance two-complex schema}
+\label{app:provenance-schema}
+
+\begin{verbatim}
+{
+  "complex_id": "sha256:...",
+  "assumption_bundle_id": "...",
+  "zero_cells": [{"id": "...", "type": "state|operator|scheme|result"}],
+  "one_cells": [
+    {"id": "...", "source": "...", "target": "...", "relation": "..."}
+  ],
+  "two_cells": [
+    {
+      "id": "...",
+      "boundary_paths": [["..."], ["..."]],
+      "relation": "EQUIVALENT_COUNT_ONCE|SUBTRACT|REPLACES|ALTERNATIVE",
+      "coefficient": "...",
+      "remainder_path": ["..."],
+      "validity_domain": "...",
+      "tolerance": "..."
+    }
+  ],
+  "normal_form_rules": ["..."],
+  "unresolved_homology_classes": ["..."]
+}
+\end{verbatim}
+
+\section{Compact adoption checklist}
+\label{app:checklist}
+
+Before calling a result an assumption-conditioned tensor-network prediction,
+answer:
+\begin{enumerate}
+ \item Is the complete assumption bundle frozen and recoverable?
+ \item Did the compiler pass every dependency, exclusion, scheme, and readiness
+ rule?
+ \item Are state, operator, and provenance networks separate?
+ \item Does every edge have a physical or declared numerical meaning?
+ \item Are exact symmetries and fermionic signs structural?
+ \item Are all outer multiplicities present?
+ \item Does full-rank tensorization reproduce the exact finite state?
+ \item Was a genuine variational TTN optimization performed?
+ \item Do bond and topology convergence include nonenergy observables?
+ \item Are Wilson paths and tensor virtual gauges distinguished?
+ \item Are all GTMD/TMD reductions traced to one common state and operator
+ bundle?
+ \item Are explicit and induced descriptions prevented from double counting?
+ \item Does every derivative carry a validity record?
+ \item Are within- and between-assumption uncertainties separated?
+ \item Is the released result accompanied by its compiler and solver
+ certificates?
+ \item Are unsupported downstream statuses fail-closed?
+ \item Can the calculation be replayed from immutable source and content hashes?
+ \item Does at least one withheld observable test the shared microscopic
+ prediction?
+\end{enumerate}
+
+\small
+\begin{thebibliography}{99}
+\raggedright
+
+\bibitem{Penrose1971}
+R.~Penrose,
+``Applications of negative dimensional tensors,''
+in \emph{Combinatorial Mathematics and its Applications},
+Academic Press, New York (1971), pp.~221--244.
+
+\bibitem{White1992}
+S.~R.~White,
+``Density matrix formulation for quantum renormalization groups,''
+Phys. Rev. Lett. \textbf{69}, 2863 (1992).
+
+\bibitem{Shi2006}
+Y.-Y.~Shi, L.-M.~Duan, and G.~Vidal,
+``Classical simulation of quantum many-body systems with a tree tensor
+network,''
+Phys. Rev. A \textbf{74}, 022320 (2006),
+arXiv:quant-ph/0511070.
+
+\bibitem{Verstraete2008}
+F.~Verstraete, V.~Murg, and J.~I.~Cirac,
+``Matrix product states, projected entangled pair states, and variational
+renormalization group methods for quantum spin systems,''
+Adv. Phys. \textbf{57}, 143 (2008),
+arXiv:0907.2796.
+
+\bibitem{Orus2014}
+R.~Or\'us,
+``A practical introduction to tensor networks: Matrix product states and
+projected entangled pair states,''
+Ann. Phys. \textbf{349}, 117 (2014),
+arXiv:1306.2164.
+
+\bibitem{Singh2009}
+S.~Singh, R.~N.~C.~Pfeifer, and G.~Vidal,
+``Tensor network decompositions in the presence of a global symmetry,''
+Phys. Rev. A \textbf{82}, 050301(R) (2010),
+arXiv:0907.2994.
+
+\bibitem{Singh2011}
+S.~Singh, R.~N.~C.~Pfeifer, and G.~Vidal,
+``Tensor network states and algorithms in the presence of a global
+\(U(1)\) symmetry,''
+Phys. Rev. B \textbf{83}, 115125 (2011),
+arXiv:1008.4774.
+
+\bibitem{Weichselbaum2012}
+A.~Weichselbaum,
+``Non-Abelian symmetries in tensor networks: A quantum symmetry space
+approach,''
+Ann. Phys. \textbf{327}, 2972 (2012),
+arXiv:1202.5664.
+
+\bibitem{Weichselbaum2020}
+A.~Weichselbaum,
+``X-symbols for non-Abelian symmetries in tensor networks,''
+Phys. Rev. Research \textbf{2}, 023385 (2020),
+arXiv:1910.13736.
+
+\bibitem{Gunst2018}
+K.~Gunst, F.~Verstraete, S.~Wouters, O.~Legeza, and D.~Van Neck,
+``T3NS: Three-legged tree tensor network states,''
+J. Chem. Theory Comput. \textbf{14}, 2026 (2018),
+arXiv:1801.09998.
+
+\bibitem{Haegeman2014}
+J.~Haegeman, M.~Mari\"en, T.~J.~Osborne, and F.~Verstraete,
+``Geometry of matrix product states: Metric, parallel transport, and
+curvature,''
+J. Math. Phys. \textbf{55}, 021902 (2014),
+arXiv:1210.7710.
+
+\bibitem{Haegeman2013}
+J.~Haegeman, T.~J.~Osborne, and F.~Verstraete,
+``Post-matrix product state methods: To tangent space and beyond,''
+Phys. Rev. B \textbf{88}, 075133 (2013),
+arXiv:1305.1894.
+
+\bibitem{Liao2019}
+H.-J.~Liao, J.-G.~Liu, L.~Wang, and T.~Xiang,
+``Differentiable programming tensor networks,''
+Phys. Rev. X \textbf{9}, 031041 (2019),
+arXiv:1903.09650.
+
+\bibitem{Tagliacozzo2014}
+L.~Tagliacozzo, A.~Celi, and M.~Lewenstein,
+``Tensor networks for lattice gauge theories with continuous groups,''
+Phys. Rev. X \textbf{4}, 041024 (2014),
+arXiv:1405.4811.
+
+\bibitem{Canals2024}
+M.~Canals, N.~Chepiga, and L.~Tagliacozzo,
+``A tensor network formulation of lattice gauge theories based only on
+symmetric tensors,''
+arXiv:2412.16961 (2024).
+
+\bibitem{GrayKourtis2021}
+J.~Gray and S.~Kourtis,
+``Hyper-optimized tensor network contraction,''
+Quantum \textbf{5}, 410 (2021),
+arXiv:2002.01935.
+
+\bibitem{Acuaviva2023}
+A.~Acuaviva, V.~Makam, H.~Nieuwboer, D.~P\'erez-Garc\'ia,
+F.~Sittner, M.~Walter, and F.~Witteveen,
+``The minimal canonical form of a tensor network,''
+arXiv:2209.14358 (2022).
+
+\bibitem{Fong2015}
+B.~Fong,
+``Decorated cospans,''
+Theory Appl. Categ. \textbf{30}, 1096 (2015),
+arXiv:1502.00872.
+
+\bibitem{Courser2017}
+K.~Courser,
+``A bicategory of decorated cospans,''
+Theory Appl. Categ. \textbf{32}, 995 (2017),
+arXiv:1605.08100.
+
+\bibitem{BaezCourser2020}
+J.~C.~Baez and K.~Courser,
+``Structured cospans,''
+Theory Appl. Categ. \textbf{35}, 1771 (2020),
+arXiv:1911.04630.
+
+\bibitem{Courser2020}
+K.~Courser,
+``Open systems: A double categorical perspective,''
+arXiv:2008.02394 (2020).
+
+\bibitem{FongSpivak2019}
+B.~Fong and D.~I.~Spivak,
+``Hypergraph categories,''
+J. Pure Appl. Algebra \textbf{223}, 4746 (2019),
+arXiv:1806.08304.
+
+\bibitem{FongSpivak2018}
+B.~Fong and D.~I.~Spivak,
+\emph{Seven Sketches in Compositionality: An Invitation to Applied Category
+Theory},
+arXiv:1803.05316 (2018).
+
+\bibitem{Dirac1949}
+P.~A.~M.~Dirac,
+``Forms of relativistic dynamics,''
+Rev. Mod. Phys. \textbf{21}, 392 (1949).
+
+\bibitem{BrodskyPauliPinsky1998}
+S.~J.~Brodsky, H.-C.~Pauli, and S.~S.~Pinsky,
+``Quantum chromodynamics and other field theories on the light cone,''
+Phys. Rept. \textbf{301}, 299 (1998),
+arXiv:hep-ph/9705477.
+
+\bibitem{Vary2010}
+J.~P.~Vary et al.,
+``Hamiltonian light-front field theory in a basis function approach,''
+Phys. Rev. C \textbf{81}, 035205 (2010),
+arXiv:0905.1411.
+
+\bibitem{Xu2025}
+S.~Xu, Y.~Liu, C.~Mondal, J.~Lan, X.~Zhao, Y.~Li, and J.~P.~Vary,
+``Towards a first principles light-front Hamiltonian for the nucleon,''
+Phys. Lett. B \textbf{867}, 139599 (2025),
+arXiv:2408.11298.
+
+\bibitem{Karmanov2008}
+V.~A.~Karmanov, J.-F.~Mathiot, and A.~V.~Smirnov,
+``Systematic renormalization scheme in light-front dynamics with Fock space
+truncation,''
+Phys. Rev. D \textbf{77}, 085028 (2008),
+arXiv:0801.4507.
+
+\bibitem{BrodskyDiehlHwang2001}
+S.~J.~Brodsky, M.~Diehl, and D.~S.~Hwang,
+``Light-cone wavefunction representation of deeply virtual Compton scattering,''
+Nucl. Phys. B \textbf{596}, 99 (2001),
+arXiv:hep-ph/0009254.
+
+\bibitem{Meissner2009}
+S.~Mei{\ss}ner, A.~Metz, and M.~Schlegel,
+``Generalized parton correlation functions for a spin-1/2 hadron,''
+JHEP \textbf{08}, 056 (2009),
+arXiv:0906.5323.
+
+\bibitem{Lorce2011}
+C.~Lorc\'e and B.~Pasquini,
+``Quark Wigner distributions and orbital angular momentum,''
+Phys. Rev. D \textbf{84}, 014015 (2011),
+arXiv:1106.0139.
+
+\bibitem{Collins2011}
+J.~Collins,
+\emph{Foundations of Perturbative QCD},
+Cambridge University Press (2011).
+
+\end{thebibliography}
+
+\end{document}

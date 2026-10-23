@@ -1,0 +1,267 @@
+{
+  "scope": "Born g2 matching and finite spacelike/Fourier source-functional qualification; no new mass/pion/nucleon solve, loop QCD matching or production causal model.",
+  "bare_cases": [
+    {
+      "Q2_GeV2": 0.47876862454155933,
+      "qplus_GeV": 0.31888775135944447,
+      "omitted_instantaneous_relative": 1.5286379498626275
+    },
+    {
+      "Q2_GeV2": 1.0270990634069055,
+      "qplus_GeV": -0.20607630587202333,
+      "omitted_instantaneous_relative": 8.494800055637596
+    },
+    {
+      "Q2_GeV2": 0.5499827071416029,
+      "qplus_GeV": -0.40612185252462646,
+      "omitted_instantaneous_relative": 0.7400274782795591
+    },
+    {
+      "Q2_GeV2": 0.36731842253418956,
+      "qplus_GeV": 0.42169794140660344,
+      "omitted_instantaneous_relative": 0.46744485110957706
+    },
+    {
+      "Q2_GeV2": 0.16104421065480537,
+      "qplus_GeV": 0.1858027579246375,
+      "omitted_instantaneous_relative": 0.46170647711906476
+    },
+    {
+      "Q2_GeV2": 0.3576263601904261,
+      "qplus_GeV": -0.07927897308630609,
+      "omitted_instantaneous_relative": 15.648564241981592
+    },
+    {
+      "Q2_GeV2": 0.3589693089553012,
+      "qplus_GeV": 0.080914285205689,
+      "omitted_instantaneous_relative": 20.757620287305055
+    },
+    {
+      "Q2_GeV2": 0.4726002504668203,
+      "qplus_GeV": -0.3362171450773259,
+      "omitted_instantaneous_relative": 1.2370401273562237
+    },
+    {
+      "Q2_GeV2": 0.4398347945412409,
+      "qplus_GeV": -0.0995535596271816,
+      "omitted_instantaneous_relative": 19.179379749384687
+    },
+    {
+      "Q2_GeV2": 0.1795959082516241,
+      "qplus_GeV": 0.21313444567689377,
+      "omitted_instantaneous_relative": 1.1036804482235842
+    },
+    {
+      "Q2_GeV2": 0.47415375558713097,
+      "qplus_GeV": -0.3251217237216631,
+      "omitted_instantaneous_relative": 1.236448392252638
+    },
+    {
+      "Q2_GeV2": 0.56128587023725,
+      "qplus_GeV": -0.23191389624938338,
+      "omitted_instantaneous_relative": 2.878100417464243
+    },
+    {
+      "Q2_GeV2": 0.9278679450464972,
+      "qplus_GeV": 0.6141462349274607,
+      "omitted_instantaneous_relative": 0.3612119318864429
+    },
+    {
+      "Q2_GeV2": 0.5551805639359744,
+      "qplus_GeV": 0.5174027073852461,
+      "omitted_instantaneous_relative": 0.21970116166598827
+    },
+    {
+      "Q2_GeV2": 1.2453090324972291,
+      "qplus_GeV": 0.018508906584758886,
+      "omitted_instantaneous_relative": 1139.9808376153742
+    },
+    {
+      "Q2_GeV2": 0.5963944373949437,
+      "qplus_GeV": 0.397876190153969,
+      "omitted_instantaneous_relative": 0.4248328347416317
+    },
+    {
+      "Q2_GeV2": 1.550618884234188,
+      "qplus_GeV": -0.4672589481142695,
+      "omitted_instantaneous_relative": 1.9189464895608348
+    },
+    {
+      "Q2_GeV2": 0.12697067463629957,
+      "qplus_GeV": -0.14353598786333763,
+      "omitted_instantaneous_relative": 1.3886027166111514
+    },
+    {
+      "Q2_GeV2": 0.3831571634299044,
+      "qplus_GeV": -0.21725643655125224,
+      "omitted_instantaneous_relative": 0.604384445333461
+    },
+    {
+      "Q2_GeV2": 0.3101430989053619,
+      "qplus_GeV": 0.041690482097348186,
+      "omitted_instantaneous_relative": 51.65285110602584
+    },
+    {
+      "Q2_GeV2": 0.6121523551783747,
+      "qplus_GeV": 0.5092104827905265,
+      "omitted_instantaneous_relative": 0.4166939184732721
+    },
+    {
+      "Q2_GeV2": 0.47342738474551815,
+      "qplus_GeV": -0.00018114197558725435,
+      "omitted_instantaneous_relative": 4254940.311719849
+    },
+    {
+      "Q2_GeV2": 0.1774157742546506,
+      "qplus_GeV": -0.07937840447717497,
+      "omitted_instantaneous_relative": 9.989263985364474
+    },
+    {
+      "Q2_GeV2": 0.14173998036090996,
+      "qplus_GeV": -0.004217766258873455,
+      "omitted_instantaneous_relative": 1099.3188423444365
+    }
+  ],
+  "bare_maxima": {
+    "LF_covariant_relative": 4.787378107503468e-10,
+    "LF_combined_relative": 4.98565368475272e-13,
+    "raw_error_over_epsilon_condition": 4.368263859292302,
+    "spin_sum_boost_relative": 3.552713678800501e-15,
+    "current_divergence_GeV2": 4.240351949070469e-15
+  },
+  "recoupling": {
+    "dirac_reconstruction_norm": 0.0,
+    "SP_only_relative_HS_loss": 0.7071067811865476,
+    "color_reconstruction_norm": 2.1677797545656835e-16,
+    "color_singlet_only_relative_HS_loss": 0.3333333333333333,
+    "warning": "These are fixed-basis open-index tensor norm losses, NOT errors on measured observables."
+  },
+  "inputs": {
+    "gs_squared": 1.2,
+    "scale_GeV": 0.8,
+    "theta": [
+      0.3,
+      -0.2,
+      0.1
+    ],
+    "spacelike_domain_GeV2": [
+      0.01,
+      100.0
+    ],
+    "points_GeV_minus1": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.8,
+        0.1,
+        -0.3,
+        0.2
+      ],
+      [
+        -0.4,
+        0.2,
+        0.5,
+        0.1
+      ]
+    ],
+    "momenta_GeV": [
+      [
+        0.3,
+        0.1,
+        0.2,
+        0.4
+      ],
+      [
+        0.5,
+        -0.2,
+        0.1,
+        0.3
+      ],
+      [
+        0.2,
+        0.6,
+        -0.3,
+        0.1
+      ],
+      [
+        -0.3,
+        -0.1,
+        -0.2,
+        -0.4
+      ],
+      [
+        -0.5,
+        0.2,
+        -0.1,
+        -0.3
+      ],
+      [
+        -0.2,
+        -0.6,
+        0.3,
+        -0.1
+      ]
+    ],
+    "momentum_weights_GeV4": [
+      0.03,
+      0.03,
+      0.03,
+      0.03,
+      0.03,
+      0.03
+    ],
+    "coordinate_weights_GeV_minus4": [
+      0.6,
+      0.8,
+      0.7
+    ],
+    "nonlinear": 0.8,
+    "propagator_seed": 1110926,
+    "physical_soft_coefficients": "unknown; displayed values are diagnostic only"
+  },
+  "derivative_errors": {
+    "first_finite_difference": 7.252084772757861e-13,
+    "kernel_finite_difference_max_entry": 1.4345035110016643e-12,
+    "first_torch": 5.721958498152797e-16,
+    "second_torch": 3.4273359795629357e-15,
+    "explicit_color_contraction_max_entry": 2.7894008272968645e-16
+  },
+  "curvature_negative": {
+    "full_chiral_max_entry": 4.103345286324977e-16,
+    "frozen_curvature_chiral_max_entry": 2.0014830212433607e-16,
+    "omitted_curvature_radial_relative": 0.7098788944577745
+  },
+  "tree_subtractions": [
+    {
+      "retained_fraction": 0.0,
+      "recombination_max_abs_GeV_minus2": 0.0,
+      "tree_remainder_max_abs_GeV_minus2": 60.0
+    },
+    {
+      "retained_fraction": 0.4,
+      "recombination_max_abs_GeV_minus2": 8.881784197001252e-16,
+      "tree_remainder_max_abs_GeV_minus2": 36.0
+    },
+    {
+      "retained_fraction": 1.0,
+      "recombination_max_abs_GeV_minus2": 0.0,
+      "tree_remainder_max_abs_GeV_minus2": 0.0
+    }
+  ],
+  "nonlinear_subtraction": {
+    "correct_value_recombination": 0.0,
+    "naive_value_relative": 0.6919628178557576,
+    "naive_self_energy_relative": 0.6247129014931115,
+    "naive_kernel_relative": 0.5782178035851475,
+    "naive_path_source_relative": 0.6978434928251229
+  },
+  "source_errors": {
+    "path_value_difference": 8.054743088927383e-11,
+    "path_self_energy_max_entry": 1.693821198696985e-10
+  },
+  "decision": "Retain full channel tensors, ordered paths, complete nonlinear derivatives and functional-level subtraction. Next qualify causal/spectral realization and independent scalar/vector/axial matching inputs before selecting a momentum-dependent state/current solve. The spacelike basis alone is not a production model."
+}

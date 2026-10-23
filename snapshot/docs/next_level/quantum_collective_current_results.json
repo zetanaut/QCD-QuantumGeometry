@@ -1,0 +1,145 @@
+{
+  "inputs": {
+    "quark_mass_GeV": 0.2843478671310942,
+    "external_pion_mass_squared_GeV2": 0.01947989376483271,
+    "light_mode_yukawa_squared": 9.245548275808696,
+    "colors": 3,
+    "flavor_charges": [
+      0.6666666666666666,
+      -0.3333333333333333
+    ],
+    "reference": "old tree kinematics/couplings only; no quantum mass/gap or physical pion solve",
+    "order": "one free-quark loop, no gluon or collective loops, electric e stripped",
+    "finite_convention": "same zero-invariant wave subtraction as twice-subtracted pion inverse; external charge-normalized shape at one-loop order",
+    "prior_radius_input_fm": 0.659,
+    "prior_radius_input_source": "https://pdglive.lbl.gov/DataBlock.action?node=S008CR",
+    "prior_radius_is_reused_calibration_not_new_measurement": true,
+    "local_coefficient": "conditional renormalized on-shell slope, NOT a replacement of bare C matrix"
+  },
+  "transfer_scan": [
+    {
+      "Q2_GeV2": 0,
+      "unit_triangle_deltaF": 1.3010426069826053e-17,
+      "unit_LF_overlap_deltaF": 0,
+      "unit_LF_integrated_deltaF": 0,
+      "overlap_difference": 1.3010426069826053e-17,
+      "resolution_difference": 0,
+      "loop_deltaF": 1.2028852231741679e-16,
+      "old_tree_linear_F": 1,
+      "old_tree_plus_loop_DOUBLE_COUNTS": 1.0000000000000002,
+      "conditionally_subtracted_one_loop_F": 1.0000000000000002,
+      "large_transfer_control_only": false
+    },
+    {
+      "Q2_GeV2": 0.02,
+      "unit_triangle_deltaF": -0.0032126554645064524,
+      "unit_LF_overlap_deltaF": -0.003212655464506466,
+      "unit_LF_integrated_deltaF": -0.0032126554645064633,
+      "overlap_difference": 1.3444106938820255e-17,
+      "resolution_difference": 2.168404344971009e-18,
+      "loop_deltaF": -0.029702761190635016,
+      "old_tree_linear_F": 0.9628228037317678,
+      "old_tree_plus_loop_DOUBLE_COUNTS": 0.9331200425411328,
+      "conditionally_subtracted_one_loop_F": 0.9635658976123052,
+      "large_transfer_control_only": false
+    },
+    {
+      "Q2_GeV2": 0.05,
+      "unit_triangle_deltaF": -0.007754545930336755,
+      "unit_LF_overlap_deltaF": -0.007754545930336773,
+      "unit_LF_integrated_deltaF": -0.007754545930336764,
+      "overlap_difference": 1.734723475976807e-17,
+      "resolution_difference": 2.6020852139652106e-18,
+      "loop_deltaF": -0.07169502875590433,
+      "old_tree_linear_F": 0.9070570093294194,
+      "old_tree_plus_loop_DOUBLE_COUNTS": 0.8353619805735151,
+      "conditionally_subtracted_one_loop_F": 0.911476618251446,
+      "large_transfer_control_only": false
+    },
+    {
+      "Q2_GeV2": 0.1,
+      "unit_triangle_deltaF": -0.014693306082475347,
+      "unit_LF_overlap_deltaF": -0.014693306082475367,
+      "unit_LF_integrated_deltaF": -0.014693306082475351,
+      "overlap_difference": 1.9081958235744878e-17,
+      "resolution_difference": 5.204170427930421e-18,
+      "loop_deltaF": -0.13584767071675938,
+      "old_tree_linear_F": 0.8141140186588387,
+      "old_tree_plus_loop_DOUBLE_COUNTS": 0.6782663479420793,
+      "conditionally_subtracted_one_loop_F": 0.8304956232979411,
+      "large_transfer_control_only": false
+    },
+    {
+      "Q2_GeV2": 0.5,
+      "unit_triangle_deltaF": -0.053729502600314366,
+      "unit_LF_overlap_deltaF": -0.053729502600314366,
+      "unit_LF_integrated_deltaF": -0.05372950260031435,
+      "overlap_difference": 0,
+      "resolution_difference": 2.7755575615628914e-17,
+      "loop_deltaF": -0.49675871012639533,
+      "old_tree_linear_F": 0.07057009329419361,
+      "old_tree_plus_loop_DOUBLE_COUNTS": -0.4261886168322017,
+      "conditionally_subtracted_one_loop_F": 0.33495775994710736,
+      "large_transfer_control_only": true
+    }
+  ],
+  "conditional_matching": {
+    "unit_loop_slope_GeV_minus2": 0.1646514309531811,
+    "loop_slope_GeV_minus2": 1.5222927535586182,
+    "loop_radius_squared_fm2": 0.3556496377716894,
+    "prior_target_slope_GeV_minus2": 1.8588598134116128,
+    "residual_local_slope_GeV_minus2": 0.3365670598529946,
+    "fraction_of_prior_radius_squared": 0.8189389767723879,
+    "unit_wave_norm_correction": 0.006333974817945055,
+    "projected_wave_norm_correction": 0.0585610699570676,
+    "local_C_was_modified": false,
+    "local_D_was_modified": false,
+    "qualification": "omitted other loops/local source terms and quantum state matching prevent physical refit; two-photon matching must also be updated before using old joint C/D calibration"
+  },
+  "offshell": {
+    "outgoing_GeV": [
+      0.2,
+      0.05,
+      0.03,
+      0.02
+    ],
+    "incoming_GeV": [
+      0.13,
+      -0.07,
+      0.02,
+      -0.01
+    ],
+    "loop_vertex_GeV": [
+      0.001738836171545534,
+      -0.000610037066733714,
+      0.0002659217482177819,
+      -0.000060547217199224496
+    ],
+    "inverse_difference_GeV2": 0.0001940801790500317,
+    "Ward_difference_GeV2": 2.710505431213761e-19,
+    "quark_only_Ward_defect_GeV2": 0.00006469339301667706,
+    "trace_difference_GeV": 1.3056226406142905e-18,
+    "boosted_trace_difference_GeV": 5.919833218418357e-19
+  },
+  "negative_controls": {
+    "orbital_erasure_relative": 0.6656503174037985,
+    "orbital_erasure_still_charge_subtracted": true,
+    "unnormalized_zero_transfer_shift": 0.0585610699570676
+  },
+  "checks": {
+    "maximum_overlap_difference": 1.9081958235744878e-17,
+    "maximum_resolution_difference": 2.7755575615628914e-17,
+    "pole_norm_vertex_difference_GeV": 5.240185877925385e-18
+  },
+  "claims": {
+    "independent_transverse_loop_shape": true,
+    "independent_quantum_LF_plus_overlap": true,
+    "independent_quantum_LF_four_current": false,
+    "local_C_actually_refitted": false,
+    "full_quantum_two_photon_matching": false,
+    "physical_hadron_form_factor": false,
+    "quantum_coupled_state_solved": false,
+    "production_model_selected": false,
+    "public_push": false
+  }
+}

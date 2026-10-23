@@ -1,0 +1,1480 @@
+{
+  "scope": "bare fixed-momentum canonical QCD tree and operator compiler; not a bound nucleon or renormalized model",
+  "conventions": "symmetric LF, metric +---, gs squared stripped from scattering; cubic P-minus coefficients strip gs and delta/measure",
+  "Ward_normalization": "Frobenius norm divided by physical amplitude norm and maximum external energy; dimensionless",
+  "physics_input_role": "explicit test masses/momenta only, not fitted or selected physical parameters",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1"
+  },
+  "summary": {
+    "tree_points": 24,
+    "frame_checks": 24,
+    "maximum_LF_covariant_relative": 6.08469558717316e-14,
+    "maximum_Ward_relative": 2.499667721472381e-15,
+    "maximum_frame_relative": 4.8750487794997216e-14,
+    "minimum_omit_instantaneous_relative": 0.5216787073262866,
+    "minimum_omit_three_gluon_Ward_relative": 0.015477937709660688,
+    "negative_crossed_plus_points": 5
+  },
+  "cubic_tensors": [
+    {
+      "channel": "q_to_qg",
+      "tensor_shape": [
+        6,
+        16,
+        6
+      ],
+      "mode_count": 28,
+      "formal_full_register_dimension_not_allocated": 268435456,
+      "nonzero_words": 136,
+      "global_SU3_relative": 2.440889573364627e-16,
+      "tensor_direct_spin_color_relative": 5.877080018997398e-17,
+      "occupation_direct_spin_color_relative": 5.877080018997398e-17
+    },
+    {
+      "channel": "qbar_to_qbarg",
+      "tensor_shape": [
+        6,
+        16,
+        6
+      ],
+      "mode_count": 28,
+      "formal_full_register_dimension_not_allocated": 268435456,
+      "nonzero_words": 136,
+      "global_SU3_relative": 2.5046266062611155e-16,
+      "tensor_direct_spin_color_relative": 3.245981346858708e-17,
+      "occupation_direct_spin_color_relative": 3.245981346858708e-17
+    },
+    {
+      "channel": "g_to_pair",
+      "tensor_shape": [
+        6,
+        6,
+        16
+      ],
+      "mode_count": 28,
+      "formal_full_register_dimension_not_allocated": 268435456,
+      "nonzero_words": 136,
+      "global_SU3_relative": 1.4778376774707554e-16,
+      "tensor_direct_spin_color_relative": 5.333506767542952e-17,
+      "occupation_direct_spin_color_relative": 5.333506767542952e-17
+    },
+    {
+      "channel": "g_to_gg",
+      "tensor_shape": [
+        16,
+        16,
+        16
+      ],
+      "mode_count": 48,
+      "formal_full_register_dimension_not_allocated": 281474976710656,
+      "nonzero_words": 324,
+      "global_SU3_relative": 2.6209789259844584e-16,
+      "tensor_direct_spin_color_relative": 1.0818456507265628e-16,
+      "occupation_direct_spin_color_relative": 1.0818456507265628e-16
+    }
+  ],
+  "tree_grid": [
+    {
+      "label": "grid_0.0_0.35",
+      "mass_GeV": 0.0,
+      "external_Cartesian_GeV": [
+        [
+          0.6288083968904995,
+          0.46951240085952217,
+          0.17,
+          0.3821754903694471
+        ],
+        [
+          0.6288083968904995,
+          -0.46951240085952217,
+          -0.17,
+          -0.3821754903694471
+        ],
+        [
+          0.6288083968904996,
+          0.31,
+          0.17,
+          0.52
+        ],
+        [
+          0.6288083968904996,
+          -0.31,
+          -0.17,
+          -0.52
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 9.835566321187289e-16,
+      "omit_instantaneous_relative": 0.5772619641273607,
+      "crossed_fermion_plus_GeV": 0.6379344070605348,
+      "exchange_GeV2": -0.04443980148287115,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 5.611733995167837e-17,
+          "LF_relative": 1.5362978343102178e-16,
+          "omit_three_gluon_graph_relative": 0.11844538978156517
+        },
+        "outgoing": {
+          "covariant_relative": 5.481164001945857e-16,
+          "LF_relative": 2.1725316698171595e-16,
+          "omit_three_gluon_graph_relative": 0.17816301945256788
+        }
+      }
+    },
+    {
+      "label": "grid_0.0_0.8",
+      "mass_GeV": 0.0,
+      "external_Cartesian_GeV": [
+        [
+          0.6288083968904996,
+          0.5890042471653731,
+          0.17,
+          0.13990710068167395
+        ],
+        [
+          0.6288083968904996,
+          -0.5890042471653731,
+          -0.17,
+          -0.13990710068167395
+        ],
+        [
+          0.6288083968904996,
+          0.31,
+          0.17,
+          0.52
+        ],
+        [
+          0.6288083968904996,
+          -0.31,
+          -0.17,
+          -0.52
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 2.116782513277949e-16,
+      "omit_instantaneous_relative": 0.618556330759336,
+      "crossed_fermion_plus_GeV": 0.46662478584516537,
+      "exchange_GeV2": -0.2223139820485276,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 8.239933169821345e-17,
+          "LF_relative": 1.2346921706435463e-16,
+          "omit_three_gluon_graph_relative": 0.40808818976194033
+        },
+        "outgoing": {
+          "covariant_relative": 5.457626907757673e-16,
+          "LF_relative": 3.220012748870064e-16,
+          "omit_three_gluon_graph_relative": 0.8521681776637063
+        }
+      }
+    },
+    {
+      "label": "grid_0.0_1.7",
+      "mass_GeV": 0.0,
+      "external_Cartesian_GeV": [
+        [
+          0.6288083968904995,
+          0.4757239082036711,
+          0.17,
+          -0.37441522827393797
+        ],
+        [
+          0.6288083968904995,
+          -0.4757239082036711,
+          -0.17,
+          0.37441522827393797
+        ],
+        [
+          0.6288083968904996,
+          0.31,
+          0.17,
+          0.52
+        ],
+        [
+          0.6288083968904996,
+          -0.31,
+          -0.17,
+          -0.52
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 8.688333188741395e-16,
+      "omit_instantaneous_relative": 1.320037719079975,
+      "crossed_fermion_plus_GeV": 0.10294397932499413,
+      "exchange_GeV2": -0.8274430143186187,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 3.05142522233885e-16,
+          "LF_relative": 5.222884746404878e-16,
+          "omit_three_gluon_graph_relative": 0.9485587924009289
+        },
+        "outgoing": {
+          "covariant_relative": 7.229298228016334e-16,
+          "LF_relative": 1.2792620179643802e-15,
+          "omit_three_gluon_graph_relative": 2.289008262717367
+        }
+      }
+    },
+    {
+      "label": "grid_0.0_2.6",
+      "mass_GeV": 0.0,
+      "external_Cartesian_GeV": [
+        [
+          0.6288083968904995,
+          0.00242519980278761,
+          0.17,
+          -0.6053875770165065
+        ],
+        [
+          0.6288083968904995,
+          -0.00242519980278761,
+          -0.17,
+          0.6053875770165065
+        ],
+        [
+          0.6288083968904996,
+          0.31,
+          0.17,
+          0.52
+        ],
+        [
+          0.6288083968904996,
+          -0.31,
+          -0.17,
+          -0.52
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 5.683203891955244e-16,
+      "omit_instantaneous_relative": 0.5404656198243991,
+      "crossed_fermion_plus_GeV": -0.06037813473746014,
+      "exchange_GeV2": -1.3610994562194374,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 6.225814465219998e-16,
+          "LF_relative": 5.131625338828763e-16,
+          "omit_three_gluon_graph_relative": 0.8983770069893408
+        },
+        "outgoing": {
+          "covariant_relative": 8.501778984675638e-16,
+          "LF_relative": 9.543756091070467e-16,
+          "omit_three_gluon_graph_relative": 1.2078023635104589
+        }
+      }
+    },
+    {
+      "label": "grid_0.3_0.35",
+      "mass_GeV": 0.3,
+      "external_Cartesian_GeV": [
+        [
+          0.6967065379340142,
+          0.46951240085952217,
+          0.17,
+          0.3821754903694471
+        ],
+        [
+          0.6288083968904995,
+          -0.46951240085952217,
+          -0.17,
+          -0.3821754903694471
+        ],
+        [
+          0.6967065379340143,
+          0.31,
+          0.17,
+          0.52
+        ],
+        [
+          0.6288083968904996,
+          -0.31,
+          -0.17,
+          -0.52
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 9.061429730642807e-16,
+      "omit_instantaneous_relative": 0.5823913091527595,
+      "crossed_fermion_plus_GeV": 0.6859456430223647,
+      "exchange_GeV2": -0.04443980148287115,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 5.57047401829254e-17,
+          "LF_relative": 1.1520521107385754e-16,
+          "omit_three_gluon_graph_relative": 0.10683606832273686
+        },
+        "outgoing": {
+          "covariant_relative": 5.022583137128468e-16,
+          "LF_relative": 1.9868903059270397e-16,
+          "omit_three_gluon_graph_relative": 0.16124858186776883
+        }
+      }
+    },
+    {
+      "label": "grid_0.3_0.8",
+      "mass_GeV": 0.3,
+      "external_Cartesian_GeV": [
+        [
+          0.6967065379340143,
+          0.5890042471653731,
+          0.17,
+          0.13990710068167395
+        ],
+        [
+          0.6288083968904996,
+          -0.5890042471653731,
+          -0.17,
+          -0.13990710068167395
+        ],
+        [
+          0.6967065379340143,
+          0.31,
+          0.17,
+          0.52
+        ],
+        [
+          0.6288083968904996,
+          -0.31,
+          -0.17,
+          -0.52
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 3.0390728686309277e-16,
+      "omit_instantaneous_relative": 0.6281939024569098,
+      "crossed_fermion_plus_GeV": 0.5146360218069952,
+      "exchange_GeV2": -0.2223139820485276,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 1.169908625947307e-16,
+          "LF_relative": 1.2773853878403025e-16,
+          "omit_three_gluon_graph_relative": 0.36846786437761503
+        },
+        "outgoing": {
+          "covariant_relative": 4.800777051758012e-16,
+          "LF_relative": 2.920097539561844e-16,
+          "omit_three_gluon_graph_relative": 0.7790530951514297
+        }
+      }
+    },
+    {
+      "label": "grid_0.3_1.7",
+      "mass_GeV": 0.3,
+      "external_Cartesian_GeV": [
+        [
+          0.6967065379340142,
+          0.4757239082036711,
+          0.17,
+          -0.37441522827393797
+        ],
+        [
+          0.6288083968904995,
+          -0.4757239082036711,
+          -0.17,
+          0.37441522827393797
+        ],
+        [
+          0.6967065379340143,
+          0.31,
+          0.17,
+          0.52
+        ],
+        [
+          0.6288083968904996,
+          -0.31,
+          -0.17,
+          -0.52
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 8.063443896827107e-16,
+      "omit_instantaneous_relative": 1.153949633240647,
+      "crossed_fermion_plus_GeV": 0.15095521528682398,
+      "exchange_GeV2": -0.8274430143186187,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 3.325644055599915e-16,
+          "LF_relative": 4.126047951459152e-16,
+          "omit_three_gluon_graph_relative": 0.8741115711224622
+        },
+        "outgoing": {
+          "covariant_relative": 8.56348683719797e-16,
+          "LF_relative": 8.719733365527828e-16,
+          "omit_three_gluon_graph_relative": 2.2624983544563544
+        }
+      }
+    },
+    {
+      "label": "grid_0.3_2.6",
+      "mass_GeV": 0.3,
+      "external_Cartesian_GeV": [
+        [
+          0.6967065379340142,
+          0.00242519980278761,
+          0.17,
+          -0.6053875770165065
+        ],
+        [
+          0.6288083968904995,
+          -0.00242519980278761,
+          -0.17,
+          0.6053875770165065
+        ],
+        [
+          0.6967065379340143,
+          0.31,
+          0.17,
+          0.52
+        ],
+        [
+          0.6288083968904996,
+          -0.31,
+          -0.17,
+          -0.52
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 2.824616502590149e-15,
+      "omit_instantaneous_relative": 6.625375477055619,
+      "crossed_fermion_plus_GeV": -0.012366898775630285,
+      "exchange_GeV2": -1.3610994562194374,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 6.303287397067791e-16,
+          "LF_relative": 1.7602031240925614e-15,
+          "omit_three_gluon_graph_relative": 0.9314384670003798
+        },
+        "outgoing": {
+          "covariant_relative": 1.041467321917383e-15,
+          "LF_relative": 1.7921247390061926e-15,
+          "omit_three_gluon_graph_relative": 1.6458196579440552
+        }
+      }
+    },
+    {
+      "label": "grid_0.7_0.35",
+      "mass_GeV": 0.7,
+      "external_Cartesian_GeV": [
+        [
+          0.9409569596958194,
+          0.46951240085952217,
+          0.17,
+          0.3821754903694471
+        ],
+        [
+          0.6288083968904995,
+          -0.46951240085952217,
+          -0.17,
+          -0.3821754903694471
+        ],
+        [
+          0.9409569596958194,
+          0.31,
+          0.17,
+          0.52
+        ],
+        [
+          0.6288083968904996,
+          -0.31,
+          -0.17,
+          -0.52
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 1.0161195542937809e-15,
+      "omit_instantaneous_relative": 0.5972713267585179,
+      "crossed_fermion_plus_GeV": 0.8586567725578113,
+      "exchange_GeV2": -0.04443980148287115,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 3.2355069527449075e-17,
+          "LF_relative": 9.77057726938942e-17,
+          "omit_three_gluon_graph_relative": 0.07896273468888369
+        },
+        "outgoing": {
+          "covariant_relative": 3.721702593442474e-16,
+          "LF_relative": 1.4565424764441364e-16,
+          "omit_three_gluon_graph_relative": 0.1203482160117616
+        }
+      }
+    },
+    {
+      "label": "grid_0.7_0.8",
+      "mass_GeV": 0.7,
+      "external_Cartesian_GeV": [
+        [
+          0.9409569596958194,
+          0.5890042471653731,
+          0.17,
+          0.13990710068167395
+        ],
+        [
+          0.6288083968904996,
+          -0.5890042471653731,
+          -0.17,
+          -0.13990710068167395
+        ],
+        [
+          0.9409569596958194,
+          0.31,
+          0.17,
+          0.52
+        ],
+        [
+          0.6288083968904996,
+          -0.31,
+          -0.17,
+          -0.52
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 2.510493180576902e-16,
+      "omit_instantaneous_relative": 0.6577189054648739,
+      "crossed_fermion_plus_GeV": 0.6873471513424418,
+      "exchange_GeV2": -0.2223139820485276,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 5.961005584551518e-17,
+          "LF_relative": 9.367855645182043e-17,
+          "omit_three_gluon_graph_relative": 0.27298684131903217
+        },
+        "outgoing": {
+          "covariant_relative": 2.8157862581003717e-16,
+          "LF_relative": 1.8305573019997805e-16,
+          "omit_three_gluon_graph_relative": 0.5977268123438246
+        }
+      }
+    },
+    {
+      "label": "grid_0.7_1.7",
+      "mass_GeV": 0.7,
+      "external_Cartesian_GeV": [
+        [
+          0.9409569596958194,
+          0.4757239082036711,
+          0.17,
+          -0.37441522827393797
+        ],
+        [
+          0.6288083968904995,
+          -0.4757239082036711,
+          -0.17,
+          0.37441522827393797
+        ],
+        [
+          0.9409569596958194,
+          0.31,
+          0.17,
+          0.52
+        ],
+        [
+          0.6288083968904996,
+          -0.31,
+          -0.17,
+          -0.52
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 4.3951140171760673e-16,
+      "omit_instantaneous_relative": 1.0347023904035573,
+      "crossed_fermion_plus_GeV": 0.3236663448222706,
+      "exchange_GeV2": -0.8274430143186187,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 1.7075079374011606e-16,
+          "LF_relative": 1.1075428575661167e-16,
+          "omit_three_gluon_graph_relative": 0.6682530647540863
+        },
+        "outgoing": {
+          "covariant_relative": 6.750784248515079e-16,
+          "LF_relative": 7.497707414813822e-16,
+          "omit_three_gluon_graph_relative": 2.0826915299197313
+        }
+      }
+    },
+    {
+      "label": "grid_0.7_2.6",
+      "mass_GeV": 0.7,
+      "external_Cartesian_GeV": [
+        [
+          0.9409569596958194,
+          0.00242519980278761,
+          0.17,
+          -0.6053875770165065
+        ],
+        [
+          0.6288083968904995,
+          -0.00242519980278761,
+          -0.17,
+          0.6053875770165065
+        ],
+        [
+          0.9409569596958194,
+          0.31,
+          0.17,
+          0.52
+        ],
+        [
+          0.6288083968904996,
+          -0.31,
+          -0.17,
+          -0.52
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 7.4253857795058e-16,
+      "omit_instantaneous_relative": 1.62761924697149,
+      "crossed_fermion_plus_GeV": 0.1603442307598163,
+      "exchange_GeV2": -1.3610994562194374,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 2.0612456426052184e-16,
+          "LF_relative": 3.846251385948179e-16,
+          "omit_three_gluon_graph_relative": 0.7854129408323626
+        },
+        "outgoing": {
+          "covariant_relative": 5.378787304669057e-16,
+          "LF_relative": 5.973712161044673e-16,
+          "omit_three_gluon_graph_relative": 2.3240419537140693
+        }
+      }
+    }
+  ],
+  "fresh_tree_points": [
+    {
+      "label": "fresh_0",
+      "mass_GeV": 0.5296431673813267,
+      "external_Cartesian_GeV": [
+        [
+          0.6760830446003253,
+          0.18792673564797932,
+          -0.197411802058118,
+          -0.31981013254614427
+        ],
+        [
+          0.4201980466902737,
+          -0.18792673564797932,
+          0.197411802058118,
+          0.31981013254614427
+        ],
+        [
+          0.6760830446003253,
+          0.2632871559219568,
+          0.2938699268195625,
+          0.144522448359809
+        ],
+        [
+          0.4201980466902737,
+          -0.2632871559219568,
+          -0.2938699268195625,
+          -0.144522448359809
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 9.794797419438992e-16,
+      "omit_instantaneous_relative": 3.4954473789911624,
+      "crossed_fermion_plus_GeV": 0.056990907079459446,
+      "exchange_GeV2": -0.4626416757636969,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 2.9960443739441695e-16,
+          "LF_relative": 3.5075049866033727e-16,
+          "omit_three_gluon_graph_relative": 0.6102040024734925
+        },
+        "outgoing": {
+          "covariant_relative": 3.3727081854301055e-16,
+          "LF_relative": 7.541329053622127e-16,
+          "omit_three_gluon_graph_relative": 1.0440679631360763
+        }
+      }
+    },
+    {
+      "label": "fresh_1",
+      "mass_GeV": 0.6733851231017856,
+      "external_Cartesian_GeV": [
+        [
+          0.9647068307528032,
+          0.24279476214969473,
+          0.5307758610262888,
+          -0.36951242754579383
+        ],
+        [
+          0.6908051427763915,
+          -0.24279476214969473,
+          -0.5307758610262888,
+          0.36951242754579383
+        ],
+        [
+          0.9647068307528032,
+          0.32789411000373714,
+          0.5079233117820073,
+          0.3342321158410209
+        ],
+        [
+          0.6908051427763916,
+          -0.32789411000373714,
+          -0.5079233117820073,
+          -0.3342321158410209
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 2.1277929530586882e-16,
+      "omit_instantaneous_relative": 0.9338002090842901,
+      "crossed_fermion_plus_GeV": 0.1687307932977424,
+      "exchange_GeV2": -0.5030205203588618,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 8.485450021506752e-17,
+          "LF_relative": 1.2052936909629953e-16,
+          "omit_three_gluon_graph_relative": 0.3185340810329809
+        },
+        "outgoing": {
+          "covariant_relative": 1.1592699736208657e-16,
+          "LF_relative": 2.260607023725112e-16,
+          "omit_three_gluon_graph_relative": 0.5741403719158189
+        }
+      }
+    },
+    {
+      "label": "fresh_2",
+      "mass_GeV": 0.7122721339519628,
+      "external_Cartesian_GeV": [
+        [
+          0.8238503427996305,
+          -0.1485569003777517,
+          -0.3668684755845071,
+          0.12139260067664986
+        ],
+        [
+          0.41400216729696704,
+          0.1485569003777517,
+          0.3668684755845071,
+          -0.12139260067664986
+        ],
+        [
+          0.8238503427996305,
+          -0.2696183690205706,
+          -0.22722007357624238,
+          -0.21696720438186098
+        ],
+        [
+          0.414002167296967,
+          0.2696183690205706,
+          0.22722007357624238,
+          0.21696720438186098
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 7.142344774141666e-16,
+      "omit_instantaneous_relative": 1.1193205850857697,
+      "crossed_fermion_plus_GeV": 0.22222497376569583,
+      "exchange_GeV2": -0.14864491305265157,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 1.5957629654090035e-16,
+          "LF_relative": 1.558975689029658e-16,
+          "omit_three_gluon_graph_relative": 0.2869046436782425
+        },
+        "outgoing": {
+          "covariant_relative": 7.918744621265116e-17,
+          "LF_relative": 9.542108810794633e-17,
+          "omit_three_gluon_graph_relative": 0.1687462347160251
+        }
+      }
+    },
+    {
+      "label": "fresh_3",
+      "mass_GeV": 0.5640872181508015,
+      "external_Cartesian_GeV": [
+        [
+          0.8033112191173034,
+          -0.49100680910603217,
+          0.2931925351019499,
+          0.008060759928362034
+        ],
+        [
+          0.5719392669494011,
+          0.49100680910603217,
+          -0.2931925351019499,
+          -0.008060759928362034
+        ],
+        [
+          0.8033112191173035,
+          -0.5653264657746089,
+          0.08563678254697579,
+          -0.0136694421396907
+        ],
+        [
+          0.5719392669494012,
+          0.5653264657746089,
+          -0.08563678254697579,
+          0.0136694421396907
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 7.756529312839756e-15,
+      "omit_instantaneous_relative": 62.153949180363234,
+      "crossed_fermion_plus_GeV": 0.15963873912914248,
+      "exchange_GeV2": -0.04907500346791518,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 1.2996674016428878e-16,
+          "LF_relative": 2.33276978593634e-16,
+          "omit_three_gluon_graph_relative": 0.054421456051271425
+        },
+        "outgoing": {
+          "covariant_relative": 4.910958250525422e-17,
+          "LF_relative": 2.772491157379606e-16,
+          "omit_three_gluon_graph_relative": 0.053241212090808746
+        }
+      }
+    },
+    {
+      "label": "fresh_4",
+      "mass_GeV": 0.6110974497307649,
+      "external_Cartesian_GeV": [
+        [
+          0.7771675565386238,
+          0.0495656486469318,
+          -0.31712805520521004,
+          -0.3571027316399868
+        ],
+        [
+          0.4801555142542573,
+          -0.0495656486469318,
+          0.31712805520521004,
+          0.3571027316399868
+        ],
+        [
+          0.7771675565386238,
+          0.20359463603824088,
+          -0.23213793441618352,
+          -0.3677098332248053
+        ],
+        [
+          0.4801555142542573,
+          -0.20359463603824088,
+          0.23213793441618352,
+          0.3677098332248053
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 6.08469558717316e-14,
+      "omit_instantaneous_relative": 163.15363433366505,
+      "crossed_fermion_plus_GeV": -0.3025006505117678,
+      "exchange_GeV2": -0.031060760192556026,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 5.407143726608097e-17,
+          "LF_relative": 1.475378410903952e-16,
+          "omit_three_gluon_graph_relative": 0.015741075363682334
+        },
+        "outgoing": {
+          "covariant_relative": 3.778524931768672e-17,
+          "LF_relative": 5.4864412267233943e-17,
+          "omit_three_gluon_graph_relative": 0.015477937709660688
+        }
+      }
+    },
+    {
+      "label": "fresh_5",
+      "mass_GeV": 0.2521641149078277,
+      "external_Cartesian_GeV": [
+        [
+          0.6748238315874558,
+          -0.5249458209055081,
+          -0.33207387780669706,
+          0.07719642234839556
+        ],
+        [
+          0.6259396638903201,
+          0.5249458209055081,
+          0.33207387780669706,
+          -0.07719642234839556
+        ],
+        [
+          0.6748238315874558,
+          -0.4880160060323963,
+          -0.30971099548149306,
+          0.2402497449846254
+        ],
+        [
+          0.6259396638903201,
+          0.4880160060323963,
+          0.30971099548149306,
+          -0.2402497449846254
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 8.816351926142717e-17,
+      "omit_instantaneous_relative": 0.5216787073262866,
+      "crossed_fermion_plus_GeV": 0.25903466405416353,
+      "exchange_GeV2": -0.02845029575516769,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 1.3674203171561875e-16,
+          "LF_relative": 1.0598689741445864e-16,
+          "omit_three_gluon_graph_relative": 0.04040571286213642
+        },
+        "outgoing": {
+          "covariant_relative": 1.968421428913616e-16,
+          "LF_relative": 1.0909975359316024e-16,
+          "omit_three_gluon_graph_relative": 0.04834332370106488
+        }
+      }
+    },
+    {
+      "label": "fresh_6",
+      "mass_GeV": 0.06618561058735213,
+      "external_Cartesian_GeV": [
+        [
+          1.0193445606658127,
+          0.10736973267368273,
+          0.33541825798763064,
+          -0.9542793778680766
+        ],
+        [
+          1.0171935893969044,
+          -0.10736973267368273,
+          -0.33541825798763064,
+          0.9542793778680766
+        ],
+        [
+          1.019344560665813,
+          -0.6621023073141633,
+          -0.011000790413346433,
+          -0.7721284320433364
+        ],
+        [
+          1.0171935893969044,
+          0.6621023073141633,
+          0.011000790413346433,
+          0.7721284320433364
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 9.403854002344224e-16,
+      "omit_instantaneous_relative": 2.7972811215040694,
+      "crossed_fermion_plus_GeV": -1.2192337031113936,
+      "exchange_GeV2": -0.7452723444829433,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 2.2051138986181132e-16,
+          "LF_relative": 2.9275141008628296e-16,
+          "omit_three_gluon_graph_relative": 0.106784831550558
+        },
+        "outgoing": {
+          "covariant_relative": 1.141331846844541e-16,
+          "LF_relative": 1.7712128684055966e-16,
+          "omit_three_gluon_graph_relative": 0.10578895040526445
+        }
+      }
+    },
+    {
+      "label": "fresh_7",
+      "mass_GeV": 0.4634149391200933,
+      "external_Cartesian_GeV": [
+        [
+          1.0440966186900322,
+          -0.06472972613467362,
+          0.2905341537645184,
+          0.8870086309676722
+        ],
+        [
+          0.935619764306141,
+          0.06472972613467362,
+          -0.2905341537645184,
+          -0.8870086309676722
+        ],
+        [
+          1.0440966186900322,
+          -0.8003270180299373,
+          0.47678360434426853,
+          -0.08682397249651351
+        ],
+        [
+          0.935619764306141,
+          0.8003270180299373,
+          -0.47678360434426853,
+          0.08682397249651351
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 1.0846609608596048e-15,
+      "omit_instantaneous_relative": 0.9256289323493614,
+      "crossed_fermion_plus_GeV": 0.6425207175430329,
+      "exchange_GeV2": -1.524142173254737,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 2.499667721472381e-15,
+          "LF_relative": 1.9544346219933975e-15,
+          "omit_three_gluon_graph_relative": 4.178483599479989
+        },
+        "outgoing": {
+          "covariant_relative": 7.18726115845183e-16,
+          "LF_relative": 6.225406583532794e-16,
+          "omit_three_gluon_graph_relative": 0.9718504254021586
+        }
+      }
+    },
+    {
+      "label": "fresh_8",
+      "mass_GeV": 0.1309684525813543,
+      "external_Cartesian_GeV": [
+        [
+          0.6530533161449016,
+          0.45570967029053744,
+          0.4076040745473481,
+          0.1884502931077261
+        ],
+        [
+          0.639785822096972,
+          -0.45570967029053744,
+          -0.4076040745473481,
+          -0.1884502931077261
+        ],
+        [
+          0.6530533161449016,
+          0.14170079052615012,
+          0.5134522833085456,
+          0.35442000068535
+        ],
+        [
+          0.6397858220969721,
+          -0.14170079052615012,
+          -0.5134522833085456,
+          -0.35442000068535
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 8.598234468448561e-16,
+      "omit_instantaneous_relative": 2.151123414108909,
+      "crossed_fermion_plus_GeV": 0.39324880105646054,
+      "exchange_GeV2": -0.1373513637022414,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 1.4324345729964625e-16,
+          "LF_relative": 1.4702681625391243e-16,
+          "omit_three_gluon_graph_relative": 0.2384844026526653
+        },
+        "outgoing": {
+          "covariant_relative": 1.2938933245195518e-16,
+          "LF_relative": 2.3729189008297137e-16,
+          "omit_three_gluon_graph_relative": 0.2990449940194564
+        }
+      }
+    },
+    {
+      "label": "fresh_9",
+      "mass_GeV": 0.5009032773918329,
+      "external_Cartesian_GeV": [
+        [
+          0.7657887822228442,
+          0.2484899009995707,
+          -0.1363399618910446,
+          0.5051658634243206
+        ],
+        [
+          0.5792481037314384,
+          -0.2484899009995707,
+          0.1363399618910446,
+          -0.5051658634243206
+        ],
+        [
+          0.7657887822228444,
+          -0.4969071474088863,
+          0.28844867075440134,
+          -0.07354601872603117
+        ],
+        [
+          0.5792481037314385,
+          0.4969071474088863,
+          -0.28844867075440134,
+          0.07354601872603117
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 1.6322436251934277e-15,
+      "omit_instantaneous_relative": 1.9744701284702313,
+      "crossed_fermion_plus_GeV": 0.43710549780925767,
+      "exchange_GeV2": -1.0709695847428298,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 1.5934432033737894e-15,
+          "LF_relative": 2.2231620666335854e-15,
+          "omit_three_gluon_graph_relative": 3.648184127440195
+        },
+        "outgoing": {
+          "covariant_relative": 3.178769934279814e-16,
+          "LF_relative": 7.921981070218838e-16,
+          "omit_three_gluon_graph_relative": 1.345346045919026
+        }
+      }
+    },
+    {
+      "label": "fresh_10",
+      "mass_GeV": 0.6325079702307075,
+      "external_Cartesian_GeV": [
+        [
+          0.8986194566087471,
+          0.40041184185500894,
+          -0.09301860391841267,
+          -0.4883323577419164
+        ],
+        [
+          0.6383185688905112,
+          -0.40041184185500894,
+          0.09301860391841267,
+          0.4883323577419164
+        ],
+        [
+          0.898619456608747,
+          0.2071604545168976,
+          0.46186906556342333,
+          -0.38886001047980323
+        ],
+        [
+          0.6383185688905111,
+          -0.2071604545168976,
+          -0.46186906556342333,
+          0.38886001047980323
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 5.2013531763234264e-15,
+      "omit_instantaneous_relative": 20.368047657922716,
+      "crossed_fermion_plus_GeV": -0.4362081491202221,
+      "exchange_GeV2": -0.3551411723209224,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 1.9129471861653668e-16,
+          "LF_relative": 2.401060438798805e-16,
+          "omit_three_gluon_graph_relative": 0.13240789262422276
+        },
+        "outgoing": {
+          "covariant_relative": 7.098025428196204e-17,
+          "LF_relative": 2.9605703477312914e-16,
+          "omit_three_gluon_graph_relative": 0.14266218404277667
+        }
+      }
+    },
+    {
+      "label": "fresh_11",
+      "mass_GeV": 0.26625942376574574,
+      "external_Cartesian_GeV": [
+        [
+          0.45958344755820857,
+          0.31684158466073054,
+          0.11181531268852615,
+          0.16562490936892899
+        ],
+        [
+          0.3745969360865378,
+          -0.31684158466073054,
+          -0.11181531268852615,
+          -0.16562490936892899
+        ],
+        [
+          0.45958344755820857,
+          0.26926104854695454,
+          0.21893123771137812,
+          0.1410335613071595
+        ],
+        [
+          0.37459693608653777,
+          -0.26926104854695454,
+          -0.21893123771137812,
+          -0.1410335613071595
+        ]
+      ],
+      "matrix_shape": [
+        96,
+        96
+      ],
+      "LF_covariant_relative": 1.6991889619451124e-15,
+      "omit_instantaneous_relative": 10.441273048470325,
+      "crossed_fermion_plus_GeV": 0.27693482269436487,
+      "exchange_GeV2": -0.014342463209870678,
+      "external_gluon_Ward": {
+        "incoming": {
+          "covariant_relative": 1.3026767272203737e-16,
+          "LF_relative": 2.2597049067989033e-16,
+          "omit_three_gluon_graph_relative": 0.06681129813713395
+        },
+        "outgoing": {
+          "covariant_relative": 1.9247067395284133e-16,
+          "LF_relative": 1.9732008395425897e-16,
+          "omit_three_gluon_graph_relative": 0.0630600231871423
+        }
+      }
+    }
+  ],
+  "Lorentz_frames": [
+    {
+      "label": "fresh_0",
+      "axis": 0,
+      "kind": "boost",
+      "parameter": 0.37,
+      "relative_amplitude_error": 1.265266333732091e-15,
+      "external_map_unitarity_error": 7.855079086386134e-16
+    },
+    {
+      "label": "fresh_1",
+      "axis": 1,
+      "kind": "boost",
+      "parameter": 0.37,
+      "relative_amplitude_error": 1.2463345566119634e-15,
+      "external_map_unitarity_error": 1.0991502213636611e-15
+    },
+    {
+      "label": "fresh_2",
+      "axis": 2,
+      "kind": "boost",
+      "parameter": 0.37,
+      "relative_amplitude_error": 9.46227614521292e-16,
+      "external_map_unitarity_error": 6.618135619019337e-16
+    },
+    {
+      "label": "fresh_3",
+      "axis": 0,
+      "kind": "boost",
+      "parameter": 0.37,
+      "relative_amplitude_error": 7.936413788586952e-15,
+      "external_map_unitarity_error": 8.495474603902324e-16
+    },
+    {
+      "label": "fresh_4",
+      "axis": 1,
+      "kind": "boost",
+      "parameter": 0.37,
+      "relative_amplitude_error": 4.8750487794997216e-14,
+      "external_map_unitarity_error": 7.851305083620748e-16
+    },
+    {
+      "label": "fresh_5",
+      "axis": 2,
+      "kind": "boost",
+      "parameter": 0.37,
+      "relative_amplitude_error": 4.2497361771553856e-16,
+      "external_map_unitarity_error": 6.290216740774396e-16
+    },
+    {
+      "label": "fresh_6",
+      "axis": 0,
+      "kind": "rotation",
+      "parameter": 0.37,
+      "relative_amplitude_error": 1.881188127653665e-14,
+      "external_map_unitarity_error": 1.7272066690834335e-15
+    },
+    {
+      "label": "fresh_7",
+      "axis": 1,
+      "kind": "rotation",
+      "parameter": 0.37,
+      "relative_amplitude_error": 3.0755804105179157e-15,
+      "external_map_unitarity_error": 4.0201135331448444e-15
+    },
+    {
+      "label": "fresh_8",
+      "axis": 2,
+      "kind": "rotation",
+      "parameter": 0.37,
+      "relative_amplitude_error": 1.4644304212100424e-15,
+      "external_map_unitarity_error": 1.0842198121925398e-15
+    },
+    {
+      "label": "fresh_9",
+      "axis": 0,
+      "kind": "rotation",
+      "parameter": 0.37,
+      "relative_amplitude_error": 3.2827963703781912e-15,
+      "external_map_unitarity_error": 2.641447215472163e-15
+    },
+    {
+      "label": "fresh_10",
+      "axis": 1,
+      "kind": "rotation",
+      "parameter": 0.37,
+      "relative_amplitude_error": 5.100393328192798e-15,
+      "external_map_unitarity_error": 7.86520821589119e-16
+    },
+    {
+      "label": "fresh_11",
+      "axis": 2,
+      "kind": "rotation",
+      "parameter": 0.37,
+      "relative_amplitude_error": 4.961831124517658e-15,
+      "external_map_unitarity_error": 7.8716117197172e-16
+    },
+    {
+      "label": "grid_mass_0.0",
+      "axis": 0,
+      "kind": "boost",
+      "parameter": 0.27,
+      "relative_amplitude_error": 3.1357523297329754e-15,
+      "external_map_unitarity_error": 5.1643374545178225e-15
+    },
+    {
+      "label": "grid_mass_0.0",
+      "axis": 1,
+      "kind": "boost",
+      "parameter": 0.27,
+      "relative_amplitude_error": 1.0589932486281388e-15,
+      "external_map_unitarity_error": 3.071768326957055e-15
+    },
+    {
+      "label": "grid_mass_0.0",
+      "axis": 2,
+      "kind": "boost",
+      "parameter": 0.27,
+      "relative_amplitude_error": 1.8545800621813738e-15,
+      "external_map_unitarity_error": 3.2367843281931225e-15
+    },
+    {
+      "label": "grid_mass_0.0",
+      "axis": 0,
+      "kind": "rotation",
+      "parameter": 0.27,
+      "relative_amplitude_error": 2.091930325259536e-15,
+      "external_map_unitarity_error": 3.0679124465813515e-15
+    },
+    {
+      "label": "grid_mass_0.0",
+      "axis": 1,
+      "kind": "rotation",
+      "parameter": 0.27,
+      "relative_amplitude_error": 1.355161026867798e-15,
+      "external_map_unitarity_error": 1.2017048495491566e-15
+    },
+    {
+      "label": "grid_mass_0.0",
+      "axis": 2,
+      "kind": "rotation",
+      "parameter": 0.27,
+      "relative_amplitude_error": 1.5424081820845552e-15,
+      "external_map_unitarity_error": 1.3034735412011342e-15
+    },
+    {
+      "label": "grid_mass_0.3",
+      "axis": 0,
+      "kind": "boost",
+      "parameter": 0.27,
+      "relative_amplitude_error": 3.3341363371710746e-15,
+      "external_map_unitarity_error": 5.1643374545178225e-15
+    },
+    {
+      "label": "grid_mass_0.3",
+      "axis": 1,
+      "kind": "boost",
+      "parameter": 0.27,
+      "relative_amplitude_error": 1.3526033230481512e-15,
+      "external_map_unitarity_error": 3.071768326957055e-15
+    },
+    {
+      "label": "grid_mass_0.3",
+      "axis": 2,
+      "kind": "boost",
+      "parameter": 0.27,
+      "relative_amplitude_error": 1.5860837018166252e-15,
+      "external_map_unitarity_error": 3.2367843281931225e-15
+    },
+    {
+      "label": "grid_mass_0.3",
+      "axis": 0,
+      "kind": "rotation",
+      "parameter": 0.27,
+      "relative_amplitude_error": 1.9187241904574768e-15,
+      "external_map_unitarity_error": 3.0679124465813515e-15
+    },
+    {
+      "label": "grid_mass_0.3",
+      "axis": 1,
+      "kind": "rotation",
+      "parameter": 0.27,
+      "relative_amplitude_error": 1.5067771443161975e-15,
+      "external_map_unitarity_error": 1.2017048495491566e-15
+    },
+    {
+      "label": "grid_mass_0.3",
+      "axis": 2,
+      "kind": "rotation",
+      "parameter": 0.27,
+      "relative_amplitude_error": 1.3183026573759617e-15,
+      "external_map_unitarity_error": 1.3034735412011342e-15
+    }
+  ],
+  "BLFQ_H2_selected": false,
+  "physical_nucleon_predictions": false,
+  "renormalization_complete": false
+}

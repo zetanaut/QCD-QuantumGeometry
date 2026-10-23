@@ -1,0 +1,325 @@
+{
+  "scope": "Only direct smooth common-kernel Wick-current contributions through H2 g4",
+  "prescription": "physical-leg-endpoint-product",
+  "Delta_plus_GeV": 0.0,
+  "transfer_GeV": [
+    0.12,
+    0.16
+  ],
+  "total_k2": 9,
+  "retained_cutoff": 0,
+  "jz_twice": 1,
+  "b_GeV": 0.4,
+  "quark_mass_GeV": 0.35,
+  "gluon_mass_GeV": 0.0,
+  "coupling": 0.3,
+  "total_pplus_GeV": 1.3,
+  "energy_out_GeV2": 1.39,
+  "energy_in_GeV2": 1.47,
+  "quark_flavors": 2,
+  "external_charge": "electromagnetic",
+  "loop_flavor_charges": [
+    0.6666666666666666,
+    -0.3333333333333333
+  ],
+  "normal_order_subtraction": true,
+  "finite_quark_mass2_per_gs2_GeV2": 0.011,
+  "finite_gluon_mass2_per_gs2_GeV2": -0.007,
+  "finite_conditions_are_uncalibrated_test_values": true,
+  "all_quantities_are_full_retained_matrix_norms_not_form_factors": true,
+  "smooth_Wick_subtraction_paired": true,
+  "longitudinal_envelope_gauged": false,
+  "complete_field_current": false,
+  "complete_loop_current_matching": false,
+  "cutoff_convergence_established": false,
+  "physical_renormalization": false,
+  "quantum_execution": false,
+  "results": [
+    {
+      "target": "PROTON",
+      "Lambda_GeV": 0.8,
+      "Q5_cutoff": 1,
+      "Q6_cutoff": 1,
+      "boson_field_modes": 8,
+      "fermion_field_modes": 8,
+      "retained_dimension": 37,
+      "raw_Q_dimensions": {
+        "qqqgg": 4950,
+        "qqqq-qbar": 31500,
+        "qqqggg": 8052,
+        "qqqq-qbar-g": 69600
+      },
+      "normalized_direct_minus_Frobenius": {
+        "canonical": 0.20368050189644943,
+        "regulator": 0.2379808911422336,
+        "ordered": 0.11006373794408403,
+        "subtraction": 0.11006373794408403,
+        "finite": 0.061398716232779496,
+        "total": 0.061398716232779496
+      },
+      "unnormalized_ordered_power_contributions": {
+        "2": 0.11007415638623048,
+        "4": 3.364823313497036e-05
+      },
+      "H2_norm_minimum_eigenvalues": [
+        1.000000011232922,
+        1.0000000122008246
+      ],
+      "subtraction_residual": 0.0,
+      "finite_pairing_residual": 0.0,
+      "seconds": 30.676483749994077,
+      "matrix_difference_from_proton_Lambda08_Q1_Frobenius": {
+        "canonical": 0.0,
+        "regulator": 0.0,
+        "ordered": 0.0,
+        "subtraction": 0.0,
+        "finite": 0.0,
+        "total": 0.0
+      }
+    },
+    {
+      "target": "PROTON",
+      "Lambda_GeV": 0.4,
+      "Q5_cutoff": 1,
+      "Q6_cutoff": 1,
+      "boson_field_modes": 8,
+      "fermion_field_modes": 8,
+      "retained_dimension": 37,
+      "raw_Q_dimensions": {
+        "qqqgg": 4950,
+        "qqqq-qbar": 31500,
+        "qqqggg": 8052,
+        "qqqq-qbar-g": 69600
+      },
+      "normalized_direct_minus_Frobenius": {
+        "canonical": 0.04427855318184997,
+        "regulator": 0.05103601806452795,
+        "ordered": 0.025435001934773403,
+        "subtraction": 0.025435001934773403,
+        "finite": 0.06139806229872204,
+        "total": 0.06139806229872204
+      },
+      "unnormalized_ordered_power_contributions": {
+        "2": 0.025436372790097694,
+        "4": 4.036498065308484e-06
+      },
+      "H2_norm_minimum_eigenvalues": [
+        1.0000000031316238,
+        1.0000000033954866
+      ],
+      "subtraction_residual": 0.0,
+      "finite_pairing_residual": 0.0,
+      "seconds": 31.12667191697983,
+      "matrix_difference_from_proton_Lambda08_Q1_Frobenius": {
+        "canonical": 0.15941610965973776,
+        "regulator": 0.18695829518322352,
+        "ordered": 0.0846651784613021,
+        "subtraction": 0.0846651784613021,
+        "finite": 2.003253394036763e-06,
+        "total": 2.003253394036763e-06
+      }
+    },
+    {
+      "target": "PROTON",
+      "Lambda_GeV": 1.6,
+      "Q5_cutoff": 1,
+      "Q6_cutoff": 1,
+      "boson_field_modes": 8,
+      "fermion_field_modes": 8,
+      "retained_dimension": 37,
+      "raw_Q_dimensions": {
+        "qqqgg": 4950,
+        "qqqq-qbar": 31500,
+        "qqqggg": 8052,
+        "qqqq-qbar-g": 69600
+      },
+      "normalized_direct_minus_Frobenius": {
+        "canonical": 0.8444996013803621,
+        "regulator": 0.9964591937511723,
+        "ordered": 0.452907974169287,
+        "subtraction": 0.452907974169287,
+        "finite": 0.061399029557445174,
+        "total": 0.061399029557445174
+      },
+      "unnormalized_ordered_power_contributions": {
+        "2": 0.45295880566663743,
+        "4": 0.00017503489601795988
+      },
+      "H2_norm_minimum_eigenvalues": [
+        1.0000000163298532,
+        1.0000000177410144
+      ],
+      "subtraction_residual": 0.0,
+      "finite_pairing_residual": 0.0,
+      "seconds": 30.933563374972437,
+      "matrix_difference_from_proton_Lambda08_Q1_Frobenius": {
+        "canonical": 0.6408237083182341,
+        "regulator": 0.7584815104287358,
+        "ordered": 0.3428867215068988,
+        "subtraction": 0.3428867215068988,
+        "finite": 9.068183691544001e-07,
+        "total": 9.068183691544001e-07
+      }
+    },
+    {
+      "target": "PROTON",
+      "Lambda_GeV": 0.8,
+      "Q5_cutoff": 0,
+      "Q6_cutoff": 0,
+      "boson_field_modes": 8,
+      "fermion_field_modes": 8,
+      "retained_dimension": 37,
+      "raw_Q_dimensions": {
+        "qqqgg": 630,
+        "qqqq-qbar": 4500,
+        "qqqggg": 792,
+        "qqqq-qbar-g": 7200
+      },
+      "normalized_direct_minus_Frobenius": {
+        "canonical": 0.20367344774058002,
+        "regulator": 0.23797560494882045,
+        "ordered": 0.11006962402580373,
+        "subtraction": 0.11006962402580373,
+        "finite": 0.06139804822844015,
+        "total": 0.06139804822844015
+      },
+      "unnormalized_ordered_power_contributions": {
+        "2": 0.11007415638623048,
+        "4": 1.7257061158482132e-05
+      },
+      "H2_norm_minimum_eigenvalues": [
+        1.0000000091234271,
+        1.0000000098410857
+      ],
+      "subtraction_residual": 0.0,
+      "finite_pairing_residual": 0.0,
+      "seconds": 5.568908041983377,
+      "matrix_difference_from_proton_Lambda08_Q1_Frobenius": {
+        "canonical": 9.41234606900551e-06,
+        "regulator": 1.2144640097776921e-05,
+        "ordered": 9.12999431260758e-06,
+        "subtraction": 9.12999431260758e-06,
+        "finite": 2.1371299053861502e-06,
+        "total": 2.1371299053861502e-06
+      }
+    },
+    {
+      "target": "PROTON",
+      "Lambda_GeV": 0.8,
+      "Q5_cutoff": 2,
+      "Q6_cutoff": 1,
+      "boson_field_modes": 8,
+      "fermion_field_modes": 8,
+      "retained_dimension": 37,
+      "raw_Q_dimensions": {
+        "qqqgg": 22230,
+        "qqqq-qbar": 130500,
+        "qqqggg": 8052,
+        "qqqq-qbar-g": 69600
+      },
+      "normalized_direct_minus_Frobenius": {
+        "canonical": 0.20368152163210435,
+        "regulator": 0.2379844960525455,
+        "ordered": 0.11006096049323173,
+        "subtraction": 0.11006096049323173,
+        "finite": 0.061398799629042065,
+        "total": 0.061398799629042065
+      },
+      "unnormalized_ordered_power_contributions": {
+        "2": 0.11007415638623048,
+        "4": 3.942993129434807e-05
+      },
+      "H2_norm_minimum_eigenvalues": [
+        1.0000000520181132,
+        1.0000000548491
+      ],
+      "subtraction_residual": 0.0,
+      "finite_pairing_residual": 0.0,
+      "seconds": 81.5634272499592,
+      "matrix_difference_from_proton_Lambda08_Q1_Frobenius": {
+        "canonical": 2.162522800722879e-06,
+        "regulator": 9.18897919437337e-06,
+        "ordered": 7.371205038201982e-06,
+        "subtraction": 7.371205038201982e-06,
+        "finite": 1.2919349121870938e-06,
+        "total": 1.2919349121870938e-06
+      }
+    },
+    {
+      "target": "PROTON",
+      "Lambda_GeV": 0.8,
+      "Q5_cutoff": 1,
+      "Q6_cutoff": 1,
+      "boson_field_modes": 1,
+      "fermion_field_modes": 2,
+      "retained_dimension": 37,
+      "raw_Q_dimensions": {
+        "qqqgg": 4950,
+        "qqqq-qbar": 31500,
+        "qqqggg": 8052,
+        "qqqq-qbar-g": 69600
+      },
+      "normalized_direct_minus_Frobenius": {
+        "canonical": 0.1364561127617721,
+        "regulator": 0.14122324256261648,
+        "ordered": 0.05008383817207618,
+        "subtraction": 0.05008383817207618,
+        "finite": 0.06139832506274425,
+        "total": 0.06139832506274425
+      },
+      "unnormalized_ordered_power_contributions": {
+        "2": 0.05008927622336167,
+        "4": 1.5467801649361157e-05
+      },
+      "H2_norm_minimum_eigenvalues": [
+        0.9999999999999976,
+        0.9999999999999991
+      ],
+      "subtraction_residual": 0.0,
+      "finite_pairing_residual": 0.0,
+      "seconds": 24.557881999993697,
+      "matrix_difference_from_proton_Lambda08_Q1_Frobenius": {
+        "canonical": 0.07817167615528368,
+        "regulator": 0.0977876661741676,
+        "ordered": 0.06960244697502263,
+        "subtraction": 0.06960244697502263,
+        "finite": 1.5199690840058171e-06,
+        "total": 1.5199690840058171e-06
+      }
+    },
+    {
+      "target": "NEUTRON",
+      "Lambda_GeV": 0.8,
+      "Q5_cutoff": 1,
+      "Q6_cutoff": 1,
+      "boson_field_modes": 8,
+      "fermion_field_modes": 8,
+      "retained_dimension": 37,
+      "raw_Q_dimensions": {
+        "qqqgg": 4950,
+        "qqqq-qbar": 31500,
+        "qqqggg": 8052,
+        "qqqq-qbar-g": 69600
+      },
+      "normalized_direct_minus_Frobenius": {
+        "canonical": 0.03402957925333277,
+        "regulator": 0.10091629107437391,
+        "ordered": 0.08910490797085042,
+        "subtraction": 0.08910490797085042,
+        "finite": 0.0243862956114597,
+        "total": 0.0243862956114597
+      },
+      "unnormalized_ordered_power_contributions": {
+        "2": 0.08911136630392,
+        "4": 3.105786268219871e-05
+      },
+      "H2_norm_minimum_eigenvalues": [
+        1.0000000112329224,
+        1.0000000122008244
+      ],
+      "subtraction_residual": 0.0,
+      "finite_pairing_residual": 0.0,
+      "seconds": 25.89810212503653
+    }
+  ]
+}

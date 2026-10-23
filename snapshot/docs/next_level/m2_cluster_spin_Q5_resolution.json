@@ -1,0 +1,160 @@
+{
+  "scope": "same-P/K source coordinates, fixed-prescription Q sensitivity; no convergence or physical claim",
+  "old_blocks": [
+    "docs/next_level/m2_cluster_spin_p_pp.json",
+    "docs/next_level/m2_cluster_spin_p_mp.json"
+  ],
+  "new_blocks": [
+    "docs/next_level/m2_cluster_spin_Q5_shell1_pp.json",
+    "docs/next_level/m2_cluster_spin_Q5_shell1_mp.json"
+  ],
+  "old_energy_GeV2": 1.4305035729036712,
+  "new_energy_GeV2": 1.4305030209954839,
+  "energy_change_GeV2": -5.519081873739395e-07,
+  "common_phase": [
+    1.0,
+    -6.785359992797243e-18
+  ],
+  "coefficient_order": [
+    "F1_separated",
+    "F2_separated",
+    "B1",
+    "B2",
+    "B3"
+  ],
+  "total_amplitude_change_norm": 7.968585982457739e-07,
+  "coefficient_change": [
+    [
+      -1.97130740398066e-07,
+      1.883015300477482e-18
+    ],
+    [
+      -4.495702974338656e-06,
+      -3.555369395120263e-17
+    ],
+    [
+      2.4237613714950257e-06,
+      -1.033561505046233e-16
+    ],
+    [
+      2.588445930040706e-06,
+      -2.2582537248887623e-16
+    ],
+    [
+      -2.78061073477609e-06,
+      2.2557394479330943e-16
+    ]
+  ],
+  "external_mass_basis_change": [
+    [
+      4.687417121118642e-09,
+      2.7654816470547848e-18
+    ],
+    [
+      -4.687417565207852e-09,
+      -6.769109390717841e-17
+    ],
+    [
+      -3.0753177782116836e-14,
+      -1.1206467647847797e-16
+    ],
+    [
+      4.48262305274838e-07,
+      -3.628087845446403e-16
+    ],
+    [
+      -2.809232553246943e-07,
+      3.623911219969836e-16
+    ]
+  ],
+  "attribution": {
+    "raw_numerator_at_new_norms_and_states": {
+      "amplitude_norm": 3.704527531272755e-07,
+      "coefficients_in_old_mass_basis": [
+        [
+          1.666076061761387e-07,
+          4.310679547096427e-24
+        ],
+        [
+          -1.0212697147765468e-06,
+          -5.801766906261087e-23
+        ],
+        [
+          6.767607738473092e-07,
+          -2.699086382616139e-23
+        ],
+        [
+          -3.257352390367897e-07,
+          1.5747459297653138e-23
+        ],
+        [
+          4.124660934779227e-07,
+          -2.217773846045527e-24
+        ]
+      ]
+    },
+    "both_norm_maps_at_new_states": {
+      "amplitude_norm": 3.071030288653428e-07,
+      "coefficients_in_old_mass_basis": [
+        [
+          -2.1326557680709616e-07,
+          -6.936528967900485e-24
+        ],
+        [
+          1.8396443572392495e-07,
+          -2.7363357661110112e-24
+        ],
+        [
+          -9.262522372090799e-08,
+          2.0335232092864823e-23
+        ],
+        [
+          -4.339135888922339e-07,
+          2.960329774516374e-23
+        ],
+        [
+          5.338989923794535e-07,
+          -2.735254410122849e-23
+        ]
+      ]
+    },
+    "normalized_state_change": {
+      "amplitude_norm": 8.388805940352674e-07,
+      "coefficients_in_old_mass_basis": [
+        [
+          -1.5516018712535678e-07,
+          2.50247198910106e-24
+        ],
+        [
+          -3.6537102789677483e-06,
+          -5.533278913605144e-22
+        ],
+        [
+          1.8396258530569672e-06,
+          6.271503584695244e-23
+        ],
+        [
+          2.899832453414476e-06,
+          5.116249241714376e-23
+        ],
+        [
+          -3.446052566041767e-06,
+          -6.505469948400277e-23
+        ]
+      ]
+    }
+  },
+  "two_structure_residuals": [
+    0.17319936155805193,
+    0.17319900941086186
+  ],
+  "independent_blocks_per_resolution": 2,
+  "kinematically_completed_blocks": [
+    "pm",
+    "mm"
+  ],
+  "split_is_convention_not_unique_physics": true,
+  "physical": false,
+  "covariance_repaired": false,
+  "full_matrix_file": "m2_cluster_spin_Q5_resolution.npz"
+}

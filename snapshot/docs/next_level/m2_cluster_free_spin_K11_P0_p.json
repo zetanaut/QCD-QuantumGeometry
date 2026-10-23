@@ -1,0 +1,26 @@
+{
+  "target": "PROTON",
+  "total_k2": 11,
+  "retained_cutoff": 0,
+  "g": 0.0,
+  "b_GeV": 0.4,
+  "mq_GeV": 0.35,
+  "mg_GeV": 0.0,
+  "Pplus_GeV": 1.3,
+  "transfer_GeV": [
+    0.12,
+    0.16
+  ],
+  "energy_GeV2": 1.4878333333333322,
+  "dimension": 69,
+  "ground_multiplicity": 3,
+  "subspace_current_preserved": true,
+  "physical": false,
+  "covariance_repaired": false,
+  "operator_order": "g0 only; all Q return words vanish exactly",
+  "regulator_variation_is_vacuous_at_g0": true,
+  "full_matrix_file": "m2_cluster_free_spin_K11_P0_p.npz",
+  "orientation": null,
+  "state_selection": "degenerate source subspace preserved; no arbitrary spin-half state selected",
+  "seconds": 16.56159925000975
+}

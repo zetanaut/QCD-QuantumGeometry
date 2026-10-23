@@ -1,0 +1,268 @@
+{
+  "scope": "Unfitted local source-action and synthetic matching controls; no physical pion, nucleon or detector likelihood.",
+  "operator": "-E_ij (D_mu phi_i)^T F^{mu rho} F_rho^nu D_nu phi_j, E GeV^-4; full O4 sources; arbitrary node count",
+  "fixture": {
+    "external_mass_GeV": 0.13957039,
+    "mode": [
+      0.8,
+      0.6
+    ],
+    "C": [
+      [
+        0.7,
+        0.1
+      ],
+      [
+        0.1,
+        0.4
+      ]
+    ],
+    "D": [
+      [
+        -0.2,
+        0.07
+      ],
+      [
+        0.07,
+        0.3
+      ]
+    ],
+    "E": [
+      [
+        0.5,
+        0.15
+      ],
+      [
+        0.15,
+        0.8
+      ]
+    ],
+    "projected_C_D_E": [
+      0.688,
+      0.04719999999999995,
+      0.752
+    ]
+  },
+  "actual_action_derivatives": {
+    "two_photon": 0.000009249224,
+    "independent_two_photon": 0.000009249224000000002,
+    "two_photon_difference": 1.6940658945086007e-21,
+    "three_photon_Ward": -0.000006780934400000001,
+    "three_lower_difference": -0.000006780934399999999,
+    "three_photon_Ward_error": 1.6940658945086007e-21,
+    "four_photon_Ward": -0.000028139839999999997,
+    "four_lower_difference": -0.000028139839999999987,
+    "four_photon_Ward_error": 1.0164395367051604e-20
+  },
+  "source_only_dipoles_fm3": [
+    0.00001176971287545177,
+    0
+  ],
+  "known_reference_loop": {
+    "radius_squared_fm2": 0.3556496377716894,
+    "alpha_fm3": 0.0005816340049767354,
+    "beta_fm3": -0.0005576610646489389,
+    "provenance": [
+      "quantum_collective_current_results.json",
+      "quantum_collective_compton_results.json"
+    ],
+    "physical_prediction": false,
+    "already_normalized_reference_observables_not_bare_coefficients": true
+  },
+  "synthetic_three_condition_matching": {
+    "parameters": [
+      0.4,
+      -0.12,
+      0.8
+    ],
+    "target": [
+      0.44910068703676614,
+      0.0007227077423248634,
+      -0.0006862138308529693
+    ],
+    "inferred": [
+      0.39999999999999997,
+      -0.11999999999999995,
+      0.7999999999999958
+    ],
+    "inverse_error": 4.218847493575595e-15,
+    "double_count_error_equals_loop": 1.0842021724855044e-19
+  },
+  "matrix_information": {
+    "independent_symmetric_entries": 9,
+    "three_projected_condition_rank": 3,
+    "unresolved_matrix_directions": 6,
+    "conditional_plus_radius_projected_rank": 2,
+    "unresolved_projected_directions": 1
+  },
+  "synthetic_response_examples": [
+    {
+      "name": "fixed synthetic normalization",
+      "diff_weight": 0.5,
+      "sum_weight": 0.34543902600599613,
+      "conditional_variance": 0.14999241341966696,
+      "information_matrix": [
+        [
+          1.6667509662673383,
+          1.1515216607638845
+        ],
+        [
+          1.1515216607638845,
+          5.202900960166778
+        ]
+      ]
+    },
+    {
+      "name": "free synthetic constant offset",
+      "diff_weight": 0.5,
+      "sum_weight": -0.9619511248873887,
+      "conditional_variance": 0.5612377842272055,
+      "information_matrix": [
+        [
+          0.4454439936616824,
+          -0.8569907015543724
+        ],
+        [
+          -0.8569907015543724,
+          1.8997822520352143
+        ]
+      ]
+    }
+  ],
+  "synthetic_conditional_families": [
+    {
+      "kappa": -0.5,
+      "renormalized_projected_C_D_E": [
+        0.4038493434597312,
+        -0.40583226505470904,
+        -1.2
+      ],
+      "radius_squared_fm2": 0.45,
+      "alpha_fm3": 0.00023519148361165018,
+      "beta_fm3": -0.00023000000000000006,
+      "alpha_plus_beta_fm3": 0.000005191483611650114,
+      "conditional_alpha_fm3": 0.00023000000000000006
+    },
+    {
+      "kappa": -0.5,
+      "renormalized_projected_C_D_E": [
+        0.4038493434597312,
+        -0.40583226505470904,
+        0
+      ],
+      "radius_squared_fm2": 0.45,
+      "alpha_fm3": 0.0002539729403277966,
+      "beta_fm3": -0.00023000000000000006,
+      "alpha_plus_beta_fm3": 0.000023972940327796565,
+      "conditional_alpha_fm3": 0.00023000000000000006
+    },
+    {
+      "kappa": -0.5,
+      "renormalized_projected_C_D_E": [
+        0.4038493434597312,
+        -0.40583226505470904,
+        2.4
+      ],
+      "radius_squared_fm2": 0.45,
+      "alpha_fm3": 0.0002915358537600895,
+      "beta_fm3": -0.00023000000000000006,
+      "alpha_plus_beta_fm3": 0.00006153585376008941,
+      "conditional_alpha_fm3": 0.0002300000000000001
+    },
+    {
+      "kappa": 0,
+      "renormalized_projected_C_D_E": [
+        0.4038493434597312,
+        -0.4074476277621628,
+        -1.2
+      ],
+      "radius_squared_fm2": 0.45,
+      "alpha_fm3": 0.00023259574180582498,
+      "beta_fm3": -0.00022740425819417487,
+      "alpha_plus_beta_fm3": 0.000005191483611650114,
+      "conditional_alpha_fm3": 0.00022999999999999993
+    },
+    {
+      "kappa": 0,
+      "renormalized_projected_C_D_E": [
+        0.4038493434597312,
+        -0.4132915958915884,
+        0
+      ],
+      "radius_squared_fm2": 0.45,
+      "alpha_fm3": 0.00024198647016389824,
+      "beta_fm3": -0.00021801352983610167,
+      "alpha_plus_beta_fm3": 0.000023972940327796565,
+      "conditional_alpha_fm3": 0.00022999999999999995
+    },
+    {
+      "kappa": 0,
+      "renormalized_projected_C_D_E": [
+        0.4038493434597312,
+        -0.4249795321504397,
+        2.4
+      ],
+      "radius_squared_fm2": 0.45,
+      "alpha_fm3": 0.00026076792688004463,
+      "beta_fm3": -0.00019923207311995522,
+      "alpha_plus_beta_fm3": 0.00006153585376008941,
+      "conditional_alpha_fm3": 0.00022999999999999993
+    },
+    {
+      "kappa": 0.8,
+      "renormalized_projected_C_D_E": [
+        0.4038493434597312,
+        -0.4100322080940888,
+        -1.2
+      ],
+      "radius_squared_fm2": 0.45,
+      "alpha_fm3": 0.00022844255491650482,
+      "beta_fm3": -0.00022325107130485465,
+      "alpha_plus_beta_fm3": 0.000005191483611650168,
+      "conditional_alpha_fm3": 0.00022999999999999987
+    },
+    {
+      "kappa": 0.8,
+      "renormalized_projected_C_D_E": [
+        0.4038493434597312,
+        -0.4252265252305954,
+        0
+      ],
+      "radius_squared_fm2": 0.45,
+      "alpha_fm3": 0.00022280811790166094,
+      "beta_fm3": -0.00019883517757386437,
+      "alpha_plus_beta_fm3": 0.000023972940327796565,
+      "conditional_alpha_fm3": 0.0002299999999999999
+    },
+    {
+      "kappa": 0.8,
+      "renormalized_projected_C_D_E": [
+        0.4038493434597312,
+        -0.45561515950360865,
+        2.4
+      ],
+      "radius_squared_fm2": 0.45,
+      "alpha_fm3": 0.00021153924387197308,
+      "beta_fm3": -0.00015000339011188367,
+      "alpha_plus_beta_fm3": 0.00006153585376008941,
+      "conditional_alpha_fm3": 0.0002299999999999999
+    }
+  ],
+  "source_audit": {
+    "paper": "https://arxiv.org/abs/1405.6377",
+    "official_public_sources": "https://wwwcompass.cern.ch/compass/publications/papers/",
+    "fit": "conditional alpha=-beta, normalization floated; corrected pointlike denominator includes radiative, chiral-loop and form-factor terms",
+    "actual_folded_two_template_response_or_likelihood_recovered": false,
+    "archive_scope": "bounded paper/public source inspection, not a proof no further data exist",
+    "synthetic_responses_are_not_COMPASS_templates": true
+  },
+  "reassessment": {
+    "physical_coefficient_refit": false,
+    "production_model_selected": false,
+    "source_free_dynamics_changed": false,
+    "known_loop_erased": false,
+    "complete_higher_derivative_basis": false,
+    "public_push": false,
+    "next": "pre-evaluate source-preserving transport into the shared finite-momentum quark/quantum network; qualify accessible and hidden mode/source directions and coupled derivatives. Keep conditional physical matching parameterized; no reference-model completion agenda."
+  }
+}

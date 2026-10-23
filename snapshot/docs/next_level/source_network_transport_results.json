@@ -1,0 +1,223 @@
+{
+  "scope": "Unfitted off-shell charged-collective matching kernels, not full QCD, measured amplitudes or a quantum bound state.",
+  "rank_controls": [
+    {
+      "nodes": 1,
+      "symmetric_source_entries": 1,
+      "equal_virtuality_rank": 1,
+      "independent_virtuality_rank": 1,
+      "diagonal_singular_values": [
+        325.64649251300926
+      ],
+      "independent_singular_values": [
+        325.9385250850129
+      ]
+    },
+    {
+      "nodes": 2,
+      "symmetric_source_entries": 3,
+      "equal_virtuality_rank": 3,
+      "independent_virtuality_rank": 3,
+      "diagonal_singular_values": [
+        326.54687186384854,
+        4.159887473843723,
+        0.1536128509652077
+      ],
+      "independent_singular_values": [
+        327.01179558123727,
+        7.726449070631443,
+        0.18255615255392563
+      ]
+    },
+    {
+      "nodes": 3,
+      "symmetric_source_entries": 6,
+      "equal_virtuality_rank": 5,
+      "independent_virtuality_rank": 6,
+      "diagonal_singular_values": [
+        345.3433576550006,
+        13.589871696105064,
+        1.0405202569581968,
+        0.14020095111644496,
+        0.009648696545117765,
+        3.417338564820815e-15
+      ],
+      "independent_singular_values": [
+        347.8471300566513,
+        19.438165682916345,
+        2.0298669568478664,
+        1.0862308539241656,
+        0.11343169689242502,
+        0.011845317975835412
+      ]
+    },
+    {
+      "nodes": 4,
+      "symmetric_source_entries": 10,
+      "equal_virtuality_rank": 7,
+      "independent_virtuality_rank": 10,
+      "diagonal_singular_values": [
+        383.46877275956155,
+        18.992347609979642,
+        1.8937925989858502,
+        0.25157751058396055,
+        0.03973934517514108,
+        0.004056023828011283,
+        0.00042235712566678497,
+        6.1455291405306695e-15,
+        2.1140858257568734e-15,
+        6.65211012251902e-16
+      ],
+      "independent_singular_values": [
+        388.5711612227084,
+        25.48574729635878,
+        3.440900505091631,
+        1.6715685055216618,
+        0.41546291580786965,
+        0.2256830395460493,
+        0.030470084935494884,
+        0.027249533521658147,
+        0.0036790341114141386,
+        0.0004442157618399212
+      ]
+    }
+  ],
+  "rank_singular_values_are_not_physical_uncertainties": true,
+  "exact_cycle": {
+    "poles_GeV2": [
+      0.2,
+      0.7,
+      1.4
+    ],
+    "couplings": [
+      1,
+      0.8,
+      0.6
+    ],
+    "source_direction_dimensionless": [
+      [
+        0,
+        0.31249999999999994,
+        -1
+      ],
+      [
+        0.31249999999999994,
+        0,
+        0.7291666666666666
+      ],
+      [
+        -1,
+        0.7291666666666666,
+        0
+      ]
+    ],
+    "shape_reference_mass_squared_GeV2": 1,
+    "shape_normalization_is_not_a_physical_E_coefficient_or_matching_scale": true,
+    "max_equal_virtuality_response": 1.4144353371057396e-15,
+    "max_independent_route_response": 0.19548260746029414,
+    "selected_independent_response": -0.1889134073731017,
+    "erasing_one_edge_diagonal_response": 4.052684903748733,
+    "interpretation": "simple-pole incidence cycle in a response graph; not vacuum topology or confinement"
+  },
+  "accessibility": {
+    "source_free_dimension": 1,
+    "with_all_declared_source_generators_dimension": 3,
+    "source_free_reachability_is_not_a_global_compression_certificate": true
+  },
+  "near_degenerate_conditioning": [
+    {
+      "pole_splitting_GeV2": 0.1,
+      "rank": 3,
+      "smallest_over_largest_singular": 0.0009463039058191523
+    },
+    {
+      "pole_splitting_GeV2": 0.01,
+      "rank": 3,
+      "smallest_over_largest_singular": 0.000017447820512843698
+    },
+    {
+      "pole_splitting_GeV2": 0.001,
+      "rank": 3,
+      "smallest_over_largest_singular": 1.8575235772710217e-7
+    },
+    {
+      "pole_splitting_GeV2": 0,
+      "rank": 1,
+      "smallest_over_largest_singular": 3.0960920837600734e-17
+    }
+  ],
+  "coupled_transport": {
+    "response_units": "GeV^-4, twice differentiated with respect to electromagnetic sources in GeV",
+    "two_source_kernel": 1.0407091188516189,
+    "E_part": -0.000016989414783008527,
+    "independent_E_insertion": -0.000016989414783007724,
+    "E_identity_error": 8.029872339970767e-19,
+    "H_endpoint_E_derivatives": [
+      -8.792726930815084,
+      0.45522385521483255,
+      0.000012368491101935496
+    ],
+    "parameter_coordinate_units": [
+      "GeV^2",
+      "dimensionless",
+      "GeV^-4"
+    ],
+    "kinetic_metric_transport_error": 8.881784197001252e-16,
+    "recanonicalized_transport_error": 1.7763568394002505e-15,
+    "omitted_metric_two_source_error": 0.24450421861110194
+  },
+  "hidden_mode_return": {
+    "H_GeV2": [
+      [
+        0.2,
+        0
+      ],
+      [
+        0,
+        0.7
+      ]
+    ],
+    "E_GeV_minus4": [
+      [
+        0,
+        0.6
+      ],
+      [
+        0.6,
+        0
+      ]
+    ],
+    "endpoints": [
+      1,
+      0
+    ],
+    "first_insertion_zero": true,
+    "response_units": "GeV^-6, four source derivatives",
+    "four_photon_E_squared_coefficient": -5.215688388839336e-9,
+    "six_ordered_pair_terms": [
+      -3.154642811270962e-10,
+      -1.3559176764586649e-9,
+      -1.2866595431848532e-9,
+      -1.1807297703962443e-9,
+      -8.393720538108264e-10,
+      -2.37545063861651e-10
+    ],
+    "longitudinal_contractions": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "after_deleting_hidden_mode": 0,
+    "scope": "complete E^2 coefficient at four-photon order only; NOT complete four-photon kernel. Direct E higher contacts are linear in E."
+  },
+  "reassessment": {
+    "physical_source_directions_kept": true,
+    "canonical_color_vector_and_graded_fermion_utilities_unchanged": true,
+    "source_free_dynamics_or_fitted_coefficients_changed": false,
+    "quantum_state_supplied": false,
+    "production_model_selected": false,
+    "public_push": false,
+    "next": "pre-evaluate the first nonzero-momentum generated quantum state and linked response using the preserved canonical/retained action. Specify actual generator, quantum counting, source partners and independent control before solving; do not relabel this spacelike exchange inverse as a Hamiltonian, choose a production model or launch an inherited bound-state repair agenda."
+  }
+}

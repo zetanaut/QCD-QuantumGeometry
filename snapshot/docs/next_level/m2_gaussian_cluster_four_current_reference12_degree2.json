@@ -1,0 +1,124 @@
+{
+  "case": "reference12_degree2",
+  "parameters": {
+    "q5": 0,
+    "q6": 0,
+    "nb": 8,
+    "nf": 8,
+    "width": 0.8,
+    "muq": 0.011,
+    "mug": -0.007,
+    "target": "PROTON",
+    "reference_width": 1.2,
+    "shape_degree": 2
+  },
+  "total_k2": 9,
+  "retained_cutoff": 0,
+  "jz_twice": 1,
+  "b_GeV": 0.4,
+  "quark_mass_GeV": 0.35,
+  "gluon_mass_GeV": 0,
+  "coupling": 0.3,
+  "total_pplus_GeV": 1.3,
+  "energy_out_GeV2": 1.39,
+  "energy_in_GeV2": 1.47,
+  "transfer_GeV": [
+    0.12,
+    0.16
+  ],
+  "component_order": [
+    "plus",
+    "minus",
+    "x",
+    "y"
+  ],
+  "current_normalization": "Jmu/(2Pplus); order g4 selected before both norm maps",
+  "physical_leg_prescription": "physical-leg-endpoint-product",
+  "smooth_prescription": "continuous-global-Jacobi-fixed-mode-membership",
+  "field_envelope_prescription": "finite-cell-covariant-spectral-gapped-envelope",
+  "isospin_prescription": "flavor-degenerate-total-isospin-half-H2-source-domain",
+  "raw_Q_dimensions": {
+    "qqqgg": 630,
+    "qqqq-qbar": 4500,
+    "qqqggg": 792,
+    "qqqq-qbar-g": 7200
+  },
+  "Ward_Frobenius": 2.0614020975004524e-15,
+  "normalized_Ward_Frobenius": 2.06100007552567e-15,
+  "raw_current_component_Frobenius": [
+    4.549964513212803,
+    7.691853340942781,
+    1.340650470143022,
+    1.0056191814191484
+  ],
+  "normalized_current_component_Frobenius": [
+    4.549313166261228,
+    7.690835905251322,
+    1.340468758565405,
+    1.0054828898195352
+  ],
+  "coefficient_component_Frobenius": {
+    "0": [
+      4.549346247321706,
+      7.629765602831042,
+      1.3404177153647299,
+      1.0053132865235475
+    ],
+    "1": [
+      0,
+      0.3595149400072723,
+      0.04905117038220627,
+      0.06540156050960838
+    ],
+    "2": [
+      0.009460026392174485,
+      0.6838448948926495,
+      0.010021665627846043,
+      0.013114359105014938
+    ],
+    "3": [
+      0.00021194624825446646,
+      0.0003922671761108208,
+      0.00011673145685619395,
+      0.00013287799765287825
+    ],
+    "4": [
+      0.0018635978471588455,
+      0.001813618399941685,
+      0.00048039548682750425,
+      0.0003870090607716801
+    ]
+  },
+  "min_norm_eigenvalue": [
+    1.0000000117612333,
+    1.0000000126834412
+  ],
+  "isospin_wave_residual": 1.4530265470003961e-16,
+  "finite_conditions_are_uncalibrated_test_values": true,
+  "continuum_convergence_established": false,
+  "physical": false,
+  "quantum_execution": false,
+  "seconds": 13138.844944667013,
+  "full_matrix_file": "m2_gaussian_cluster_four_current_reference12_degree2.npz",
+  "moment_evaluation_variant": "Batched complete moment recurrence loaded before the later tiny-matrix scalar fallback; independent original scalar run retained separately.",
+  "finite_reference_comparison": {
+    "reference_report": "m2_gaussian_cluster_four_current_Gaussian_reference12.json",
+    "reference_width_GeV": 1.2,
+    "same_physical_parameters_energies_and_resolutions": true,
+    "relative_stacked_current_errors_g0_through_g4": [0, 0.0005604066576831085, 0.00019100037723065216, 0.0021706310158615565, 0.0003105716772600143],
+    "relative_component_errors_g0_through_g4": [
+      [0, 0, 0, 0],
+      [null, 0.000570078017130958, 0.0003202548327398723, 0.00032025483273980475],
+      [0.00017411615423864715, 0.00018403356868581958, 0.0020982978801328423, 0.0021373215154606422],
+      [0.0015763644674168784, 0.0024345542220830015, 0.0014678294623347047, 0.001325564447341909],
+      [0.00016417477456054578, 0.0004164777902781425, 0.00024380784280904214, 0.0002713525471800933]
+    ],
+    "largest_nonzero_component_relative_error": 0.0024345542220830015,
+    "every_nonzero_component_error_less_than_0p15_times_degree_one": true,
+    "normalized_total_relative_error": 6.942042171040344e-6,
+    "normalized_total_absolute_error": 6.311269711961503e-5,
+    "normalized_total_two_norm_error_bound": 6.375321784723073e-5,
+    "bound_is_cutoff_removal_or_interval_certificate": false,
+    "independent_original_scalar_comparison_reported_separately": true
+  }
+}

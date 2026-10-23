@@ -1,0 +1,266 @@
+{
+  "scope": "Resolved S/P collective-to-quark algebra, one/two-source Gaussian response, homogeneous nonlinear tree elimination. Not QCD coefficient matching, a fermion expectation value, a loop calculation or a nucleon Hamiltonian.",
+  "inputs": {
+    "prior_calibration": "transverse_source_matching_results.json, middle charged-mass variant; same approximate isospin scalar benchmark",
+    "current_mass_parameter_GeV": 0.004,
+    "yukawa": [
+      3,
+      1
+    ],
+    "vacuum_GeV": [
+      0.07609594369467992,
+      0.05206003604705443
+    ],
+    "quartics": [
+      60.61652373261482,
+      30.92679782276267
+    ],
+    "source_C_GeV_minus2": [
+      [
+        1.2662160406432923,
+        0.8662650007166435
+      ],
+      [
+        0.8662650007166435,
+        0.5926437727683209
+      ]
+    ],
+    "source_D_GeV_minus2": [
+      [
+        -0.5483267872323764,
+        -0.37513053814536323
+      ],
+      [
+        -0.37513053814536323,
+        -0.25664060907823677
+      ]
+    ],
+    "source_coefficient_scope": "Chosen light-projection representative only; null directions explicitly varied, not fixed by data."
+  },
+  "resolved_channels": {
+    "order": [
+      "scalar",
+      "isovector_pseudoscalar_1",
+      "isovector_pseudoscalar_2",
+      "isovector_pseudoscalar_3"
+    ],
+    "endpoint_indices": "4 Dirac x 2 flavor x 3 color; canonical color-vector exchange remains separate",
+    "Q2_GeV2": 0.1,
+    "exchange_weights_GeV_minus2": [
+      14.339203055491291,
+      79.38292981957025,
+      79.38292981957025,
+      79.38292981957025
+    ]
+  },
+  "gauged_exchange": {
+    "momenta_GeV": [
+      [
+        0.07,
+        0.3,
+        0.12,
+        0.11
+      ],
+      [
+        0.08,
+        0.33999999999999997,
+        0.11,
+        0.13
+      ],
+      [
+        0.09000000000000001,
+        0.27,
+        0.13999999999999999,
+        0.07
+      ],
+      [
+        0.1,
+        0.30999999999999994,
+        0.13,
+        0.09
+      ]
+    ],
+    "q1_GeV": [
+      0.01,
+      0.04,
+      -0.01,
+      0.02
+    ],
+    "q2_GeV": [
+      0.02,
+      -0.03,
+      0.02,
+      -0.04
+    ],
+    "polarizations": [
+      [
+        0.1,
+        0.3,
+        -0.2,
+        0.4
+      ],
+      [
+        0.2,
+        -0.1,
+        0.4,
+        0.3
+      ]
+    ],
+    "response_norms_orders_0_a_b_ab": [
+      147.5722815976078,
+      211.19581086790365,
+      74.7412757426814,
+      231.89441360796465
+    ],
+    "response_units": [
+      "GeV^-2",
+      "GeV^-3",
+      "GeV^-3",
+      "GeV^-4"
+    ],
+    "direct_mixed_derivative_error": 5.684341886080802e-14,
+    "one_source_Ward_error": 1.4210854715202004e-14,
+    "two_source_Ward_error": 1.0658141036401503e-14,
+    "missing_contact_Ward_error": 4.3171032793439394,
+    "retained_reconstruction_max_error": 0,
+    "retained_scope": "Explicit synthetic same-coordinate retained functional, NOT a matched QCD content assignment."
+  },
+  "nonidentifiability": {
+    "tree_quark_mass_GeV": 0.2843478671310942,
+    "alternative_yukawa": [
+      2.3224290319257186,
+      1.9904027378914502
+    ],
+    "tree_mass_change_GeV": 0,
+    "light_pion_yukawa_change": -3.627769457416421e-13,
+    "alternative_exchange_weights_GeV_minus2": [
+      17.802573804802403,
+      77.67297005271139,
+      77.67297005271139,
+      77.67297005271139
+    ],
+    "same_light_C_D_projection_error": 2.220446049250313e-16,
+    "null_direction_change_one_source_norm_GeV_minus3": 0.01514213157225908,
+    "null_direction_change_two_source_norm_GeV_minus4": 0.05187670779613103
+  },
+  "nonlinear_tree": {
+    "sign_convention": "Euclidean mass m+g phi: +B^T Y^T x, stationary J=-Y B; vacuum and linear mass terms separate.",
+    "W3_SSS_GeV_minus5": -3011.6912577466082,
+    "W3_S_P1_P1_GeV_minus5": -785173.7480986898,
+    "W4_SSSS_GeV_minus8": -1385097.6123118433,
+    "probes": [
+      {
+        "bilinear_probe_GeV3": [
+          -0.00001,
+          0.0000020000000000000003,
+          -0.0000010000000000000002,
+          0.000003
+        ],
+        "exact_tree_action_density_GeV4": -4.15103902284242e-9,
+        "separate_4q_6q_8q_terms_GeV4": [
+          -4.205613209692449e-9,
+          5.546411090986606e-11,
+          -9.040071397401193e-13
+        ],
+        "relative_errors_through_4q_6q_8q": [
+          0.013147114866836205,
+          0.00021438585735777247,
+          0.000003392663818659743
+        ],
+        "min_local_curvature_GeV2": 0.019797195694846156,
+        "stationarity_error_GeV3": 7.661435248935928e-21,
+        "log_det_local_curvature_ratio": 0.05361788374422716
+      },
+      {
+        "bilinear_probe_GeV3": [
+          -0.00003,
+          0.000006,
+          -0.000003,
+          0.000009
+        ],
+        "exact_tree_action_density_GeV4": -3.642288947485836e-8,
+        "separate_4q_6q_8q_terms_GeV4": [
+          -3.785051888723204e-8,
+          1.4975309945663835e-9,
+          -7.322457831894972e-11
+        ],
+        "relative_errors_through_4q_6q_8q": [
+          0.03919594060100938,
+          0.001919166304500726,
+          0.00009123373170428886
+        ],
+        "min_local_curvature_GeV2": 0.020432468338224596,
+        "stationarity_error_GeV3": 1.3231077603550314e-20,
+        "log_det_local_curvature_ratio": 0.15866336553507665
+      },
+      {
+        "bilinear_probe_GeV3": [
+          -0.0001,
+          0.00002,
+          -0.00001,
+          0.00003
+        ],
+        "exact_tree_action_density_GeV4": -3.728964429698593e-7,
+        "separate_4q_6q_8q_terms_GeV4": [
+          -4.205613209692448e-7,
+          5.546411090986606e-8,
+          -9.040071397401199e-9
+        ],
+        "relative_errors_through_4q_6q_8q": [
+          0.12782336463112406,
+          0.020915278376927176,
+          0.0033275685791965106
+        ],
+        "min_local_curvature_GeV2": 0.0226595799328047,
+        "stationarity_error_GeV3": 1.2225476268723877e-19,
+        "log_det_local_curvature_ratio": 0.5050087857557948
+      },
+      {
+        "bilinear_probe_GeV3": [
+          -0.0003,
+          0.000059999999999999995,
+          -0.000029999999999999997,
+          0.00008999999999999999
+        ],
+        "exact_tree_action_density_GeV4": -0.000002781937989144596,
+        "separate_4q_6q_8q_terms_GeV4": [
+          -0.000003785051888723203,
+          0.000001497530994566383,
+          -7.322457831894967e-7
+        ],
+        "relative_errors_through_4q_6q_8q": [
+          0.3605809703497558,
+          0.17772398123791464,
+          0.08549029098770428
+        ],
+        "min_local_curvature_GeV2": 0.029000245336336286,
+        "stationarity_error_GeV3": 9.546899292738997e-19,
+        "log_det_local_curvature_ratio": 1.3469024201481083
+      },
+      {
+        "bilinear_probe_GeV3": [
+          -0.001,
+          0.0002,
+          -0.0001,
+          0.0003
+        ],
+        "exact_tree_action_density_GeV4": -0.00002107909209386194,
+        "separate_4q_6q_8q_terms_GeV4": [
+          -0.00004205613209692448,
+          0.00005546411090986604,
+          -0.00009040071397401193
+        ],
+        "relative_errors_through_4q_6q_8q": [
+          0.995158610705576,
+          1.636079521510599,
+          2.652564105618668
+        ],
+        "min_local_curvature_GeV2": 0.05024946922990347,
+        "stationarity_error_GeV3": 4.503029819097855e-19,
+        "log_det_local_curvature_ratio": 3.3315887910308764
+      }
+    ],
+    "determinant_scope": "Finite 8-field local Hessian ratio only: demonstrates background dependence. NOT a regulated spacetime trace, loop energy, relative loop error or QCD fluctuation prediction."
+  },
+  "decision": "Collective/source transport advances; pairwise-only closure and mean-bilinear replacement are not justified. Keep the implicit nonlinear functional or explicit collective variables. Before a physical quantum state solve, define whether the learned interaction is a scale-dependent action with retained modes quantized once or an already quantum-effective functional. These imply different matching and no-double-counting rules; the tree pilot cannot select between them. Unknown coefficients alone do not bar exploratory fits."
+}

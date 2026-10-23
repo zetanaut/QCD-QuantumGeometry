@@ -1,0 +1,248 @@
+{
+  "C_GeV_minus2": [
+    [
+      0.14,
+      0.037
+    ],
+    [
+      0.037,
+      -0.06
+    ]
+  ],
+  "D_E_begin_at_two_photons_not_set_to_zero": true,
+  "all_component_frequency_cases": 36,
+  "all_four_component_quantum_loop_current": false,
+  "bound_nucleon_or_nuclear_model_generated": false,
+  "cell_volume_GeV_minus3": 24805.021344239853,
+  "duration_GeV_minus1": 12,
+  "final_window_scan": [
+    {
+      "both_source_sign_pair_routes": 16,
+      "final_transverse_shell": 1,
+      "mixed_wave_norm_squared_GeV_minus2_NOT_probability": 0.08409287535798164,
+      "quadrature_refinement_error_GeV_minus1": 5.085026207981156e-16
+    },
+    {
+      "both_source_sign_pair_routes": 64,
+      "final_transverse_shell": 2,
+      "mixed_wave_norm_squared_GeV_minus2_NOT_probability": 0.21793510479108708,
+      "quadrature_refinement_error_GeV_minus1": 7.927596029407506e-16
+    },
+    {
+      "both_source_sign_pair_routes": 144,
+      "final_transverse_shell": 3,
+      "mixed_wave_norm_squared_GeV_minus2_NOT_probability": 0.2263065660497498,
+      "quadrature_refinement_error_GeV_minus1": 8.487041366220353e-16
+    },
+    {
+      "both_source_sign_pair_routes": 256,
+      "final_transverse_shell": 4,
+      "mixed_wave_norm_squared_GeV_minus2_NOT_probability": 0.22636007932868152,
+      "quadrature_refinement_error_GeV_minus1": 1.0695635956831124e-15
+    },
+    {
+      "both_source_sign_pair_routes": 400,
+      "final_transverse_shell": 5,
+      "mixed_wave_norm_squared_GeV_minus2_NOT_probability": 0.22636013659296478,
+      "quadrature_refinement_error_GeV_minus1": 1.869347814606936e-15
+    }
+  ],
+  "global_Fock_or_continuum_completion": false,
+  "gradient_max_error": 4.509183282840057e-15,
+  "independent_centered_difference_derivatives": [
+    -0.0015387325081835969,
+    0.009126320676768919,
+    -0.0002549553109007941,
+    0.0001628201018086771,
+    0.00007429916426462263
+  ],
+  "mass_derivatives_in_new_Torch_feature_map": false,
+  "mass_squared_blocks_GeV2": [
+    [
+      [
+        0.42250000000000004,
+        0.027
+      ],
+      [
+        0.027,
+        0.8281000000000001
+      ]
+    ],
+    [
+      [
+        0.12249999999999998,
+        -0.018
+      ],
+      [
+        -0.018,
+        0.30250000000000005
+      ]
+    ],
+    [
+      [
+        0.12249999999999998,
+        -0.018
+      ],
+      [
+        -0.018,
+        0.30250000000000005
+      ]
+    ],
+    [
+      [
+        0.12249999999999998,
+        -0.018
+      ],
+      [
+        -0.018,
+        0.30250000000000005
+      ]
+    ]
+  ],
+  "max_covariant_LF_normalized_tree_error": 2.4291800996759065e-15,
+  "max_tree_Ward_norm_GeV": 3.98652651600506e-17,
+  "nonzero_plus_source_pair_sectors": false,
+  "old_loops_requantized": false,
+  "physical_covariance_defect_repaired": false,
+  "preedit_commit": "28fd253fb3b09c878d0f874c02ca6f48576f5506",
+  "production_model_selected_or_parameters_refitted": false,
+  "public_push_or_review_export": false,
+  "pure_gauge_runs": [
+    {
+      "charge": -1,
+      "endpoint_zero_gauge_wave_norm": 2.557371425599548e-17,
+      "omitted_fermion_contact_wave_norm": 0.0058230978924842455,
+      "omitted_outside_intermediate_wave_norm": 2.6333718467999618e-17,
+      "source_fourier_sign": -1
+    },
+    {
+      "charge": -1,
+      "endpoint_zero_gauge_wave_norm": 5.051909610117851e-17,
+      "omitted_fermion_contact_wave_norm": 0.01071851563014513,
+      "omitted_outside_intermediate_wave_norm": 0.02199061017227278,
+      "source_fourier_sign": 1
+    },
+    {
+      "charge": 0,
+      "endpoint_zero_gauge_wave_norm": 2.4239538121869665e-17,
+      "omitted_fermion_contact_wave_norm": 0.01823377175811517,
+      "omitted_outside_intermediate_wave_norm": 2.402109341900889e-17,
+      "source_fourier_sign": -1
+    },
+    {
+      "charge": 0,
+      "endpoint_zero_gauge_wave_norm": 4.5660278694147894e-17,
+      "omitted_fermion_contact_wave_norm": 0.032104752914747396,
+      "omitted_outside_intermediate_wave_norm": 0.03368265789126293,
+      "source_fourier_sign": 1
+    },
+    {
+      "charge": 1,
+      "endpoint_zero_gauge_wave_norm": 2.884046886266345e-17,
+      "omitted_fermion_contact_wave_norm": 0.0058230978924842455,
+      "omitted_outside_intermediate_wave_norm": 2.7482861267456898e-17,
+      "source_fourier_sign": -1
+    },
+    {
+      "charge": 1,
+      "endpoint_zero_gauge_wave_norm": 5.283562217258526e-17,
+      "omitted_fermion_contact_wave_norm": 0.010718515630145139,
+      "omitted_outside_intermediate_wave_norm": 0.021990610172272784,
+      "source_fourier_sign": 1
+    }
+  ],
+  "quark_mass_GeV": 0.27,
+  "real_cosine_source_wave_runs": [
+    {
+      "charge": -1,
+      "final_pair_routes": 4,
+      "independent_Dirac_ODE_error_GeV_minus1": 2.2352478972379637e-11,
+      "mixed_wave_norm_GeV_minus1": 0.16531814714842732,
+      "ode_function_evaluations": 350,
+      "outside_window_intermediates": 0,
+      "resolved_complex_amplitudes": 576,
+      "source_fourier_sign": -1
+    },
+    {
+      "charge": -1,
+      "final_pair_routes": 12,
+      "independent_Dirac_ODE_error_GeV_minus1": 1.5920078230259415e-10,
+      "mixed_wave_norm_GeV_minus1": 0.23824941884796436,
+      "ode_function_evaluations": 362,
+      "outside_window_intermediates": 8,
+      "resolved_complex_amplitudes": 1728,
+      "source_fourier_sign": 1
+    },
+    {
+      "charge": 0,
+      "final_pair_routes": 4,
+      "independent_Dirac_ODE_error_GeV_minus1": 2.998318283314152e-11,
+      "mixed_wave_norm_GeV_minus1": 0.21994131634866104,
+      "ode_function_evaluations": 362,
+      "outside_window_intermediates": 0,
+      "resolved_complex_amplitudes": 576,
+      "source_fourier_sign": -1
+    },
+    {
+      "charge": 0,
+      "final_pair_routes": 12,
+      "independent_Dirac_ODE_error_GeV_minus1": 1.627275072127714e-10,
+      "mixed_wave_norm_GeV_minus1": 0.35503526387276463,
+      "ode_function_evaluations": 410,
+      "outside_window_intermediates": 8,
+      "resolved_complex_amplitudes": 1728,
+      "source_fourier_sign": 1
+    },
+    {
+      "charge": 1,
+      "final_pair_routes": 4,
+      "independent_Dirac_ODE_error_GeV_minus1": 2.2352521158070768e-11,
+      "mixed_wave_norm_GeV_minus1": 0.16531814714842732,
+      "ode_function_evaluations": 350,
+      "outside_window_intermediates": 0,
+      "resolved_complex_amplitudes": 576,
+      "source_fourier_sign": -1
+    },
+    {
+      "charge": 1,
+      "final_pair_routes": 12,
+      "independent_Dirac_ODE_error_GeV_minus1": 1.5920060783037947e-10,
+      "mixed_wave_norm_GeV_minus1": 0.23824941884796438,
+      "ode_function_evaluations": 362,
+      "outside_window_intermediates": 8,
+      "resolved_complex_amplitudes": 1728,
+      "source_fourier_sign": 1
+    }
+  ],
+  "scope": "one bare Yukawa and one classical q+=0 EM insertion; full resolved final-window Fock response",
+  "shared_g1_g2_C00_C01_C11_derivatives": [
+    -0.0015387325081828787,
+    0.00912632067676716,
+    -0.0002549553108971578,
+    0.00016282010180898002,
+    0.00007429916426011345
+  ],
+  "time_parent_plus_transverse_GeV": [
+    0.5,
+    0.2,
+    0
+  ],
+  "time_source_transfer_plus_transverse_GeV": [
+    0,
+    -0.2,
+    0.2
+  ],
+  "unit_positive_Fourier_Aplus_omission_errors_GeV_minus1": {
+    "anti": 0.2371566251138148,
+    "collective": 0.05724840202006986,
+    "collective_endpoint": 0.0818126581523068,
+    "fermion_contact": 0.29135219857608047,
+    "outside_intermediates": 0.36454559467571396,
+    "quark": 0.4743132502276297,
+    "source_derivatives": 0.0033105283334102977
+  },
+  "yukawa_couplings": [
+    0.31,
+    -0.19
+  ]
+}

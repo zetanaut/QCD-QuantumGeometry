@@ -1,0 +1,368 @@
+{
+  "preedit_commit": "5254a42815fa5379647bdbd46fcebd0caa42fca6",
+  "scope": "Sufficient bounded kinetic/coercive potential family; actual finite connection-dependent Nf2 determinant and common responses. Not a physical vacuum/baryon regulator.",
+  "units": "dimensionless reference-cell units; no parameters fitted to physical data",
+  "parameters": {
+    "gate": {
+      "eta": 1.0,
+      "scale": 1.0,
+      "rho_reference": 0.5
+    },
+    "a": 0.25,
+    "quartic": 0.6,
+    "beta": 0.7,
+    "sea_weight": 0.04,
+    "mass": 0.06,
+    "yukawa": 1.0,
+    "hopping": 0.4,
+    "seed": 17
+  },
+  "carrier": {
+    "nodes": 8,
+    "links": 12,
+    "spin": 4,
+    "color": 3,
+    "flavor": 2,
+    "full_D_dimension": 192,
+    "role": "algebraic graph, not continuum/anomaly-correct lattice or LF dynamics"
+  },
+  "kinetic_gate": {
+    "bounds": [
+      0.7165313105737893,
+      1.947734041054676
+    ],
+    "reference_value": 1.0,
+    "canonical_momentum": "Pi=kappa E; Gauss uses D_i Pi_i, not D_i E_i",
+    "rejected_linear_gate_at_rho_2": -1.0,
+    "zero_floor_confinement_mechanism_not_claimed": true
+  },
+  "full_two_flavor_determinant": {
+    "logabs": 49.826186231247505,
+    "kernel_identity_norm": 3.641637553404655e-15,
+    "independent_logdet_error": 1.4210854715202004e-14,
+    "phase_error": 1.4576041560720575e-17,
+    "extra_flavor_factor": false,
+    "homogeneous_chiral_scope": true
+  },
+  "unquenched_two_coordinate_slice": {
+    "attempts": [
+      {
+        "start": [
+          0.1,
+          -5.0
+        ],
+        "success": true,
+        "point": [
+          1.001152918236016,
+          -0.5577742659455112
+        ],
+        "action": 1.855378142923051
+      },
+      {
+        "start": [
+          0.7,
+          -5.0
+        ],
+        "success": true,
+        "point": [
+          1.001152922226917,
+          -0.5577742787988402
+        ],
+        "action": 1.8553781429230511
+      },
+      {
+        "start": [
+          1.5,
+          -5.0
+        ],
+        "success": true,
+        "point": [
+          1.001152922229003,
+          -0.5577742785594487
+        ],
+        "action": 1.8553781429230514
+      },
+      {
+        "start": [
+          0.1,
+          0.0
+        ],
+        "success": true,
+        "point": [
+          1.001152922218425,
+          -0.557774278742818
+        ],
+        "action": 1.8553781429230511
+      },
+      {
+        "start": [
+          0.7,
+          0.0
+        ],
+        "success": true,
+        "point": [
+          1.001152922267851,
+          -0.5577742790370512
+        ],
+        "action": 1.8553781429230507
+      },
+      {
+        "start": [
+          1.5,
+          0.0
+        ],
+        "success": true,
+        "point": [
+          1.0011529222536177,
+          -0.5577742784103461
+        ],
+        "action": 1.855378142923051
+      },
+      {
+        "start": [
+          0.1,
+          5.0
+        ],
+        "success": true,
+        "point": [
+          1.0011529221639583,
+          -0.5577742788798734
+        ],
+        "action": 1.8553781429230514
+      },
+      {
+        "start": [
+          0.7,
+          5.0
+        ],
+        "success": true,
+        "point": [
+          1.0011529220048936,
+          -0.5577742729459151
+        ],
+        "action": 1.8553781429230511
+      },
+      {
+        "start": [
+          1.5,
+          5.0
+        ],
+        "success": true,
+        "point": [
+          1.0011529222219964,
+          -0.5577742788119928
+        ],
+        "action": 1.855378142923051
+      }
+    ],
+    "best_point": [
+      1.001152922267851,
+      -0.5577742790370512
+    ],
+    "action": 1.8553781429230507,
+    "gradient_norm": 5.274273612010063e-10,
+    "slice_hessian_eigenvalues": [
+      0.14251717041588324,
+      11.92785626468288
+    ],
+    "all_attempts_success": true,
+    "maximum_action_spread": 6.661338147750939e-16
+  },
+  "quenched_two_coordinate_slice": {
+    "attempts": [
+      {
+        "start": [
+          0.1,
+          -5.0
+        ],
+        "success": true,
+        "point": [
+          0.0,
+          -0.5598682268736289
+        ],
+        "action": 1.4238843459130934
+      },
+      {
+        "start": [
+          0.7,
+          -5.0
+        ],
+        "success": true,
+        "point": [
+          0.0,
+          -0.5598682277121655
+        ],
+        "action": 1.4238843459130934
+      },
+      {
+        "start": [
+          1.5,
+          -5.0
+        ],
+        "success": true,
+        "point": [
+          0.0,
+          -0.5598682277127401
+        ],
+        "action": 1.4238843459130934
+      },
+      {
+        "start": [
+          0.1,
+          0.0
+        ],
+        "success": true,
+        "point": [
+          0.0,
+          -0.5598682278515148
+        ],
+        "action": 1.4238843459130934
+      },
+      {
+        "start": [
+          0.7,
+          0.0
+        ],
+        "success": true,
+        "point": [
+          0.0,
+          -0.559868227901557
+        ],
+        "action": 1.4238843459130934
+      },
+      {
+        "start": [
+          1.5,
+          0.0
+        ],
+        "success": true,
+        "point": [
+          0.0,
+          -0.559868227743694
+        ],
+        "action": 1.4238843459130934
+      },
+      {
+        "start": [
+          0.1,
+          5.0
+        ],
+        "success": true,
+        "point": [
+          0.0,
+          -0.5598682277127394
+        ],
+        "action": 1.4238843459130934
+      },
+      {
+        "start": [
+          0.7,
+          5.0
+        ],
+        "success": true,
+        "point": [
+          0.0,
+          -0.5598682277133119
+        ],
+        "action": 1.4238843459130934
+      },
+      {
+        "start": [
+          1.5,
+          5.0
+        ],
+        "success": true,
+        "point": [
+          0.0,
+          -0.5598682277127395
+        ],
+        "action": 1.4238843459130934
+      }
+    ],
+    "best_point": [
+      0.0,
+      -0.5598682268736289
+    ],
+    "action": 1.4238843459130934,
+    "gradient_norm": 8.524175790731092e-11,
+    "slice_hessian_eigenvalues": [
+      0.10158585957154168,
+      3.4238843459130934
+    ],
+    "all_attempts_success": true,
+    "maximum_action_spread": 0.0
+  },
+  "sea_shift": [
+    1.001152922267851,
+    0.002093947836577681
+  ],
+  "source_checks": {
+    "gradient_fd_max_error": 7.001182122934324e-08,
+    "hessian_fd_max_error": 9.854107574369664e-08,
+    "mixed_response": 0.047109401349745214,
+    "mixed_response_without_sea": 0.0499514204134943,
+    "sea_link_gradient": -0.0002970206088699436,
+    "sea_link_hessian": 0.0006702377505462809,
+    "sea_link_hessian_with_contact_omitted": 0.0065126087356930555
+  },
+  "non_singlet_chiral": {
+    "mass": 0.0,
+    "fixed_theta": 0.43,
+    "stationary_radius": 1.01180299947012,
+    "gap_residual": 2.5441811324355967e-08,
+    "orbit_action_spread": 8.881784197001252e-16,
+    "pion_curvature_fd": 1.3322676295501878e-07,
+    "finite_orientation_average_norm": 3.568268046904557e-17,
+    "physical_spontaneous_condensate_claim": false,
+    "U1_A_anomaly_claim": false
+  },
+  "radial_coercivity_scan": [
+    {
+      "radius": 2.0,
+      "action": 10.510188252223982
+    },
+    {
+      "radius": 4.0,
+      "action": 162.3045713504878
+    },
+    {
+      "radius": 8.0,
+      "action": 2509.420335930418
+    },
+    {
+      "radius": 16.0,
+      "action": 39560.23509008499
+    }
+  ],
+  "disconnected_modules": {
+    "logdet_additivity_error": 7.105427357601002e-15,
+    "mixed_source_response": 0.0,
+    "physical_nuclear_cluster_claim": false
+  },
+  "exact_fermionic_retained_matching": {
+    "retained_full_spin_color_flavor_dimension": 96,
+    "logdet_split_error": 0.0,
+    "first_source_split_error": 1.0658187305853692e-14,
+    "second_source_split_error": 4.450667561245522e-16,
+    "incorrect_full_plus_retained_first_source_excess": 15.105967715878375,
+    "full_gluon_or_LF_Fock_matching_claim": false
+  },
+  "arbitrary_pion_texture_operator": {
+    "hermiticity_error": 0.0,
+    "single_particle_norm": 2.312955072286523,
+    "single_particle_bound": 3.2537955493202944,
+    "finite_Fock_plus_quartic_coercive_bound_derived": true,
+    "finite_gauge_field_quantization_performed": false,
+    "euclidean_to_real_time_equivalence_claim": false
+  },
+  "limitations": [
+    "Not full connection-space minimization or a quantum ensemble",
+    "No positivity claim for arbitrary pion textures or chemical potential",
+    "No continuum renormalization, anomaly, real-time/LF reconstruction or baryon binding",
+    "Color-link, mass and algebraic bilocal sources are not a complete matched electromagnetic/metric current",
+    "Exact finite fermionic Schur matching is not full gluonic/renormalized LF matching"
+  ],
+  "decision": "Retain the stable connection/chiral/sea shared-action class as a working exploratory candidate; next qualify full field-space textures, physical regulator/anomaly and canonical LF matching before a physical p/n solve",
+  "physical_model_complete": false,
+  "public_push": false
+}

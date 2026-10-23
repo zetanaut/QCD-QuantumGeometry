@@ -1,0 +1,368 @@
+{
+  "scope": "Order-gs^2 path-dressed canonical LF carrier; no physical bound state, local Gauss-law proof or production action",
+  "date": "2026-09-11",
+  "parent_quarks_GeV": [
+    [
+      1.875,
+      0.2,
+      -0.2
+    ],
+    [
+      0.375,
+      0,
+      0.2
+    ],
+    [
+      0.625,
+      -0.2,
+      0
+    ]
+  ],
+  "quark_mass_GeV": 0.27,
+  "cell_lengths_GeV_inverse": [
+    25.132741228718345,
+    31.41592653589793,
+    31.41592653589793
+  ],
+  "gluon_spatial_momenta_GeV": [
+    [
+      0.25,
+      0.2,
+      0
+    ],
+    [
+      0.5,
+      0,
+      0.2
+    ]
+  ],
+  "helicities": [
+    -1,
+    1
+  ],
+  "colors": 8,
+  "boson_configurations": 561,
+  "raw_color_dimension": 27,
+  "raw_wave_dimension": 15147,
+  "all_paths_start_and_end_at_origin": true,
+  "paths": {
+    "bare": [
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "transverse_loop": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        4,
+        3
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "LF_detour": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        4,
+        0
+      ],
+      [
+        3,
+        4,
+        3
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "different_loop": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        2,
+        2,
+        5
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "paths_order": [
+    "bare",
+    "transverse_loop",
+    "LF_detour",
+    "different_loop"
+  ],
+  "coefficients": {
+    "bare": {
+      "one_gluon_norm_squared": 0,
+      "second_order_vacuum_amplitude": {
+        "real": 0,
+        "imag": 0
+      },
+      "second_order_two_gluon_norm": 0,
+      "diagonal_norm_coefficients": {
+        "real": [
+          1.0000000000000002,
+          0,
+          0
+        ],
+        "imag": [
+          0,
+          0,
+          0
+        ]
+      },
+      "free_energy_shift_gs2_GeV": 0
+    },
+    "transverse_loop": {
+      "one_gluon_norm_squared": 0.0008873374766772518,
+      "second_order_vacuum_amplitude": {
+        "real": -0.0004436687383386247,
+        "imag": -0.00020845940871142262
+      },
+      "second_order_two_gluon_norm": 0.0030690999181297376,
+      "diagonal_norm_coefficients": {
+        "real": [
+          1.0000000000000002,
+          0,
+          1.8431436932253575e-18
+        ],
+        "imag": [
+          0,
+          0,
+          2.710505431213761e-20
+        ]
+      },
+      "free_energy_shift_gs2_GeV": 0.00007299210732468459
+    },
+    "LF_detour": {
+      "one_gluon_norm_squared": 0.000644434203068733,
+      "second_order_vacuum_amplitude": {
+        "real": -0.0003222171015343671,
+        "imag": -0.00022113435978361024
+      },
+      "second_order_two_gluon_norm": 0.002964536284790385,
+      "diagonal_norm_coefficients": {
+        "real": [
+          1.0000000000000002,
+          0,
+          -5.421010862427522e-19
+        ],
+        "imag": [
+          0,
+          0,
+          -2.710505431213761e-20
+        ]
+      },
+      "free_energy_shift_gs2_GeV": 0.000058746273787681345
+    },
+    "different_loop": {
+      "one_gluon_norm_squared": 0.0001526574714259145,
+      "second_order_vacuum_amplitude": {
+        "real": -0.00007632873571295715,
+        "imag": -0.0003562507861313646
+      },
+      "second_order_two_gluon_norm": 0.0016395162278153694,
+      "diagonal_norm_coefficients": {
+        "real": [
+          1.0000000000000002,
+          0,
+          3.2526065174565133e-19
+        ],
+        "imag": [
+          0,
+          0,
+          5.421010862427522e-20
+        ]
+      },
+      "free_energy_shift_gs2_GeV": 0.000012146271197883519
+    }
+  },
+  "Gram_gs2": {
+    "real": [
+      [
+        0,
+        -0.0004436687383386247,
+        -0.0003222171015343671,
+        -0.00007632873571295715
+      ],
+      [
+        -0.0004436687383386247,
+        1.8431436932253575e-18,
+        -0.0005212132157085092,
+        -0.00026520538381520674
+      ],
+      [
+        -0.0003222171015343671,
+        -0.0005212132157085092,
+        -5.421010862427522e-19,
+        -0.00014269461523986812
+      ],
+      [
+        -0.00007632873571295715,
+        -0.00026520538381520674,
+        -0.00014269461523986812,
+        3.2526065174565133e-19
+      ]
+    ],
+    "imag": [
+      [
+        0,
+        -0.00020845940871142262,
+        -0.00022113435978361024,
+        -0.0003562507861313646
+      ],
+      [
+        0.00020845940871142265,
+        2.710505431213761e-20,
+        0.00010281214771535005,
+        -0.00006095127662977747
+      ],
+      [
+        0.0002211343597836102,
+        -0.0001028121477153501,
+        -2.710505431213761e-20,
+        -0.0001851341423084784
+      ],
+      [
+        0.00035625078613136466,
+        0.000060951276629777576,
+        0.00018513414230847844,
+        5.421010862427522e-20
+      ]
+    ]
+  },
+  "free_Pminus_gs2_GeV": {
+    "real": [
+      [
+        0,
+        -0.00012494894788251241,
+        -0.00009074492824811871,
+        -0.000021496207409721084
+      ],
+      [
+        -0.00012494894788251244,
+        0.0000729921073246851,
+        -0.00012781700183816229,
+        -0.00005498508441929338
+      ],
+      [
+        -0.00009074492824811871,
+        -0.00012781700183816223,
+        0.00005874627378768119,
+        -0.00001845973333432147
+      ],
+      [
+        -0.000021496207409721084,
+        -0.00005498508441929335,
+        -0.00001845973333432147,
+        0.00001214627119788361
+      ]
+    ],
+    "imag": [
+      [
+        0,
+        -0.00005870772841070225,
+        -0.00006227733263132553,
+        -0.0001003297213955558
+      ],
+      [
+        0.00005870772841070226,
+        6.776263578034403e-21,
+        0.00003831022064513056,
+        -0.00001037960302662915
+      ],
+      [
+        0.00006227733263132555,
+        -0.00003831022064513064,
+        1.3552527156068805e-20,
+        -0.000056861488594548456
+      ],
+      [
+        0.0001003297213955558,
+        0.000010379603026629137,
+        0.000056861488594548456,
+        0
+      ]
+    ]
+  },
+  "bare_Pminus_GeV": 0.2816266666666667,
+  "polynomial_column_singular_values_at_gs_point6": [
+    1.9999206013900959,
+    0.014390886927055901,
+    0.010471025042986826,
+    0.0019037820596955093
+  ],
+  "polynomial_higher_order_terms_are_not_physical_fourth_order": true,
+  "independent_oscillator_wave_error": 6.2743022447614774e-12,
+  "ODE_evaluations": 188,
+  "coarse_oscillator_wave_error": 1.7272815449172742e-11,
+  "coarse_ODE_evaluations": 140,
+  "quadrature_16_to_32_wave_error": 8.291432169046967e-19,
+  "unordered_full_second_order_wave_error": 0.002957453281280978,
+  "unordered_two_gluon_wave_error": 0.002949174376988027,
+  "omitted_two_gluon_norm_coefficient_error": 0,
+  "omitted_two_gluon_quadratic_probe_gs2_error": 5.508831640618372e-8,
+  "enlarged_mode_domain": {
+    "spatial_modes": 3,
+    "boson_configurations": 1225,
+    "old_one_gluon_amplitude_error": 4.8873351848127706e-18,
+    "one_gluon_norm_squared": 0.0009369917351654756,
+    "vacuum_coefficient_change": {
+      "real": -0.00014627876604837064,
+      "imag": 0.0003023795140345754
+    },
+    "continuum_convergence_established": false
+  },
+  "additional_orthogonal_flux_register": false,
+  "local_Gauss_law": false,
+  "production_binding_action": false,
+  "GTMD_process_links": false,
+  "physical_nucleon_prediction": false,
+  "old_BLFQ_H2_rebuilt": false,
+  "public_push": false
+}

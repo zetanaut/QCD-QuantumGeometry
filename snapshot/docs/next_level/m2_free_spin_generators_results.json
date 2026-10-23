@@ -1,0 +1,113 @@
+{
+  "scope": "source-derived free one-particle and finite-cell/Galerkin references; not the interacting many-body H2 spin action",
+  "cases": {
+    "quark": {
+      "mass_GeV": 0.3,
+      "doubled_modes": [
+        1,
+        3,
+        5
+      ],
+      "half_length_GeVinv": 2.7,
+      "width_GeV": 0.4,
+      "retained_cutoff": 1,
+      "parent_cutoff": 4,
+      "retained_dimension": 18,
+      "parent_dimension": 90,
+      "cell_plus_commutator_residual_GeV": 1.5700924586837752e-16,
+      "free_casimir_residual_GeV2": 2.5183501160218287e-18,
+      "projected_F1_F2_commutator_norm": 1.1131168529259505,
+      "parent_cell_defect_projected_norm": 1.8556430421824055,
+      "transverse_projection_leakage_norm": 2.50771019634803,
+      "leakage_identity_residual": 2.472527823976526e-16
+    },
+    "gluon": {
+      "mass_GeV": 0.0,
+      "doubled_modes": [
+        2,
+        4,
+        6
+      ],
+      "half_length_GeVinv": 2.7,
+      "width_GeV": 0.4,
+      "retained_cutoff": 1,
+      "parent_cutoff": 4,
+      "retained_dimension": 18,
+      "parent_dimension": 90,
+      "cell_plus_commutator_residual_GeV": 3.510833468576701e-16,
+      "free_casimir_residual_GeV2": 8.831770080096235e-17,
+      "projected_F1_F2_commutator_norm": 0.5578217587652743,
+      "parent_cell_defect_projected_norm": 0.7544886053866322,
+      "transverse_projection_leakage_norm": 0.9843633881184541,
+      "leakage_identity_residual": 2.1995625968064853e-16
+    }
+  },
+  "APBC_cell_resolution": [
+    {
+      "mode_count": 3,
+      "boundary_spectral_norm": 3.0,
+      "commutator_identity_residual": 0.0
+    },
+    {
+      "mode_count": 5,
+      "boundary_spectral_norm": 5.000000000000001,
+      "commutator_identity_residual": 9.930136612989092e-16
+    },
+    {
+      "mode_count": 9,
+      "boundary_spectral_norm": 9.0,
+      "commutator_identity_residual": 2.5703521317566537e-15
+    }
+  ],
+  "qqq_K2_9_zero_total_transverse_F1_tangent": {
+    "modes": [
+      1,
+      3,
+      5
+    ],
+    "total_pplus_GeV": 2.1,
+    "masses_GeV": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "coordinates_GeV": [
+      [
+        0.07,
+        -0.12
+      ],
+      [
+        0.19,
+        0.04
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "total_pplus_derivative_GeV": 0.0,
+    "fraction_derivative": [
+      0.02843392347628445,
+      0.004551794182647947,
+      -0.0329857176589324
+    ],
+    "Jacobi_derivative_GeV": [
+      [
+        0.06014279102735527,
+        -0.00035244019884783683
+      ],
+      [
+        0.5084350294867414,
+        -0.004478342947514802
+      ],
+      [
+        0.3092857142857143,
+        0.0
+      ]
+    ]
+  },
+  "physical_prediction": false,
+  "interacting_spin_qualified": false,
+  "current_covariance_repaired": false,
+  "next": "derive regulated interaction-dependent generators and many-body domain action, then common-order H2/norm transport and multiplet/current tests"
+}

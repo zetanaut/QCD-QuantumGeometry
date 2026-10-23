@@ -1,0 +1,351 @@
+{
+  "case": "Q5_shell2",
+  "parameters": {
+    "q5": 2,
+    "q6": 0,
+    "nb": 8,
+    "nf": 8,
+    "width": 0.8,
+    "muq": 0.011,
+    "mug": -0.007,
+    "target": "PROTON"
+  },
+  "total_k2": 9,
+  "retained_cutoff": 0,
+  "jz_twice": 1,
+  "b_GeV": 0.4,
+  "quark_mass_GeV": 0.35,
+  "gluon_mass_GeV": 0,
+  "coupling": 0.3,
+  "total_pplus_GeV": 1.3,
+  "energy_out_GeV2": 1.39,
+  "energy_in_GeV2": 1.47,
+  "transfer_GeV": [
+    0.12,
+    0.16
+  ],
+  "component_order": [
+    "plus",
+    "minus",
+    "x",
+    "y"
+  ],
+  "current_normalization": "Jmu/(2Pplus); order g4 selected before both norm maps",
+  "physical_leg_prescription": "physical-leg-endpoint-product",
+  "smooth_prescription": "continuous-global-Jacobi-fixed-mode-membership",
+  "field_envelope_prescription": "finite-cell-covariant-spectral-gapped-envelope",
+  "isospin_prescription": "flavor-degenerate-total-isospin-half-H2-source-domain",
+  "raw_Q_dimensions": {
+    "qqqgg": 22230,
+    "qqqq-qbar": 130500,
+    "qqqggg": 792,
+    "qqqq-qbar-g": 7200
+  },
+  "Ward_Frobenius": 1.886974509927371e-15,
+  "normalized_Ward_Frobenius": 1.8862812492228936e-15,
+  "raw_current_component_Frobenius": [
+    4.5508826511929525,
+    7.692731055609763,
+    1.340901223946785,
+    1.0057924050559686
+  ],
+  "normalized_current_component_Frobenius": [
+    4.549211021318502,
+    7.689864137411193,
+    1.3404010656246408,
+    1.0054172721834516
+  ],
+  "coefficient_component_Frobenius": {
+    "0": [
+      4.549346247321706,
+      7.629765602831042,
+      1.3404177153647299,
+      1.0053132865235475
+    ],
+    "1": [
+      0,
+      0.3355639201796427,
+      0.046224994025394525,
+      0.06163332536719273
+    ],
+    "2": [
+      0.021781374060552614,
+      0.6952528687523386,
+      0.009845869352583136,
+      0.011194296337111756
+    ],
+    "3": [
+      0.00020806359490000952,
+      0.0004809676271250501,
+      0.0001225495481377642,
+      0.00013785994240070066
+    ],
+    "4": [
+      0.00401176242613728,
+      0.002860620140019822,
+      0.001131003417508269,
+      0.0008604134428075121
+    ]
+  },
+  "min_norm_eigenvalue": [
+    1.0000000520162744,
+    1.0000000548469579
+  ],
+  "isospin_wave_residual": 3.0725999665012513e-16,
+  "finite_conditions_are_uncalibrated_test_values": true,
+  "continuum_convergence_established": false,
+  "physical": false,
+  "quantum_execution": false,
+  "seconds": 17107.41218641703,
+  "full_matrix_file": "m2_gaussian_cluster_four_current_Q5_shell2.npz",
+  "resolution_comparison": {
+    "baseline": {
+      "matrices": {
+        "raw_current": {
+          "bitwise_identical": false,
+          "difference_Frobenius": 0.0021722681266251047,
+          "relative_difference": 0.00023890752043103608
+        },
+        "normalized_current": {
+          "bitwise_identical": false,
+          "difference_Frobenius": 0.0018006734263431108,
+          "relative_difference": 0.00019806375918466097
+        },
+        "H_out": {
+          "bitwise_identical": false,
+          "difference_Frobenius": 0.004485965607694869,
+          "relative_difference": 0.0002684098020461507
+        },
+        "H_in": {
+          "bitwise_identical": false,
+          "difference_Frobenius": 0.004631194310396388,
+          "relative_difference": 0.00027710032673810674
+        },
+        "N_out": {
+          "bitwise_identical": false,
+          "difference_Frobenius": 0.0017595220215069094,
+          "relative_difference": 0.00028922720286168733
+        },
+        "N_in": {
+          "bitwise_identical": false,
+          "difference_Frobenius": 0.001886217429435692,
+          "relative_difference": 0.00031005077155620627
+        },
+        "current_power_0": {
+          "bitwise_identical": true,
+          "difference_Frobenius": 0,
+          "relative_difference": 0,
+          "best_real_scalar": 1,
+          "best_scalar_residual_Frobenius": 0,
+          "best_scalar_relative_residual": 0
+        },
+        "current_power_1": {
+          "bitwise_identical": true,
+          "difference_Frobenius": 0,
+          "relative_difference": 0,
+          "best_real_scalar": 1,
+          "best_scalar_residual_Frobenius": 0,
+          "best_scalar_relative_residual": 0
+        },
+        "current_power_2": {
+          "bitwise_identical": false,
+          "difference_Frobenius": 0.024391690887828145,
+          "relative_difference": 0.03566197231713332,
+          "best_real_scalar": 0.9825911536314712,
+          "best_scalar_residual_Frobenius": 0.021171856572066168,
+          "best_scalar_relative_residual": 0.030954400268827335
+        },
+        "current_power_3": {
+          "bitwise_identical": false,
+          "difference_Frobenius": 0.0002206687676301108,
+          "relative_difference": 0.5517837255934006,
+          "best_real_scalar": 0.6802083214870104,
+          "best_scalar_residual_Frobenius": 0.00013088425690944207,
+          "best_scalar_relative_residual": 0.32727695756234954
+        },
+        "current_power_4": {
+          "bitwise_identical": false,
+          "difference_Frobenius": 0.00310139139242285,
+          "relative_difference": 1.264685405547052,
+          "best_real_scalar": 0.4314587470903027,
+          "best_scalar_residual_Frobenius": 0.0010575689073472707,
+          "best_scalar_relative_residual": 0.4312554570668259
+        }
+      },
+      "two_norm_bound": {
+        "minimum_endpoint_metric_eigenvalue": 1.0000000091234271,
+        "raw_current_difference_Frobenius": 0.0021722681266251047,
+        "endpoint_metric_difference_spectral_norm": [
+          0.0004949918175648621,
+          0.0005323919985326799
+        ],
+        "raw_transport_bound_Frobenius": 0.002172268106806575,
+        "two_norm_transport_bound_Frobenius": 0.004670746807740009,
+        "normalized_current_error_bound_Frobenius": 0.006843014914546584
+      },
+      "relative_component_changes": {
+        "0": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "1": [
+          null,
+          0,
+          0,
+          0
+        ],
+        "2": [
+          1.5745910443979383,
+          0.02826814857544969,
+          0.5181161397823626,
+          0.30953411809234865
+        ],
+        "3": [
+          0.2133164248224729,
+          0.6539880829021907,
+          0.29289073359236495,
+          0.2703105620911596
+        ],
+        "4": [
+          1.393820754330664,
+          1.0409497804253989,
+          1.6797296755449425,
+          1.593446820619555
+        ]
+      }
+    },
+    "Q5_shell1": {
+      "matrices": {
+        "raw_current": {
+          "bitwise_identical": false,
+          "difference_Frobenius": 0.0008646768793336711,
+          "relative_difference": 0.00009508617202205043
+        },
+        "normalized_current": {
+          "bitwise_identical": false,
+          "difference_Frobenius": 0.0009138004809351283,
+          "relative_difference": 0.00010052027177639382
+        },
+        "H_out": {
+          "bitwise_identical": false,
+          "difference_Frobenius": 0.0016069657400123393,
+          "relative_difference": 0.00009616489644150113
+        },
+        "H_in": {
+          "bitwise_identical": false,
+          "difference_Frobenius": 0.0016425453420259055,
+          "relative_difference": 0.00009829499182172968
+        },
+        "N_out": {
+          "bitwise_identical": false,
+          "difference_Frobenius": 0.0004378411881888821,
+          "relative_difference": 0.00007195865909122755
+        },
+        "N_in": {
+          "bitwise_identical": false,
+          "difference_Frobenius": 0.0004590598315297022,
+          "relative_difference": 0.0000754442750123323
+        },
+        "current_power_0": {
+          "bitwise_identical": true,
+          "difference_Frobenius": 0,
+          "relative_difference": 0,
+          "best_real_scalar": 1,
+          "best_scalar_residual_Frobenius": 0,
+          "best_scalar_relative_residual": 0
+        },
+        "current_power_1": {
+          "bitwise_identical": true,
+          "difference_Frobenius": 0,
+          "relative_difference": 0,
+          "best_real_scalar": 1,
+          "best_scalar_residual_Frobenius": 0,
+          "best_scalar_relative_residual": 0
+        },
+        "current_power_2": {
+          "bitwise_identical": false,
+          "difference_Frobenius": 0.00968351335089383,
+          "relative_difference": 0.0139613676104754,
+          "best_real_scalar": 0.9968030585721388,
+          "best_scalar_residual_Frobenius": 0.009424595060125706,
+          "best_scalar_relative_residual": 0.013588067826863691
+        },
+        "current_power_3": {
+          "bitwise_identical": false,
+          "difference_Frobenius": 0.0002237887940856677,
+          "relative_difference": 0.5895431341999058,
+          "best_real_scalar": 0.6522991237692126,
+          "best_scalar_residual_Frobenius": 0.00011299390045218151,
+          "best_scalar_relative_residual": 0.29766806908370347
+        },
+        "current_power_4": {
+          "bitwise_identical": false,
+          "difference_Frobenius": 0.0009062094026894114,
+          "relative_difference": 0.20693010178581325,
+          "best_real_scalar": 0.8490353320672366,
+          "best_scalar_residual_Frobenius": 0.0004710639196249796,
+          "best_scalar_relative_residual": 0.10756598259335205
+        }
+      },
+      "two_norm_bound": {
+        "minimum_endpoint_metric_eigenvalue": 1.0000000112308751,
+        "raw_current_difference_Frobenius": 0.0008646768793336711,
+        "endpoint_metric_difference_spectral_norm": [
+          0.00014182270497448964,
+          0.00014996219904749478
+        ],
+        "raw_transport_bound_Frobenius": 0.0008646768696225931,
+        "two_norm_transport_bound_Frobenius": 0.001326689513385838,
+        "normalized_current_error_bound_Frobenius": 0.002191366383008431
+      },
+      "relative_component_changes": {
+        "0": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "1": [
+          null,
+          0,
+          0,
+          0
+        ],
+        "2": [
+          0.20204138550292727,
+          0.012819167586275144,
+          0.08642943546520612,
+          0.057335876613265495
+        ],
+        "3": [
+          0.21331642482247298,
+          0.7195761389591011,
+          0.29289073359235496,
+          0.27031056209114573
+        ],
+        "4": [
+          0.17239443533002963,
+          0.2821831342028264,
+          0.12100566206512978,
+          0.1214893925768157
+        ]
+      }
+    },
+    "independent_plus_matrix_differences": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 3.2164582576645046e-19,
+      "N_out": 0,
+      "N_in": 0,
+      "raw": 3.422719677827805e-21,
+      "normalized": 5.356484826309423e-21
+    },
+    "coordinate_identification": "same K9/P0 physical occupation basis; only Q5 cutoff differs",
+    "independent_plus_report": "m2_gaussian_resolution_defect_Q5_shell2_to3.json",
+    "bound_scope": "finite aligned reference with both positive endpoint norms; not an infinite-space or physical error estimate"
+  }
+}

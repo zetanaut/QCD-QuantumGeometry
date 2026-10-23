@@ -1,0 +1,209 @@
+{
+  "scope": "one emission and one classical q+=0 EM insertion, full free-reference baryon state, not bound nucleons",
+  "inputs": {
+    "cell_lengths_GeV_minus1": [
+      25.132741228718345,
+      31.41592653589793,
+      31.41592653589793
+    ],
+    "mass_squared_GeV2": [
+      [
+        [
+          0.42250000000000004,
+          0.027
+        ],
+        [
+          0.027,
+          0.8281000000000001
+        ]
+      ],
+      [
+        [
+          0.12249999999999998,
+          -0.018
+        ],
+        [
+          -0.018,
+          0.30250000000000005
+        ]
+      ],
+      [
+        [
+          0.12249999999999998,
+          -0.018
+        ],
+        [
+          -0.018,
+          0.30250000000000005
+        ]
+      ],
+      [
+        [
+          0.12249999999999998,
+          -0.018
+        ],
+        [
+          -0.018,
+          0.30250000000000005
+        ]
+      ]
+    ],
+    "C_GeV_minus2": [
+      [
+        0.14,
+        0.037
+      ],
+      [
+        0.037,
+        -0.06
+      ]
+    ],
+    "quark_mass_GeV": 0.27,
+    "Yukawas": [
+      0.31,
+      -0.19
+    ],
+    "gs": 0.43,
+    "quark_momentum_GeV": [
+      0.375,
+      0.2,
+      0
+    ],
+    "transfer_GeV": [
+      0,
+      -0.2,
+      0.2
+    ],
+    "duration_GeV_minus1": 12,
+    "each_real_source_Fourier_amplitude": 0.5
+  },
+  "ordinary_cases": [
+    {
+      "species": "p",
+      "source_sign": 1,
+      "dimensions": {
+        "initial": 21,
+        "source_first": 72,
+        "emission_first": 92160,
+        "mixed_final": 82944,
+        "outside_intermediate_blocks": 5040,
+        "final_blocks": 6480,
+        "quarks": 3,
+        "final_domain_is_global_Fock_cutoff": false
+      },
+      "mixed_wave_norm_squared_GeV_minus2": 0.137740356482989,
+      "phi_norm_squared_GeV_minus2": 0.014180601248112684,
+      "gluon_norm_squared_GeV_minus2": 0.12355975523487625,
+      "quadrature_refinement_error_GeV_minus1": 5.142302805658207e-16,
+      "omission_wave_errors_GeV_minus1": {
+        "before": 0.0685166499069444,
+        "after_quark": 0.42309757711324836,
+        "collective": 0.09618824802265526,
+        "fermion_contact": 0.2618629495842657,
+        "collective_endpoint": 0.04336685458738354,
+        "outside_intermediates": 0.32955574999464765,
+        "spectators": 0.09797315497348143
+      }
+    },
+    {
+      "species": "p",
+      "source_sign": -1,
+      "dimensions": {
+        "initial": 21,
+        "source_first": 72,
+        "emission_first": 92160,
+        "mixed_final": 9216,
+        "outside_intermediate_blocks": 5040,
+        "final_blocks": 720,
+        "quarks": 3,
+        "final_domain_is_global_Fock_cutoff": false
+      },
+      "mixed_wave_norm_squared_GeV_minus2": 0.045803082693576365,
+      "phi_norm_squared_GeV_minus2": 0.00567104766612997,
+      "gluon_norm_squared_GeV_minus2": 0.040132035027446465
+    },
+    {
+      "species": "n",
+      "source_sign": 1,
+      "dimensions": {
+        "initial": 18,
+        "source_first": 72,
+        "emission_first": 92160,
+        "mixed_final": 82944,
+        "outside_intermediate_blocks": 5040,
+        "final_blocks": 6480,
+        "quarks": 3,
+        "final_domain_is_global_Fock_cutoff": false
+      },
+      "mixed_wave_norm_squared_GeV_minus2": 0.09587085700247786,
+      "phi_norm_squared_GeV_minus2": 0.013992150762364475,
+      "gluon_norm_squared_GeV_minus2": 0.08187870624011293
+    },
+    {
+      "species": "n",
+      "source_sign": -1,
+      "dimensions": {
+        "initial": 18,
+        "source_first": 72,
+        "emission_first": 92160,
+        "mixed_final": 9216,
+        "outside_intermediate_blocks": 5040,
+        "final_blocks": 720,
+        "quarks": 3,
+        "final_domain_is_global_Fock_cutoff": false
+      },
+      "mixed_wave_norm_squared_GeV_minus2": 0.03270184139517506,
+      "phi_norm_squared_GeV_minus2": 0.00572284503701651,
+      "gluon_norm_squared_GeV_minus2": 0.026978996358158508
+    }
+  ],
+  "independent_Dirac_ODE": {
+    "coarse_wave_error_GeV_minus1": 1.331200050697422e-9,
+    "refined_wave_error_GeV_minus1": 1.429196023132569e-11,
+    "coarse_rhs_evaluations": 446,
+    "refined_rhs_evaluations": 698
+  },
+  "pure_gauge": [
+    {
+      "source_sign": 1,
+      "whole_wave_norm": 7.006119064594368e-17,
+      "spectator_omitted_norm": 4.3947684176271e-17,
+      "outside_intermediates_omitted_norm": 0.033864049974456516,
+      "fermion_contact_omitted_norm": 0.03037771552719045
+    },
+    {
+      "source_sign": -1,
+      "whole_wave_norm": 2.483545582748944e-17,
+      "spectator_omitted_norm": 2.483545582748944e-17,
+      "outside_intermediates_omitted_norm": 2.483545582748944e-17,
+      "fermion_contact_omitted_norm": 0.016367698172486716
+    }
+  ],
+  "window_enlargement": {
+    "larger_dimensions": {
+      "initial": 21,
+      "source_first": 72,
+      "emission_first": 193536,
+      "mixed_final": 281088,
+      "outside_intermediate_blocks": 7920,
+      "final_blocks": 22176,
+      "quarks": 3,
+      "final_domain_is_global_Fock_cutoff": false
+    },
+    "old_amplitude_error_GeV_minus1": 5.113449535094762e-16,
+    "newly_represented_wave_norm_GeV_minus1": 0.39453422649851627,
+    "larger_norm_squared_GeV_minus2": 0.2933976123617779
+  },
+  "interpretation": {
+    "real_source_squared_norm_is_sum_of_both_orthogonal_transfer_branches": true,
+    "mixed_norm_is_derivative_coefficient_not_probability": true,
+    "spectator_omission_can_pass_pure_gauge": true,
+    "global_Fock_cutoff_or_continuum_completion": false,
+    "full_bound_nucleon_current": false,
+    "physical_covariance_defect_repaired": false,
+    "production_model_or_physical_fit_selected": false,
+    "old_loops_requantized": false,
+    "old_BLFQ_H2_rebuilt": false,
+    "public_push": false
+  }
+}

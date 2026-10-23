@@ -1,0 +1,111 @@
+{
+  "scope": "finite elastic H2 g4 spin diagnostic, positive-parity test branch; NOT physical calibration",
+  "metadata": {
+    "target": "PROTON",
+    "jz_out_twice": 1,
+    "jz_in_twice": 1,
+    "total_k2": 9,
+    "retained_cutoff": 0,
+    "energy_out_GeV2": 1.4305030209954839,
+    "energy_in_GeV2": 1.4305030209954839,
+    "transfer_GeV": [
+      0.12,
+      0.16
+    ],
+    "mean_total_transverse_GeV": [
+      0.0,
+      0.0
+    ],
+    "charge": "electromagnetic",
+    "loop_flavor_charges": [
+      0.6666666666666666,
+      -0.3333333333333333
+    ],
+    "physical_leg_prescription": "physical-leg-endpoint-product",
+    "quadrature_order": 8,
+    "smooth_prescription": "continuous-global-Jacobi-fixed-mode-membership",
+    "field_envelope_prescription": "finite-cell-covariant-spectral-gapped-envelope",
+    "isospin_prescription": "flavor-degenerate-total-isospin-half-H2-source-domain",
+    "component_order": [
+      "plus",
+      "minus",
+      "x",
+      "y"
+    ],
+    "normalization": "Jmu/(2Pplus); raw order g4 before both full norm maps",
+    "physical": false
+  },
+  "families": [
+    "free",
+    "cubic_canonical",
+    "cubic_regulator",
+    "quartic_source_canonical",
+    "quartic_source_regulator",
+    "quartic_pair_canonical",
+    "quartic_pair_regulator",
+    "Wick_paired",
+    "projector_retained",
+    "projector_free_Q",
+    "projector_cubic_Q",
+    "projector_quartic_source",
+    "projector_quartic_pair"
+  ],
+  "parameters": {
+    "regulator": {
+      "width_GeV": 0.8,
+      "boson_modes": 8,
+      "fermion_modes": 8,
+      "reference_shape": null
+    },
+    "wick": {
+      "regulator": {
+        "width_GeV": 0.8,
+        "boson_modes": 8,
+        "fermion_modes": 8,
+        "reference_shape": null
+      },
+      "quark_flavors": 2,
+      "normal_order_subtraction": true,
+      "finite_quark_mass2_per_gs2_GeV2": 0.011,
+      "finite_gluon_mass2_per_gs2_GeV2": -0.007
+    },
+    "q5": 1,
+    "q6": 0,
+    "b_GeV": 0.4,
+    "mq_GeV": 0.35,
+    "mg_GeV": 0.0,
+    "g": 0.3,
+    "Pplus_GeV": 1.3
+  },
+  "energy_GeV2": 1.4305030209954839,
+  "intrinsic_parity": 1,
+  "bracket_GeV2": [
+    1.3,
+    1.5
+  ],
+  "independent_spin_poles_GeV2": [
+    1.4305030209954839,
+    1.430503020995486
+  ],
+  "pole_residuals_GeV2": [
+    2.158419889434022e-15,
+    4.256776279114187e-15
+  ],
+  "parity_errors": {
+    "effective_hamiltonian": 1.0779319725831415e-14,
+    "metric": 9.358430011371977e-16,
+    "matrix": 1.3369931654794411e-14
+  },
+  "Ward_order_norms": [
+    8.574961741024535e-16,
+    3.094440958783843e-16,
+    7.909266791586736e-17,
+    9.51499084949559e-19,
+    2.0191093478384253e-18
+  ],
+  "full_matrix_file": "m2_cluster_spin_Q5_shell1_pp.npz",
+  "physical": false,
+  "covariance_repaired": false,
+  "quantum_execution": false,
+  "seconds": 1764.6821931669838
+}

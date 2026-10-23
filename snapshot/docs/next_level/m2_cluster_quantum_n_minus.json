@@ -1,0 +1,453 @@
+{
+  "scope": "finite common-regulated H2 g4 at Delta+=0; explicit test conditions",
+  "endpoint_current_metadata": {
+    "target": "NEUTRON",
+    "jz_out_twice": -1,
+    "jz_in_twice": -1,
+    "total_k2": 9,
+    "retained_cutoff": 0,
+    "energy_out_GeV2": 1.39,
+    "energy_in_GeV2": 1.47,
+    "transfer_GeV": [
+      0.12,
+      0.16
+    ],
+    "mean_total_transverse_GeV": [
+      0.0,
+      0.0
+    ],
+    "charge": "electromagnetic",
+    "loop_flavor_charges": [
+      0.6666666666666666,
+      -0.3333333333333333
+    ],
+    "physical_leg_prescription": "physical-leg-endpoint-product",
+    "quadrature_order": 8,
+    "smooth_prescription": "continuous-global-Jacobi-fixed-mode-membership",
+    "field_envelope_prescription": "finite-cell-covariant-spectral-gapped-envelope",
+    "isospin_prescription": "flavor-degenerate-total-isospin-half-H2-source-domain",
+    "component_order": [
+      "plus",
+      "minus",
+      "x",
+      "y"
+    ],
+    "normalization": "Jmu/(2Pplus); raw order g4 before both full norm maps",
+    "physical": false
+  },
+  "model_parameters": {
+    "b_GeV": 0.4,
+    "quark_mass_GeV": 0.35,
+    "gluon_mass_GeV": 0.0,
+    "coupling": 0.3,
+    "total_pplus_GeV": 1.3,
+    "regulator": {
+      "width_GeV": 0.8,
+      "boson_modes": 8,
+      "fermion_modes": 8,
+      "reference_shape": null
+    },
+    "wick": {
+      "regulator": {
+        "width_GeV": 0.8,
+        "boson_modes": 8,
+        "fermion_modes": 8,
+        "reference_shape": null
+      },
+      "quark_flavors": 2,
+      "normal_order_subtraction": true,
+      "finite_quark_mass2_per_gs2_GeV2": 0.011,
+      "finite_gluon_mass2_per_gs2_GeV2": -0.007
+    },
+    "excluded_cutoffs": {
+      "qqqgg": 0,
+      "qqqq-qbar": 0,
+      "qqqggg": 0,
+      "qqqq-qbar-g": 0
+    }
+  },
+  "oracle": {
+    "device": "lightning.qubit",
+    "pennylane": "0.38.0",
+    "lightning": "0.38.0",
+    "state_qubits": 6,
+    "readout_qubits": 7,
+    "readout": "tagged direct-sum Hermitian quadratures",
+    "exact_oracle_stateprep": true,
+    "shots": null,
+    "physical": false
+  },
+  "oracle_executions": 1900,
+  "oracle_errors": {
+    "g0_plus": 1.734723475976807e-18,
+    "g0_minus": 1.2509268882771003e-17,
+    "g0_x": 8.182674270850422e-18,
+    "g0_y": 1.7541305574877886e-17,
+    "g1_plus": 0.0,
+    "g1_minus": 6.133173666733497e-19,
+    "g1_x": 3.428548309156935e-19,
+    "g1_y": 7.818293051731877e-19,
+    "g2_plus": 2.541098841762901e-21,
+    "g2_minus": 2.6020852139652106e-18,
+    "g2_x": 1.9166167708542177e-20,
+    "g2_y": 6.776263578034403e-20,
+    "g3_plus": 1.4513189705189692e-22,
+    "g3_minus": 1.6940658945086007e-21,
+    "g3_x": 8.984141113379144e-22,
+    "g3_y": 1.1403530045093186e-21,
+    "g4_plus": 1.7072494855162848e-21,
+    "g4_minus": 1.5152185993940876e-20,
+    "g4_x": 1.0595353850779214e-21,
+    "g4_y": 5.3571067330577106e-21,
+    "total_plus": 4.271261210083258e-18,
+    "total_minus": 1.4304896245381992e-17,
+    "total_x": 6.938893903907228e-18,
+    "total_y": 9.540979117872439e-18
+  },
+  "oracle_action_errors": {
+    "g0_plus": 1.7433755170605403e-17,
+    "g0_minus": 6.546139416680338e-17,
+    "g0_x": 2.0888836804026045e-17,
+    "g0_y": 2.1942709178604383e-17,
+    "g1_plus": 0.0,
+    "g1_minus": 6.938893903907228e-18,
+    "g1_x": 7.893110957891144e-19,
+    "g1_y": 1.3884562417838567e-18,
+    "g2_plus": 4.0692859202798455e-20,
+    "g2_minus": 1.0410599365349476e-17,
+    "g2_x": 1.9545732629329695e-19,
+    "g2_y": 2.9193036915438557e-19,
+    "g3_plus": 2.994713704459715e-22,
+    "g3_minus": 1.0199627345715842e-20,
+    "g3_x": 1.7462031549538564e-21,
+    "g3_y": 2.117582368135751e-21,
+    "g4_plus": 6.89434869366917e-21,
+    "g4_minus": 5.431588454656214e-20,
+    "g4_x": 1.0164395367051604e-20,
+    "g4_y": 1.0199627345715842e-20,
+    "total_plus": 8.673617379884035e-18,
+    "total_minus": 1.1107649934270853e-16,
+    "total_x": 4.860322466063819e-17,
+    "total_y": 1.3985787785349405e-17
+  },
+  "controlled_readout_executions": 49,
+  "controlled_readout_qubits": 7,
+  "controlled_readout_padding": 0.0,
+  "controlled_readout_stateprep": false,
+  "exact_state_seed": false,
+  "measurements": {
+    "g0_plus": {
+      "measured": [
+        1.7570143200606658e-08,
+        -9.3907787558348e-18
+      ],
+      "executed_state_error": 1.3800681339834714e-20,
+      "ground_reference_error": 1.2538284559342963e-12,
+      "residual_gap_bound": 5.042826191572394e-09,
+      "direct_state_distance_bound": 3.557270023778913e-09,
+      "roundoff_budget": 8e-13
+    },
+    "g0_minus": {
+      "measured": [
+        -7.563603613129992e-08,
+        -1.184709500281407e-17
+      ],
+      "executed_state_error": 1.0216011437274913e-19,
+      "ground_reference_error": 4.4785622046295e-12,
+      "residual_gap_bound": 2.1220670794155466e-08,
+      "direct_state_distance_bound": 1.4969315465737328e-08,
+      "roundoff_budget": 8e-13
+    },
+    "g0_x": {
+      "measured": [
+        -1.4995555211786578e-16,
+        -0.10850348400751689
+      ],
+      "executed_state_error": 1.1102230246251565e-16,
+      "ground_reference_error": 1.7305602125143284e-13,
+      "residual_gap_bound": 9.015772156605167e-09,
+      "direct_state_distance_bound": 6.359833715369827e-09,
+      "roundoff_budget": 8e-13
+    },
+    "g0_y": {
+      "measured": [
+        1.1246666309720946e-16,
+        0.08137761300563762
+      ],
+      "executed_state_error": 6.938893903907228e-17,
+      "ground_reference_error": 1.297434436832936e-13,
+      "residual_gap_bound": 6.761829117453874e-09,
+      "direct_state_distance_bound": 4.769875286527368e-09,
+      "roundoff_budget": 8e-13
+    },
+    "g1_plus": {
+      "measured": [
+        0.0,
+        0.0
+      ],
+      "executed_state_error": 0.0,
+      "ground_reference_error": 0.0,
+      "residual_gap_bound": 0.0,
+      "direct_state_distance_bound": 0.0,
+      "roundoff_budget": 8e-13
+    },
+    "g1_minus": {
+      "measured": [
+        6.677108582090483e-07,
+        4.704573584551561e-16
+      ],
+      "executed_state_error": 4.972083400382743e-19,
+      "ground_reference_error": 5.586230004436544e-12,
+      "residual_gap_bound": 3.1883889438587647e-09,
+      "direct_state_distance_bound": 2.2491277674990375e-09,
+      "roundoff_budget": 8e-13
+    },
+    "g1_x": {
+      "measured": [
+        -2.1386057734784755e-13,
+        6.588400777091921e-15
+      ],
+      "executed_state_error": 9.002316264391313e-21,
+      "ground_reference_error": 6.588430528915773e-15,
+      "residual_gap_bound": 4.2789809034410477e-10,
+      "direct_state_distance_bound": 3.0184444043642653e-10,
+      "roundoff_budget": 8e-13
+    },
+    "g1_y": {
+      "measured": [
+        -2.8514738225372284e-13,
+        8.784534368007329e-15
+      ],
+      "executed_state_error": 1.510180943278323e-20,
+      "ground_reference_error": 8.784574208474586e-15,
+      "residual_gap_bound": 5.705307871254729e-10,
+      "direct_state_distance_bound": 4.024592539152353e-10,
+      "roundoff_budget": 8e-13
+    },
+    "g2_plus": {
+      "measured": [
+        -3.640541403281833e-08,
+        7.500975697290152e-20
+      ],
+      "executed_state_error": 6.617444900424221e-23,
+      "ground_reference_error": 9.32628574351092e-16,
+      "residual_gap_bound": 1.3002532487523414e-11,
+      "direct_state_distance_bound": 9.172142226194057e-12,
+      "roundoff_budget": 8e-13
+    },
+    "g2_minus": {
+      "measured": [
+        1.3821339385955097e-07,
+        7.105688976274872e-17
+      ],
+      "executed_state_error": 2.8057966377799455e-21,
+      "ground_reference_error": 1.484030646835608e-11,
+      "residual_gap_bound": 2.1524292412523573e-09,
+      "direct_state_distance_bound": 1.5183493793635507e-09,
+      "roundoff_budget": 8e-13
+    },
+    "g2_x": {
+      "measured": [
+        1.6877098909000208e-09,
+        4.1166188361842524e-07
+      ],
+      "executed_state_error": 8.294920670139319e-22,
+      "ground_reference_error": 3.361629870134755e-13,
+      "residual_gap_bound": 8.495364241260667e-11,
+      "direct_state_distance_bound": 5.992731735831832e-11,
+      "roundoff_budget": 8e-13
+    },
+    "g2_y": {
+      "measured": [
+        2.250279854477769e-09,
+        -3.0874571441607034e-07
+      ],
+      "executed_state_error": 2.4727028359756997e-22,
+      "ground_reference_error": 4.461755093125341e-13,
+      "residual_gap_bound": 1.085553972096116e-10,
+      "direct_state_distance_bound": 7.657627801222243e-11,
+      "roundoff_budget": 8e-13
+    },
+    "g3_plus": {
+      "measured": [
+        -3.1827459360472593e-10,
+        1.1751363083585755e-19
+      ],
+      "executed_state_error": 7.34122793640812e-24,
+      "ground_reference_error": 1.2981802541906596e-15,
+      "residual_gap_bound": 3.5509068258284166e-13,
+      "direct_state_distance_bound": 2.504852225496343e-13,
+      "roundoff_budget": 8e-13
+    },
+    "g3_minus": {
+      "measured": [
+        -2.734284149270863e-09,
+        -1.5064889405034707e-17
+      ],
+      "executed_state_error": 2.0679515313825754e-24,
+      "ground_reference_error": 1.8962627727273628e-15,
+      "residual_gap_bound": 4.247130716745617e-12,
+      "direct_state_distance_bound": 2.9959769010081584e-12,
+      "roundoff_budget": 8e-13
+    },
+    "g3_x": {
+      "measured": [
+        2.0175015332577846e-11,
+        2.1750345016199595e-09
+      ],
+      "executed_state_error": 1.341789029547562e-23,
+      "ground_reference_error": 8.930008289236827e-16,
+      "residual_gap_bound": 8.79312035533172e-13,
+      "direct_state_distance_bound": 6.202772466712464e-13,
+      "roundoff_budget": 8e-13
+    },
+    "g3_y": {
+      "measured": [
+        2.690002042324636e-11,
+        -1.6312761499539564e-09
+      ],
+      "executed_state_error": 4.0050784602844304e-23,
+      "ground_reference_error": 3.9677934058611555e-16,
+      "residual_gap_bound": 9.495312094066733e-13,
+      "direct_state_distance_bound": 6.698106933587752e-13,
+      "roundoff_budget": 8e-13
+    },
+    "g4_plus": {
+      "measured": [
+        6.030509996578583e-09,
+        7.833316616715424e-20
+      ],
+      "executed_state_error": 6.617444900424223e-24,
+      "ground_reference_error": 4.5454456821575595e-15,
+      "residual_gap_bound": 2.5084156646431057e-12,
+      "direct_state_distance_bound": 1.7694664682127546e-12,
+      "roundoff_budget": 8e-13
+    },
+    "g4_minus": {
+      "measured": [
+        3.567375246917723e-08,
+        -1.2591543540828842e-17
+      ],
+      "executed_state_error": 5.955700410381799e-23,
+      "ground_reference_error": 6.201414993129841e-14,
+      "residual_gap_bound": 2.1139455079387402e-11,
+      "direct_state_distance_bound": 1.49120249273311e-11,
+      "roundoff_budget": 8e-13
+    },
+    "g4_x": {
+      "measured": [
+        -2.764849709301626e-10,
+        -2.1327783834811437e-06
+      ],
+      "executed_state_error": 2.5410992540741672e-21,
+      "ground_reference_error": 5.199919970204986e-15,
+      "residual_gap_bound": 5.524384602096039e-12,
+      "direct_state_distance_bound": 3.896967097082216e-12,
+      "roundoff_budget": 8e-13
+    },
+    "g4_y": {
+      "measured": [
+        -3.686466289509122e-10,
+        1.5995837863660692e-06
+      ],
+      "executed_state_error": 1.2705558201049985e-21,
+      "ground_reference_error": 2.6628990529398173e-15,
+      "residual_gap_bound": 4.877948930294785e-12,
+      "direct_state_distance_bound": 3.4409636279475866e-12,
+      "roundoff_budget": 8e-13
+    },
+    "total_plus": {
+      "measured": [
+        1.4333909654611252e-08,
+        -9.380220511042595e-18
+      ],
+      "executed_state_error": 1.4237432703262712e-20,
+      "ground_reference_error": 1.253672659944969e-12,
+      "residual_gap_bound": 5.042826506956327e-09,
+      "direct_state_distance_bound": 3.5572702462545193e-09,
+      "roundoff_budget": 8e-13
+    },
+    "total_minus": {
+      "measured": [
+        1.3733155850177926e-07,
+        1.3517648909593688e-16
+      ],
+      "executed_state_error": 8.523269031746397e-20,
+      "ground_reference_error": 7.48950526305732e-12,
+      "residual_gap_bound": 2.1418420548520562e-08,
+      "direct_state_distance_bound": 1.510881051210403e-08,
+      "roundoff_budget": 8e-13
+    },
+    "total_x": {
+      "measured": [
+        1.501347792050977e-10,
+        -0.10850346417472434
+      ],
+      "executed_state_error": 6.938893927990871e-17,
+      "ground_reference_error": 2.052108530626067e-13,
+      "residual_gap_bound": 9.016941274784327e-09,
+      "direct_state_distance_bound": 6.360658425342963e-09,
+      "roundoff_budget": 8e-13
+    },
+    "total_y": {
+      "measured": [
+        2.001800179687258e-10,
+        0.0813775981311102
+      ],
+      "executed_state_error": 5.55111512551833e-17,
+      "ground_reference_error": 8.695823045749234e-14,
+      "residual_gap_bound": 6.763884088256948e-09,
+      "direct_state_distance_bound": 4.771324887556596e-09,
+      "roundoff_budget": 8e-13
+    }
+  },
+  "endpoints": [
+    {
+      "energy_GeV2": 1.430503573298883,
+      "ground_energy_GeV2": 1.4305035732988804,
+      "residual_GeV2": 8.42674247674849e-09,
+      "separation_GeV2": 0.5920153220904254,
+      "phase_aligned_distance": 1.4199877886641472e-08,
+      "state_distance_bound": 2.0129907204366083e-08,
+      "iterations": 56,
+      "evaluations": 113,
+      "state_qubits": 6,
+      "padding_probability": 0.0,
+      "root": 7,
+      "support_threshold": 1e-12,
+      "padding_penalty_GeV2": 4.830760790273224
+    },
+    {
+      "energy_GeV2": 1.4305035733091347,
+      "ground_energy_GeV2": 1.4305035733091331,
+      "residual_GeV2": 8.426766258084436e-09,
+      "separation_GeV2": 0.592015311221679,
+      "phase_aligned_distance": 1.41999179656439e-08,
+      "state_distance_bound": 2.0129964383080954e-08,
+      "iterations": 56,
+      "evaluations": 113,
+      "state_qubits": 6,
+      "padding_probability": 0.0,
+      "root": 7,
+      "support_threshold": 1e-12,
+      "padding_penalty_GeV2": 4.830757124942212
+    }
+  ],
+  "independent_reversal": null,
+  "Ward_coefficient_Frobenius": [
+    7.351928775843095e-16,
+    1.6362030530913877e-16,
+    5.895608059894055e-17,
+    1.9214019107045682e-19,
+    4.918560336231548e-19
+  ],
+  "residual_tolerance_GeV2": 1e-08,
+  "all_24_measurements_within_bounds": true,
+  "physical": false,
+  "quantum_advantage": false,
+  "shots": null,
+  "seconds": 7.3860506669734605,
+  "total_seconds": 590.7752904579975,
+  "source_report": null,
+  "full_matrix_file": "m2_cluster_quantum_n_minus.npz"
+}

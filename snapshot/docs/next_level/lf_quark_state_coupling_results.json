@@ -1,0 +1,184 @@
+{
+  "cell_lengths_GeV_minus1": [
+    25.132741228718345,
+    31.41592653589793,
+    31.41592653589793
+  ],
+  "cell_volume_GeV_minus3": 24805.021344239853,
+  "domain_scan": [
+    {
+      "leading_pair_norm_squared": 0.001525607578306315,
+      "missing_reversed_assignment_norm": 0.027618902750709655,
+      "pair_momentum_routes": 2,
+      "parent_norm_error": 1.1102230246251565e-16,
+      "resolved_pair_amplitudes": 288,
+      "transverse_shell": 0
+    },
+    {
+      "leading_pair_norm_squared": 0.03160139711933857,
+      "missing_reversed_assignment_norm": 0.12570082959021914,
+      "pair_momentum_routes": 18,
+      "parent_norm_error": 1.1102230246251565e-16,
+      "resolved_pair_amplitudes": 2592,
+      "transverse_shell": 1
+    },
+    {
+      "leading_pair_norm_squared": 0.04216808666688147,
+      "missing_reversed_assignment_norm": 0.1452034549638564,
+      "pair_momentum_routes": 50,
+      "parent_norm_error": 1.1102230246251565e-16,
+      "resolved_pair_amplitudes": 7200,
+      "transverse_shell": 2
+    },
+    {
+      "leading_pair_norm_squared": 0.042168538151906965,
+      "missing_reversed_assignment_norm": 0.14520423229352972,
+      "pair_momentum_routes": 98,
+      "parent_norm_error": 1.1102230246251565e-16,
+      "resolved_pair_amplitudes": 14112,
+      "transverse_shell": 3
+    },
+    {
+      "leading_pair_norm_squared": 0.04216854032543116,
+      "missing_reversed_assignment_norm": 0.14520423603571447,
+      "pair_momentum_routes": 242,
+      "parent_norm_error": 1.1102230246251565e-16,
+      "resolved_pair_amplitudes": 34848,
+      "transverse_shell": 5
+    },
+    {
+      "leading_pair_norm_squared": 0.04216854032708723,
+      "missing_reversed_assignment_norm": 0.14520423603856641,
+      "pair_momentum_routes": 578,
+      "parent_norm_error": 1.1102230246251565e-16,
+      "resolved_pair_amplitudes": 83232,
+      "transverse_shell": 8
+    }
+  ],
+  "duration_GeV_minus1": 12,
+  "first_order_infinite_transverse_limit_proved": false,
+  "fixed_charge_runs": [
+    {
+      "electric_charge": -1,
+      "leading_pair_norm_squared": 0.012260682970231685,
+      "total_charge_residual": 1.8476138284926276e-17
+    },
+    {
+      "electric_charge": 0,
+      "leading_pair_norm_squared": 0.04216853815190711,
+      "total_charge_residual": 0
+    },
+    {
+      "electric_charge": 1,
+      "leading_pair_norm_squared": 0.012260682970231685,
+      "total_charge_residual": 1.8476138284926276e-17
+    }
+  ],
+  "gradient_max_error": 1.610430538923069e-14,
+  "independent_fourth_order_finite_difference_gradients": [
+    0.0028556381702679987,
+    -0.00440050288013651,
+    0.0029069725868566118
+  ],
+  "independent_time_integral_error_estimate": 8.275497193333126e-13,
+  "mass_squared_blocks_GeV2": [
+    [
+      [
+        0.42250000000000004,
+        0.027
+      ],
+      [
+        0.027,
+        0.8281000000000001
+      ]
+    ],
+    [
+      [
+        0.12249999999999998,
+        -0.018
+      ],
+      [
+        -0.018,
+        0.30250000000000005
+      ]
+    ],
+    [
+      [
+        0.12249999999999998,
+        -0.018
+      ],
+      [
+        -0.018,
+        0.30250000000000005
+      ]
+    ],
+    [
+      [
+        0.12249999999999998,
+        -0.018
+      ],
+      [
+        -0.018,
+        0.30250000000000005
+      ]
+    ]
+  ],
+  "old_loops_used_as_bare_vertices": false,
+  "order": "psi=psi_0+lambda*psi_1+O(lambda^2); norm(psi_1)^2 is the leading transition coefficient",
+  "parent_plus_transverse_GeV": [
+    0.5,
+    0,
+    0
+  ],
+  "physical_model_or_coefficients_selected_or_refitted": false,
+  "physical_nucleon_or_nucleus_generated": false,
+  "public_push_or_review_export": false,
+  "pulse": "lambda*sin(pi*x_plus/T)^4 for 0<x_plus<T",
+  "quark_mass_GeV": 0.27,
+  "scope": "first order in a smoothly switched bare Yukawa interaction; finite AP/periodic LF cell",
+  "second_order_state_or_unitarity_completion": false,
+  "seed_imag": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -0.1796053020267749,
+      0,
+      0,
+      0
+    ]
+  ],
+  "seed_real": [
+    [
+      0.8980265101338745,
+      0,
+      0,
+      -0.3592106040535498
+    ],
+    [
+      0,
+      0,
+      0,
+      0.1796053020267749
+    ]
+  ],
+  "shell3_full_complex_wave_error": 1.9551834197669681e-16,
+  "shell3_scalar_mass_squared_source_and_yukawa_gradients": [
+    0.002855638170263685,
+    -0.004400502880120406,
+    0.0029069725868490414
+  ],
+  "source_is_electromagnetic_current": false,
+  "spacing_GeV": [
+    0.25,
+    0.2,
+    0.2
+  ],
+  "yukawa_couplings": [
+    0.31,
+    -0.19
+  ]
+}

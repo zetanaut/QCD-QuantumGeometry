@@ -1,0 +1,118 @@
+{
+  "scope": "Finite causal color-singlet response/matching qualification, not a causal completion of the nonlinear quark functional or new bound-state solve.",
+  "units": "s,z,Q2 GeV2, times GeV-1; normalized C GeV-2 and residues dimensionless; no physical data fit",
+  "positive_spectra_nonuniqueness": {
+    "mass_squared": [
+      0.25,
+      0.71875,
+      1.1875,
+      1.65625,
+      2.125,
+      2.59375,
+      3.0625,
+      3.53125,
+      4.0
+    ],
+    "spacelike_q_squared": [
+      0.2,
+      0.6,
+      1.4,
+      3.0
+    ],
+    "residues_a": [
+      0.11121998304728242,
+      0.10803641371353424,
+      0.1329244992845351,
+      0.046800939304134356,
+      0.2,
+      0.06122824111782888,
+      0.1056009187617351,
+      0.12754698652216143,
+      0.10664201824878841
+    ],
+    "residues_b": [
+      0.11100223917493979,
+      0.11418580850868797,
+      0.08929772293768713,
+      0.17542128291808784,
+      0.022222222222222213,
+      0.16099398110439334,
+      0.11662130346048712,
+      0.0946752357000608,
+      0.1155802039734338
+    ],
+    "constraint_rank": 6,
+    "nullity": 3,
+    "singular_values": [
+      8.030119996381247,
+      3.149245659341807,
+      0.5452866012158041,
+      0.05138622004601403,
+      0.0029973840679997244,
+      0.00012023632011828735
+    ],
+    "constraint_max_error": 5.551115123125783e-17,
+    "smeared_spectral_relative_difference": 0.8831989496640941,
+    "spectral_bin_z": [
+      2.125,
+      0.025
+    ],
+    "euclidean_time_relative_difference": 3.949115465892101e-05,
+    "resolved_bins": {
+      "selected_mass_squared": [
+        2.59375,
+        3.53125,
+        1.65625
+      ],
+      "row_normalized_joint_condition": 20468.69144414247,
+      "row_normalized_spacelike_only_condition": 377151934.80643415,
+      "joint_rank": 9,
+      "exact_residue_recovery_max_error": 1.7602586055431857e-13,
+      "scope": "Known nine-pole family, noiseless controls, unit row norms; not physical-data identification or universal minimum input count"
+    }
+  },
+  "positivity_and_matching": {
+    "positive_full_reflection_min_eigenvalue": -2.1416013823442606e-17,
+    "positive_retained_reflection_min_eigenvalue": -5.8552802169929365e-18,
+    "residual_reflection_min_eigenvalue": -0.3786234563266616,
+    "residual_zero_UV_moment": 0.0,
+    "residual_Euclidean_Q2_half": -0.29803921568627456,
+    "residual_retarded_negative_time_max": 0.0,
+    "positive_spacelike_but_invalid_reflection_min": -0.009314195613576423,
+    "recombination_max": 0.0
+  },
+  "supplied_pion_pole": {
+    "source": "Preserved shared_chiral_dynamics_results.json finite-mass solution; transported, NOT generated in the new functional",
+    "source_scale_GeV": 0.8,
+    "retained_fraction": 0.35,
+    "pion_mass_squared_GeV2": 0.012018170881764469,
+    "normalized_residue_matrix": [
+      [
+        0.05940876824508017,
+        0.0005940876824508092
+      ],
+      [
+        0.0005940876824508092,
+        5.940876824508167e-06
+      ]
+    ],
+    "PCAC_ratio": 0.01,
+    "residual_residue_error": 8.470329472543003e-22
+  },
+  "field_coordinates": {
+    "max_response_relative_error": 6.196250828004105e-16,
+    "frozen_sources_relative_errors": [
+      0.08162971192524955,
+      0.4187654566499265,
+      0.649192199230625
+    ],
+    "internal_propagator_relative_changes": [
+      0.07288022828776507,
+      0.36836675536998503,
+      0.8369442690597713
+    ],
+    "same_two_point_but_different_scalar_insertion_relative": 0.7715554670259304,
+    "warning": "Field-congruence differences are redundant only with every source/measure partner. Different physical scalar couplings at h=0 are not fixed by the two-point spectrum."
+  },
+  "decision": "Use causal matrix responses and independent scalar/mixed/transverse source matching to constrain ONE shared action. Do not positive-clip residuals, uniquely infer timelike dynamics from sparse spacelike data, or fit redundant off-shell coordinates. Next specify the smallest common-action realization and actual scheme-qualified matching targets; no BLFQ/H2 or spectral-fitting campaign."
+}

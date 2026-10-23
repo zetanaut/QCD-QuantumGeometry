@@ -1,0 +1,132 @@
+{
+  "scope": "LO quadratic-pion source matching and dressed-quark longitudinal constraint; not a physical nucleon or nuclear fit",
+  "representative_inputs": {
+    "m_pi_GeV": 0.14,
+    "F_GeV": 0.0924,
+    "m_current_GeV": 0.0035,
+    "g_A_N": 1.27,
+    "status": "declared illustrative low-energy scales, not a precision data determination"
+  },
+  "random_spacelike_cases": 24,
+  "maximum_errors": {
+    "explicit_nonlocal": 2.0806550143855435e-18,
+    "PCAC": 2.485143278892569e-19,
+    "vector_Ward": 2.369716632652277e-18,
+    "action_source_difference": 9.59440073730328e-13,
+    "Lorentz_response": 1.0047012169548962e-17,
+    "Lorentz_source": 6.345962492597242e-17,
+    "LF_relative": 2.220446049250313e-16,
+    "quark_axial_Ward": 3.3537189618722464e-16
+  },
+  "error_units": "response GeV^2; source derivative GeV; PCAC and vector Ward GeV^3/GeV^2 respectively; quark Ward GeV; LF_relative dimensionless",
+  "negative_control_minimum_errors": {
+    "omit_axial_contact": 0.00022570107602665887,
+    "omit_vector_contacts": 0.0015133524971569468,
+    "bare_dressed_axial": 1.1163315765739916
+  },
+  "derivative_expansion": [
+    {
+      "spatial_momentum_GeV": 0.035,
+      "ratio_to_pion_mass": 0.25,
+      "relative_propagator_errors": {
+        "0": 0.06250000000000022,
+        "1": 0.003906249999999889,
+        "2": 0.00024414062500022204,
+        "4": 9.5367431640625e-07
+      }
+    },
+    {
+      "spatial_momentum_GeV": 0.07,
+      "ratio_to_pion_mass": 0.5,
+      "relative_propagator_errors": {
+        "0": 0.2500000000000002,
+        "1": 0.06249999999999989,
+        "2": 0.015625,
+        "4": 0.0009765625
+      }
+    },
+    {
+      "spatial_momentum_GeV": 0.1,
+      "ratio_to_pion_mass": 0.7142857142857143,
+      "relative_propagator_errors": {
+        "0": 0.5102040816326534,
+        "1": 0.2603082049146189,
+        "2": 0.13281030862990773,
+        "4": 0.034571613033607784
+      }
+    },
+    {
+      "spatial_momentum_GeV": 0.14,
+      "ratio_to_pion_mass": 1.0,
+      "relative_propagator_errors": {
+        "0": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "4": 1.0
+      }
+    },
+    {
+      "spatial_momentum_GeV": 0.21,
+      "ratio_to_pion_mass": 1.4999999999999998,
+      "relative_propagator_errors": {
+        "0": 2.2499999999999996,
+        "1": 5.062499999999997,
+        "2": 11.390624999999993,
+        "4": 57.66503906249994
+      }
+    },
+    {
+      "spatial_momentum_GeV": 0.28,
+      "ratio_to_pion_mass": 2.0,
+      "relative_propagator_errors": {
+        "0": 4.000000000000001,
+        "1": 16.0,
+        "2": 64.0,
+        "4": 1024.0
+      }
+    }
+  ],
+  "consistent_gauging_comparison": [
+    {
+      "order": 0,
+      "correct_vector_Ward_error": 2.337101262888856e-18,
+      "two_truncated_propagators_Ward_error": 0.0013126435415099886,
+      "current_relative_error_to_pole": 0.5849351912720356
+    },
+    {
+      "order": 1,
+      "correct_vector_Ward_error": 3.3614026272489517e-18,
+      "two_truncated_propagators_Ward_error": 0.0009436163068080994,
+      "current_relative_error_to_pole": 0.3767879377898189
+    },
+    {
+      "order": 2,
+      "correct_vector_Ward_error": 1.7584926232625772e-18,
+      "two_truncated_propagators_Ward_error": 0.000654896783248326,
+      "current_relative_error_to_pole": 0.2368347047403026
+    },
+    {
+      "order": 4,
+      "correct_vector_Ward_error": 2.1518344810960705e-18,
+      "two_truncated_propagators_Ward_error": 0.00025059639392488193,
+      "current_relative_error_to_pole": 0.08745317373576136
+    }
+  ],
+  "pion_isospin_generator_eigenvalues": [
+    -1.0,
+    0.0,
+    1.0
+  ],
+  "I0_spin_triplet_static_OPE_diagonal_GeV_inverse2": [
+    60.007887452501656,
+    -60.00788745250164,
+    60.007887452501656
+  ],
+  "architecture_conclusion": "protect the pion pole, chiral contact and source partners explicitly or nonlocally; fit matched residual content, not a duplicate pole",
+  "exact_at_all_chiral_orders": false,
+  "quark_dressing_generated_by_dynamics": false,
+  "transverse_quark_vertex_determined": false,
+  "bound_nucleon_covariance_solved": false,
+  "production_Hamiltonian_selected": false,
+  "public_push": false
+}

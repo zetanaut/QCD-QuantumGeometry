@@ -1,0 +1,55 @@
+{
+  "case": "Q5_shell1",
+  "parameters": {
+    "q5": 1,
+    "q6": 0,
+    "nb": 8,
+    "nf": 8,
+    "width": 0.8,
+    "muq": 0.011,
+    "mug": -0.007,
+    "target": "PROTON"
+  },
+  "energy_out_GeV2": 1.39,
+  "energy_in_GeV2": 1.47,
+  "transfer_GeV": [
+    0.12,
+    0.16
+  ],
+  "current_normalization": "g4 coefficient of Jplus/(2Pplus), before coupling multiplication",
+  "words_Frobenius": {
+    "Q5_qqqgg_quartic_square": 0.000004429106764064625,
+    "Q5_qqqgg_QQ_backflow": 0.0023655253383452874,
+    "Q5_qqqgg_direct6_backflow": 0.000011033369016990634,
+    "Q5_qqqgg_iterated6_backflow": 0.00005128398294545818,
+    "Q5_qqqq-qbar_quartic_square": 0.00002887959366205233,
+    "Q5_qqqq-qbar_QQ_backflow": 0.0012656107310348463,
+    "Q5_qqqq-qbar_direct6_backflow": 0.0000046210665747651,
+    "Q5_qqqq-qbar_iterated6_backflow": 0.00000860796801571318,
+    "Q6_qqqggg_direct_square": 0.0000033139206681979247,
+    "Q6_qqqggg_iterated_square": 0.000002979600627973018,
+    "Q6_qqqggg_direct_iterated_interference": 0.000003104446709132361,
+    "Q6_qqqq-qbar-g_direct_square": 0.00002808049495970058,
+    "Q6_qqqq-qbar-g_iterated_square": 0.000012038713187497959,
+    "Q6_qqqq-qbar-g_direct_iterated_interference": 0.000006220730262760342
+  },
+  "QQ_subdivision_Frobenius": {
+    "resolved_Q5_qqqgg_QQ_contact": 0.00007383275374691893,
+    "resolved_Q5_qqqgg_QQ_pair": 3.320984471683532e-7,
+    "resolved_Q5_qqqgg_QQ_finite_Wick": 0.002330720894428445,
+    "resolved_Q5_qqqq-qbar_QQ_contact": 0.00002790542358929537,
+    "resolved_Q5_qqqq-qbar_QQ_pair": 0.0000025721901833974,
+    "resolved_Q5_qqqq-qbar_QQ_finite_Wick": 0.0012694641601627026
+  },
+  "QQ_subdivision_is_not_added_again_to_the_raw_current": true,
+  "raw_plus_g4_Frobenius": 0.0034624116851271103,
+  "normalized_plus_g4_Frobenius": 0.0034605838022925576,
+  "terms_are_coherent_matrix_amplitudes_not_probabilities": true,
+  "finite_conditions_are_uncalibrated_test_values": true,
+  "physical": false,
+  "continuum_convergence_established": false,
+  "seconds": 37.39110745803919,
+  "full_matrix_file": "m2_gaussian_plus_resolution_Q5_shell1.npz",
+  "paired_normal_order_subtraction": true,
+  "finite_Wick_label_means": "Residual explicit mu_q^2 D_q + mu_g^2 D_g after exact paired normal-order subtraction; not the divergent Wick trace."
+}

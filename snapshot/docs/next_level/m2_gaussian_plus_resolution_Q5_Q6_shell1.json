@@ -1,0 +1,46 @@
+{
+  "case": "Q5_Q6_shell1",
+  "parameters": {
+    "q5": 1,
+    "q6": 1,
+    "nb": 8,
+    "nf": 8,
+    "width": 0.8,
+    "muq": 0.011,
+    "mug": -0.007,
+    "target": "PROTON"
+  },
+  "energy_out_GeV2": 1.39,
+  "energy_in_GeV2": 1.47,
+  "transfer_GeV": [
+    0.12,
+    0.16
+  ],
+  "current_normalization": "g4 coefficient of Jplus/(2Pplus), before coupling multiplication",
+  "words_Frobenius": {
+    "Q5_qqqgg_quartic_square": 0.000004429106764064625,
+    "Q5_qqqgg_QQ_backflow": 0.0023655253383452874,
+    "Q5_qqqgg_direct6_backflow": 0.000011033369016990634,
+    "Q5_qqqgg_iterated6_backflow": 0.00016720074299302024,
+    "Q5_qqqq-qbar_quartic_square": 0.00002887959366205233,
+    "Q5_qqqq-qbar_QQ_backflow": 0.0012656107310348463,
+    "Q5_qqqq-qbar_direct6_backflow": 0.0000046210665747651,
+    "Q5_qqqq-qbar_iterated6_backflow": 0.000029106343963619972,
+    "Q6_qqqggg_direct_square": 0.0000033139206681979264,
+    "Q6_qqqggg_iterated_square": 0.000013940060516696398,
+    "Q6_qqqggg_direct_iterated_interference": 0.0000031044467091323606,
+    "Q6_qqqq-qbar-g_direct_square": 0.000028080494959700588,
+    "Q6_qqqq-qbar-g_iterated_square": 0.00003832813927863437,
+    "Q6_qqqq-qbar-g_direct_iterated_interference": 0.000006220730262760341
+  },
+  "raw_plus_g4_Frobenius": 0.0032784043353083236,
+  "normalized_plus_g4_Frobenius": 0.0032766761985601107,
+  "terms_are_coherent_matrix_amplitudes_not_probabilities": true,
+  "finite_conditions_are_uncalibrated_test_values": true,
+  "physical": false,
+  "continuum_convergence_established": false,
+  "seconds": 65.64717941597337,
+  "full_matrix_file": "m2_gaussian_plus_resolution_Q5_Q6_shell1.npz",
+  "paired_normal_order_subtraction": true,
+  "finite_Wick_label_means": "Residual explicit mu_q^2 D_q + mu_g^2 D_g after exact paired normal-order subtraction; not the divergent Wick trace."
+}

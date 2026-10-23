@@ -1,0 +1,459 @@
+{
+  "inputs": {
+    "quark_mass_GeV": 0.2843478671310942,
+    "quark_pair_threshold_GeV": 0.5686957342621884,
+    "colors": 3,
+    "flavors": 2,
+    "vertices": "S,P1..3,A1[0..3],A2,A3,V_EM[0..3]; 20 x 24 x 24 open vertices",
+    "cut_convention": "A=1/2 integral dPhi2 sum M M*; Im correlator=-Im induced inverse term",
+    "quantum_order": "one free-quark loop; no gluon or collective loops",
+    "subtraction": "nonlocal two-point remainder only, DeltaK(z)-DeltaK(0)-z DeltaKprime(0)",
+    "local_coefficients": "unselected; zero subtraction values do not set physical counterterms",
+    "domain": "future timelike pair cuts; real nonlocal remainder below 4M^2; listed spacelike probes"
+  },
+  "spectral_checks": [
+    {
+      "q_GeV": [
+        0.7,
+        0,
+        0,
+        0
+      ],
+      "spectral_norm_GeV2": 0.14304236317628274,
+      "rest_relative": 5.324490308623177e-16,
+      "LF_relative": 5.478325243327214e-16,
+      "quadrature_relative": 4.02824651130561e-16,
+      "eigenvalues_GeV2": [
+        0,
+        8.693705201441833e-19,
+        6.691049372227895e-18,
+        9.400924450427565e-18,
+        0.0038647069922293437,
+        0.003864706992229344,
+        0.003864706992229345,
+        0.0038647069922293454,
+        0.0038647069922293454,
+        0.0038647069922293454,
+        0.0038647069922293463,
+        0.0038647069922293463,
+        0.0038647069922293498,
+        0.016799270126550712,
+        0.016799270126550712,
+        0.016799270126550712,
+        0.02318824195337607,
+        0.07946142256170752,
+        0.07946142256170753,
+        0.07946142256170753
+      ],
+      "vector_Ward_norm_GeV3": 4.890460495868124e-19,
+      "quark_axial_Ward_norm_GeV3": 3.902808734270248e-18,
+      "omit_PA_interference_Ward_norm_GeV3": 0.020933504349596406
+    },
+    {
+      "q_GeV": [
+        1,
+        0.1,
+        -0.2,
+        0.3
+      ],
+      "spectral_norm_GeV2": 0.34523559962481964,
+      "rest_relative": 3.0513492262246453e-16,
+      "LF_relative": 1.6281627414218356e-16,
+      "quadrature_relative": 5.789983777087286e-16,
+      "eigenvalues_GeV2": [
+        -5.300163072633258e-18,
+        3.1721520841170768e-18,
+        4.485789684934353e-18,
+        1.3089588629574439e-17,
+        0.016864322672266435,
+        0.016864322672266483,
+        0.016864322672266487,
+        0.016864322672266497,
+        0.016864322672266497,
+        0.016864322672266504,
+        0.021147560944278308,
+        0.02114756094427832,
+        0.02114756094427833,
+        0.035679132115257285,
+        0.03567913211525729,
+        0.04729559373417828,
+        0.10118593603359892,
+        0.18359199437594123,
+        0.18359199437594131,
+        0.18359199437594131
+      ],
+      "vector_Ward_norm_GeV3": 4.273964881889441e-18,
+      "quark_axial_Ward_norm_GeV3": 7.814082379189554e-18,
+      "omit_PA_interference_Ward_norm_GeV3": 0.04890282394843741
+    },
+    {
+      "q_GeV": [
+        1.4,
+        -0.3,
+        0.4,
+        0.6
+      ],
+      "spectral_norm_GeV2": 0.624256502381411,
+      "rest_relative": 2.296761954677592e-16,
+      "LF_relative": 3.6134154177091916e-16,
+      "quadrature_relative": 7.634319348085768e-16,
+      "eigenvalues_GeV2": [
+        -8.414467461578986e-18,
+        -2.3035857020230754e-18,
+        1.9497520605476746e-17,
+        2.1999011942626894e-17,
+        0.03561932868958728,
+        0.03561932868958728,
+        0.035619328689587317,
+        0.03561932868958732,
+        0.03561932868958733,
+        0.03561932868958737,
+        0.05827952218547566,
+        0.05827952218547573,
+        0.061553922095742016,
+        0.06155392209574207,
+        0.06155392209574207,
+        0.11094694223457231,
+        0.21371597213752397,
+        0.3193432631622603,
+        0.3193432631622603,
+        0.31934326316226036
+      ],
+      "vector_Ward_norm_GeV3": 1.4979554607149182e-17,
+      "quark_axial_Ward_norm_GeV3": 1.5735678156880876e-17,
+      "omit_PA_interference_Ward_norm_GeV3": 0.08434734987858668
+    }
+  ],
+  "dispersive_checks": [
+    {
+      "z_GeV2": -1,
+      "channel": "scalar",
+      "Feynman_GeV2": -0.055961208724888536,
+      "dispersive_GeV2": -0.05596120872488903,
+      "relative": 8.803624482083495e-15
+    },
+    {
+      "z_GeV2": -1,
+      "channel": "pion",
+      "Feynman_GeV2": -0.08056566805133669,
+      "dispersive_GeV2": -0.08056566805133718,
+      "relative": 6.0289026954260726e-15
+    },
+    {
+      "z_GeV2": -0.3,
+      "channel": "scalar",
+      "Feynman_GeV2": -0.006839953139668548,
+      "dispersive_GeV2": -0.0068399531396685954,
+      "relative": 6.974447721388028e-15
+    },
+    {
+      "z_GeV2": -0.3,
+      "channel": "pion",
+      "Feynman_GeV2": -0.010605200263173688,
+      "dispersive_GeV2": -0.010605200263173728,
+      "relative": 3.762176946909118e-15
+    },
+    {
+      "z_GeV2": -0.1,
+      "channel": "scalar",
+      "Feynman_GeV2": -0.0008666167065032397,
+      "dispersive_GeV2": -0.0008666167065032446,
+      "relative": 5.754943282315636e-15
+    },
+    {
+      "z_GeV2": -0.1,
+      "channel": "pion",
+      "Feynman_GeV2": -0.0014011497363410899,
+      "dispersive_GeV2": -0.0014011497363410948,
+      "relative": 3.559455398719232e-15
+    },
+    {
+      "z_GeV2": 0.1,
+      "channel": "scalar",
+      "Feynman_GeV2": -0.0010366838210620712,
+      "dispersive_GeV2": -0.0010366838210620767,
+      "relative": 5.229184397682367e-15
+    },
+    {
+      "z_GeV2": 0.1,
+      "channel": "pion",
+      "Feynman_GeV2": -0.0018035397264100632,
+      "dispersive_GeV2": -0.0018035397264100689,
+      "relative": 3.1259922996798843e-15
+    }
+  ],
+  "complex_boundary_checks": [
+    {
+      "s_GeV2": 0.5,
+      "channel": "scalar",
+      "phase_space_cut_GeV2": 0.025052882416618776,
+      "boundary": [
+        {
+          "epsilon_GeV2": 0.000001,
+          "negative_Im_GeV2": 0.025052976431123038
+        },
+        {
+          "epsilon_GeV2": 1e-8,
+          "negative_Im_GeV2": 0.025052883356765154
+        }
+      ]
+    },
+    {
+      "s_GeV2": 0.5,
+      "channel": "pion",
+      "phase_space_cut_GeV2": 0.07093711090078737,
+      "boundary": [
+        {
+          "epsilon_GeV2": 0.000001,
+          "negative_Im_GeV2": 0.07093706849429461
+        },
+        {
+          "epsilon_GeV2": 1e-8,
+          "negative_Im_GeV2": 0.07093711047672122
+        }
+      ]
+    },
+    {
+      "s_GeV2": 1,
+      "channel": "scalar",
+      "phase_space_cut_GeV2": 0.13286025886444128,
+      "boundary": [
+        {
+          "epsilon_GeV2": 0.000001,
+          "negative_Im_GeV2": 0.13286024095372176
+        },
+        {
+          "epsilon_GeV2": 1e-8,
+          "negative_Im_GeV2": 0.13286025868533427
+        }
+      ]
+    },
+    {
+      "s_GeV2": 1,
+      "channel": "pion",
+      "phase_space_cut_GeV2": 0.19636886287115052,
+      "boundary": [
+        {
+          "epsilon_GeV2": 0.000001,
+          "negative_Im_GeV2": 0.1963687584690965
+        },
+        {
+          "epsilon_GeV2": 1e-8,
+          "negative_Im_GeV2": 0.19636886182713006
+        }
+      ]
+    }
+  ],
+  "shared_continuum": {
+    "s_GeV2": 1,
+    "scalar_cut_matrix_GeV2": [
+      [
+        1.1957423297799714,
+        0.3985807765933238
+      ],
+      [
+        0.3985807765933238,
+        0.13286025886444128
+      ]
+    ],
+    "rank": 1,
+    "dark_source_response": 2.757083564070131e-17,
+    "diagonal_only_dark_response": 0.2391484659559943
+  },
+  "coupling_sensitivity": [
+    {
+      "eta": 0,
+      "yukawa": [
+        3,
+        1
+      ],
+      "fixed_tree_mass_GeV": 0.2843478671310942,
+      "mode_width_diagnostics": [
+        {
+          "channel": "scalar",
+          "mode": 0,
+          "tree_mass_GeV": 0.5761836463363517,
+          "yukawa": -1.7089039243838384,
+          "projected_Gamma_over_M": 0.0028929745076061303,
+          "channel_open": true
+        },
+        {
+          "channel": "scalar",
+          "mode": 1,
+          "tree_mass_GeV": 0.9133027214234192,
+          "yukawa": -2.6607606764279863,
+          "projected_Gamma_over_M": 0.8097230592554863,
+          "channel_open": true
+        },
+        {
+          "channel": "pion",
+          "mode": 0,
+          "tree_mass_GeV": 0.13957039000028879,
+          "yukawa": -3.040649318124123,
+          "projected_Gamma_over_M": 0,
+          "channel_open": false
+        },
+        {
+          "channel": "pion",
+          "mode": 1,
+          "tree_mass_GeV": 0.5262887272355548,
+          "yukawa": -0.8685918052752429,
+          "projected_Gamma_over_M": 0,
+          "channel_open": false
+        }
+      ],
+      "nonlocal_piece_sizes": [
+        {
+          "Q2_GeV2": 0.1,
+          "scalar_subtracted_piece_relative_to_tree": 0.01242659292583105,
+          "pion_subtracted_piece_relative_to_tree": 0.11122737118667408
+        },
+        {
+          "Q2_GeV2": 0.3,
+          "scalar_subtracted_piece_relative_to_tree": 0.07430450596133073,
+          "pion_subtracted_piece_relative_to_tree": 0.3207750910318103
+        },
+        {
+          "Q2_GeV2": 1,
+          "scalar_subtracted_piece_relative_to_tree": 0.33870202555129153,
+          "pion_subtracted_piece_relative_to_tree": 0.7782399215092901
+        }
+      ]
+    },
+    {
+      "eta": 1.7721173688355225,
+      "yukawa": [
+        1.9993872657140552,
+        2.4625915782997456
+      ],
+      "fixed_tree_mass_GeV": 0.2843478671310942,
+      "mode_width_diagnostics": [
+        {
+          "channel": "scalar",
+          "mode": 0,
+          "tree_mass_GeV": 0.5761836463363517,
+          "yukawa": -2.879582413390174,
+          "projected_Gamma_over_M": 0.008214257964933407,
+          "channel_open": true
+        },
+        {
+          "channel": "scalar",
+          "mode": 1,
+          "tree_mass_GeV": 0.9133027214234192,
+          "yukawa": -1.3303803382139934,
+          "projected_Gamma_over_M": 0.20243076481387165,
+          "channel_open": true
+        },
+        {
+          "channel": "pion",
+          "mode": 0,
+          "tree_mass_GeV": 0.13957039000028879,
+          "yukawa": -3.0406493181235876,
+          "projected_Gamma_over_M": 0,
+          "channel_open": false
+        },
+        {
+          "channel": "pion",
+          "mode": 1,
+          "tree_mass_GeV": 0.5262887272355548,
+          "yukawa": 0.9035255635602799,
+          "projected_Gamma_over_M": 0,
+          "channel_open": false
+        }
+      ],
+      "nonlocal_piece_sizes": [
+        {
+          "Q2_GeV2": 0.1,
+          "scalar_subtracted_piece_relative_to_tree": 0.0182767012209303,
+          "pion_subtracted_piece_relative_to_tree": 0.11145746462540795
+        },
+        {
+          "Q2_GeV2": 0.3,
+          "scalar_subtracted_piece_relative_to_tree": 0.10041806148417419,
+          "pion_subtracted_piece_relative_to_tree": 0.32191296992018187
+        },
+        {
+          "Q2_GeV2": 1,
+          "scalar_subtracted_piece_relative_to_tree": 0.4023762433276547,
+          "pion_subtracted_piece_relative_to_tree": 0.7821456654710376
+        }
+      ]
+    },
+    {
+      "eta": 3.544234737671045,
+      "yukawa": [
+        0.9987745314281105,
+        3.925183156599491
+      ],
+      "fixed_tree_mass_GeV": 0.2843478671310942,
+      "mode_width_diagnostics": [
+        {
+          "channel": "scalar",
+          "mode": 0,
+          "tree_mass_GeV": 0.5761836463363517,
+          "yukawa": -4.050260902396509,
+          "projected_Gamma_over_M": 0.01625082119812698,
+          "channel_open": true
+        },
+        {
+          "channel": "scalar",
+          "mode": 1,
+          "tree_mass_GeV": 0.9133027214234192,
+          "yukawa": -4.340146762347736e-16,
+          "projected_Gamma_over_M": 2.154436564925539e-32,
+          "channel_open": true
+        },
+        {
+          "channel": "pion",
+          "mode": 0,
+          "tree_mass_GeV": 0.13957039000028879,
+          "yukawa": -3.0406493181230516,
+          "projected_Gamma_over_M": 0,
+          "channel_open": false
+        },
+        {
+          "channel": "pion",
+          "mode": 1,
+          "tree_mass_GeV": 0.5262887272355548,
+          "yukawa": 2.675642932395802,
+          "projected_Gamma_over_M": 0,
+          "channel_open": false
+        }
+      ],
+      "nonlocal_piece_sizes": [
+        {
+          "Q2_GeV2": 0.1,
+          "scalar_subtracted_piece_relative_to_tree": 0.03290953769056596,
+          "pion_subtracted_piece_relative_to_tree": 0.13503188740747163
+        },
+        {
+          "Q2_GeV2": 0.3,
+          "scalar_subtracted_piece_relative_to_tree": 0.177545869234457,
+          "pion_subtracted_piece_relative_to_tree": 0.4384953380875548
+        },
+        {
+          "Q2_GeV2": 1,
+          "scalar_subtracted_piece_relative_to_tree": 0.6892121196872304,
+          "pion_subtracted_piece_relative_to_tree": 1.1823120497463266
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "max_LF_spectral_relative": 5.478325243327214e-16,
+    "max_rest_spectral_relative": 5.324490308623177e-16,
+    "max_dispersion_relative": 8.803624482083495e-15
+  },
+  "reassessment": "old heavy scalar is not a justified narrow mode at its test coupling; shared coupling freedom can remove that particular cut projection but does not remove nonlocal quantum corrections; preserve common continuum and source interference, do not select a retuned production model",
+  "claims": {
+    "one_loop_nonlocal_information": true,
+    "physical_hadron_widths": false,
+    "finite_local_matching_selected": false,
+    "quantum_coupled_state_solved": false,
+    "full_quantum_EM_triangle": false,
+    "interacting_PCAC_completed": false,
+    "confinement_or_QCD_matching": false,
+    "production_model_selected": false,
+    "public_push": false
+  }
+}

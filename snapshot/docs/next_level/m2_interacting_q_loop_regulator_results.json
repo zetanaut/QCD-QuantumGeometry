@@ -1,0 +1,345 @@
+{
+  "date": "2026-09-07",
+  "scientific_source": "c8034005d42d21e01fa5c4bbaca08f699bf95033",
+  "new_direct_tests": {
+    "passed": 38,
+    "seconds": 735,
+    "files": [
+      "tests/test_m2_interacting_q_loop_regulator.py"
+    ]
+  },
+  "separate_regression": {
+    "passed": 43,
+    "seconds": 89.77,
+    "files": [
+      "tests/test_m2_q5_loop_regulator_current.py",
+      "tests/test_m2_fourth_order_h2.py",
+      "tests/test_m2_gauged_shell_resolvent.py"
+    ]
+  },
+  "initial_direct_before_reuse": {
+    "passed": 28,
+    "seconds": 762.03
+  },
+  "initial_radial_before_reuse": {
+    "passed": 8,
+    "seconds": 517.35
+  },
+  "M2_tests_collected": 1643,
+  "full_M2_pass_claimed": false,
+  "independent_review": "No blocking algebra issue; suggested radial/unequal-cutoff gap closed by eight added tests.",
+  "raw_Q_coordinates": 561222,
+  "retained_coordinates": 37,
+  "maximum_probe_H_norm_reference_error": 1.1822560125116037e-16,
+  "execution_note": "Proton run used direct Leibniz coefficients before exact-vector reuse; neutron used reused production coefficients. Final tests compare reused coefficients to the direct evaluator. Runtimes are not a controlled speed comparison.",
+  "finite_parent_Ward_test_componentwise_atol": 2e-16,
+  "finite_parent_Ward_test_componentwise_rtol": 2e-11,
+  "runs": [
+    {
+      "target": "PROTON",
+      "outer_cutoff": 2,
+      "inner_Q5_Q6_cutoff": 0,
+      "retained_cutoff": 0,
+      "retained_dimension": 37,
+      "total_k2": 9,
+      "b_GeV": 0.4,
+      "quark_mass_GeV": 0.35,
+      "gluon_mass_GeV": 0,
+      "coupling": 0.3,
+      "energy_out_GeV2": 1.39,
+      "energy_in_GeV2": 1.47,
+      "total_pplus_GeV": 1.3,
+      "transfer_GeV": [
+        0.12,
+        0.16
+      ],
+      "quadrature_order": 20,
+      "probes": {
+        "seed": 20260907,
+        "count_per_endpoint": 3,
+        "full_retained_matrix_norms": false,
+        "eigenstates": false
+      },
+      "records": [
+        {
+          "incoming_jz_twice": 1,
+          "outgoing_jz_twice": 1,
+          "raw_dimensions": {
+            "qqqgg": 22230,
+            "qqqq-qbar": 130500,
+            "qqqggg": 43692,
+            "qqqq-qbar-g": 364800
+          },
+          "H_norm_reference_errors": {
+            "outgoing": {
+              "H": 1.1822560125116037e-16,
+              "norm": 6.911889267432181e-17
+            },
+            "incoming": {
+              "H": 9.675596793890068e-17,
+              "norm": 1.0257019496056198e-16
+            }
+          },
+          "raw_coefficient_probe_norms": {
+            "2": [
+              0.00009109502199501704,
+              0.00012146002932668938
+            ],
+            "3": [
+              0.000008605060435930504,
+              0.000011473413914574006
+            ],
+            "4": [
+              0.0000016169223439917743,
+              0.0000021558964586556984
+            ]
+          },
+          "order4_interacting_word_probe_norms": {
+            "R U R": [
+              4.452898304188599e-7,
+              5.93719773891813e-7
+            ],
+            "R W R": [
+              0.000001050173327328078,
+              0.0000014002311031041044
+            ],
+            "R U R U R": [
+              5.376750816826616e-7,
+              7.169001089102156e-7
+            ]
+          },
+          "summed_raw_probe_norms": [
+            0.000008213496866068731,
+            0.000010951329154758307
+          ],
+          "summed_two_norm_probe_norms": [
+            0.000008211599345149285,
+            0.000010948799126865715
+          ]
+        },
+        {
+          "incoming_jz_twice": 1,
+          "outgoing_jz_twice": -1,
+          "raw_dimensions": {
+            "qqqgg": 22230,
+            "qqqq-qbar": 130500,
+            "qqqggg": 43692,
+            "qqqq-qbar-g": 364800
+          },
+          "H_norm_reference_errors": {
+            "outgoing": {
+              "H": 8.662027333294456e-17,
+              "norm": 8.789337420177429e-17
+            },
+            "incoming": {
+              "H": 9.675596793890068e-17,
+              "norm": 1.0257019496056198e-16
+            }
+          },
+          "raw_coefficient_probe_norms": {
+            "2": [
+              0.00028952462917704975,
+              0.0002836340364493761
+            ],
+            "3": [
+              0.000013249454006206409,
+              0.000012614267723295346
+            ],
+            "4": [
+              0.0000030398012497693497,
+              0.000002918760827380771
+            ]
+          },
+          "order4_interacting_word_probe_norms": {
+            "R U R": [
+              0.0000013678006358011872,
+              0.0000012854208513050697
+            ],
+            "R W R": [
+              0.0000020497391219887453,
+              0.0000019426931499180534
+            ],
+            "R U R U R": [
+              0.000001741696896440005,
+              0.0000016961054619163928
+            ]
+          },
+          "summed_raw_probe_norms": [
+            0.000025999920704812452,
+            0.000025471120757104356
+          ],
+          "summed_two_norm_probe_norms": [
+            0.00002599497164218332,
+            0.000025466257958055737
+          ]
+        }
+      ],
+      "seconds": 932.324502833013,
+      "scope": "canonical H2 Q-only projector return current through g4 with both local norms",
+      "Q_only_H2_order4_transport_complete": true,
+      "full_H2_order4_regulator_matching_complete": false,
+      "common_field_regulator_complete": false,
+      "physical": false,
+      "continuum_convergence_established": false,
+      "quantum_execution": false
+    },
+    {
+      "target": "NEUTRON",
+      "outer_cutoff": 2,
+      "inner_Q5_Q6_cutoff": 0,
+      "retained_cutoff": 0,
+      "retained_dimension": 37,
+      "total_k2": 9,
+      "b_GeV": 0.4,
+      "quark_mass_GeV": 0.35,
+      "gluon_mass_GeV": 0,
+      "coupling": 0.3,
+      "energy_out_GeV2": 1.39,
+      "energy_in_GeV2": 1.47,
+      "total_pplus_GeV": 1.3,
+      "transfer_GeV": [
+        0.12,
+        0.16
+      ],
+      "quadrature_order": 20,
+      "probes": {
+        "seed": 20260907,
+        "count_per_endpoint": 3,
+        "full_retained_matrix_norms": false,
+        "eigenstates": false
+      },
+      "records": [
+        {
+          "incoming_jz_twice": 1,
+          "outgoing_jz_twice": 1,
+          "raw_dimensions": {
+            "qqqgg": 22230,
+            "qqqq-qbar": 130500,
+            "qqqggg": 43692,
+            "qqqq-qbar-g": 364800
+          },
+          "H_norm_reference_errors": {
+            "outgoing": {
+              "H": 8.25179009867772e-17,
+              "norm": 1.1087642721466207e-16
+            },
+            "incoming": {
+              "H": 1.1453954796670521e-16,
+              "norm": 5.66104491525333e-17
+            }
+          },
+          "raw_coefficient_probe_norms": {
+            "2": [
+              0.0000767014644147667,
+              0.00010226861921968897
+            ],
+            "3": [
+              0.0000026559095350990925,
+              0.000003541212713465456
+            ],
+            "4": [
+              0.0000013521625602030296,
+              0.000001802883413604039
+            ]
+          },
+          "order4_interacting_word_probe_norms": {
+            "R U R": [
+              4.830063930780751e-7,
+              6.440085241041002e-7
+            ],
+            "R W R": [
+              8.396731425981921e-7,
+              0.000001119564190130923
+            ],
+            "R U R U R": [
+              5.259717872891433e-7,
+              7.012957163855246e-7
+            ]
+          },
+          "summed_raw_probe_norms": [
+            0.000006938658977745358,
+            0.000009251545303660479
+          ],
+          "summed_two_norm_probe_norms": [
+            0.0000069370454347224,
+            0.000009249393912963203
+          ]
+        },
+        {
+          "incoming_jz_twice": 1,
+          "outgoing_jz_twice": -1,
+          "raw_dimensions": {
+            "qqqgg": 22230,
+            "qqqq-qbar": 130500,
+            "qqqggg": 43692,
+            "qqqq-qbar-g": 364800
+          },
+          "H_norm_reference_errors": {
+            "outgoing": {
+              "H": 9.507978256529619e-17,
+              "norm": 8.895835195549081e-17
+            },
+            "incoming": {
+              "H": 1.1453954796670521e-16,
+              "norm": 5.66104491525333e-17
+            }
+          },
+          "raw_coefficient_probe_norms": {
+            "2": [
+              0.0002117240348618293,
+              0.0002010899567752191
+            ],
+            "3": [
+              0.000009753170758119602,
+              0.000009430839620670978
+            ],
+            "4": [
+              0.0000030214811709896575,
+              0.0000029025790793089396
+            ]
+          },
+          "order4_interacting_word_probe_norms": {
+            "R U R": [
+              0.000001741294831422597,
+              0.000001663542113573423
+            ],
+            "R W R": [
+              0.000001321527991299692,
+              0.0000012558484653245962
+            ],
+            "R U R U R": [
+              0.0000019416980572179408,
+              0.0000018441460753490875
+            ]
+          },
+          "summed_raw_probe_norms": [
+            0.000019035778831367938,
+            0.000018076357332985556
+          ],
+          "summed_two_norm_probe_norms": [
+            0.000019030925760232253,
+            0.00001807178247398383
+          ]
+        }
+      ],
+      "seconds": 492.88629033300094,
+      "scope": "canonical H2 Q-only projector return current through g4 with both local norms",
+      "Q_only_H2_order4_transport_complete": true,
+      "full_H2_order4_regulator_matching_complete": false,
+      "common_field_regulator_complete": false,
+      "physical": false,
+      "continuum_convergence_established": false,
+      "quantum_execution": false
+    }
+  ],
+  "normal_ordered_canonical_Q_only_H2_order4_transport_complete": true,
+  "paired_Wick_in_same_regulator_wrapper": false,
+  "P_source_projector_partners_complete": false,
+  "full_H2_order4_regulator_matching_complete": false,
+  "common_field_regulator_complete": false,
+  "physical": false,
+  "covariance_repaired": false,
+  "quantum_execution": false,
+  "backup": "computation_handoff/backups/2026-09-06_pre_canonical_self/pre_interacting_q_loop.tar",
+  "test_backup": "computation_handoff/backups/2026-09-06_pre_canonical_self/pre_interacting_q_loop_theory_contract.tar"
+}

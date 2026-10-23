@@ -1,0 +1,276 @@
+{
+  "scope": "Local coupled linear-sigma/quark-meson tree candidate. No new composite-q-qbar bound pion, quantum quark self-energy, production QCD matching or nucleon prediction.",
+  "targets": {
+    "pion_mass_GeV": 0.1348,
+    "pion_mass_error_GeV": 0.0003,
+    "mass_convention": "Isospin-limit point used in arXiv:2503.20687, section VI; not charged physical mass",
+    "decay_constant_GeV": 0.0922,
+    "decay_constant_convention": "Explicit illustrative isovector tau/2 normalization; not a newly extracted precision datum",
+    "scalar_radius_squared_fm2": 0.515,
+    "scalar_stat_fm2": 0.028,
+    "scalar_sys_fm2": 0.032,
+    "scalar_total_fm2": 0.043,
+    "scalar_source": "https://arxiv.org/abs/2503.20687",
+    "scalar_operator": "u-bar u + d-bar d; Nf=2+1 lattice result, normalized scalar slope; strange effects not explicitly resolved by this two-flavor pilot",
+    "withheld_vector_radius_fm": 0.659,
+    "withheld_vector_error_fm": 0.004,
+    "vector_source": "https://pdglive.lbl.gov/DataBlock.action?node=S008CR",
+    "matching_window_GeV2": [
+      0.0,
+      0.1
+    ],
+    "likelihood": "No cross-dataset covariance, absolute scalar normalization, precision QED/isospin matching, or statistical exclusion significance claimed"
+  },
+  "cases": [
+    {
+      "angle": 0.35,
+      "quartic_ratio": 0.8,
+      "coupling_GeV2": 0.1,
+      "quartic": [
+        34.55243573343406,
+        53.988180833490716
+      ],
+      "quartic_over_16pi2": [
+        0.21880585538983416,
+        0.34188414904661585
+      ],
+      "radial_squared_GeV2": [
+        0.008813127050834174,
+        -0.002559078966267366
+      ],
+      "scalar_source_GeV2": [
+        0.3934491891783423,
+        0.14362016531802127
+      ],
+      "yukawa": [
+        3.0,
+        1.0
+      ],
+      "mass_source_GeV": 0.004,
+      "source_scheme": "Unmatched exploratory mass/source coordinate; not assigned MSbar by assumption",
+      "vacuum_GeV": [
+        0.08661016412452834,
+        0.03161517784739261
+      ],
+      "pion_mass_squared_GeV2": [
+        0.01817103999999999,
+        0.32862510539142076
+      ],
+      "scalar_mass_squared_GeV2": [
+        0.3543271274968827,
+        0.6187712847504035
+      ],
+      "decay_constants_GeV": [
+        0.09219999999999999,
+        3.747234136316241e-18
+      ],
+      "pseudoscalar_residues_GeV2": [
+        0.20942123599999998,
+        2.1548304675165877e-18
+      ],
+      "tree_quark_mass_GeV": 0.2954456702209776,
+      "gap_norm_GeV3": 3.0435005313749536e-18,
+      "chiral_pion_mass_squared_GeV2": 5.3342398115950226e-17,
+      "scalar_F0_GeV": 4.36022892947429,
+      "scalar_radius_squared_fm2": 0.5149999999999988,
+      "scalar_Q2_GeV2": [
+        0.0,
+        0.02,
+        0.05,
+        0.1
+      ],
+      "normalized_scalar_F": [
+        1.0,
+        0.9579020443725119,
+        0.9013875353580982,
+        0.8213786982405461
+      ],
+      "scalar_Feynman_Hellmann_error_GeV": 1.3589129821411916e-12,
+      "exact_elimination_max_error_GeV": 1.3322676295501878e-15,
+      "frozen_sources_relative_error": 0.12319652862685879,
+      "quark_axial_Ward_max_error_GeV": 1.1102230246251565e-16,
+      "pion_vector_F": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "vector_radius_squared_fm2": 0.0,
+      "vector_zero_is": "Derived exact tree result for local potential + constant kinetic metric; missing physical interactions are not set to zero"
+    },
+    {
+      "angle": 0.6,
+      "quartic_ratio": 1.4,
+      "coupling_GeV2": 0.12,
+      "quartic": [
+        60.88960527064067,
+        31.06612513808198
+      ],
+      "quartic_over_16pi2": [
+        0.3855879298460026,
+        0.19672853563571563
+      ],
+      "radial_squared_GeV2": [
+        0.006114663445259598,
+        0.0003419264466880457
+      ],
+      "scalar_source_GeV2": [
+        0.34568560917840974,
+        0.23649624935297084
+      ],
+      "yukawa": [
+        3.0,
+        1.0
+      ],
+      "mass_source_GeV": 0.004,
+      "source_scheme": "Unmatched exploratory mass/source coordinate; not assigned MSbar by assumption",
+      "vacuum_GeV": [
+        0.07609594369467593,
+        0.05206003604703735
+      ],
+      "pion_mass_squared_GeV2": [
+        0.018171040000038146,
+        0.2756709706504191
+      ],
+      "scalar_mass_squared_GeV2": [
+        0.33157969814201954,
+        0.8358298804603587
+      ],
+      "decay_constants_GeV": [
+        0.09220000000001148,
+        1.3040747615884962e-14
+      ],
+      "pseudoscalar_residues_GeV2": [
+        0.20942123599999998,
+        5.931578357892955e-15
+      ],
+      "tree_quark_mass_GeV": 0.28434786713106514,
+      "gap_norm_GeV3": 5.143508352800671e-15,
+      "chiral_pion_mass_squared_GeV2": -4.091090881191301e-17,
+      "scalar_F0_GeV": 4.359523843221594,
+      "scalar_radius_squared_fm2": 0.5149999999997994,
+      "scalar_Q2_GeV2": [
+        0.0,
+        0.02,
+        0.05,
+        0.1
+      ],
+      "normalized_scalar_F": [
+        1.0,
+        0.958062992937807,
+        0.9022340801348944,
+        0.8239781011430248
+      ],
+      "scalar_Feynman_Hellmann_error_GeV": 1.51133328074593e-09,
+      "exact_elimination_max_error_GeV": 8.881784197001252e-16,
+      "frozen_sources_relative_error": 0.3305159278059991,
+      "quark_axial_Ward_max_error_GeV": 1.566524687746096e-13,
+      "pion_vector_F": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "vector_radius_squared_fm2": 0.0,
+      "vector_zero_is": "Derived exact tree result for local potential + constant kinetic metric; missing physical interactions are not set to zero"
+    },
+    {
+      "angle": 1.0,
+      "quartic_ratio": 0.8,
+      "coupling_GeV2": 0.2,
+      "quartic": [
+        33.319669802112536,
+        52.06198406580083
+      ],
+      "quartic_over_16pi2": [
+        0.2109992739326188,
+        0.3296863655197168
+      ],
+      "radial_squared_GeV2": [
+        -0.0014095513996599785,
+        0.007045119746682142
+      ],
+      "scalar_source_GeV2": [
+        0.22630155341711175,
+        0.3524437873932138
+      ],
+      "yukawa": [
+        3.0,
+        1.0
+      ],
+      "mass_source_GeV": 0.004,
+      "source_scheme": "Unmatched exploratory mass/source coordinate; not assigned MSbar by assumption",
+      "vacuum_GeV": [
+        0.0498158726010425,
+        0.07758362479928806
+      ],
+      "pion_mass_squared_GeV2": [
+        0.01817103999999999,
+        0.45807110811784657
+      ],
+      "scalar_mass_squared_GeV2": [
+        0.3905333029080262,
+        0.8778273910208103
+      ],
+      "decay_constants_GeV": [
+        0.09220000000000002,
+        5.791645170863239e-20
+      ],
+      "pseudoscalar_residues_GeV2": [
+        0.209421236,
+        -2.7155025195090222e-17
+      ],
+      "tree_quark_mass_GeV": 0.23103124260241553,
+      "gap_norm_GeV3": 1.3410840230045617e-18,
+      "chiral_pion_mass_squared_GeV2": 5.533517638614921e-17,
+      "scalar_F0_GeV": 4.36021212462595,
+      "scalar_radius_squared_fm2": 0.5149999999999987,
+      "scalar_Q2_GeV2": [
+        0.0,
+        0.02,
+        0.05,
+        0.1
+      ],
+      "normalized_scalar_F": [
+        1.0,
+        0.9579095721271176,
+        0.9014405659178749,
+        0.821601351925779
+      ],
+      "scalar_Feynman_Hellmann_error_GeV": 1.0276224315930449e-12,
+      "exact_elimination_max_error_GeV": 8.881784197001252e-16,
+      "frozen_sources_relative_error": 0.8873086427766864,
+      "quark_axial_Ward_max_error_GeV": 1.6653345369377348e-16,
+      "pion_vector_F": [
+        1.0000000000000002,
+        1.0000000000000002,
+        1.0000000000000002
+      ],
+      "vector_radius_squared_fm2": 0.0,
+      "vector_zero_is": "Derived exact tree result for local potential + constant kinetic metric; missing physical interactions are not set to zero"
+    }
+  ],
+  "scalar_one_sigma_summary_sensitivity": [
+    {
+      "target_scalar_radius_squared_fm2": 0.47200000000000003,
+      "quartic": [
+        67.38698142544418,
+        34.3811129721654
+      ],
+      "scalar_mass_squared_GeV2": [
+        0.35266565128211586,
+        0.9079601184973337
+      ]
+    },
+    {
+      "target_scalar_radius_squared_fm2": 0.558,
+      "quartic": [
+        55.451984007912515,
+        28.29182857546557
+      ],
+      "scalar_mass_squared_GeV2": [
+        0.3133713238817559,
+        0.7760260954889032
+      ]
+    }
+  ],
+  "decision": "Do not promote or expand this potential-only tree candidate for joint physics. Preserve its common-action/source checks; next qualify an independent transverse, chirally/gauge-invariant source interaction (or its matched dynamical origin) within the shared action. No loop-repair program or independent observable head."
+}

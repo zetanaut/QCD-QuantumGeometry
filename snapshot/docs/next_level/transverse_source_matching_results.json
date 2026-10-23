@@ -1,0 +1,138 @@
+{
+  "scope": "Weak-source local tree derivative expansion. Not QCD-matched coefficients, production sigma model, new quantum states, or a precision likelihood.",
+  "matching_inputs": {
+    "radius_fm": 0.659,
+    "radius_error_fm": 0.004,
+    "radius_source": "https://pdglive.lbl.gov/DataBlock.action?node=S008CR",
+    "charged_pion_mass_GeV": 0.13957039,
+    "mass_source": "https://pdglive.lbl.gov/DataBlock.action?node=S008M",
+    "alpha_fm3": 0.0002,
+    "alpha_stat_fm3": 0.00006,
+    "alpha_sys_fm3": 0.00007,
+    "polarizability_source": "https://arxiv.org/abs/1405.6377",
+    "polarizability_qualification": "COMPASS assumes alpha=-beta; extracted summary includes radiative/chiral-loop/nuclear corrections. No raw events, joint likelihood or QCD coefficient matching imported.",
+    "scalar_shape_qualification": "Prior Nf=2+1 isospin scalar slope benchmark retained approximately in a separately retuned charged-mass variant; original isospin results unchanged."
+  },
+  "radius_only": {
+    "C_GeV_minus2": 1.8588598134116128,
+    "D_GeV_minus2": 0,
+    "alpha_fm3": 0.001493509818747316,
+    "alpha_with_original_isospin_mass_fm3": 0.0015463631147729392,
+    "outcome": "Radius calibrated; independent two-photon comparison fails for D=0 at this tree order. No significance or all-orders exclusion claimed."
+  },
+  "joint_matching": {
+    "C_GeV_minus2": 1.8588598134116128,
+    "D_GeV_minus2": -0.804967396310613,
+    "alpha_fm3": 0.00019999999999999998,
+    "status": "Two independently fitted projected coefficients, NOT two predictions.",
+    "radius_was_withheld_in_preceding_experiment_now_calibration": true
+  },
+  "matching_rank": 2,
+  "fixed_basis_symmetric_coefficients": 6,
+  "unidentified_directions": 4,
+  "cases": [
+    {
+      "angle": 0.35,
+      "quartic_ratio": 0.8,
+      "coupling_GeV2": 0.1,
+      "pion_mass_squared_GeV2": 0.019479893764752117,
+      "scalar_radius_squared_fm2": 0.514999999999999,
+      "projected_C_GeV_minus2": 1.8588598134116123,
+      "projected_D_GeV_minus2": -0.804967396310613,
+      "Q2_GeV2": [
+        0.02,
+        0.05,
+        0.1
+      ],
+      "tree_truncated_vector_F": [
+        0.9628228037317678,
+        0.9070570093294195,
+        0.8141140186588387
+      ],
+      "action_vertex_vs_analytic_max_error_GeV": 1.3877787807814457e-17,
+      "real_Compton_structure_contact_charge_stripped": 0.00025515622986455,
+      "real_Compton_action_vs_reduced_max_error": 1.3010426069826053e-18,
+      "radius_only_Compton_structure_contact_charge_stripped": 0.001905391673086271,
+      "alternative_same_light_projection_max_error": 6.661338147750939e-16,
+      "heavy_light_offshell_current_change_norm_GeV": 0.047585333875050165
+    },
+    {
+      "angle": 0.6,
+      "quartic_ratio": 1.4,
+      "coupling_GeV2": 0.12,
+      "pion_mass_squared_GeV2": 0.01947989376483271,
+      "scalar_radius_squared_fm2": 0.5149999999995761,
+      "projected_C_GeV_minus2": 1.8588598134116134,
+      "projected_D_GeV_minus2": -0.8049673963106133,
+      "Q2_GeV2": [
+        0.02,
+        0.05,
+        0.1
+      ],
+      "tree_truncated_vector_F": [
+        0.9628228037317678,
+        0.9070570093294194,
+        0.8141140186588387
+      ],
+      "action_vertex_vs_analytic_max_error_GeV": 1.3877787807814457e-17,
+      "real_Compton_structure_contact_charge_stripped": 0.0002551562298645496,
+      "real_Compton_action_vs_reduced_max_error": 1.734723475976807e-18,
+      "radius_only_Compton_structure_contact_charge_stripped": 0.0019053916730862716,
+      "alternative_same_light_projection_max_error": 8.881784197001252e-16,
+      "heavy_light_offshell_current_change_norm_GeV": 0.04758533387505022
+    },
+    {
+      "angle": 1,
+      "quartic_ratio": 0.8,
+      "coupling_GeV2": 0.2,
+      "pion_mass_squared_GeV2": 0.019479893764752104,
+      "scalar_radius_squared_fm2": 0.5149999999999987,
+      "projected_C_GeV_minus2": 1.8588598134116134,
+      "projected_D_GeV_minus2": -0.8049673963106132,
+      "Q2_GeV2": [
+        0.02,
+        0.05,
+        0.1
+      ],
+      "tree_truncated_vector_F": [
+        0.9628228037317678,
+        0.9070570093294194,
+        0.8141140186588387
+      ],
+      "action_vertex_vs_analytic_max_error_GeV": 2.7755575615628914e-17,
+      "real_Compton_structure_contact_charge_stripped": 0.00025515622986455305,
+      "real_Compton_action_vs_reduced_max_error": 1.734723475976807e-18,
+      "radius_only_Compton_structure_contact_charge_stripped": 0.0019053916730862753,
+      "alternative_same_light_projection_max_error": 6.661338147750939e-16,
+      "heavy_light_offshell_current_change_norm_GeV": 0.047585333875050206
+    }
+  ],
+  "one_input_at_a_time_sensitivity": [
+    {
+      "radius_fm": 0.655,
+      "alpha_fm3": 0.0002,
+      "C_GeV_minus2": 1.8363624737184385,
+      "D_GeV_minus2": -0.7937187264640259
+    },
+    {
+      "radius_fm": 0.663,
+      "alpha_fm3": 0.0002,
+      "C_GeV_minus2": 1.881494123209464,
+      "D_GeV_minus2": -0.8162845512095386
+    },
+    {
+      "radius_fm": 0.659,
+      "alpha_fm3": 0.00010780455542707114,
+      "C_GeV_minus2": 1.8588598134116128,
+      "D_GeV_minus2": -0.8623417787033512
+    },
+    {
+      "radius_fm": 0.659,
+      "alpha_fm3": 0.0002921954445729289,
+      "C_GeV_minus2": 1.8588598134116128,
+      "D_GeV_minus2": -0.7475930139178748
+    }
+  ],
+  "expansion_boundary": "0<=Q2<=0.1 GeV2 diagnostic window; linear slope is not a full form factor, no controlled loop/higher-order error or timelike/UV completion.",
+  "decision": "Retain the two shared curvature/source operator classes and linked derivatives. Reject one-coefficient radius-only inference and default closure of matrix null directions. Next qualify their full-minus-retained matching map into the quark-resolved state/current network; a pion calibration must not become an independently fitted nucleon head or a sigma-model repair agenda."
+}

@@ -1,0 +1,461 @@
+{
+  "scope": "finite common-regulated H2 g4 at Delta+=0; explicit test conditions",
+  "endpoint_current_metadata": {
+    "target": "PROTON",
+    "jz_out_twice": 1,
+    "jz_in_twice": 1,
+    "total_k2": 9,
+    "retained_cutoff": 0,
+    "energy_out_GeV2": 1.39,
+    "energy_in_GeV2": 1.47,
+    "transfer_GeV": [
+      0.12,
+      0.16
+    ],
+    "mean_total_transverse_GeV": [
+      0.0,
+      0.0
+    ],
+    "charge": "electromagnetic",
+    "loop_flavor_charges": [
+      0.6666666666666666,
+      -0.3333333333333333
+    ],
+    "physical_leg_prescription": "physical-leg-endpoint-product",
+    "quadrature_order": 8,
+    "smooth_prescription": "continuous-global-Jacobi-fixed-mode-membership",
+    "field_envelope_prescription": "finite-cell-covariant-spectral-gapped-envelope",
+    "isospin_prescription": "flavor-degenerate-total-isospin-half-H2-source-domain",
+    "component_order": [
+      "plus",
+      "minus",
+      "x",
+      "y"
+    ],
+    "normalization": "Jmu/(2Pplus); raw order g4 before both full norm maps",
+    "physical": false
+  },
+  "model_parameters": {
+    "b_GeV": 0.4,
+    "quark_mass_GeV": 0.35,
+    "gluon_mass_GeV": 0.0,
+    "coupling": 0.3,
+    "total_pplus_GeV": 1.3,
+    "regulator": {
+      "width_GeV": 0.8,
+      "boson_modes": 8,
+      "fermion_modes": 8,
+      "reference_shape": {
+        "base_width_GeV": 0.8,
+        "reference_width_GeV": 1.2,
+        "degree": 2
+      }
+    },
+    "wick": {
+      "regulator": {
+        "width_GeV": 0.8,
+        "boson_modes": 8,
+        "fermion_modes": 8,
+        "reference_shape": {
+          "base_width_GeV": 0.8,
+          "reference_width_GeV": 1.2,
+          "degree": 2
+        }
+      },
+      "quark_flavors": 2,
+      "normal_order_subtraction": true,
+      "finite_quark_mass2_per_gs2_GeV2": 0.011,
+      "finite_gluon_mass2_per_gs2_GeV2": -0.007
+    },
+    "excluded_cutoffs": {
+      "qqqgg": 0,
+      "qqqq-qbar": 0,
+      "qqqggg": 0,
+      "qqqq-qbar-g": 0
+    }
+  },
+  "oracle": {
+    "device": "lightning.qubit",
+    "pennylane": "0.38.0",
+    "lightning": "0.38.0",
+    "state_qubits": 6,
+    "readout_qubits": 7,
+    "readout": "tagged direct-sum Hermitian quadratures",
+    "exact_oracle_stateprep": true,
+    "shots": null,
+    "physical": false
+  },
+  "oracle_executions": 1900,
+  "oracle_errors": {
+    "g0_plus": 1.962615573354719e-17,
+    "g0_minus": 1.0103182026100663e-16,
+    "g0_x": 1.5515838457795457e-17,
+    "g0_y": 1.4304896245381992e-17,
+    "g1_plus": 0.0,
+    "g1_minus": 1.734723475976807e-18,
+    "g1_x": 4.99792506496182e-19,
+    "g1_y": 6.505213034913027e-19,
+    "g2_plus": 7.298259228859639e-20,
+    "g2_minus": 3.878959614448864e-18,
+    "g2_x": 1.0863176909312428e-19,
+    "g2_y": 1.9545732629329692e-19,
+    "g3_plus": 2.117582368135751e-21,
+    "g3_minus": 1.5270103616663822e-21,
+    "g3_x": 1.5416232339631138e-21,
+    "g3_y": 6.352747104407253e-22,
+    "g4_plus": 1.3969625239630852e-20,
+    "g4_minus": 2.4432165786662115e-20,
+    "g4_x": 7.576092996970438e-21,
+    "g4_y": 3.492406309907713e-21,
+    "total_plus": 1.5515838457795457e-17,
+    "total_minus": 2.7755575615628914e-17,
+    "total_x": 9.813077866773595e-18,
+    "total_y": 1.734723475976807e-17
+  },
+  "oracle_action_errors": {
+    "g0_plus": 8.441528768080323e-17,
+    "g0_minus": 2.2247786310271853e-16,
+    "g0_x": 5.575456304969596e-17,
+    "g0_y": 5.557210413939996e-17,
+    "g1_plus": 0.0,
+    "g1_minus": 1.5515838457795457e-17,
+    "g1_x": 1.734723475976807e-18,
+    "g1_y": 1.745068781624091e-18,
+    "g2_plus": 4.355825238257497e-19,
+    "g2_minus": 1.4539632184201917e-17,
+    "g2_x": 2.710505431213761e-19,
+    "g2_y": 2.42434975903054e-19,
+    "g3_plus": 6.828997942065139e-21,
+    "g3_minus": 1.0164395367051604e-20,
+    "g3_x": 3.788046498485219e-21,
+    "g3_y": 3.582721581872547e-21,
+    "g4_plus": 8.159701876572674e-20,
+    "g4_minus": 8.180009913862925e-20,
+    "g4_x": 2.0329893611669953e-20,
+    "g4_y": 9.583083854271089e-21,
+    "total_plus": 8.342919866351945e-17,
+    "total_minus": 3.3306690738754696e-16,
+    "total_x": 4.2207643840401616e-17,
+    "total_y": 1.5515838457795457e-17
+  },
+  "controlled_readout_executions": 49,
+  "controlled_readout_qubits": 7,
+  "controlled_readout_padding": 0.0,
+  "controlled_readout_stateprep": false,
+  "exact_state_seed": false,
+  "measurements": {
+    "g0_plus": {
+      "measured": [
+        0.8823950506898592,
+        -1.5330890469425124e-19
+      ],
+      "executed_state_error": 4.44089211572123e-16,
+      "ground_reference_error": 2.084221684129438e-12,
+      "residual_gap_bound": 3.492713550731031e-08,
+      "direct_state_distance_bound": 2.465776647660199e-08,
+      "roundoff_budget": 8e-13
+    },
+    "g0_minus": {
+      "measured": [
+        0.3535209178291543,
+        5.0622342990195006e-18
+      ],
+      "executed_state_error": 1.665334548090869e-16,
+      "ground_reference_error": 1.282135508873263e-11,
+      "residual_gap_bound": 6.700691380800834e-08,
+      "direct_state_distance_bound": 4.730536326547162e-08,
+      "roundoff_budget": 8e-13
+    },
+    "g0_x": {
+      "measured": [
+        7.8185758245936e-18,
+        -0.1627399751887708
+      ],
+      "executed_state_error": 1.3877787810149663e-16,
+      "ground_reference_error": 2.6375845951776465e-12,
+      "residual_gap_bound": 1.2770504731264497e-08,
+      "direct_state_distance_bound": 9.015687054724351e-09,
+      "roundoff_budget": 8e-13
+    },
+    "g0_y": {
+      "measured": [
+        2.1471633776571827e-17,
+        0.12205498139157799
+      ],
+      "executed_state_error": 4.1633363429872864e-17,
+      "ground_reference_error": 1.978139874125907e-12,
+      "residual_gap_bound": 9.577878548448368e-09,
+      "direct_state_distance_bound": 6.7617652910432594e-09,
+      "roundoff_budget": 8e-13
+    },
+    "g1_plus": {
+      "measured": [
+        0.0,
+        0.0
+      ],
+      "executed_state_error": 0.0,
+      "ground_reference_error": 0.0,
+      "residual_gap_bound": 0.0,
+      "direct_state_distance_bound": 0.0,
+      "roundoff_budget": 8e-13
+    },
+    "g1_minus": {
+      "measured": [
+        -0.006323079338576177,
+        -7.161809821675992e-18
+      ],
+      "executed_state_error": 1.7348235145814905e-18,
+      "ground_reference_error": 1.2317641698291957e-11,
+      "residual_gap_bound": 4.809900699220451e-09,
+      "direct_state_distance_bound": 3.3956809367375406e-09,
+      "roundoff_budget": 8e-13
+    },
+    "g1_x": {
+      "measured": [
+        -5.223232719437572e-12,
+        3.381434971566143e-14
+      ],
+      "executed_state_error": 1.0039295538226161e-19,
+      "ground_reference_error": 3.3814344426411685e-14,
+      "residual_gap_bound": 5.813118796447834e-10,
+      "direct_state_distance_bound": 4.103930187849367e-10,
+      "roundoff_budget": 8e-13
+    },
+    "g1_y": {
+      "measured": [
+        -6.964310213522575e-12,
+        4.508573488468202e-14
+      ],
+      "executed_state_error": 4.907022993339801e-20,
+      "ground_reference_error": 4.508579480183487e-14,
+      "residual_gap_bound": 7.75082506193045e-10,
+      "direct_state_distance_bound": 5.471906917132493e-10,
+      "roundoff_budget": 8e-13
+    },
+    "g2_plus": {
+      "measured": [
+        4.279104132301452e-06,
+        6.588967147963488e-22
+      ],
+      "executed_state_error": 8.508941455960854e-22,
+      "ground_reference_error": 3.844878212198122e-15,
+      "residual_gap_bound": 1.537284084738375e-10,
+      "direct_state_distance_bound": 1.0852877402941298e-10,
+      "roundoff_budget": 8e-13
+    },
+    "g2_minus": {
+      "measured": [
+        0.02589477447774572,
+        3.687384488456386e-18
+      ],
+      "executed_state_error": 1.780042687672536e-21,
+      "ground_reference_error": 6.729577312070143e-11,
+      "residual_gap_bound": 6.309396523279557e-09,
+      "direct_state_distance_bound": 4.454291020995682e-09,
+      "roundoff_budget": 8e-13
+    },
+    "g2_x": {
+      "measured": [
+        3.2503917023942446e-08,
+        6.17194128037391e-07
+      ],
+      "executed_state_error": 2.1374347028370235e-21,
+      "ground_reference_error": 1.0024852222731777e-12,
+      "residual_gap_bound": 1.2940212517567821e-10,
+      "direct_state_distance_bound": 9.135496907526411e-11,
+      "roundoff_budget": 8e-13
+    },
+    "g2_y": {
+      "measured": [
+        4.3338556031929654e-08,
+        -4.628976810812687e-07
+      ],
+      "executed_state_error": 1.4710536849859046e-21,
+      "ground_reference_error": 1.3331893770993797e-12,
+      "residual_gap_bound": 1.705499901382244e-10,
+      "direct_state_distance_bound": 1.204044296313654e-10,
+      "roundoff_budget": 8e-13
+    },
+    "g3_plus": {
+      "measured": [
+        9.366950626846403e-07,
+        -1.913446815116717e-21
+      ],
+      "executed_state_error": 2.1187412024778296e-22,
+      "ground_reference_error": 9.457508150206368e-15,
+      "residual_gap_bound": 3.008473936233175e-12,
+      "direct_state_distance_bound": 2.1239144491266606e-12,
+      "roundoff_budget": 8e-13
+    },
+    "g3_minus": {
+      "measured": [
+        3.793248371652663e-07,
+        -1.4753007523678e-17
+      ],
+      "executed_state_error": 2.1191003074006236e-22,
+      "ground_reference_error": 3.5528231882816916e-15,
+      "residual_gap_bound": 5.4477246587895885e-12,
+      "direct_state_distance_bound": 3.845970203801702e-12,
+      "roundoff_budget": 8e-13
+    },
+    "g3_x": {
+      "measured": [
+        5.0323363275316285e-09,
+        3.7377272556291345e-09
+      ],
+      "executed_state_error": 5.399531933421571e-23,
+      "ground_reference_error": 3.1493793006814173e-15,
+      "residual_gap_bound": 1.5206656922511412e-12,
+      "direct_state_distance_bound": 1.0735555316484777e-12,
+      "roundoff_budget": 8e-13
+    },
+    "g3_y": {
+      "measured": [
+        6.70978177004094e-09,
+        -2.8032954840930594e-09
+      ],
+      "executed_state_error": 4.5541908337612996e-23,
+      "ground_reference_error": 2.324199660468908e-15,
+      "residual_gap_bound": 1.8947174706897577e-12,
+      "direct_state_distance_bound": 1.3376276139687305e-12,
+      "roundoff_budget": 8e-13
+    },
+    "g4_plus": {
+      "measured": [
+        1.1425664073605572e-05,
+        -4.7209369844676e-21
+      ],
+      "executed_state_error": 3.388171135988909e-21,
+      "ground_reference_error": 6.672561842521841e-14,
+      "residual_gap_bound": 2.8607151922905002e-11,
+      "direct_state_distance_bound": 2.0196001230276327e-11,
+      "roundoff_budget": 8e-13
+    },
+    "g4_minus": {
+      "measured": [
+        8.801124183063354e-06,
+        3.9295590552948573e-17
+      ],
+      "executed_state_error": 1.5759914545234802e-23,
+      "ground_reference_error": 8.358014843919603e-14,
+      "residual_gap_bound": 2.8861379644428956e-11,
+      "direct_state_distance_bound": 2.0375480242745133e-11,
+      "roundoff_budget": 8e-13
+    },
+    "g4_x": {
+      "measured": [
+        1.2584834315383805e-07,
+        -3.784014384453813e-06
+      ],
+      "executed_state_error": 4.308967933543231e-22,
+      "ground_reference_error": 2.600942051052284e-14,
+      "residual_gap_bound": 7.1570554803593735e-12,
+      "direct_state_distance_bound": 5.052719042987334e-12,
+      "roundoff_budget": 8e-13
+    },
+    "g4_y": {
+      "measured": [
+        1.6779779087176103e-07,
+        2.8380107923001342e-06
+      ],
+      "executed_state_error": 1.2705494208814505e-21,
+      "ground_reference_error": 1.557472123821463e-14,
+      "residual_gap_bound": 5.927057511622832e-12,
+      "direct_state_distance_bound": 4.184368339751092e-12,
+      "roundoff_budget": 8e-13
+    },
+    "total_plus": {
+      "measured": [
+        0.8823955536478771,
+        -1.3238126245969252e-19
+      ],
+      "executed_state_error": 2.2204461152731544e-16,
+      "ground_reference_error": 2.0858870186663318e-12,
+      "residual_gap_bound": 3.492713842389398e-08,
+      "direct_state_distance_bound": 2.465776853564399e-08,
+      "roundoff_budget": 8e-13
+    },
+    "total_minus": {
+      "measured": [
+        0.35395460526145506,
+        3.2144541683918006e-18
+      ],
+      "executed_state_error": 2.7755575616443817e-16,
+      "ground_reference_error": 2.257233289171268e-11,
+      "residual_gap_bound": 6.7578140834071e-08,
+      "direct_state_distance_bound": 4.7708636606076066e-08,
+      "roundoff_budget": 8e-13
+    },
+    "total_x": {
+      "measured": [
+        4.0790302305092725e-09,
+        -0.16273995019088688
+      ],
+      "executed_state_error": 8.326675518617006e-17,
+      "ground_reference_error": 2.717437386314788e-12,
+      "residual_gap_bound": 1.2771342948985875e-08,
+      "direct_state_distance_bound": 9.016278817447806e-09,
+      "roundoff_budget": 8e-13
+    },
+    "total_y": {
+      "measured": [
+        5.438706985094589e-09,
+        0.12205496264299867
+      ],
+      "executed_state_error": 1.3877854315223317e-17,
+      "ground_reference_error": 1.8716000973429443e-12,
+      "residual_gap_bound": 9.579863839633884e-09,
+      "direct_state_distance_bound": 6.763166861648162e-09,
+      "roundoff_budget": 8e-13
+    }
+  },
+  "endpoints": [
+    {
+      "energy_GeV2": 1.4304204658066013,
+      "ground_energy_GeV2": 1.4304204658066013,
+      "residual_GeV2": 7.954595196903214e-09,
+      "separation_GeV2": 0.5918300930388132,
+      "phase_aligned_distance": 1.341920561905217e-08,
+      "state_distance_bound": 1.9007983106919584e-08,
+      "iterations": 56,
+      "evaluations": 113,
+      "state_qubits": 6,
+      "padding_probability": 0.0,
+      "root": 6,
+      "support_threshold": 1e-12,
+      "padding_penalty_GeV2": 4.841324414916603
+    },
+    {
+      "energy_GeV2": 1.4304204658227568,
+      "ground_energy_GeV2": 1.430420465822755,
+      "residual_GeV2": 7.954601412219583e-09,
+      "separation_GeV2": 0.5918300793516102,
+      "phase_aligned_distance": 1.3419216161643e-08,
+      "state_distance_bound": 1.9007998398387762e-08,
+      "iterations": 56,
+      "evaluations": 113,
+      "state_qubits": 6,
+      "padding_probability": 0.0,
+      "root": 6,
+      "support_threshold": 1e-12,
+      "padding_penalty_GeV2": 4.841319009338874
+    }
+  ],
+  "independent_reversal": null,
+  "Ward_coefficient_Frobenius": [
+    8.574961741024535e-16,
+    2.7081544855563563e-16,
+    1.1158424284832324e-16,
+    5.853898850895283e-19,
+    1.30667591518333e-18
+  ],
+  "residual_tolerance_GeV2": 1e-08,
+  "all_24_measurements_within_bounds": true,
+  "physical": false,
+  "quantum_advantage": false,
+  "shots": null,
+  "seconds": 11.551049166999292,
+  "total_seconds": 20.911331042007077,
+  "source_report": "docs/next_level/m2_gaussian_cluster_four_current_reference12_degree2.json",
+  "full_matrix_file": "m2_cluster_quantum_reference12_degree2.npz"
+}

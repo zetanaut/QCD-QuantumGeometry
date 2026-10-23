@@ -1,0 +1,262 @@
+{
+  "scope": "finite-elastic common-regulated H2 spin/rotation diagnostic; no covariance repair or physical calibration",
+  "target": "NEUTRON",
+  "metadata": {
+    "target": "NEUTRON",
+    "jz_out_twice": 1,
+    "jz_in_twice": 1,
+    "total_k2": 9,
+    "retained_cutoff": 0,
+    "energy_out_GeV2": 1.430503572903667,
+    "energy_in_GeV2": 1.430503572903667,
+    "transfer_GeV": [
+      0.12,
+      0.16
+    ],
+    "mean_total_transverse_GeV": [
+      0.0,
+      0.0
+    ],
+    "charge": "electromagnetic",
+    "loop_flavor_charges": [
+      0.6666666666666666,
+      -0.3333333333333333
+    ],
+    "physical_leg_prescription": "physical-leg-endpoint-product",
+    "quadrature_order": 8,
+    "smooth_prescription": "continuous-global-Jacobi-fixed-mode-membership",
+    "field_envelope_prescription": "finite-cell-covariant-spectral-gapped-envelope",
+    "isospin_prescription": "flavor-degenerate-total-isospin-half-H2-source-domain",
+    "component_order": [
+      "plus",
+      "minus",
+      "x",
+      "y"
+    ],
+    "normalization": "Jmu/(2Pplus); raw order g4 before both full norm maps",
+    "physical": false
+  },
+  "parameters": {
+    "regulator": {
+      "width_GeV": 0.8,
+      "boson_modes": 8,
+      "fermion_modes": 8,
+      "reference_shape": null
+    },
+    "wick": {
+      "regulator": {
+        "width_GeV": 0.8,
+        "boson_modes": 8,
+        "fermion_modes": 8,
+        "reference_shape": null
+      },
+      "quark_flavors": 2,
+      "normal_order_subtraction": true,
+      "finite_quark_mass2_per_gs2_GeV2": 0.011,
+      "finite_gluon_mass2_per_gs2_GeV2": -0.007
+    },
+    "q5": 0,
+    "q6": 0,
+    "b_GeV": 0.4,
+    "mq_GeV": 0.35,
+    "mg_GeV": 0.0,
+    "g": 0.3,
+    "Pplus_GeV": 1.3
+  },
+  "energy_GeV2": 1.430503572903667,
+  "input_blocks": [
+    "docs/next_level/m2_cluster_spin_n_pp.json",
+    "docs/next_level/m2_cluster_spin_n_pm.json",
+    "docs/next_level/m2_cluster_spin_n_mp.json",
+    "docs/next_level/m2_cluster_spin_n_mm.json"
+  ],
+  "families": [
+    "free",
+    "cubic_canonical",
+    "cubic_regulator",
+    "quartic_source_canonical",
+    "quartic_source_regulator",
+    "quartic_pair_canonical",
+    "quartic_pair_regulator",
+    "Wick_paired",
+    "projector_retained",
+    "projector_free_Q",
+    "projector_cubic_Q",
+    "projector_quartic_source",
+    "projector_quartic_pair"
+  ],
+  "independent_spin_blocks": 4,
+  "kinematically_completed_blocks": [],
+  "two_structure_residual_norm": 0.1782962721849396,
+  "five_structure_residual_norm": 5.629404936985697e-16,
+  "two_structure_relative_residual": 0.7229054139143474,
+  "five_structure_coefficients": [
+    [
+      -0.012240019916422687,
+      -5.629108499930631e-19
+    ],
+    [
+      -1.7509412720903725,
+      -3.515172714760764e-17
+    ],
+    [
+      0.8815906531680254,
+      6.625489209271843e-17
+    ],
+    [
+      0.21403111208073,
+      -1.6954464732072318e-17
+    ],
+    [
+      -0.2263565556992052,
+      1.666611507013601e-17
+    ]
+  ],
+  "five_structure_condition": 41.353969915825225,
+  "GM_plus": [
+    1.4329254365746102e-08,
+    -3.6769906720441138e-34
+  ],
+  "GM_transverse": [
+    -1.7631812920067953,
+    1.0652492877381527e-17
+  ],
+  "GM_disagreement": [
+    1.7631813063360497,
+    -1.0652492877381527e-17
+  ],
+  "continuity_norm": 2.4532894419008827e-18,
+  "groups": {
+    "free_one_body": {
+      "coefficients": [
+        [
+          -0.012240019916422679,
+          -4.491386576425057e-19
+        ],
+        [
+          -1.750941272090372,
+          -4.3291517039022025e-17
+        ],
+        [
+          0.8815906531680252,
+          8.642125526430621e-17
+        ],
+        [
+          0.21420742537720133,
+          -5.681452909055903e-17
+        ],
+        [
+          -0.22653311247902272,
+          5.619977288590704e-17
+        ]
+      ],
+      "amplitude_norm": 0.24662735895326218
+    },
+    "canonical_contacts": {
+      "coefficients": [
+        [
+          -8.559623505591698e-21,
+          2.0336425106541818e-22
+        ],
+        [
+          -6.50343768144254e-20,
+          6.918924226684659e-21
+        ],
+        [
+          1.7439962526777796e-19,
+          -2.385087458397653e-20
+        ],
+        [
+          -0.0006255376515942213,
+          2.494260409375009e-21
+        ],
+        [
+          0.0006258556774043725,
+          -2.6764137491545206e-21
+        ]
+      ],
+      "amplitude_norm": 6.260863723087577e-05
+    },
+    "field_regulator_contacts": {
+      "coefficients": [
+        [
+          3.526664545323354e-21,
+          -8.39548606687669e-23
+        ],
+        [
+          4.220359805452252e-20,
+          7.886628880614157e-21
+        ],
+        [
+          -8.609202168185671e-20,
+          6.658108267860764e-21
+        ],
+        [
+          0.00024118660722820896,
+          -1.8953942837512478e-20
+        ],
+        [
+          -0.00024119403484270822,
+          1.914784748069296e-20
+        ]
+      ],
+      "amplitude_norm": 2.4139372943220557e-05
+    },
+    "paired_Wick": {
+      "coefficients": [
+        [
+          5.115938016145404e-26,
+          -5.605749237168489e-28
+        ],
+        [
+          -2.164897099173784e-24,
+          -3.0504178002141e-26
+        ],
+        [
+          -7.030074123983564e-26,
+          5.559968281748642e-26
+        ],
+        [
+          -1.280588938278104e-25,
+          2.72865918328857e-26
+        ],
+        [
+          -6.269632464274895e-10,
+          -2.719545178713361e-26
+        ]
+      ],
+      "amplitude_norm": 7.505149067396047e-10
+    },
+    "oscillator_projectors": {
+      "coefficients": [
+        [
+          3.44321776661068e-21,
+          -5.467672989880996e-22
+        ],
+        [
+          -1.706264580325983e-20,
+          -6.608077313638044e-20
+        ],
+        [
+          -3.91562267903571e-20,
+          3.6766633203178937e-20
+        ],
+        [
+          0.0002080377478945702,
+          7.364953092734477e-20
+        ],
+        [
+          -0.00020810423578064265,
+          -7.39964563685827e-20
+        ]
+      ],
+      "amplitude_norm": 2.0821791010432515e-05
+    }
+  },
+  "omitted_norm_map_effect_norm": 1.4052960009733915e-07,
+  "maximum_pole_residual": 3.061666831092548e-15,
+  "exact_elastic_state_not_old_anchor_fit": true,
+  "physical": false,
+  "covariance_repaired": false,
+  "full_matrix_file": "m2_cluster_spin_neutron_analysis.npz"
+}

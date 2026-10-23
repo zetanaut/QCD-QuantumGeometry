@@ -1,0 +1,412 @@
+{
+  "scope": "joint-learning/source/matching synthetic closure, not physical nucleon dynamics",
+  "full_fits": [
+    {
+      "backend": "torch",
+      "seed": 7,
+      "use_state_equation": true,
+      "closure_calls": 72,
+      "initial_loop": 0.2,
+      "phase_sensitive_matching": false,
+      "truth": [
+        0.85,
+        -0.45,
+        0.55
+      ],
+      "learned": [
+        0.849999999942104,
+        -0.4499999999348026,
+        0.5500000026223419
+      ],
+      "matching_rank": 2,
+      "matching_nullspace": [
+        [
+          0.0
+        ],
+        [
+          0.0
+        ],
+        [
+          1.0
+        ]
+      ],
+      "matching_chi2": 3.357573133686288e-17,
+      "training_probe_max_error": 4.465081082649647e-11,
+      "training_energy_error": 2.5455915153571596e-11,
+      "state_equation_norm": 2.061844458345512e-10,
+      "ground_energy_excess": -5.551115123125783e-17,
+      "fidelity_to_own_ground": 1.0,
+      "withheld_density_matrix_error": 3.063112976937056e-10,
+      "withheld_current_operator_error": 7.438763667035554e-10,
+      "state_metric_eigenvalues": [
+        0.001847367898198122,
+        0.0028707296775283176,
+        0.011053242990189751,
+        0.03482274140726696,
+        0.12082876558117245,
+        0.25000000000000006
+      ],
+      "matching_metric_eigenvalues": [
+        0.0,
+        2999.2482902458814,
+        6325.751709754119
+      ],
+      "physical_nucleon_fit": false
+    },
+    {
+      "backend": "torch",
+      "seed": 11,
+      "use_state_equation": true,
+      "closure_calls": 67,
+      "initial_loop": 0.2,
+      "phase_sensitive_matching": false,
+      "truth": [
+        0.85,
+        -0.45,
+        0.55
+      ],
+      "learned": [
+        0.8500000000386156,
+        -0.44999999997982004,
+        0.5499999980264798
+      ],
+      "matching_rank": 2,
+      "matching_nullspace": [
+        [
+          0.0
+        ],
+        [
+          0.0
+        ],
+        [
+          1.0
+        ]
+      ],
+      "matching_chi2": 1.07312365235143e-17,
+      "training_probe_max_error": 5.046088547011607e-11,
+      "training_energy_error": 2.4972940382284037e-11,
+      "state_equation_norm": 1.0309965853334072e-10,
+      "ground_energy_excess": 8.326672684688674e-17,
+      "fidelity_to_own_ground": 0.9999999999999998,
+      "withheld_density_matrix_error": 2.99355255194426e-10,
+      "withheld_current_operator_error": 5.594766220520836e-10,
+      "state_metric_eigenvalues": [
+        0.0018473678790281408,
+        0.0028707296710746995,
+        0.011053242951234665,
+        0.0348227414148303,
+        0.12082876559705247,
+        0.25
+      ],
+      "matching_metric_eigenvalues": [
+        0.0,
+        2999.2482902458814,
+        6325.751709754119
+      ],
+      "physical_nucleon_fit": false
+    },
+    {
+      "backend": "torch",
+      "seed": 29,
+      "use_state_equation": true,
+      "closure_calls": 66,
+      "initial_loop": 0.2,
+      "phase_sensitive_matching": false,
+      "truth": [
+        0.85,
+        -0.45,
+        0.55
+      ],
+      "learned": [
+        0.8500000000128947,
+        -0.4500000000183607,
+        0.5499999980779225
+      ],
+      "matching_rank": 2,
+      "matching_nullspace": [
+        [
+          0.0
+        ],
+        [
+          0.0
+        ],
+        [
+          1.0
+        ]
+      ],
+      "matching_chi2": 2.0393523207598055e-18,
+      "training_probe_max_error": 2.348343741687131e-11,
+      "training_energy_error": 2.918962294096161e-11,
+      "state_equation_norm": 1.105337191674185e-10,
+      "ground_energy_excess": -2.7755575615628914e-17,
+      "fidelity_to_own_ground": 1.0000000000000004,
+      "withheld_density_matrix_error": 1.9921099957377243e-10,
+      "withheld_current_operator_error": 5.437924000950233e-10,
+      "state_metric_eigenvalues": [
+        0.0018473678806009267,
+        0.0028707296688252645,
+        0.01105324294648136,
+        0.03482274140242852,
+        0.12082876556039564,
+        0.24999999999999997
+      ],
+      "matching_metric_eigenvalues": [
+        0.0,
+        2999.2482902458814,
+        6325.751709754119
+      ],
+      "physical_nucleon_fit": false
+    }
+  ],
+  "quantum_fit": {
+    "backend": "pennylane",
+    "seed": 7,
+    "use_state_equation": true,
+    "closure_calls": 72,
+    "initial_loop": 0.2,
+    "phase_sensitive_matching": false,
+    "truth": [
+      0.85,
+      -0.45,
+      0.55
+    ],
+    "learned": [
+      0.8499999999421041,
+      -0.4499999999348026,
+      0.5500000026223424
+    ],
+    "matching_rank": 2,
+    "matching_nullspace": [
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        1.0
+      ]
+    ],
+    "matching_chi2": 3.357564006517336e-17,
+    "training_probe_max_error": 4.465083858207208e-11,
+    "training_energy_error": 2.545594290914721e-11,
+    "state_equation_norm": 2.06184438948132e-10,
+    "ground_energy_excess": 5.551115123125783e-17,
+    "fidelity_to_own_ground": 1.0,
+    "withheld_density_matrix_error": 3.063113251405272e-10,
+    "withheld_current_operator_error": 7.438764737485462e-10,
+    "state_metric_eigenvalues": [
+      0.0018473678981981239,
+      0.0028707296775283128,
+      0.011053242990189763,
+      0.03482274140726692,
+      0.1208287655811726,
+      0.25
+    ],
+    "matching_metric_eigenvalues": [
+      0.0,
+      2999.2482902458814,
+      6325.751709754119
+    ],
+    "physical_nucleon_fit": false
+  },
+  "no_state_equation_negative": {
+    "backend": "torch",
+    "seed": 7,
+    "use_state_equation": false,
+    "closure_calls": 60,
+    "initial_loop": 0.2,
+    "phase_sensitive_matching": false,
+    "truth": [
+      0.85,
+      -0.45,
+      0.55
+    ],
+    "learned": [
+      0.8499999999536678,
+      -0.45000000013305624,
+      1.1310403133246756
+    ],
+    "matching_rank": 2,
+    "matching_nullspace": [
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        1.0
+      ]
+    ],
+    "matching_chi2": 6.730605575743251e-17,
+    "training_probe_max_error": 8.858819233736881e-11,
+    "training_energy_error": 1.4420437066675618e-11,
+    "state_equation_norm": 0.1770407590503014,
+    "ground_energy_excess": 0.015686412191765586,
+    "fidelity_to_own_ground": 0.9911565211806516,
+    "withheld_density_matrix_error": 0.10509463673254947,
+    "withheld_current_operator_error": 0.16434301827785375,
+    "state_metric_eigenvalues": [
+      0.000826411246711183,
+      0.0032718117994011077,
+      0.011800648148455203,
+      0.03482274140763924,
+      0.12106833182224408,
+      0.25
+    ],
+    "matching_metric_eigenvalues": [
+      0.0,
+      2999.2482902458814,
+      6325.751709754119
+    ],
+    "physical_nucleon_fit": false
+  },
+  "conjugate_branch_fit": {
+    "backend": "torch",
+    "seed": 7,
+    "use_state_equation": true,
+    "closure_calls": 72,
+    "initial_loop": -0.2,
+    "phase_sensitive_matching": false,
+    "truth": [
+      0.85,
+      -0.45,
+      0.55
+    ],
+    "learned": [
+      0.849999999942104,
+      -0.4499999999348026,
+      -0.5500000026223419
+    ],
+    "matching_rank": 2,
+    "matching_nullspace": [
+      [
+        0.0
+      ],
+      [
+        0.0
+      ],
+      [
+        1.0
+      ]
+    ],
+    "matching_chi2": 3.357573133686288e-17,
+    "training_probe_max_error": 4.465081082649647e-11,
+    "training_energy_error": 2.5455915153571596e-11,
+    "state_equation_norm": 2.061844458345512e-10,
+    "ground_energy_excess": -5.551115123125783e-17,
+    "fidelity_to_own_ground": 1.0,
+    "withheld_density_matrix_error": 0.1405186698330457,
+    "withheld_current_operator_error": 0.3111269844637912,
+    "state_metric_eigenvalues": [
+      0.001847367898198122,
+      0.0028707296775283176,
+      0.011053242990189751,
+      0.03482274140726696,
+      0.12082876558117245,
+      0.25000000000000006
+    ],
+    "matching_metric_eigenvalues": [
+      0.0,
+      2999.2482902458814,
+      6325.751709754119
+    ],
+    "physical_nucleon_fit": false
+  },
+  "phase_resolved_fits": [
+    {
+      "backend": "torch",
+      "seed": 7,
+      "use_state_equation": true,
+      "closure_calls": 40,
+      "initial_loop": 0.2,
+      "phase_sensitive_matching": true,
+      "truth": [
+        0.85,
+        -0.45,
+        0.55
+      ],
+      "learned": [
+        0.8499999999273304,
+        -0.449999999844613,
+        0.5500000000712865
+      ],
+      "matching_rank": 3,
+      "matching_nullspace": [
+        [],
+        [],
+        []
+      ],
+      "matching_chi2": 1.1741212954044206e-16,
+      "training_probe_max_error": 4.8555826026586146e-11,
+      "training_energy_error": 2.9866303874470645e-11,
+      "state_equation_norm": 2.4673011830063586e-10,
+      "ground_energy_excess": 0.0,
+      "fidelity_to_own_ground": 0.9999999999999998,
+      "withheld_density_matrix_error": 3.574643227730817e-10,
+      "withheld_current_operator_error": 7.40011074442589e-11,
+      "state_metric_eigenvalues": [
+        0.0018473678879437471,
+        0.0028707296699506364,
+        0.011053242957628155,
+        0.03482274139616045,
+        0.12082876554384972,
+        0.24999999999999994
+      ],
+      "matching_metric_eigenvalues": [
+        2500.0,
+        2999.2482902458814,
+        6325.751709754119
+      ],
+      "physical_nucleon_fit": false
+    },
+    {
+      "backend": "torch",
+      "seed": 7,
+      "use_state_equation": true,
+      "closure_calls": 38,
+      "initial_loop": -0.2,
+      "phase_sensitive_matching": true,
+      "truth": [
+        0.85,
+        -0.45,
+        0.55
+      ],
+      "learned": [
+        0.8500000000349708,
+        -0.44999999995607565,
+        0.5500000000221549
+      ],
+      "matching_rank": 3,
+      "matching_nullspace": [
+        [],
+        [],
+        []
+      ],
+      "matching_chi2": 1.4903936455832927e-17,
+      "training_probe_max_error": 1.1074363648333474e-11,
+      "training_energy_error": 7.902317689101324e-12,
+      "state_equation_norm": 1.3248695297549373e-10,
+      "ground_energy_excess": -2.7755575615628914e-17,
+      "fidelity_to_own_ground": 0.9999999999999998,
+      "withheld_density_matrix_error": 1.9017461655363106e-10,
+      "withheld_current_operator_error": 3.4832513067537747e-11,
+      "state_metric_eigenvalues": [
+        0.0018473678881266611,
+        0.0028707296739485396,
+        0.011053242969203349,
+        0.03482274141106796,
+        0.12082876558890401,
+        0.25
+      ],
+      "matching_metric_eigenvalues": [
+        2500.0,
+        2999.2482902458814,
+        6325.751709754119
+      ],
+      "physical_nucleon_fit": false
+    }
+  ],
+  "sign_identifiability": "real diagonal probes and eigenvalues cannot distinguish complex conjugate dynamics; a phase-sensitive observable or matching condition is required"
+}

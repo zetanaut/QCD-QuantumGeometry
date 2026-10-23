@@ -1,0 +1,621 @@
+{
+  "longitudinal_K2": [
+    9,
+    11
+  ],
+  "full_retained_dimensions": [
+    37,
+    69
+  ],
+  "source_full_current_reports": [
+    "m2_gaussian_cluster_four_current_baseline.json",
+    "m2_gaussian_cluster_four_current_longitudinal_K11.json"
+  ],
+  "component_order": [
+    "plus",
+    "minus",
+    "x",
+    "y"
+  ],
+  "coupling": 0.3,
+  "energy_out_GeV2": 1.39,
+  "energy_in_GeV2": 1.47,
+  "transfer_GeV": [
+    0.12,
+    0.16
+  ],
+  "probe_powers": [
+    1,
+    2
+  ],
+  "probe_labels": [
+    "qqq",
+    "qqqg_minus",
+    "qqqg_plus"
+  ],
+  "raw_color_coordinates": [
+    0,
+    1,
+    1
+  ],
+  "quark_labels": [
+    [
+      0,
+      1,
+      3
+    ],
+    [
+      1,
+      1,
+      3
+    ],
+    [
+      0,
+      0,
+      3
+    ]
+  ],
+  "raw_spin_flavor_legend": [
+    "u_down",
+    "u_up",
+    "d_down",
+    "d_up"
+  ],
+  "both_full_three_probe_Gram_metrics_retained": true,
+  "normalization": "Common raw order g4 selected before both three-probe Gram inverse square roots.",
+  "total_pplus_fixed_GeV": 1.3,
+  "finite_conditions_are_uncalibrated_test_values": true,
+  "different_K_compact_column_alignment": false,
+  "physical": false,
+  "continuum_convergence_established": false,
+  "comparisons": {
+    "1": {
+      "raw_current": {
+        "stacked": {
+          "reference_Frobenius": 2.180484602140172,
+          "candidate_Frobenius": 2.188599669444601,
+          "difference_Frobenius": 0.021502507354827345,
+          "relative_difference": 0.00986134336088518
+        },
+        "components": {
+          "plus": {
+            "reference_Frobenius": 1.349576551169488,
+            "candidate_Frobenius": 1.3564924249343822,
+            "difference_Frobenius": 0.007057747642690422,
+            "relative_difference": 0.005229601563967947
+          },
+          "minus": {
+            "reference_Frobenius": 1.6399828481956813,
+            "candidate_Frobenius": 1.648748147976719,
+            "difference_Frobenius": 0.01589532915938776,
+            "relative_difference": 0.009692375244580085
+          },
+          "x": {
+            "reference_Frobenius": 0.39485128559359034,
+            "candidate_Frobenius": 0.3849296345095932,
+            "difference_Frobenius": 0.010109650954331448,
+            "relative_difference": 0.025603692638693942
+          },
+          "y": {
+            "reference_Frobenius": 0.29615021964017524,
+            "candidate_Frobenius": 0.28871358680933157,
+            "difference_Frobenius": 0.0075947013932612505,
+            "relative_difference": 0.02564476029255987
+          }
+        }
+      },
+      "normalized_current": {
+        "stacked": {
+          "reference_Frobenius": 2.18010313587278,
+          "candidate_Frobenius": 2.1881126122843364,
+          "difference_Frobenius": 0.021436192769034586,
+          "relative_difference": 0.009832650766062425
+        },
+        "components": {
+          "plus": {
+            "reference_Frobenius": 1.3493812726097234,
+            "candidate_Frobenius": 1.3562434743142335,
+            "difference_Frobenius": 0.006997068451511858,
+            "relative_difference": 0.005185390218125248
+          },
+          "minus": {
+            "reference_Frobenius": 1.63966277665897,
+            "candidate_Frobenius": 1.6483378883367046,
+            "difference_Frobenius": 0.015814880636055,
+            "relative_difference": 0.00964520318518172
+          },
+          "x": {
+            "reference_Frobenius": 0.3947810589862116,
+            "candidate_Frobenius": 0.38484341058924226,
+            "difference_Frobenius": 0.010127251711931608,
+            "relative_difference": 0.025652830806873438
+          },
+          "y": {
+            "reference_Frobenius": 0.296097548921319,
+            "candidate_Frobenius": 0.28864891757561284,
+            "difference_Frobenius": 0.007607872024855508,
+            "relative_difference": 0.025693802777398612
+          }
+        }
+      },
+      "current_power_0": {
+        "stacked": {
+          "reference_Frobenius": 2.1708025687811054,
+          "candidate_Frobenius": 2.1789263814544255,
+          "difference_Frobenius": 0.021354101220588895,
+          "relative_difference": 0.009836961466550647
+        },
+        "components": {
+          "plus": {
+            "reference_Frobenius": 1.3493879452036335,
+            "candidate_Frobenius": 1.3562528186684986,
+            "difference_Frobenius": 0.00700008868971408,
+            "relative_difference": 0.005187602805105621
+          },
+          "minus": {
+            "reference_Frobenius": 1.6272658343991049,
+            "candidate_Frobenius": 1.6361059059747451,
+            "difference_Frobenius": 0.0157374890355641,
+            "relative_difference": 0.0096711236129255
+          },
+          "x": {
+            "reference_Frobenius": 0.3947996921280642,
+            "candidate_Frobenius": 0.3848789375054037,
+            "difference_Frobenius": 0.010098010453733253,
+            "relative_difference": 0.025577554023161912
+          },
+          "y": {
+            "reference_Frobenius": 0.2960997690960482,
+            "candidate_Frobenius": 0.2886592031290527,
+            "difference_Frobenius": 0.007573507840300075,
+            "relative_difference": 0.025577554023162367
+          }
+        }
+      },
+      "current_power_1": {
+        "stacked": {
+          "reference_Frobenius": 0.062416400770451026,
+          "candidate_Frobenius": 0.07242145447610697,
+          "difference_Frobenius": 0.01001955218263824,
+          "relative_difference": 0.16052755460038742
+        },
+        "components": {
+          "plus": {
+            "reference_Frobenius": 0,
+            "candidate_Frobenius": 0,
+            "difference_Frobenius": 0,
+            "relative_difference": null
+          },
+          "minus": {
+            "reference_Frobenius": 0.06098371224644071,
+            "candidate_Frobenius": 0.07074600097203534,
+            "difference_Frobenius": 0.009776980878418983,
+            "relative_difference": 0.16032118279237112
+          },
+          "x": {
+            "reference_Frobenius": 0.00797783261801824,
+            "candidate_Frobenius": 0.009292650287396967,
+            "difference_Frobenius": 0.0013148176693787276,
+            "relative_difference": 0.1648088813507019
+          },
+          "y": {
+            "reference_Frobenius": 0.010637110157357656,
+            "candidate_Frobenius": 0.012390200383195958,
+            "difference_Frobenius": 0.0017530902258383017,
+            "relative_difference": 0.16480888135070168
+          }
+        }
+      },
+      "current_power_2": {
+        "stacked": {
+          "reference_Frobenius": 0.14019658615145672,
+          "candidate_Frobenius": 0.13901626629074837,
+          "difference_Frobenius": 0.0016073626122894858,
+          "relative_difference": 0.011465062427076685
+        },
+        "components": {
+          "plus": {
+            "reference_Frobenius": 0.0027134274529185547,
+            "candidate_Frobenius": 0.003432617194821777,
+            "difference_Frobenius": 0.000721814906285497,
+            "relative_difference": 0.2660159222274821
+          },
+          "minus": {
+            "reference_Frobenius": 0.1401682277610742,
+            "candidate_Frobenius": 0.13897198084158793,
+            "difference_Frobenius": 0.0014342530385490885,
+            "relative_difference": 0.010232369071497896
+          },
+          "x": {
+            "reference_Frobenius": 0.0005993936588787064,
+            "candidate_Frobenius": 0.0005609676973436956,
+            "difference_Frobenius": 0.00005471983396510516,
+            "relative_difference": 0.0912919800777844
+          },
+          "y": {
+            "reference_Frobenius": 0.000478260955860321,
+            "candidate_Frobenius": 0.00046183202782166806,
+            "difference_Frobenius": 0.00005021722447205496,
+            "relative_difference": 0.1049996322232108
+          }
+        }
+      },
+      "current_power_3": {
+        "stacked": {
+          "reference_Frobenius": 0.00004387089465590238,
+          "candidate_Frobenius": 0.00006650458862951552,
+          "difference_Frobenius": 0.00002973622810746127,
+          "relative_difference": 0.6778122110500558
+        },
+        "components": {
+          "plus": {
+            "reference_Frobenius": 0.00002404619369077753,
+            "candidate_Frobenius": 0.00004362089054187684,
+            "difference_Frobenius": 0.00001957550766521043,
+            "relative_difference": 0.8140792641422601
+          },
+          "minus": {
+            "reference_Frobenius": 0.00003150911321789073,
+            "candidate_Frobenius": 0.000043824345151919916,
+            "difference_Frobenius": 0.00002122754834886545,
+            "relative_difference": 0.6736955179307472
+          },
+          "x": {
+            "reference_Frobenius": 0.000012612043925100465,
+            "candidate_Frobenius": 0.00001697444073290164,
+            "difference_Frobenius": 0.000005208325480682027,
+            "relative_difference": 0.4129644260369589
+          },
+          "y": {
+            "reference_Frobenius": 0.000013948050012398685,
+            "candidate_Frobenius": 0.00001764577430789838,
+            "difference_Frobenius": 0.000004827763301169117,
+            "relative_difference": 0.34612460500769837
+          }
+        }
+      },
+      "current_power_4": {
+        "stacked": {
+          "reference_Frobenius": 0.0005836151238606926,
+          "candidate_Frobenius": 0.000760600564106319,
+          "difference_Frobenius": 0.000278758878222141,
+          "relative_difference": 0.4776416285755473
+        },
+        "components": {
+          "plus": {
+            "reference_Frobenius": 0.0005261098381512349,
+            "candidate_Frobenius": 0.0005840173273766222,
+            "difference_Frobenius": 0.000059299310796417054,
+            "relative_difference": 0.11271279587699126
+          },
+          "minus": {
+            "reference_Frobenius": 0.00020338371289491206,
+            "candidate_Frobenius": 0.0004689423385836117,
+            "difference_Frobenius": 0.0002717889446653496,
+            "relative_difference": 1.3363358392703863
+          },
+          "x": {
+            "reference_Frobenius": 0.00011936132868213378,
+            "candidate_Frobenius": 0.00010532398187679997,
+            "difference_Frobenius": 0.000014284308648449762,
+            "relative_difference": 0.11967283546658326
+          },
+          "y": {
+            "reference_Frobenius": 0.0000905703568709359,
+            "candidate_Frobenius": 0.00008023042669752368,
+            "difference_Frobenius": 0.000010808885736640778,
+            "relative_difference": 0.1193424218482831
+          }
+        }
+      },
+      "H_out": {
+        "reference_Frobenius": 4.18296658055205,
+        "candidate_Frobenius": 4.17974741620277,
+        "difference_Frobenius": 0.013302338730502563,
+        "relative_difference": 0.0031801207287548965
+      },
+      "H_in": {
+        "reference_Frobenius": 4.182943024660355,
+        "candidate_Frobenius": 4.179717544620125,
+        "difference_Frobenius": 0.013300839828973274,
+        "relative_difference": 0.0031797803007496783
+      },
+      "N_out": {
+        "reference_Frobenius": 1.732311004177542,
+        "candidate_Frobenius": 1.7323792683829076,
+        "difference_Frobenius": 0.00008362717226626953,
+        "relative_difference": 0.000048274918340066554
+      },
+      "N_in": {
+        "reference_Frobenius": 1.7323287297282066,
+        "candidate_Frobenius": 1.7324038168310998,
+        "difference_Frobenius": 0.00009198486687937112,
+        "relative_difference": 0.00005309896747703484
+      }
+    },
+    "2": {
+      "raw_current": {
+        "stacked": {
+          "reference_Frobenius": 2.0611341005438915,
+          "candidate_Frobenius": 1.9698161076416623,
+          "difference_Frobenius": 0.15960063406700245,
+          "relative_difference": 0.07743340621305866
+        },
+        "components": {
+          "plus": {
+            "reference_Frobenius": 1.3864527632142951,
+            "candidate_Frobenius": 1.411534294066313,
+            "difference_Frobenius": 0.029173053731254006,
+            "relative_difference": 0.021041505708150054
+          },
+          "minus": {
+            "reference_Frobenius": 1.451785001168035,
+            "candidate_Frobenius": 1.2995596456115939,
+            "difference_Frobenius": 0.15517787297546295,
+            "relative_difference": 0.1068876402846251
+          },
+          "x": {
+            "reference_Frobenius": 0.37381182656984296,
+            "candidate_Frobenius": 0.3567719589915408,
+            "difference_Frobenius": 0.01860964120787034,
+            "relative_difference": 0.04978344687121159
+          },
+          "y": {
+            "reference_Frobenius": 0.28037037022547123,
+            "candidate_Frobenius": 0.26759097775237384,
+            "difference_Frobenius": 0.013957231942903617,
+            "relative_difference": 0.04978140854070757
+          }
+        }
+      },
+      "normalized_current": {
+        "stacked": {
+          "reference_Frobenius": 2.060713442985162,
+          "candidate_Frobenius": 1.9692189716277264,
+          "difference_Frobenius": 0.15970096402589284,
+          "relative_difference": 0.07749789985091234
+        },
+        "components": {
+          "plus": {
+            "reference_Frobenius": 1.3862207669271933,
+            "candidate_Frobenius": 1.4111690315664507,
+            "difference_Frobenius": 0.029008705497126815,
+            "relative_difference": 0.020926468704858467
+          },
+          "minus": {
+            "reference_Frobenius": 1.451440843956958,
+            "candidate_Frobenius": 1.2990989398360655,
+            "difference_Frobenius": 0.1553046151618446,
+            "relative_difference": 0.10700030649437209
+          },
+          "x": {
+            "reference_Frobenius": 0.373733517198049,
+            "candidate_Frobenius": 0.35666081874292344,
+            "difference_Frobenius": 0.01864822814342459,
+            "relative_difference": 0.049897125318686675
+          },
+          "y": {
+            "reference_Frobenius": 0.28031163738923476,
+            "candidate_Frobenius": 0.26750762130601824,
+            "difference_Frobenius": 0.013986172196945942,
+            "relative_difference": 0.049895082227802916
+          }
+        }
+      },
+      "current_power_0": {
+        "stacked": {
+          "reference_Frobenius": 2.0532424028313825,
+          "candidate_Frobenius": 1.963479320061526,
+          "difference_Frobenius": 0.157784746446281,
+          "relative_difference": 0.076846623773549
+        },
+        "components": {
+          "plus": {
+            "reference_Frobenius": 1.3862315099052518,
+            "candidate_Frobenius": 1.4111891307112003,
+            "difference_Frobenius": 0.029020300979269446,
+            "relative_difference": 0.02093467128102792
+          },
+          "minus": {
+            "reference_Frobenius": 1.440796165709132,
+            "candidate_Frobenius": 1.290335916172933,
+            "difference_Frobenius": 0.15333957761618547,
+            "relative_difference": 0.10642697507507226
+          },
+          "x": {
+            "reference_Frobenius": 0.37375754674576595,
+            "candidate_Frobenius": 0.35672241408108524,
+            "difference_Frobenius": 0.018604468773790944,
+            "relative_difference": 0.04977683778100649
+          },
+          "y": {
+            "reference_Frobenius": 0.28031816005932453,
+            "candidate_Frobenius": 0.2675418105608139,
+            "difference_Frobenius": 0.013953351580343352,
+            "relative_difference": 0.049776837781007
+          }
+        }
+      },
+      "current_power_1": {
+        "stacked": {
+          "reference_Frobenius": 0.06266564160657244,
+          "candidate_Frobenius": 0.062212275867256826,
+          "difference_Frobenius": 0.0005732243040826033,
+          "relative_difference": 0.009147345968009412
+        },
+        "components": {
+          "plus": {
+            "reference_Frobenius": 0,
+            "candidate_Frobenius": 0,
+            "difference_Frobenius": 0,
+            "relative_difference": null
+          },
+          "minus": {
+            "reference_Frobenius": 0.06134525190037773,
+            "candidate_Frobenius": 0.060886688922110285,
+            "difference_Frobenius": 0.0005727992983314781,
+            "relative_difference": 0.009337304527849713
+          },
+          "x": {
+            "reference_Frobenius": 0.007677719362371283,
+            "candidate_Frobenius": 0.007664477610829195,
+            "difference_Frobenius": 0.000013241751542088359,
+            "relative_difference": 0.0017246985617873133
+          },
+          "y": {
+            "reference_Frobenius": 0.010236959149828377,
+            "candidate_Frobenius": 0.010219303481105595,
+            "difference_Frobenius": 0.00001765566872278182,
+            "relative_difference": 0.0017246985617870535
+          }
+        }
+      },
+      "current_power_2": {
+        "stacked": {
+          "reference_Frobenius": 0.1208300973267208,
+          "candidate_Frobenius": 0.10119050037434757,
+          "difference_Frobenius": 0.02057613379284139,
+          "relative_difference": 0.17028980566989174
+        },
+        "components": {
+          "plus": {
+            "reference_Frobenius": 0.003187842758725533,
+            "candidate_Frobenius": 0.004912200825219173,
+            "difference_Frobenius": 0.001730003041279596,
+            "relative_difference": 0.542687695791882
+          },
+          "minus": {
+            "reference_Frobenius": 0.1207853215370171,
+            "candidate_Frobenius": 0.10106857885709904,
+            "difference_Frobenius": 0.020503051912317202,
+            "relative_difference": 0.16974787707158298
+          },
+          "x": {
+            "reference_Frobenius": 0.0006333172045484285,
+            "candidate_Frobenius": 0.0005695279767067103,
+            "difference_Frobenius": 0.00007123758637394337,
+            "relative_difference": 0.11248326409312946
+          },
+          "y": {
+            "reference_Frobenius": 0.000505063410155973,
+            "candidate_Frobenius": 0.00045349173493479156,
+            "difference_Frobenius": 0.00006448895398741306,
+            "relative_difference": 0.12768486627747921
+          }
+        }
+      },
+      "current_power_3": {
+        "stacked": {
+          "reference_Frobenius": 0.000035407322020748264,
+          "candidate_Frobenius": 0.0000799133868830248,
+          "difference_Frobenius": 0.0000527445935555505,
+          "relative_difference": 1.489652155128897
+        },
+        "components": {
+          "plus": {
+            "reference_Frobenius": 0.000021894789063419894,
+            "candidate_Frobenius": 0.00005518353316221903,
+            "difference_Frobenius": 0.00003329481994173457,
+            "relative_difference": 1.5206732453687328
+          },
+          "minus": {
+            "reference_Frobenius": 0.000023066260396274163,
+            "candidate_Frobenius": 0.000052563469384821685,
+            "difference_Frobenius": 0.000039394718515714716,
+            "relative_difference": 1.707893600389513
+          },
+          "x": {
+            "reference_Frobenius": 0.000010478368284385998,
+            "candidate_Frobenius": 0.00001749533803971409,
+            "difference_Frobenius": 0.000008584853746065611,
+            "relative_difference": 0.8192929961106686
+          },
+          "y": {
+            "reference_Frobenius": 0.000011508609558819907,
+            "candidate_Frobenius": 0.000016490054698433184,
+            "difference_Frobenius": 0.0000069140113981654,
+            "relative_difference": 0.6007686126484912
+          }
+        }
+      },
+      "current_power_4": {
+        "stacked": {
+          "reference_Frobenius": 0.0006956695920148793,
+          "candidate_Frobenius": 0.0010833685354545758,
+          "difference_Frobenius": 0.00046999087973496764,
+          "relative_difference": 0.6755949737198162
+        },
+        "components": {
+          "plus": {
+            "reference_Frobenius": 0.0006168178557120611,
+            "candidate_Frobenius": 0.0008187532098651321,
+            "difference_Frobenius": 0.00020378924960001062,
+            "relative_difference": 0.3303880516959973
+          },
+          "minus": {
+            "reference_Frobenius": 0.0002798301769109627,
+            "candidate_Frobenius": 0.0006952719348400408,
+            "difference_Frobenius": 0.00042305085637532657,
+            "relative_difference": 1.5118128467964849
+          },
+          "x": {
+            "reference_Frobenius": 0.00012642441101367194,
+            "candidate_Frobenius": 0.000112527882932714,
+            "difference_Frobenius": 0.000015251186092748941,
+            "relative_difference": 0.12063482020967951
+          },
+          "y": {
+            "reference_Frobenius": 0.00009593672143006064,
+            "candidate_Frobenius": 0.00008523483522013031,
+            "difference_Frobenius": 0.000012519705443040527,
+            "relative_difference": 0.13049961741883775
+          }
+        }
+      },
+      "H_out": {
+        "reference_Frobenius": 3.8896535716765674,
+        "candidate_Frobenius": 3.673688036504795,
+        "difference_Frobenius": 0.22602796711359066,
+        "relative_difference": 0.05811005092059272
+      },
+      "H_in": {
+        "reference_Frobenius": 3.8896258836269815,
+        "candidate_Frobenius": 3.673646282154108,
+        "difference_Frobenius": 0.22604372687563315,
+        "relative_difference": 0.058114516315603305
+      },
+      "N_out": {
+        "reference_Frobenius": 1.732352564052947,
+        "candidate_Frobenius": 1.7325067215246253,
+        "difference_Frobenius": 0.00018891102230905607,
+        "relative_difference": 0.00010904883118427518
+      },
+      "N_in": {
+        "reference_Frobenius": 1.7323740161951395,
+        "candidate_Frobenius": 1.7325457008384184,
+        "difference_Frobenius": 0.00021038208160958772,
+        "relative_difference": 0.00012144148991085404
+      }
+    }
+  },
+  "raw_change_attribution": {
+    "1": {
+      "0": {"weighted_difference_Frobenius": 0.02135410122058889, "signed_projection_on_total_change": 0.9833254373672247},
+      "1": {"weighted_difference_Frobenius": 0.003005865654791472, "signed_projection_on_total_change": 0.019545429469314514},
+      "2": {"weighted_difference_Frobenius": 0.0001446626351060537, "signed_projection_on_total_change": -0.002927126791404043},
+      "3": {"weighted_difference_Frobenius": 8.028781589014541e-7, "signed_projection_on_total_change": 3.7947234810291267e-6},
+      "4": {"weighted_difference_Frobenius": 2.257946913599342e-6, "signed_projection_on_total_change": 5.2465231386813566e-5}
+    },
+    "2": {
+      "0": {"weighted_difference_Frobenius": 0.157784746446281, "signed_projection_on_total_change": 0.9886193956383049},
+      "1": {"weighted_difference_Frobenius": 0.00017196729122478097, "signed_projection_on_total_change": 1.1552563339370313e-6},
+      "2": {"weighted_difference_Frobenius": 0.0018518520413557252, "signed_projection_on_total_change": 0.011401994594219342},
+      "3": {"weighted_difference_Frobenius": 1.4241040259998635e-6, "signed_projection_on_total_change": -5.638000119451232e-9},
+      "4": {"weighted_difference_Frobenius": 3.8069261258532376e-6, "signed_projection_on_total_change": -2.2539850860432515e-5}
+    }
+  },
+  "signed_projections_are_probabilities_or_physical_uncertainties": false,
+  "generation_note": "The attribution was evaluated from the unchanged 48 saved matrices after the initial 30.57-second projection run; it does not replace or recompute a current.",
+  "seconds": 30.572398249991238,
+  "full_matrix_file": "m2_gaussian_longitudinal_resolution_K9_K11.npz"
+}

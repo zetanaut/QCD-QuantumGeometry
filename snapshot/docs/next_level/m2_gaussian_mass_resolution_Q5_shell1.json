@@ -1,0 +1,33 @@
+{
+  "case": "Q5_shell1",
+  "parameters": {
+    "q5": 1,
+    "q6": 0,
+    "nb": 8,
+    "nf": 8,
+    "width": 0.8,
+    "muq": 0.011,
+    "mug": -0.007,
+    "target": "PROTON"
+  },
+  "energy_out_GeV2": 1.39,
+  "energy_in_GeV2": 1.47,
+  "transfer_GeV": [
+    0.12,
+    0.16
+  ],
+  "intercept_means": "Affine finite-parameter decomposition at muq=mug=0; no selected physical condition or replacement of the benchmark.",
+  "original_benchmark_unchanged": true,
+  "intercept_metrics_rediagonalized_without_clipping": true,
+  "intercept_Ward_Frobenius": 2.350174430689563e-15,
+  "intercept_normalized_Ward_Frobenius": 2.3492538550807164e-15,
+  "intercept_metric_minimum_eigenvalues": [
+    1.0000000112743777,
+    1.0000000122481125
+  ],
+  "physical": false,
+  "continuum_convergence_established": false,
+  "seconds": 370.93096049997257,
+  "full_matrix_file": "m2_gaussian_mass_resolution_Q5_shell1.npz",
+  "reference_full_current_report": "m2_gaussian_cluster_four_current_Q5_shell1.json"
+}

@@ -1,0 +1,1316 @@
+{
+  "description": "Executed explicit finite-field Wick/H2 subtraction comparisons; not propagating-loop renormalization or quantum execution.",
+  "script": "scripts/benchmark_m2_paired_wick_h2.py",
+  "preceding_scientific_source": "b308eb4990fa324dd834a3d3f702a213d09b0ca5",
+  "results": [
+    {
+      "scope": "Compare ordered and subtracted Wick/H2 operators on complete Q5/Q6 shells.\n\nFinite-model subtraction study only. The Gaussian coincident trace does NOT\nregulate the pre-existing propagating vertices; this is not UV convergence,\na physical mass/current fit or a quantum-device benchmark.\n",
+      "target": "PROTON",
+      "current_kind": "full",
+      "retained_cutoff": 0,
+      "excluded_cutoff": 0,
+      "retained_dimension": 37,
+      "raw_Q5_dimensions": {
+        "qqqgg": 630,
+        "qqqq-qbar": 4500
+      },
+      "raw_Q6_dimensions": {
+        "qqqggg": 792,
+        "qqqq-qbar-g": 7200
+      },
+      "coupling": 0.3,
+      "matching_energy_GeV2": 1.4,
+      "total_k2": 9,
+      "total_pplus_GeV": 1.3,
+      "transfer_GeV": [
+        0.12,
+        0.16
+      ],
+      "quark_mass_GeV": 0.35,
+      "gluon_mass_GeV": 0,
+      "width_GeV": 0.4,
+      "preexisting_bare_M2_GeV2": 1.4214313007409884,
+      "records": [
+        {
+          "member": "ordered",
+          "boson_modes": 8,
+          "fermion_modes": 8,
+          "trace_width_GeV": 0.4,
+          "coincident_trace_GeV2": 0.01273239544735163,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.4296048915701465,
+          "state_residual_GeV2": 2.3054207372700732e-15,
+          "pp_coefficient_norm_GeV2": 0.31881689540175623,
+          "matched_matrix_difference_to_bare": 0.028692636001452863,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0.00000472535268843281,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.005833290507933467,
+            "qqqq-qbar": 0.0017318912355441206
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 1.4685133238437086e-18,
+            "qqqq-qbar": 8.879230647042868e-19
+          },
+          "direct_minus_current_order2_norm": 0.42710165950344137,
+          "direct_minus_current_order4_norm": 0.0010885075048545814,
+          "normalized_direct_minus_matrix_norm": 0.03843888558497762,
+          "full_matched_minus_ground_expectation": [
+            0.3542842062239537,
+            2.1292925645377523e-18
+          ],
+          "normalized_charge_error": 5.3822449424444926e-15
+        },
+        {
+          "member": "ordered",
+          "boson_modes": 12,
+          "fermion_modes": 12,
+          "trace_width_GeV": 0.4,
+          "coincident_trace_GeV2": 0.01273239544735163,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.4295499887474534,
+          "state_residual_GeV2": 1.939508457558115e-15,
+          "pp_coefficient_norm_GeV2": 0.3277801710906356,
+          "matched_matrix_difference_to_bare": 0.029499507625195834,
+          "matched_matrix_difference_to_first_field_member": 0.0010637549600808994,
+          "metric_difference_to_bare": 0.000005052142689987686,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.006288661407621431,
+            "qqqq-qbar": 0.00174679236024932
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 1.715351986424448e-18,
+            "qqqq-qbar": 9.644976245194671e-19
+          },
+          "direct_minus_current_order2_norm": 0.4280020035862623,
+          "direct_minus_current_order4_norm": 0.0010910449392675166,
+          "normalized_direct_minus_matrix_norm": 0.03851991627340099,
+          "full_matched_minus_ground_expectation": [
+            0.35429114591859373,
+            2.0896723188021488e-18
+          ],
+          "normalized_charge_error": 5.6296561379656515e-15
+        },
+        {
+          "member": "ordered",
+          "boson_modes": 16,
+          "fermion_modes": 16,
+          "trace_width_GeV": 0.4,
+          "coincident_trace_GeV2": 0.01273239544735163,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.429509748132665,
+          "state_residual_GeV2": 1.4702242338005347e-15,
+          "pp_coefficient_norm_GeV2": 0.3342767107853158,
+          "matched_matrix_difference_to_bare": 0.03008433016553602,
+          "matched_matrix_difference_to_first_field_member": 0.0018194822681663761,
+          "metric_difference_to_bare": 0.0000052900786781687835,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.006618816316632934,
+            "qqqq-qbar": 0.0017586651755258126
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 1.7080731721559379e-18,
+            "qqqq-qbar": 9.071439641066463e-19
+          },
+          "direct_minus_current_order2_norm": 0.42838290033204934,
+          "direct_minus_current_order4_norm": 0.0010921750109287348,
+          "normalized_direct_minus_matrix_norm": 0.038554197301052216,
+          "full_matched_minus_ground_expectation": [
+            0.3542935881856782,
+            2.128536087447511e-18
+          ],
+          "normalized_charge_error": 4.9591602252836064e-15
+        },
+        {
+          "member": "ordered",
+          "boson_modes": 8,
+          "fermion_modes": 8,
+          "trace_width_GeV": 0.8,
+          "coincident_trace_GeV2": 0.05092958178940652,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.45412565717721,
+          "state_residual_GeV2": 2.2857993122165626e-15,
+          "pp_coefficient_norm_GeV2": 1.275267581607025,
+          "matched_matrix_difference_to_bare": 0.11477083954645811,
+          "matched_matrix_difference_to_first_field_member": 0.0860782035451439,
+          "metric_difference_to_bare": 0.000018901410753691593,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.023333162031733867,
+            "qqqq-qbar": 0.0069275649421764824
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 5.836039852397743e-18,
+            "qqqq-qbar": 3.47403596531599e-18
+          },
+          "direct_minus_current_order2_norm": 1.7084066380137655,
+          "direct_minus_current_order4_norm": 0.0043540300194183255,
+          "normalized_direct_minus_matrix_norm": 0.153755785175675,
+          "full_matched_minus_ground_expectation": [
+            0.37827485982684866,
+            2.1170749390411652e-18
+          ],
+          "normalized_charge_error": 5.862401525557018e-15
+        },
+        {
+          "member": "ordered",
+          "boson_modes": 8,
+          "fermion_modes": 8,
+          "trace_width_GeV": 1.6,
+          "coincident_trace_GeV2": 0.20371832715762608,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.5522086088934353,
+          "state_residual_GeV2": 1.3433827782125002e-15,
+          "pp_coefficient_norm_GeV2": 5.1010703264281,
+          "matched_matrix_difference_to_bare": 0.4590880869969923,
+          "matched_matrix_difference_to_first_field_member": 0.4303954509983117,
+          "metric_difference_to_bare": 0.00007560564301461778,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.09333264812693547,
+            "qqqq-qbar": 0.02771025976870593
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 2.295576371983466e-17,
+            "qqqq-qbar": 1.3807330807990518e-17
+          },
+          "direct_minus_current_order2_norm": 6.833626552055062,
+          "direct_minus_current_order4_norm": 0.017416120077673302,
+          "normalized_direct_minus_matrix_norm": 0.6150270262266302,
+          "full_matched_minus_ground_expectation": [
+            0.47423753003761865,
+            2.1155748945878503e-18
+          ],
+          "normalized_charge_error": 5.446036416794638e-15
+        },
+        {
+          "member": "ordered",
+          "boson_modes": 12,
+          "fermion_modes": 12,
+          "trace_width_GeV": 0.8,
+          "coincident_trace_GeV2": 0.05092958178940652,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.45390604942026,
+          "state_residual_GeV2": 1.4716372895811244e-15,
+          "pp_coefficient_norm_GeV2": 1.3111206843625425,
+          "matched_matrix_difference_to_bare": 0.1179983581725427,
+          "matched_matrix_difference_to_first_field_member": 0.08931648338181604,
+          "metric_difference_to_bare": 0.000020208570759472024,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.025154645630485722,
+            "qqqq-qbar": 0.00698716944099728
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 6.722711836792969e-18,
+            "qqqq-qbar": 3.753361178645578e-18
+          },
+          "direct_minus_current_order2_norm": 1.7120080143450491,
+          "direct_minus_current_order4_norm": 0.0043641797570700665,
+          "normalized_direct_minus_matrix_norm": 0.15407992772049936,
+          "full_matched_minus_ground_expectation": [
+            0.3783026199421533,
+            2.1218049857022227e-18
+          ],
+          "normalized_charge_error": 5.195870897798252e-15
+        },
+        {
+          "member": "ordered",
+          "boson_modes": 16,
+          "fermion_modes": 16,
+          "trace_width_GeV": 1.6,
+          "coincident_trace_GeV2": 0.20371832715762608,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.550686400668982,
+          "state_residual_GeV2": 1.440947844853098e-15,
+          "pp_coefficient_norm_GeV2": 5.348427372565053,
+          "matched_matrix_difference_to_bare": 0.4813563216113507,
+          "matched_matrix_difference_to_first_field_member": 0.45268796507143905,
+          "metric_difference_to_bare": 0.00008464125885143615,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.10590106106612694,
+            "qqqq-qbar": 0.028138642808412998
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 2.6231334728057025e-17,
+            "qqqq-qbar": 1.4242688965707085e-17
+          },
+          "direct_minus_current_order2_norm": 6.8541264053127895,
+          "direct_minus_current_order4_norm": 0.017474800174859757,
+          "normalized_direct_minus_matrix_norm": 0.6168726936079616,
+          "full_matched_minus_ground_expectation": [
+            0.4743876707178444,
+            2.171431371176368e-18
+          ],
+          "normalized_charge_error": 5.3270441382765566e-15
+        },
+        {
+          "member": "normal_order_zero",
+          "boson_modes": 8,
+          "fermion_modes": 8,
+          "trace_width_GeV": 0.4,
+          "coincident_trace_GeV2": 0.01273239544735163,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.4214313007409871,
+          "state_residual_GeV2": 2.475673524466332e-15,
+          "pp_coefficient_norm_GeV2": 0,
+          "matched_matrix_difference_to_bare": 0,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "direct_minus_current_order2_norm": 0,
+          "direct_minus_current_order4_norm": 0,
+          "normalized_direct_minus_matrix_norm": 0,
+          "full_matched_minus_ground_expectation": [
+            0.34628732267513296,
+            2.1166530248924757e-18
+          ],
+          "normalized_charge_error": 5.351296345428341e-15
+        },
+        {
+          "member": "normal_order_zero",
+          "boson_modes": 12,
+          "fermion_modes": 12,
+          "trace_width_GeV": 0.4,
+          "coincident_trace_GeV2": 0.01273239544735163,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.4214313007409871,
+          "state_residual_GeV2": 2.475673524466332e-15,
+          "pp_coefficient_norm_GeV2": 0,
+          "matched_matrix_difference_to_bare": 0,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "direct_minus_current_order2_norm": 0,
+          "direct_minus_current_order4_norm": 0,
+          "normalized_direct_minus_matrix_norm": 0,
+          "full_matched_minus_ground_expectation": [
+            0.34628732267513296,
+            2.1166530248924757e-18
+          ],
+          "normalized_charge_error": 5.351296345428341e-15
+        },
+        {
+          "member": "normal_order_zero",
+          "boson_modes": 16,
+          "fermion_modes": 16,
+          "trace_width_GeV": 0.4,
+          "coincident_trace_GeV2": 0.01273239544735163,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.4214313007409871,
+          "state_residual_GeV2": 2.475673524466332e-15,
+          "pp_coefficient_norm_GeV2": 0,
+          "matched_matrix_difference_to_bare": 0,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "direct_minus_current_order2_norm": 0,
+          "direct_minus_current_order4_norm": 0,
+          "normalized_direct_minus_matrix_norm": 0,
+          "full_matched_minus_ground_expectation": [
+            0.34628732267513296,
+            2.1166530248924757e-18
+          ],
+          "normalized_charge_error": 5.351296345428341e-15
+        },
+        {
+          "member": "normal_order_zero",
+          "boson_modes": 8,
+          "fermion_modes": 8,
+          "trace_width_GeV": 0.8,
+          "coincident_trace_GeV2": 0.05092958178940652,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.4214313007409871,
+          "state_residual_GeV2": 2.475673524466332e-15,
+          "pp_coefficient_norm_GeV2": 0,
+          "matched_matrix_difference_to_bare": 0,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "direct_minus_current_order2_norm": 0,
+          "direct_minus_current_order4_norm": 0,
+          "normalized_direct_minus_matrix_norm": 0,
+          "full_matched_minus_ground_expectation": [
+            0.34628732267513296,
+            2.1166530248924757e-18
+          ],
+          "normalized_charge_error": 5.351296345428341e-15
+        },
+        {
+          "member": "normal_order_zero",
+          "boson_modes": 8,
+          "fermion_modes": 8,
+          "trace_width_GeV": 1.6,
+          "coincident_trace_GeV2": 0.20371832715762608,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.4214313007409871,
+          "state_residual_GeV2": 2.475673524466332e-15,
+          "pp_coefficient_norm_GeV2": 0,
+          "matched_matrix_difference_to_bare": 0,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "direct_minus_current_order2_norm": 0,
+          "direct_minus_current_order4_norm": 0,
+          "normalized_direct_minus_matrix_norm": 0,
+          "full_matched_minus_ground_expectation": [
+            0.34628732267513296,
+            2.1166530248924757e-18
+          ],
+          "normalized_charge_error": 5.351296345428341e-15
+        },
+        {
+          "member": "normal_order_zero",
+          "boson_modes": 12,
+          "fermion_modes": 12,
+          "trace_width_GeV": 0.8,
+          "coincident_trace_GeV2": 0.05092958178940652,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.4214313007409871,
+          "state_residual_GeV2": 2.475673524466332e-15,
+          "pp_coefficient_norm_GeV2": 0,
+          "matched_matrix_difference_to_bare": 0,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "direct_minus_current_order2_norm": 0,
+          "direct_minus_current_order4_norm": 0,
+          "normalized_direct_minus_matrix_norm": 0,
+          "full_matched_minus_ground_expectation": [
+            0.34628732267513296,
+            2.1166530248924757e-18
+          ],
+          "normalized_charge_error": 5.351296345428341e-15
+        },
+        {
+          "member": "normal_order_zero",
+          "boson_modes": 16,
+          "fermion_modes": 16,
+          "trace_width_GeV": 1.6,
+          "coincident_trace_GeV2": 0.20371832715762608,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.4214313007409871,
+          "state_residual_GeV2": 2.475673524466332e-15,
+          "pp_coefficient_norm_GeV2": 0,
+          "matched_matrix_difference_to_bare": 0,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "direct_minus_current_order2_norm": 0,
+          "direct_minus_current_order4_norm": 0,
+          "normalized_direct_minus_matrix_norm": 0,
+          "full_matched_minus_ground_expectation": [
+            0.34628732267513296,
+            2.1166530248924757e-18
+          ],
+          "normalized_charge_error": 5.351296345428341e-15
+        },
+        {
+          "member": "normal_order_illustrative_finite",
+          "boson_modes": 8,
+          "fermion_modes": 8,
+          "trace_width_GeV": 0.4,
+          "coincident_trace_GeV2": 0.01273239544735163,
+          "finite_quark_mass2_per_gs2_GeV2": 0.011,
+          "finite_gluon_mass2_per_gs2_GeV2": -0.007,
+          "M2_GeV2": 1.4303450098319126,
+          "state_residual_GeV2": 8.572543715625502e-16,
+          "pp_coefficient_norm_GeV2": 1.1490086968818836,
+          "matched_matrix_difference_to_bare": 0.1034427813558782,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0.000022539275390590952,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.014801248060058505,
+            "qqqq-qbar": 0.021240434655886105
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 4.386096326052005e-18,
+            "qqqq-qbar": 1.0077666179078639e-17
+          },
+          "direct_minus_current_order2_norm": 0.6821927475374878,
+          "direct_minus_current_order4_norm": 0.0015216752545997555,
+          "normalized_direct_minus_matrix_norm": 0.06139816363228966,
+          "full_matched_minus_ground_expectation": [
+            0.3486219374113762,
+            2.1197120602673557e-18
+          ],
+          "normalized_charge_error": 5.350157529127425e-15
+        },
+        {
+          "member": "normal_order_illustrative_finite",
+          "boson_modes": 12,
+          "fermion_modes": 12,
+          "trace_width_GeV": 0.4,
+          "coincident_trace_GeV2": 0.01273239544735163,
+          "finite_quark_mass2_per_gs2_GeV2": 0.011,
+          "finite_gluon_mass2_per_gs2_GeV2": -0.007,
+          "M2_GeV2": 1.4303450098319126,
+          "state_residual_GeV2": 8.572543715625502e-16,
+          "pp_coefficient_norm_GeV2": 1.1490086968818836,
+          "matched_matrix_difference_to_bare": 0.1034427813558782,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0.000022539275390590952,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.014801248060058505,
+            "qqqq-qbar": 0.021240434655886105
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 4.386096326052005e-18,
+            "qqqq-qbar": 1.0077666179078639e-17
+          },
+          "direct_minus_current_order2_norm": 0.6821927475374878,
+          "direct_minus_current_order4_norm": 0.0015216752545997555,
+          "normalized_direct_minus_matrix_norm": 0.06139816363228966,
+          "full_matched_minus_ground_expectation": [
+            0.3486219374113762,
+            2.1197120602673557e-18
+          ],
+          "normalized_charge_error": 5.350157529127425e-15
+        },
+        {
+          "member": "normal_order_illustrative_finite",
+          "boson_modes": 16,
+          "fermion_modes": 16,
+          "trace_width_GeV": 0.4,
+          "coincident_trace_GeV2": 0.01273239544735163,
+          "finite_quark_mass2_per_gs2_GeV2": 0.011,
+          "finite_gluon_mass2_per_gs2_GeV2": -0.007,
+          "M2_GeV2": 1.4303450098319126,
+          "state_residual_GeV2": 8.572543715625502e-16,
+          "pp_coefficient_norm_GeV2": 1.1490086968818836,
+          "matched_matrix_difference_to_bare": 0.1034427813558782,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0.000022539275390590952,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.014801248060058505,
+            "qqqq-qbar": 0.021240434655886105
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 4.386096326052005e-18,
+            "qqqq-qbar": 1.0077666179078639e-17
+          },
+          "direct_minus_current_order2_norm": 0.6821927475374878,
+          "direct_minus_current_order4_norm": 0.0015216752545997555,
+          "normalized_direct_minus_matrix_norm": 0.06139816363228966,
+          "full_matched_minus_ground_expectation": [
+            0.3486219374113762,
+            2.1197120602673557e-18
+          ],
+          "normalized_charge_error": 5.350157529127425e-15
+        },
+        {
+          "member": "normal_order_illustrative_finite",
+          "boson_modes": 8,
+          "fermion_modes": 8,
+          "trace_width_GeV": 0.8,
+          "coincident_trace_GeV2": 0.05092958178940652,
+          "finite_quark_mass2_per_gs2_GeV2": 0.011,
+          "finite_gluon_mass2_per_gs2_GeV2": -0.007,
+          "M2_GeV2": 1.4303450098319126,
+          "state_residual_GeV2": 8.572543715625502e-16,
+          "pp_coefficient_norm_GeV2": 1.1490086968818836,
+          "matched_matrix_difference_to_bare": 0.1034427813558782,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0.000022539275390590952,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.014801248060058505,
+            "qqqq-qbar": 0.021240434655886105
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 4.386096326052005e-18,
+            "qqqq-qbar": 1.0077666179078639e-17
+          },
+          "direct_minus_current_order2_norm": 0.6821927475374878,
+          "direct_minus_current_order4_norm": 0.0015216752545997555,
+          "normalized_direct_minus_matrix_norm": 0.06139816363228966,
+          "full_matched_minus_ground_expectation": [
+            0.3486219374113762,
+            2.1197120602673557e-18
+          ],
+          "normalized_charge_error": 5.350157529127425e-15
+        },
+        {
+          "member": "normal_order_illustrative_finite",
+          "boson_modes": 8,
+          "fermion_modes": 8,
+          "trace_width_GeV": 1.6,
+          "coincident_trace_GeV2": 0.20371832715762608,
+          "finite_quark_mass2_per_gs2_GeV2": 0.011,
+          "finite_gluon_mass2_per_gs2_GeV2": -0.007,
+          "M2_GeV2": 1.4303450098319126,
+          "state_residual_GeV2": 8.572543715625502e-16,
+          "pp_coefficient_norm_GeV2": 1.1490086968818836,
+          "matched_matrix_difference_to_bare": 0.1034427813558782,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0.000022539275390590952,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.014801248060058505,
+            "qqqq-qbar": 0.021240434655886105
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 4.386096326052005e-18,
+            "qqqq-qbar": 1.0077666179078639e-17
+          },
+          "direct_minus_current_order2_norm": 0.6821927475374878,
+          "direct_minus_current_order4_norm": 0.0015216752545997555,
+          "normalized_direct_minus_matrix_norm": 0.06139816363228966,
+          "full_matched_minus_ground_expectation": [
+            0.3486219374113762,
+            2.1197120602673557e-18
+          ],
+          "normalized_charge_error": 5.350157529127425e-15
+        },
+        {
+          "member": "normal_order_illustrative_finite",
+          "boson_modes": 12,
+          "fermion_modes": 12,
+          "trace_width_GeV": 0.8,
+          "coincident_trace_GeV2": 0.05092958178940652,
+          "finite_quark_mass2_per_gs2_GeV2": 0.011,
+          "finite_gluon_mass2_per_gs2_GeV2": -0.007,
+          "M2_GeV2": 1.4303450098319126,
+          "state_residual_GeV2": 8.572543715625502e-16,
+          "pp_coefficient_norm_GeV2": 1.1490086968818836,
+          "matched_matrix_difference_to_bare": 0.1034427813558782,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0.000022539275390590952,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.014801248060058505,
+            "qqqq-qbar": 0.021240434655886105
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 4.386096326052005e-18,
+            "qqqq-qbar": 1.0077666179078639e-17
+          },
+          "direct_minus_current_order2_norm": 0.6821927475374878,
+          "direct_minus_current_order4_norm": 0.0015216752545997555,
+          "normalized_direct_minus_matrix_norm": 0.06139816363228966,
+          "full_matched_minus_ground_expectation": [
+            0.3486219374113762,
+            2.1197120602673557e-18
+          ],
+          "normalized_charge_error": 5.350157529127425e-15
+        },
+        {
+          "member": "normal_order_illustrative_finite",
+          "boson_modes": 16,
+          "fermion_modes": 16,
+          "trace_width_GeV": 1.6,
+          "coincident_trace_GeV2": 0.20371832715762608,
+          "finite_quark_mass2_per_gs2_GeV2": 0.011,
+          "finite_gluon_mass2_per_gs2_GeV2": -0.007,
+          "M2_GeV2": 1.4303450098319126,
+          "state_residual_GeV2": 8.572543715625502e-16,
+          "pp_coefficient_norm_GeV2": 1.1490086968818836,
+          "matched_matrix_difference_to_bare": 0.1034427813558782,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0.000022539275390590952,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.014801248060058505,
+            "qqqq-qbar": 0.021240434655886105
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 4.386096326052005e-18,
+            "qqqq-qbar": 1.0077666179078639e-17
+          },
+          "direct_minus_current_order2_norm": 0.6821927475374878,
+          "direct_minus_current_order4_norm": 0.0015216752545997555,
+          "normalized_direct_minus_matrix_norm": 0.06139816363228966,
+          "full_matched_minus_ground_expectation": [
+            0.3486219374113762,
+            2.1197120602673557e-18
+          ],
+          "normalized_charge_error": 5.350157529127425e-15
+        }
+      ],
+      "physical_finite_conditions_selected": false,
+      "common_continuum_regulator_complete": false,
+      "covariance_repaired": false,
+      "quantum_execution": false,
+      "seconds": 66.27282241598004
+    },
+    {
+      "scope": "Compare ordered and subtracted Wick/H2 operators on complete Q5/Q6 shells.\n\nFinite-model subtraction study only. The Gaussian coincident trace does NOT\nregulate the pre-existing propagating vertices; this is not UV convergence,\na physical mass/current fit or a quantum-device benchmark.\n",
+      "target": "PROTON",
+      "current_kind": "direct",
+      "retained_cutoff": 0,
+      "excluded_cutoff": 2,
+      "retained_dimension": 37,
+      "raw_Q5_dimensions": {
+        "qqqgg": 22230,
+        "qqqq-qbar": 130500
+      },
+      "raw_Q6_dimensions": {
+        "qqqggg": 43692,
+        "qqqq-qbar-g": 364800
+      },
+      "coupling": 0.3,
+      "matching_energy_GeV2": 1.4,
+      "total_k2": 9,
+      "total_pplus_GeV": 1.3,
+      "transfer_GeV": [
+        0.12,
+        0.16
+      ],
+      "quark_mass_GeV": 0.35,
+      "gluon_mass_GeV": 0,
+      "width_GeV": 0.4,
+      "preexisting_bare_M2_GeV2": 1.4214287990775756,
+      "records": [
+        {
+          "member": "ordered",
+          "boson_modes": 8,
+          "fermion_modes": 8,
+          "trace_width_GeV": 0.4,
+          "coincident_trace_GeV2": 0.01273239544735163,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.4296023847224626,
+          "state_residual_GeV2": 1.8733365285611954e-15,
+          "pp_coefficient_norm_GeV2": 0.31881689540175623,
+          "matched_matrix_difference_to_bare": 0.028705142561970123,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0.000017008591603979473,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.013678812387026,
+            "qqqq-qbar": 0.002190781613874308
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 6.65567407713608e-18,
+            "qqqq-qbar": 2.7542517899997377e-18
+          },
+          "direct_minus_current_order2_norm": 0.42710165950344137,
+          "direct_minus_current_order4_norm": 0.0033843346277633475,
+          "normalized_direct_minus_matrix_norm": 0.03843956875158856,
+          "full_matched_minus_ground_expectation": null,
+          "normalized_charge_error": 4.754782661631641e-15
+        },
+        {
+          "member": "ordered",
+          "boson_modes": 12,
+          "fermion_modes": 12,
+          "trace_width_GeV": 0.4,
+          "coincident_trace_GeV2": 0.01273239544735163,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.4295474833239175,
+          "state_residual_GeV2": 2.209271456986953e-15,
+          "pp_coefficient_norm_GeV2": 0.3277801710906356,
+          "matched_matrix_difference_to_bare": 0.029513754046550083,
+          "matched_matrix_difference_to_first_field_member": 0.001065426448689641,
+          "metric_difference_to_bare": 0.000018323433116511254,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.014738554179350789,
+            "qqqq-qbar": 0.0022096786123539983
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 7.209589060580383e-18,
+            "qqqq-qbar": 2.775805699253949e-18
+          },
+          "direct_minus_current_order2_norm": 0.4280020035862623,
+          "direct_minus_current_order4_norm": 0.0033940199235047304,
+          "normalized_direct_minus_matrix_norm": 0.03852062119840926,
+          "full_matched_minus_ground_expectation": null,
+          "normalized_charge_error": 4.713088036205944e-15
+        },
+        {
+          "member": "ordered",
+          "boson_modes": 16,
+          "fermion_modes": 16,
+          "trace_width_GeV": 0.4,
+          "coincident_trace_GeV2": 0.01273239544735163,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.4295072437441723,
+          "state_residual_GeV2": 2.8313525331572916e-15,
+          "pp_coefficient_norm_GeV2": 0.3342767107853158,
+          "matched_matrix_difference_to_bare": 0.030099832334693533,
+          "matched_matrix_difference_to_first_field_member": 0.0018223243454237713,
+          "metric_difference_to_bare": 0.000019276795841523894,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.015507394871921397,
+            "qqqq-qbar": 0.0022247267801633786
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 7.573730580107059e-18,
+            "qqqq-qbar": 2.7650936094341006e-18
+          },
+          "direct_minus_current_order2_norm": 0.42838290033204934,
+          "direct_minus_current_order4_norm": 0.0033984407762417523,
+          "normalized_direct_minus_matrix_norm": 0.038554914823235927,
+          "full_matched_minus_ground_expectation": null,
+          "normalized_charge_error": 4.684360360534816e-15
+        },
+        {
+          "member": "ordered",
+          "boson_modes": 8,
+          "fermion_modes": 8,
+          "trace_width_GeV": 0.8,
+          "coincident_trace_GeV2": 0.05092958178940652,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.4541231350598756,
+          "state_residual_GeV2": 1.1780706020276764e-15,
+          "pp_coefficient_norm_GeV2": 1.275267581607025,
+          "matched_matrix_difference_to_bare": 0.11482170924214376,
+          "matched_matrix_difference_to_first_field_member": 0.08611656668080274,
+          "metric_difference_to_bare": 0.00006803436641633361,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.054715249548104,
+            "qqqq-qbar": 0.008763126455497232
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 2.6501318025731835e-17,
+            "qqqq-qbar": 1.0886474099425562e-17
+          },
+          "direct_minus_current_order2_norm": 1.7084066380137655,
+          "direct_minus_current_order4_norm": 0.01353733851105339,
+          "normalized_direct_minus_matrix_norm": 0.15375947708419813,
+          "full_matched_minus_ground_expectation": null,
+          "normalized_charge_error": 4.976531438400245e-15
+        },
+        {
+          "member": "ordered",
+          "boson_modes": 8,
+          "fermion_modes": 8,
+          "trace_width_GeV": 1.6,
+          "coincident_trace_GeV2": 0.20371832715762608,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.5522060300311042,
+          "state_residual_GeV2": 1.4044819012419551e-15,
+          "pp_coefficient_norm_GeV2": 5.1010703264281,
+          "matched_matrix_difference_to_bare": 0.45930506223552037,
+          "matched_matrix_difference_to_first_field_member": 0.43059991968613404,
+          "metric_difference_to_bare": 0.0002721374656651679,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.218860998192416,
+            "qqqq-qbar": 0.035052505821988926
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 1.0568955533721838e-16,
+            "qqqq-qbar": 4.3408247862087273e-17
+          },
+          "direct_minus_current_order2_norm": 6.833626552055062,
+          "direct_minus_current_order4_norm": 0.05414935404421356,
+          "normalized_direct_minus_matrix_norm": 0.6150571429854822,
+          "full_matched_minus_ground_expectation": null,
+          "normalized_charge_error": 4.688198928427189e-15
+        },
+        {
+          "member": "ordered",
+          "boson_modes": 12,
+          "fermion_modes": 12,
+          "trace_width_GeV": 0.8,
+          "coincident_trace_GeV2": 0.05092958178940652,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.4539035330507504,
+          "state_residual_GeV2": 1.3305603608389867e-15,
+          "pp_coefficient_norm_GeV2": 1.3111206843625425,
+          "matched_matrix_difference_to_bare": 0.11805628615325744,
+          "matched_matrix_difference_to_first_field_member": 0.08936191763408008,
+          "metric_difference_to_bare": 0.00007329373246623742,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.058954216717403155,
+            "qqqq-qbar": 0.008838714449415993
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 2.860698355599342e-17,
+            "qqqq-qbar": 1.1031788902040254e-17
+          },
+          "direct_minus_current_order2_norm": 1.7120080143450491,
+          "direct_minus_current_order4_norm": 0.013576079694018922,
+          "normalized_direct_minus_matrix_norm": 0.15408378414658438,
+          "full_matched_minus_ground_expectation": null,
+          "normalized_charge_error": 4.94531092244978e-15
+        },
+        {
+          "member": "ordered",
+          "boson_modes": 16,
+          "fermion_modes": 16,
+          "trace_width_GeV": 1.6,
+          "coincident_trace_GeV2": 0.20371832715762608,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.55068386260719,
+          "state_residual_GeV2": 1.2732622427297621e-15,
+          "pp_coefficient_norm_GeV2": 5.348427372565053,
+          "matched_matrix_difference_to_bare": 0.481624685462031,
+          "matched_matrix_difference_to_first_field_member": 0.4529438548742198,
+          "metric_difference_to_bare": 0.0003084287334649462,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.24811831795074235,
+            "qqqq-qbar": 0.03559562848261406
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 1.1939950736957764e-16,
+            "qqqq-qbar": 4.3578959522283166e-17
+          },
+          "direct_minus_current_order2_norm": 6.8541264053127895,
+          "direct_minus_current_order4_norm": 0.054375052419868036,
+          "normalized_direct_minus_matrix_norm": 0.6169060226003624,
+          "full_matched_minus_ground_expectation": null,
+          "normalized_charge_error": 4.61274042047496e-15
+        },
+        {
+          "member": "normal_order_zero",
+          "boson_modes": 8,
+          "fermion_modes": 8,
+          "trace_width_GeV": 0.4,
+          "coincident_trace_GeV2": 0.01273239544735163,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.4214287990775747,
+          "state_residual_GeV2": 2.399953045300442e-15,
+          "pp_coefficient_norm_GeV2": 0,
+          "matched_matrix_difference_to_bare": 0,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "direct_minus_current_order2_norm": 0,
+          "direct_minus_current_order4_norm": 0,
+          "normalized_direct_minus_matrix_norm": 0,
+          "full_matched_minus_ground_expectation": null,
+          "normalized_charge_error": 4.700014092991167e-15
+        },
+        {
+          "member": "normal_order_zero",
+          "boson_modes": 12,
+          "fermion_modes": 12,
+          "trace_width_GeV": 0.4,
+          "coincident_trace_GeV2": 0.01273239544735163,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.4214287990775747,
+          "state_residual_GeV2": 2.399953045300442e-15,
+          "pp_coefficient_norm_GeV2": 0,
+          "matched_matrix_difference_to_bare": 0,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "direct_minus_current_order2_norm": 0,
+          "direct_minus_current_order4_norm": 0,
+          "normalized_direct_minus_matrix_norm": 0,
+          "full_matched_minus_ground_expectation": null,
+          "normalized_charge_error": 4.700014092991167e-15
+        },
+        {
+          "member": "normal_order_zero",
+          "boson_modes": 16,
+          "fermion_modes": 16,
+          "trace_width_GeV": 0.4,
+          "coincident_trace_GeV2": 0.01273239544735163,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.4214287990775747,
+          "state_residual_GeV2": 2.399953045300442e-15,
+          "pp_coefficient_norm_GeV2": 0,
+          "matched_matrix_difference_to_bare": 0,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "direct_minus_current_order2_norm": 0,
+          "direct_minus_current_order4_norm": 0,
+          "normalized_direct_minus_matrix_norm": 0,
+          "full_matched_minus_ground_expectation": null,
+          "normalized_charge_error": 4.700014092991167e-15
+        },
+        {
+          "member": "normal_order_zero",
+          "boson_modes": 8,
+          "fermion_modes": 8,
+          "trace_width_GeV": 0.8,
+          "coincident_trace_GeV2": 0.05092958178940652,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.4214287990775747,
+          "state_residual_GeV2": 2.399953045300442e-15,
+          "pp_coefficient_norm_GeV2": 0,
+          "matched_matrix_difference_to_bare": 0,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "direct_minus_current_order2_norm": 0,
+          "direct_minus_current_order4_norm": 0,
+          "normalized_direct_minus_matrix_norm": 0,
+          "full_matched_minus_ground_expectation": null,
+          "normalized_charge_error": 4.700014092991167e-15
+        },
+        {
+          "member": "normal_order_zero",
+          "boson_modes": 8,
+          "fermion_modes": 8,
+          "trace_width_GeV": 1.6,
+          "coincident_trace_GeV2": 0.20371832715762608,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.4214287990775747,
+          "state_residual_GeV2": 2.399953045300442e-15,
+          "pp_coefficient_norm_GeV2": 0,
+          "matched_matrix_difference_to_bare": 0,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "direct_minus_current_order2_norm": 0,
+          "direct_minus_current_order4_norm": 0,
+          "normalized_direct_minus_matrix_norm": 0,
+          "full_matched_minus_ground_expectation": null,
+          "normalized_charge_error": 4.700014092991167e-15
+        },
+        {
+          "member": "normal_order_zero",
+          "boson_modes": 12,
+          "fermion_modes": 12,
+          "trace_width_GeV": 0.8,
+          "coincident_trace_GeV2": 0.05092958178940652,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.4214287990775747,
+          "state_residual_GeV2": 2.399953045300442e-15,
+          "pp_coefficient_norm_GeV2": 0,
+          "matched_matrix_difference_to_bare": 0,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "direct_minus_current_order2_norm": 0,
+          "direct_minus_current_order4_norm": 0,
+          "normalized_direct_minus_matrix_norm": 0,
+          "full_matched_minus_ground_expectation": null,
+          "normalized_charge_error": 4.700014092991167e-15
+        },
+        {
+          "member": "normal_order_zero",
+          "boson_modes": 16,
+          "fermion_modes": 16,
+          "trace_width_GeV": 1.6,
+          "coincident_trace_GeV2": 0.20371832715762608,
+          "finite_quark_mass2_per_gs2_GeV2": 0,
+          "finite_gluon_mass2_per_gs2_GeV2": 0,
+          "M2_GeV2": 1.4214287990775747,
+          "state_residual_GeV2": 2.399953045300442e-15,
+          "pp_coefficient_norm_GeV2": 0,
+          "matched_matrix_difference_to_bare": 0,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 0,
+            "qqqq-qbar": 0
+          },
+          "direct_minus_current_order2_norm": 0,
+          "direct_minus_current_order4_norm": 0,
+          "normalized_direct_minus_matrix_norm": 0,
+          "full_matched_minus_ground_expectation": null,
+          "normalized_charge_error": 4.700014092991167e-15
+        },
+        {
+          "member": "normal_order_illustrative_finite",
+          "boson_modes": 8,
+          "fermion_modes": 8,
+          "trace_width_GeV": 0.4,
+          "coincident_trace_GeV2": 0.01273239544735163,
+          "finite_quark_mass2_per_gs2_GeV2": 0.011,
+          "finite_gluon_mass2_per_gs2_GeV2": -0.007,
+          "M2_GeV2": 1.4303425244853096,
+          "state_residual_GeV2": 1.6523559666933367e-15,
+          "pp_coefficient_norm_GeV2": 1.1490086968818836,
+          "matched_matrix_difference_to_bare": 0.10350438269308293,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0.00006345790571114763,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.03326398844408964,
+            "qqqq-qbar": 0.02672501666413423
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 1.8495161003297163e-17,
+            "qqqq-qbar": 3.2857547730116196e-17
+          },
+          "direct_minus_current_order2_norm": 0.6821927475374878,
+          "direct_minus_current_order4_norm": 0.005057273059712122,
+          "normalized_direct_minus_matrix_norm": 0.06139934832239853,
+          "full_matched_minus_ground_expectation": null,
+          "normalized_charge_error": 4.975316911808046e-15
+        },
+        {
+          "member": "normal_order_illustrative_finite",
+          "boson_modes": 12,
+          "fermion_modes": 12,
+          "trace_width_GeV": 0.4,
+          "coincident_trace_GeV2": 0.01273239544735163,
+          "finite_quark_mass2_per_gs2_GeV2": 0.011,
+          "finite_gluon_mass2_per_gs2_GeV2": -0.007,
+          "M2_GeV2": 1.4303425244853096,
+          "state_residual_GeV2": 1.6523559666933367e-15,
+          "pp_coefficient_norm_GeV2": 1.1490086968818836,
+          "matched_matrix_difference_to_bare": 0.10350438269308293,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0.00006345790571114763,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.03326398844408964,
+            "qqqq-qbar": 0.02672501666413423
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 1.8495161003297163e-17,
+            "qqqq-qbar": 3.2857547730116196e-17
+          },
+          "direct_minus_current_order2_norm": 0.6821927475374878,
+          "direct_minus_current_order4_norm": 0.005057273059712122,
+          "normalized_direct_minus_matrix_norm": 0.06139934832239853,
+          "full_matched_minus_ground_expectation": null,
+          "normalized_charge_error": 4.975316911808046e-15
+        },
+        {
+          "member": "normal_order_illustrative_finite",
+          "boson_modes": 16,
+          "fermion_modes": 16,
+          "trace_width_GeV": 0.4,
+          "coincident_trace_GeV2": 0.01273239544735163,
+          "finite_quark_mass2_per_gs2_GeV2": 0.011,
+          "finite_gluon_mass2_per_gs2_GeV2": -0.007,
+          "M2_GeV2": 1.4303425244853096,
+          "state_residual_GeV2": 1.6523559666933367e-15,
+          "pp_coefficient_norm_GeV2": 1.1490086968818836,
+          "matched_matrix_difference_to_bare": 0.10350438269308293,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0.00006345790571114763,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.03326398844408964,
+            "qqqq-qbar": 0.02672501666413423
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 1.8495161003297163e-17,
+            "qqqq-qbar": 3.2857547730116196e-17
+          },
+          "direct_minus_current_order2_norm": 0.6821927475374878,
+          "direct_minus_current_order4_norm": 0.005057273059712122,
+          "normalized_direct_minus_matrix_norm": 0.06139934832239853,
+          "full_matched_minus_ground_expectation": null,
+          "normalized_charge_error": 4.975316911808046e-15
+        },
+        {
+          "member": "normal_order_illustrative_finite",
+          "boson_modes": 8,
+          "fermion_modes": 8,
+          "trace_width_GeV": 0.8,
+          "coincident_trace_GeV2": 0.05092958178940652,
+          "finite_quark_mass2_per_gs2_GeV2": 0.011,
+          "finite_gluon_mass2_per_gs2_GeV2": -0.007,
+          "M2_GeV2": 1.4303425244853096,
+          "state_residual_GeV2": 1.6523559666933367e-15,
+          "pp_coefficient_norm_GeV2": 1.1490086968818836,
+          "matched_matrix_difference_to_bare": 0.10350438269308293,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0.00006345790571114763,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.03326398844408964,
+            "qqqq-qbar": 0.02672501666413423
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 1.8495161003297163e-17,
+            "qqqq-qbar": 3.2857547730116196e-17
+          },
+          "direct_minus_current_order2_norm": 0.6821927475374878,
+          "direct_minus_current_order4_norm": 0.005057273059712122,
+          "normalized_direct_minus_matrix_norm": 0.06139934832239853,
+          "full_matched_minus_ground_expectation": null,
+          "normalized_charge_error": 4.975316911808046e-15
+        },
+        {
+          "member": "normal_order_illustrative_finite",
+          "boson_modes": 8,
+          "fermion_modes": 8,
+          "trace_width_GeV": 1.6,
+          "coincident_trace_GeV2": 0.20371832715762608,
+          "finite_quark_mass2_per_gs2_GeV2": 0.011,
+          "finite_gluon_mass2_per_gs2_GeV2": -0.007,
+          "M2_GeV2": 1.4303425244853096,
+          "state_residual_GeV2": 1.6523559666933367e-15,
+          "pp_coefficient_norm_GeV2": 1.1490086968818836,
+          "matched_matrix_difference_to_bare": 0.10350438269308293,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0.00006345790571114763,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.03326398844408964,
+            "qqqq-qbar": 0.02672501666413423
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 1.8495161003297163e-17,
+            "qqqq-qbar": 3.2857547730116196e-17
+          },
+          "direct_minus_current_order2_norm": 0.6821927475374878,
+          "direct_minus_current_order4_norm": 0.005057273059712122,
+          "normalized_direct_minus_matrix_norm": 0.06139934832239853,
+          "full_matched_minus_ground_expectation": null,
+          "normalized_charge_error": 4.975316911808046e-15
+        },
+        {
+          "member": "normal_order_illustrative_finite",
+          "boson_modes": 12,
+          "fermion_modes": 12,
+          "trace_width_GeV": 0.8,
+          "coincident_trace_GeV2": 0.05092958178940652,
+          "finite_quark_mass2_per_gs2_GeV2": 0.011,
+          "finite_gluon_mass2_per_gs2_GeV2": -0.007,
+          "M2_GeV2": 1.4303425244853096,
+          "state_residual_GeV2": 1.6523559666933367e-15,
+          "pp_coefficient_norm_GeV2": 1.1490086968818836,
+          "matched_matrix_difference_to_bare": 0.10350438269308293,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0.00006345790571114763,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.03326398844408964,
+            "qqqq-qbar": 0.02672501666413423
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 1.8495161003297163e-17,
+            "qqqq-qbar": 3.2857547730116196e-17
+          },
+          "direct_minus_current_order2_norm": 0.6821927475374878,
+          "direct_minus_current_order4_norm": 0.005057273059712122,
+          "normalized_direct_minus_matrix_norm": 0.06139934832239853,
+          "full_matched_minus_ground_expectation": null,
+          "normalized_charge_error": 4.975316911808046e-15
+        },
+        {
+          "member": "normal_order_illustrative_finite",
+          "boson_modes": 16,
+          "fermion_modes": 16,
+          "trace_width_GeV": 1.6,
+          "coincident_trace_GeV2": 0.20371832715762608,
+          "finite_quark_mass2_per_gs2_GeV2": 0.011,
+          "finite_gluon_mass2_per_gs2_GeV2": -0.007,
+          "M2_GeV2": 1.4303425244853096,
+          "state_residual_GeV2": 1.6523559666933367e-15,
+          "pp_coefficient_norm_GeV2": 1.1490086968818836,
+          "matched_matrix_difference_to_bare": 0.10350438269308293,
+          "matched_matrix_difference_to_first_field_member": 0,
+          "metric_difference_to_bare": 0.00006345790571114763,
+          "raw_extra_backflow_norms": {
+            "qqqgg": 0.03326398844408964,
+            "qqqq-qbar": 0.02672501666413423
+          },
+          "raw_Q_wave_equation_residuals": {
+            "qqqgg": 1.8495161003297163e-17,
+            "qqqq-qbar": 3.2857547730116196e-17
+          },
+          "direct_minus_current_order2_norm": 0.6821927475374878,
+          "direct_minus_current_order4_norm": 0.005057273059712122,
+          "normalized_direct_minus_matrix_norm": 0.06139934832239853,
+          "full_matched_minus_ground_expectation": null,
+          "normalized_charge_error": 4.975316911808046e-15
+        }
+      ],
+      "physical_finite_conditions_selected": false,
+      "common_continuum_regulator_complete": false,
+      "covariance_repaired": false,
+      "quantum_execution": false,
+      "seconds": 151.12761408399092
+    }
+  ]
+}

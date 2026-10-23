@@ -1,0 +1,224 @@
+{
+  "scope": "free-threshold and six-static-quark color/geometry preflight, not physical nucleon binding",
+  "unconfined_three_quark_threshold_GeV": 0.81,
+  "illustrative_quark_mass_GeV": 0.27,
+  "finite_longitudinal_minima": [
+    {
+      "k2": 3,
+      "mass_GeV": 0.81,
+      "odd_modes": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "k2": 5,
+      "mass_GeV": 0.9222255689363639,
+      "odd_modes": [
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "k2": 7,
+      "mass_GeV": 0.922225568936364,
+      "odd_modes": [
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "k2": 9,
+      "mass_GeV": 0.81,
+      "odd_modes": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "k2": 11,
+      "mass_GeV": 0.8336546047374777,
+      "odd_modes": [
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "k2": 13,
+      "mass_GeV": 0.8336546047374777,
+      "odd_modes": [
+        3,
+        5,
+        5
+      ]
+    },
+    {
+      "k2": 15,
+      "mass_GeV": 0.81,
+      "odd_modes": [
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "k2": 29,
+      "mass_GeV": 0.8136282376435255,
+      "odd_modes": [
+        9,
+        9,
+        11
+      ]
+    },
+    {
+      "k2": 31,
+      "mass_GeV": 0.8136282376435254,
+      "odd_modes": [
+        9,
+        11,
+        11
+      ]
+    },
+    {
+      "k2": 61,
+      "mass_GeV": 0.8109017536886565,
+      "odd_modes": [
+        19,
+        21,
+        21
+      ]
+    },
+    {
+      "k2": 121,
+      "mass_GeV": 0.8102251094325403,
+      "odd_modes": [
+        39,
+        41,
+        41
+      ]
+    }
+  ],
+  "partition_count": 10,
+  "color_singlet_rank": 5,
+  "Gram_eigenvalues": [
+    -9.009298864844767e-16,
+    -2.7303743521255287e-16,
+    -7.237906593708553e-17,
+    1.5827831522531027e-16,
+    3.8062762083035407e-16,
+    1.9999999999999993,
+    1.9999999999999993,
+    1.9999999999999993,
+    1.9999999999999996,
+    2
+  ],
+  "cluster_cases": [
+    {
+      "separation": 2,
+      "pair_ground_energy": 5.977548139434916,
+      "pair_ground_shift_from_two_singlets": -0.022451860565084303,
+      "product_singlet_diagonal": 6.000000000000002,
+      "hidden_color_weight": 0.004004105800768043,
+      "force": -0.03611736087609159,
+      "connected_tree_excess_length": 2,
+      "independent_partition_energy_Hermiticity_defect": 6.622350986370672,
+      "excited_color_gaps": [
+        4.876553826814773,
+        5.23065579306445,
+        5.230655793064457,
+        5.607209619879226
+      ]
+    },
+    {
+      "separation": 4,
+      "pair_ground_energy": 5.997574148711461,
+      "pair_ground_shift_from_two_singlets": -0.002425851288538894,
+      "product_singlet_diagonal": 6.000000000000001,
+      "hidden_color_weight": 0.00017255004883787173,
+      "force": -0.0019297992865390098,
+      "connected_tree_excess_length": 4,
+      "independent_partition_energy_Hermiticity_defect": 17.442547976741803,
+      "excited_color_gaps": [
+        13.687084289715042,
+        13.871742728141527,
+        13.87174272814153,
+        14.058827017856558
+      ]
+    },
+    {
+      "separation": 8,
+      "pair_ground_energy": 5.999725583949726,
+      "pair_ground_shift_from_two_singlets": -0.0002744160502743398,
+      "product_singlet_diagonal": 6.000000000000002,
+      "hidden_color_weight": 0.000008634673721474861,
+      "force": -0.00010662963681021898,
+      "connected_tree_excess_length": 8,
+      "independent_partition_energy_Hermiticity_defect": 39.83363336465358,
+      "excited_color_gaps": [
+        31.593661038498126,
+        31.687047660945908,
+        31.68704766094593,
+        31.78070869944407
+      ]
+    },
+    {
+      "separation": 16,
+      "pair_ground_energy": 5.9999675788339975,
+      "pair_ground_shift_from_two_singlets": -0.00003242116600254974,
+      "product_singlet_diagonal": 6.000000000000002,
+      "hidden_color_weight": 4.79315509172018e-7,
+      "force": -0.000006197470962616107,
+      "connected_tree_excess_length": 16,
+      "independent_partition_energy_Hermiticity_defect": 84.9706519682975,
+      "excited_color_gaps": [
+        67.54686173398812,
+        67.59369104681022,
+        67.59369104681024,
+        67.64055278079836
+      ]
+    },
+    {
+      "separation": 32,
+      "pair_ground_energy": 5.9999960661519935,
+      "pair_ground_shift_from_two_singlets": -0.000003933848006454355,
+      "product_singlet_diagonal": 6.000000000000002,
+      "hidden_color_weight": 2.818542221838527e-8,
+      "force": -3.7251805055532e-7,
+      "connected_tree_excess_length": 32,
+      "independent_partition_energy_Hermiticity_defect": 175.42140528522597,
+      "excited_color_gaps": [
+        139.52343571459443,
+        139.5468674953406,
+        139.54686749534076,
+        139.5703032099352
+      ]
+    },
+    {
+      "separation": 64,
+      "pair_ground_energy": 5.999999515713177,
+      "pair_ground_shift_from_two_singlets": -4.842868230880981e-7,
+      "product_singlet_diagonal": 6.000000000000003,
+      "hidden_color_weight": 1.7080306058403494e-9,
+      "force": -2.2817317564237012e-8,
+      "connected_tree_excess_length": 64,
+      "independent_partition_energy_Hermiticity_defect": 356.4112802245529,
+      "excited_color_gaps": [
+        283.51171851911846,
+        283.52343655395,
+        283.52343655395003,
+        283.5351550730683
+      ]
+    }
+  ],
+  "physical_bound_states": false,
+  "production_confinement_selected": false,
+  "static_color_basis_includes_independent_flux_states": false,
+  "full_LF_chiral_current_or_cluster_covariance_proved": false,
+  "old_BLFQ_H2_rebuilt": false,
+  "public_push": false
+}

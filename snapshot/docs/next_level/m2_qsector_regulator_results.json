@@ -1,0 +1,319 @@
+{
+  "description": "Executed actual-source Q5 loop regulator-current controls on explicit inner/outer shells; not full H2 loop renormalization.",
+  "benchmark_script": "scripts/benchmark_m2_q5_regulator_current.py",
+  "preceding_scientific_source": "99d854862c7870a26b9df673cbcf373d7817d88f",
+  "combined_tests_passed": 104,
+  "combined_tests_seconds": 345.64,
+  "new_direct_tests": 73,
+  "results": [
+    {
+      "target": "PROTON",
+      "inner_Q5_cutoff": 0,
+      "outer_Q5_cutoff": 2,
+      "retained_cutoff": 0,
+      "retained_dimension": 37,
+      "total_k2": 9,
+      "b_GeV": 0.4,
+      "quark_mass_GeV": 0.35,
+      "gluon_mass_GeV": 0,
+      "coupling": 0.3,
+      "energy_out_GeV2": 1.39,
+      "energy_in_GeV2": 1.47,
+      "total_pplus_GeV": 1.3,
+      "transfer_GeV": [
+        0.12,
+        0.16
+      ],
+      "quadrature_order": 20,
+      "records": [
+        {
+          "outgoing_jz_twice": 1,
+          "incoming_jz_twice": 1,
+          "raw_Q5_dimensions": {
+            "qqqgg": 22230,
+            "qqqq-qbar": 130500
+          },
+          "regulator_coefficient_norms": {
+            "2": [
+              0.0011791279191711891,
+              0.0015721705588949183
+            ],
+            "3": [
+              0.00008390688440695378,
+              0.00011187584587593838
+            ],
+            "4": [
+              0.000009534786550799314,
+              0.000012713048734399086
+            ]
+          },
+          "normalized_by_retained_metric": false,
+          "summed_at_gs_point_norms": [
+            0.00010614571990496399,
+            0.000141527626539952
+          ],
+          "loop_Ward_residuals": {
+            "2": 2.320806711841015e-18,
+            "3": 8.373572153623172e-20,
+            "4": 1.5470718360988483e-20
+          },
+          "loop_Ward_residuals_if_regulator_is_omitted": {
+            "2": 0.0010219108632816972,
+            "3": 0.00007271929981935996,
+            "4": 0.00000826348167735941
+          }
+        },
+        {
+          "outgoing_jz_twice": -1,
+          "incoming_jz_twice": 1,
+          "raw_Q5_dimensions": {
+            "qqqgg": 22230,
+            "qqqq-qbar": 130500
+          },
+          "regulator_coefficient_norms": {
+            "2": [
+              0.0033386211950597188,
+              0.0032258943897106322
+            ],
+            "3": [
+              0.00019761748976881242,
+              0.00018919604766828404
+            ],
+            "4": [
+              0,
+              0
+            ]
+          },
+          "normalized_by_retained_metric": false,
+          "summed_at_gs_point_norms": [
+            0.0003005232776663155,
+            0.0002903754311752208
+          ],
+          "loop_Ward_residuals": {
+            "2": 1.0889002254898965e-18,
+            "3": 4.785907081737015e-20,
+            "4": 0
+          },
+          "loop_Ward_residuals_if_regulator_is_omitted": {
+            "2": 0.0015989446224853507,
+            "3": 0.00009244730525677106,
+            "4": 0
+          }
+        }
+      ],
+      "scope": "Q5 free-propagation V1/V2 loop regulator coefficients, before both retained norms",
+      "full_H2_order4_regulator_matching_complete": false,
+      "continuum_regulator_convergence_established": false,
+      "covariance_repaired": false,
+      "physical": false,
+      "quantum_execution": false,
+      "seconds": 31.35508116701385
+    },
+    {
+      "target": "PROTON",
+      "inner_Q5_cutoff": 0,
+      "outer_Q5_cutoff": 3,
+      "retained_cutoff": 0,
+      "retained_dimension": 37,
+      "total_k2": 9,
+      "b_GeV": 0.4,
+      "quark_mass_GeV": 0.35,
+      "gluon_mass_GeV": 0,
+      "coupling": 0.3,
+      "energy_out_GeV2": 1.39,
+      "energy_in_GeV2": 1.47,
+      "total_pplus_GeV": 1.3,
+      "transfer_GeV": [
+        0.12,
+        0.16
+      ],
+      "quadrature_order": 20,
+      "records": [
+        {
+          "outgoing_jz_twice": 1,
+          "incoming_jz_twice": 1,
+          "raw_Q5_dimensions": {
+            "qqqgg": 72630,
+            "qqqq-qbar": 409500
+          },
+          "regulator_coefficient_norms": {
+            "2": [
+              0.0011791279191711891,
+              0.001572170558894918
+            ],
+            "3": [
+              0.00008390688440695378,
+              0.00011187584587593838
+            ],
+            "4": [
+              0.000009534786550799314,
+              0.000012713048734399085
+            ]
+          },
+          "normalized_by_retained_metric": false,
+          "summed_at_gs_point_norms": [
+            0.00010614571990496399,
+            0.000141527626539952
+          ],
+          "loop_Ward_residuals": {
+            "2": 2.3331325899706176e-18,
+            "3": 8.531537240924547e-20,
+            "4": 1.4631197407977846e-20
+          },
+          "loop_Ward_residuals_if_regulator_is_omitted": {
+            "2": 0.0010219108632816972,
+            "3": 0.00007271929981935998,
+            "4": 0.00000826348167735941
+          }
+        },
+        {
+          "outgoing_jz_twice": -1,
+          "incoming_jz_twice": 1,
+          "raw_Q5_dimensions": {
+            "qqqgg": 72630,
+            "qqqq-qbar": 409500
+          },
+          "regulator_coefficient_norms": {
+            "2": [
+              0.0038493992502586674,
+              0.0038823113197837783
+            ],
+            "3": [
+              0.0002302539297219425,
+              0.00023115189919671765
+            ],
+            "4": [
+              0,
+              0
+            ]
+          },
+          "normalized_by_retained_metric": false,
+          "summed_at_gs_point_norms": [
+            0.00034650170773276723,
+            0.0003494637533898306
+          ],
+          "loop_Ward_residuals": {
+            "2": 1.3835001256403845e-18,
+            "3": 5.945373495079362e-20,
+            "4": 0
+          },
+          "loop_Ward_residuals_if_regulator_is_omitted": {
+            "2": 0.002040595056775555,
+            "3": 0.0001207966921158135,
+            "4": 0
+          }
+        }
+      ],
+      "scope": "Q5 free-propagation V1/V2 loop regulator coefficients, before both retained norms",
+      "full_H2_order4_regulator_matching_complete": false,
+      "continuum_regulator_convergence_established": false,
+      "covariance_repaired": false,
+      "physical": false,
+      "quantum_execution": false,
+      "seconds": 170.6445374590112
+    },
+    {
+      "target": "NEUTRON",
+      "inner_Q5_cutoff": 0,
+      "outer_Q5_cutoff": 2,
+      "retained_cutoff": 0,
+      "retained_dimension": 37,
+      "total_k2": 9,
+      "b_GeV": 0.4,
+      "quark_mass_GeV": 0.35,
+      "gluon_mass_GeV": 0,
+      "coupling": 0.3,
+      "energy_out_GeV2": 1.39,
+      "energy_in_GeV2": 1.47,
+      "total_pplus_GeV": 1.3,
+      "transfer_GeV": [
+        0.12,
+        0.16
+      ],
+      "quadrature_order": 20,
+      "records": [
+        {
+          "outgoing_jz_twice": 1,
+          "incoming_jz_twice": 1,
+          "raw_Q5_dimensions": {
+            "qqqgg": 22230,
+            "qqqq-qbar": 130500
+          },
+          "regulator_coefficient_norms": {
+            "2": [
+              0.001107337356849015,
+              0.0014764498091320206
+            ],
+            "3": [
+              0.00005421466249209661,
+              0.00007228621665612882
+            ],
+            "4": [
+              0.000007858610484035043,
+              0.000010478147312046723
+            ]
+          },
+          "normalized_by_retained_metric": false,
+          "summed_at_gs_point_norms": [
+            0.00009967113186625515,
+            0.0001328948424883402
+          ],
+          "loop_Ward_residuals": {
+            "2": 6.340181744822239e-19,
+            "3": 3.7078720406326353e-20,
+            "4": 5.2607988217941216e-21
+          },
+          "loop_Ward_residuals_if_regulator_is_omitted": {
+            "2": 0.0009596923759358136,
+            "3": 0.000046986040826483735,
+            "4": 0.00000681079575283037
+          }
+        },
+        {
+          "outgoing_jz_twice": -1,
+          "incoming_jz_twice": 1,
+          "raw_Q5_dimensions": {
+            "qqqgg": 22230,
+            "qqqq-qbar": 130500
+          },
+          "regulator_coefficient_norms": {
+            "2": [
+              0.0027093032930976756,
+              0.002606915580338922
+            ],
+            "3": [
+              0.0001298165552822023,
+              0.00012440440026852546
+            ],
+            "4": [
+              0,
+              0
+            ]
+          },
+          "normalized_by_retained_metric": false,
+          "summed_at_gs_point_norms": [
+            0.0002438624867824871,
+            0.00023464644460116066
+          ],
+          "loop_Ward_residuals": {
+            "2": 1.0446378851508873e-18,
+            "3": 3.067819552713757e-20,
+            "4": 0
+          },
+          "loop_Ward_residuals_if_regulator_is_omitted": {
+            "2": 0.001283902497367031,
+            "3": 0.0000608810130558665,
+            "4": 0
+          }
+        }
+      ],
+      "scope": "Q5 free-propagation V1/V2 loop regulator coefficients, before both retained norms",
+      "full_H2_order4_regulator_matching_complete": false,
+      "continuum_regulator_convergence_established": false,
+      "covariance_repaired": false,
+      "physical": false,
+      "quantum_execution": false,
+      "seconds": 30.736914374982007
+    }
+  ]
+}

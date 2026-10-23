@@ -1,0 +1,263 @@
+{
+  "scope": "finite-elastic common-regulated H2 spin/rotation diagnostic; no covariance repair or physical calibration",
+  "target": "PROTON",
+  "metadata": {
+    "target": "PROTON",
+    "jz_out_twice": 1,
+    "jz_in_twice": 1,
+    "total_k2": 9,
+    "retained_cutoff": 0,
+    "energy_out_GeV2": 1.4305030209954839,
+    "energy_in_GeV2": 1.4305030209954839,
+    "transfer_GeV": [
+      0.12,
+      0.16
+    ],
+    "mean_total_transverse_GeV": [
+      0.0,
+      0.0
+    ],
+    "charge": "electromagnetic",
+    "loop_flavor_charges": [
+      0.6666666666666666,
+      -0.3333333333333333
+    ],
+    "physical_leg_prescription": "physical-leg-endpoint-product",
+    "quadrature_order": 8,
+    "smooth_prescription": "continuous-global-Jacobi-fixed-mode-membership",
+    "field_envelope_prescription": "finite-cell-covariant-spectral-gapped-envelope",
+    "isospin_prescription": "flavor-degenerate-total-isospin-half-H2-source-domain",
+    "component_order": [
+      "plus",
+      "minus",
+      "x",
+      "y"
+    ],
+    "normalization": "Jmu/(2Pplus); raw order g4 before both full norm maps",
+    "physical": false
+  },
+  "parameters": {
+    "regulator": {
+      "width_GeV": 0.8,
+      "boson_modes": 8,
+      "fermion_modes": 8,
+      "reference_shape": null
+    },
+    "wick": {
+      "regulator": {
+        "width_GeV": 0.8,
+        "boson_modes": 8,
+        "fermion_modes": 8,
+        "reference_shape": null
+      },
+      "quark_flavors": 2,
+      "normal_order_subtraction": true,
+      "finite_quark_mass2_per_gs2_GeV2": 0.011,
+      "finite_gluon_mass2_per_gs2_GeV2": -0.007
+    },
+    "q5": 1,
+    "q6": 0,
+    "b_GeV": 0.4,
+    "mq_GeV": 0.35,
+    "mg_GeV": 0.0,
+    "g": 0.3,
+    "Pplus_GeV": 1.3
+  },
+  "energy_GeV2": 1.4305030209954839,
+  "input_blocks": [
+    "docs/next_level/m2_cluster_spin_Q5_shell1_pp.json",
+    "docs/next_level/m2_cluster_spin_Q5_shell1_mp.json"
+  ],
+  "families": [
+    "free",
+    "cubic_canonical",
+    "cubic_regulator",
+    "quartic_source_canonical",
+    "quartic_source_regulator",
+    "quartic_pair_canonical",
+    "quartic_pair_regulator",
+    "Wick_paired",
+    "projector_retained",
+    "projector_free_Q",
+    "projector_cubic_Q",
+    "projector_quartic_source",
+    "projector_quartic_pair"
+  ],
+  "independent_spin_blocks": 2,
+  "kinematically_completed_blocks": [
+    "pm",
+    "mm"
+  ],
+  "two_structure_residual_norm": 0.17319900941086186,
+  "five_structure_residual_norm": 4.813458628404075e-16,
+  "two_structure_relative_residual": 0.12419275461310372,
+  "five_structure_coefficients": [
+    [
+      0.8946382555114609,
+      1.1031207892725152e-18
+    ],
+    [
+      1.750128479318446,
+      8.823119296071853e-18
+    ],
+    [
+      -0.8811812556535471,
+      -9.335792226000386e-17
+    ],
+    [
+      -0.32104379747058076,
+      -1.892914502225443e-16
+    ],
+    [
+      0.3135717955389617,
+      1.910789624388419e-16
+    ]
+  ],
+  "five_structure_condition": 41.35395954703107,
+  "GM_plus": [
+    0.8824042235228132,
+    -2.9445901957764382e-21
+  ],
+  "GM_transverse": [
+    2.6447667348299078,
+    -9.960694011040176e-17
+  ],
+  "GM_disagreement": [
+    -1.7623625113070944,
+    9.960399552020598e-17
+  ],
+  "continuity_norm": 9.293876542165918e-18,
+  "groups": {
+    "free_one_body": {
+      "coefficients": [
+        [
+          0.8946382606113963,
+          1.0268902517039592e-18
+        ],
+        [
+          1.750129208865725,
+          1.6376101788333832e-16
+        ],
+        [
+          -0.8811816229771545,
+          -1.5740125631838024e-16
+        ],
+        [
+          -0.3213082242588025,
+          -1.9123776317914967e-16
+        ],
+        [
+          0.3071333329488773,
+          1.9301656484707994e-16
+        ]
+      ],
+      "amplitude_norm": 1.3917329693515912
+    },
+    "canonical_contacts": {
+      "coefficients": [
+        [
+          -7.518702680097375e-10,
+          -4.601172253773565e-22
+        ],
+        [
+          -1.0755526902091043e-07,
+          -7.951541062761926e-20
+        ],
+        [
+          5.4153569646622895e-08,
+          9.131837575564746e-20
+        ],
+        [
+          0.0009387846284134124,
+          3.208479961941702e-20
+        ],
+        [
+          -0.0031372154429637343,
+          -2.913778854334309e-20
+        ]
+      ],
+      "amplitude_norm": 0.0026333360798694127
+    },
+    "field_regulator_contacts": {
+      "coefficients": [
+        [
+          -2.245618007135814e-09,
+          -4.378593275512862e-22
+        ],
+        [
+          -3.212363343302758e-07,
+          -4.4622053084067055e-20
+        ],
+        [
+          1.6174097616866717e-07,
+          3.0111172723152307e-20
+        ],
+        [
+          -0.00036168731576036287,
+          5.181576011706512e-20
+        ],
+        [
+          0.00042013135772851816,
+          -5.1998575098091494e-20
+        ]
+      ],
+      "amplitude_norm": 7.878908755579471e-05
+    },
+    "paired_Wick": {
+      "coefficients": [
+        [
+          -8.655982815226584e-19,
+          -3.267068447330461e-23
+        ],
+        [
+          -5.3082624126976206e-18,
+          1.1714543756803745e-19
+        ],
+        [
+          1.0342641239644696e-19,
+          -4.891820444868357e-20
+        ],
+        [
+          -8.70654714270037e-09,
+          -1.7269733728865208e-19
+        ],
+        [
+          0.002753161646033304,
+          1.7441270232775415e-19
+        ]
+      ],
+      "amplitude_norm": 0.0032956980113138033
+    },
+    "oscillator_projectors": {
+      "coefficients": [
+        [
+          -2.1024469818268244e-09,
+          -9.94962867048697e-20
+        ],
+        [
+          -3.007556757025473e-07,
+          -1.4122550011585145e-17
+        ],
+        [
+          1.5142906134057735e-07,
+          7.215530890723723e-18
+        ],
+        [
+          -0.00031266181788445986,
+          1.415013257866889e-17
+        ],
+        [
+          0.006402385029286337,
+          -1.4256118066669972e-17
+        ]
+      ],
+      "amplitude_norm": 0.007289853259971469
+    }
+  },
+  "omitted_norm_map_effect_norm": 1.1712364387656178e-06,
+  "maximum_pole_residual": 4.256776279114187e-15,
+  "exact_elastic_state_not_old_anchor_fit": true,
+  "physical": false,
+  "covariance_repaired": false,
+  "full_matrix_file": "m2_cluster_spin_Q5_shell1_analysis.npz"
+}

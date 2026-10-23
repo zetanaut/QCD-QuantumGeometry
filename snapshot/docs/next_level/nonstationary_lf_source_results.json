@@ -1,0 +1,839 @@
+{
+  "scope": "Charged minimal/C/D/E reference: exact mixed a,b source coefficients in positive-plus LF channels; nonstationary canonical map and weak one-charge WAVE amplitudes. A 16-route carrier retains all paths from the four seeds at this order. Not a complete sourced Fock state, vacuum/pair-sector solution or physical hadron.",
+  "parameters": {
+    "mass_squared_GeV2": [
+      [
+        0.12,
+        0.02
+      ],
+      [
+        0.02,
+        0.25
+      ]
+    ],
+    "C_GeV_minus2": [
+      [
+        0.4,
+        0.05
+      ],
+      [
+        0.05,
+        0.2
+      ]
+    ],
+    "D_GeV_minus2": [
+      [
+        -0.1,
+        0.03
+      ],
+      [
+        0.03,
+        0.06
+      ]
+    ],
+    "E_GeV_minus4": [
+      [
+        0.7,
+        0.1
+      ],
+      [
+        0.1,
+        0.4
+      ]
+    ],
+    "p0_cartesian_GeV": [
+      0.565685424949238,
+      0.1,
+      0.2,
+      0.565685424949238
+    ],
+    "qa_cartesian_GeV": [
+      0.1414213562373095,
+      0.05,
+      -0.03,
+      0.04242640687119285
+    ],
+    "qb_cartesian_GeV": [
+      0.021213203435596427,
+      -0.02,
+      0.04,
+      0.07778174593052023
+    ],
+    "epsa": [
+      0.2,
+      0.4,
+      -0.1,
+      0.3
+    ],
+    "epsb": [
+      0.1,
+      -0.2,
+      0.35,
+      -0.15
+    ],
+    "common_minus_shift_GeV": -0.15,
+    "route_plus_GeV": [
+      0.7999999999999999,
+      0.9299999999999998,
+      0.8699999999999999,
+      0.9999999999999999
+    ],
+    "route_minus_offsets_GeV": [
+      0.0,
+      0.06999999999999998,
+      -0.040000000000000015,
+      0.02999999999999997
+    ]
+  },
+  "response": {
+    "canonical_jet_norm_error": [
+      2.846198610793279e-15,
+      3.692221894516987e-15,
+      2.3468648139504367e-15,
+      1.5912852091174709e-15
+    ],
+    "units_by_order": [
+      "GeV^-1",
+      "GeV^-2",
+      "GeV^-2",
+      "GeV^-3"
+    ],
+    "original_scalar_two_source_block_GeV_minus4": [
+      [
+        0.16682348883684445,
+        0.034049739669745435
+      ],
+      [
+        0.034385524903709525,
+        0.38891972961470783
+      ]
+    ],
+    "time_dependent_connection_norm_GeV_minus1": 3.8633214323233776e-05,
+    "negative_control_errors_GeV_minus3": {
+      "connection": 0.0006052518613181822,
+      "endpoints": 2.733876131552406,
+      "direct": 0.0020690055440197915,
+      "one_order": 1.4065834817065823,
+      "right_adjoint": 0.00021938025946880888
+    },
+    "all_16_Cartesian_polarization_pairs": [
+      {
+        "Cartesian_polarization_indices": [
+          0,
+          0
+        ],
+        "mixed_error": 1.7297602514258373e-13,
+        "mixed_response_norm": 186.66845263608562
+      },
+      {
+        "Cartesian_polarization_indices": [
+          0,
+          1
+        ],
+        "mixed_error": 2.070975165006449e-14,
+        "mixed_response_norm": 29.307632208179452
+      },
+      {
+        "Cartesian_polarization_indices": [
+          0,
+          2
+        ],
+        "mixed_error": 4.374335073158796e-14,
+        "mixed_response_norm": 51.25668412436002
+      },
+      {
+        "Cartesian_polarization_indices": [
+          0,
+          3
+        ],
+        "mixed_error": 1.6301643265076138e-13,
+        "mixed_response_norm": 184.33196774011506
+      },
+      {
+        "Cartesian_polarization_indices": [
+          1,
+          0
+        ],
+        "mixed_error": 1.6908955447810502e-14,
+        "mixed_response_norm": 29.45494090070668
+      },
+      {
+        "Cartesian_polarization_indices": [
+          1,
+          1
+        ],
+        "mixed_error": 2.3985956702599943e-14,
+        "mixed_response_norm": 43.439796047271386
+      },
+      {
+        "Cartesian_polarization_indices": [
+          1,
+          2
+        ],
+        "mixed_error": 8.345525134158095e-15,
+        "mixed_response_norm": 11.033216933669902
+      },
+      {
+        "Cartesian_polarization_indices": [
+          1,
+          3
+        ],
+        "mixed_error": 2.6206907974960407e-14,
+        "mixed_response_norm": 39.59879341621046
+      },
+      {
+        "Cartesian_polarization_indices": [
+          2,
+          0
+        ],
+        "mixed_error": 4.8623205704142674e-14,
+        "mixed_response_norm": 52.095476906411974
+      },
+      {
+        "Cartesian_polarization_indices": [
+          2,
+          1
+        ],
+        "mixed_error": 5.263616419152997e-15,
+        "mixed_response_norm": 11.161421608526757
+      },
+      {
+        "Cartesian_polarization_indices": [
+          2,
+          2
+        ],
+        "mixed_error": 1.9714510068502268e-14,
+        "mixed_response_norm": 30.542296859332634
+      },
+      {
+        "Cartesian_polarization_indices": [
+          2,
+          3
+        ],
+        "mixed_error": 4.797396888920388e-14,
+        "mixed_response_norm": 69.69640959921288
+      },
+      {
+        "Cartesian_polarization_indices": [
+          3,
+          0
+        ],
+        "mixed_error": 1.6916010308576601e-13,
+        "mixed_response_norm": 185.98160067651563
+      },
+      {
+        "Cartesian_polarization_indices": [
+          3,
+          1
+        ],
+        "mixed_error": 2.4263898168426203e-14,
+        "mixed_response_norm": 39.76736781737646
+      },
+      {
+        "Cartesian_polarization_indices": [
+          3,
+          2
+        ],
+        "mixed_error": 5.041732888450563e-14,
+        "mixed_response_norm": 69.18656972900092
+      },
+      {
+        "Cartesian_polarization_indices": [
+          3,
+          3
+        ],
+        "mixed_error": 1.5119917008140263e-13,
+        "mixed_response_norm": 200.05842809121543
+      }
+    ],
+    "offshell_Ward": [
+      {
+        "photon": 0,
+        "offshell_Ward_error": 8.172591417130147e-16,
+        "nonzero_endpoint_difference_norm": 2.511794103525775
+      },
+      {
+        "photon": 1,
+        "offshell_Ward_error": 9.097098972217435e-16,
+        "nonzero_endpoint_difference_norm": 1.627407866082712
+      }
+    ],
+    "boosts": [
+      {
+        "boost_generator": [
+          0.17,
+          -0.12,
+          0.08
+        ],
+        "scalar_unnormalized_error": 9.579820941044893e-16,
+        "omitting_external_kinetic_factors_error": 0.15890778645657022
+      },
+      {
+        "boost_generator": [
+          -0.13,
+          0.09,
+          0.19
+        ],
+        "scalar_unnormalized_error": 2.769987847638656e-15,
+        "omitting_external_kinetic_factors_error": 0.39199250128768365
+      }
+    ]
+  },
+  "weak_wave_response": {
+    "source_order": "0,a,b,a*b connected one-charge wave amplitudes; not complete sourced Fock-state derivatives",
+    "seed_routes": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "all_weak_routes": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        -1,
+        2
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        -1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "carrier_momenta_cartesian_GeV": [
+      [
+        0.565685424949238,
+        0.1,
+        0.2,
+        0.565685424949238
+      ],
+      [
+        0.7071067811865475,
+        0.15000000000000002,
+        0.17,
+        0.6081118318204308
+      ],
+      [
+        0.5868986283848344,
+        0.08,
+        0.24000000000000002,
+        0.6434671708797582
+      ],
+      [
+        0.7283199846221439,
+        0.13000000000000003,
+        0.21000000000000002,
+        0.6858935777509511
+      ],
+      [
+        0.4030508652763321,
+        0.07,
+        0.19,
+        0.44547727214752497
+      ],
+      [
+        0.4242640687119285,
+        0.05,
+        0.23,
+        0.5232590180780452
+      ],
+      [
+        0.4454772721475249,
+        0.030000000000000002,
+        0.27,
+        0.6010407640085654
+      ],
+      [
+        0.4666904755831214,
+        0.010000000000000002,
+        0.31,
+        0.6788225099390857
+      ],
+      [
+        0.5444722215136416,
+        0.12000000000000001,
+        0.16,
+        0.4879036790187178
+      ],
+      [
+        0.6081118318204308,
+        0.060000000000000005,
+        0.28,
+        0.7212489168102785
+      ],
+      [
+        0.6858935777509511,
+        0.17,
+        0.13,
+        0.5303300858899106
+      ],
+      [
+        0.7495331880577403,
+        0.11000000000000001,
+        0.25,
+        0.7636753236814713
+      ],
+      [
+        0.8273149339882606,
+        0.22,
+        0.1,
+        0.5727564927611035
+      ],
+      [
+        0.848528137423857,
+        0.2,
+        0.14,
+        0.6505382386916237
+      ],
+      [
+        0.8697413408594534,
+        0.18000000000000002,
+        0.18000000000000002,
+        0.728319984622144
+      ],
+      [
+        0.8909545442950498,
+        0.16,
+        0.22000000000000003,
+        0.8061017305526642
+      ]
+    ],
+    "spatial_mode_step_GeV": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "periodic_box_lengths_GeV_minus1": [
+      628.3185307179587,
+      628.3185307179587,
+      628.3185307179587
+    ],
+    "normalization": "Periodic scalar modes exp(-ip.x)/sqrt(2p+ V); volume cancels for external Fourier-source amplitudes a,b in GeV. The box is a reference convention, not a QCD matching scale.",
+    "all_retained_four_corner_amplitude_errors_by_order": [
+      2.219414631788912e-15,
+      1.0547746411256502e-15,
+      2.096720301951998e-15,
+      3.370999804584162e-15
+    ],
+    "previously_unrepresented_wave_amplitude_norms_by_order": [
+      0.0,
+      0.6160490002827712,
+      1.1954500343225236,
+      3.1360214860205384
+    ],
+    "times_GeV_minus1": [
+      0.0,
+      0.55,
+      1.1,
+      1.6500000000000001,
+      2.2,
+      2.75,
+      3.3000000000000003,
+      3.8500000000000005,
+      4.4,
+      4.95,
+      5.5,
+      6.050000000000001,
+      6.6000000000000005,
+      7.15,
+      7.700000000000001,
+      8.25,
+      8.8,
+      9.350000000000001,
+      9.9,
+      10.450000000000001,
+      11.0
+    ],
+    "initial_normalized_complex_amplitudes": [
+      [
+        0.0066590381249137885,
+        -0.15956966926008942
+      ],
+      [
+        0.07694731672337965,
+        0.1071354617768545
+      ],
+      [
+        0.047782556516649644,
+        0.045285813784058306
+      ],
+      [
+        -0.22710165589991732,
+        -0.05684475693017936
+      ],
+      [
+        -0.3053664313972481,
+        -0.3354528431494573
+      ],
+      [
+        0.08994226916730183,
+        -0.385072205422244
+      ],
+      [
+        0.11240949065343389,
+        0.5098538761043631
+      ],
+      [
+        0.4971646756011328,
+        -0.12667576404299102
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "error_units_by_source_order": [
+      "dimensionless",
+      "GeV^-1",
+      "GeV^-1",
+      "GeV^-2"
+    ],
+    "original_vs_mapped_errors_by_order": [
+      6.322897049466283e-12,
+      1.2819673037175667e-11,
+      4.3415205842544124e-11,
+      1.469830172996006e-10
+    ],
+    "direct_ODE_vs_differentiable_exponential_errors_by_order": [
+      9.72766006677508e-13,
+      2.9122625470295837e-12,
+      9.473216384939758e-12,
+      4.539211040124311e-11
+    ],
+    "final_mixed_canonical_amplitudes_GeV_minus2": [
+      [
+        -0.020283066939479177,
+        0.9109366217661399
+      ],
+      [
+        0.7915650394675254,
+        -0.57544850092787
+      ],
+      [
+        -0.8140073645698005,
+        -0.13933984985606693
+      ],
+      [
+        -0.502449513927624,
+        -0.3056199384917846
+      ],
+      [
+        0.00921039653075444,
+        0.14413860949226798
+      ],
+      [
+        -0.3536011269812684,
+        -0.10915227288440799
+      ],
+      [
+        -0.01877135272670094,
+        -0.32048754820854547
+      ],
+      [
+        0.20147466206223485,
+        0.0633286585417607
+      ],
+      [
+        0.1367522618306527,
+        -0.37865524575042464
+      ],
+      [
+        0.23072233814338342,
+        0.11934177153449606
+      ],
+      [
+        -0.47230191250388814,
+        -0.9246781286749837
+      ],
+      [
+        -0.25315708966292816,
+        -0.7451319404533319
+      ],
+      [
+        0.26230894691001305,
+        -0.21900315638612816
+      ],
+      [
+        0.11396110214880571,
+        0.19990486750032244
+      ],
+      [
+        0.016420156396570698,
+        -0.892286444824485
+      ],
+      [
+        0.14883544663454062,
+        -0.6724643856578038
+      ],
+      [
+        0.10457375652963494,
+        0.14371462532219095
+      ],
+      [
+        -0.406931976196298,
+        0.12837868868330715
+      ],
+      [
+        -0.39638251658807433,
+        0.6632227172940801
+      ],
+      [
+        0.8417094608044704,
+        -0.053028999188302034
+      ],
+      [
+        -0.21261368060317587,
+        -0.258624005238046
+      ],
+      [
+        0.19866077280123157,
+        -0.0643321954862126
+      ],
+      [
+        -0.5994849039656779,
+        -0.5591034648229362
+      ],
+      [
+        -0.26187957624447633,
+        -0.5489091243327844
+      ],
+      [
+        0.1911690722966476,
+        -0.026888496969551624
+      ],
+      [
+        -0.10466249619361842,
+        0.4241914922210024
+      ],
+      [
+        0.8177367799676805,
+        0.4880736541009086
+      ],
+      [
+        -0.07479560405698746,
+        -0.9330071111767075
+      ],
+      [
+        0.14752090967343762,
+        0.08000819877247348
+      ],
+      [
+        -0.3226134454546757,
+        0.249526502385233
+      ],
+      [
+        0.36591580801724344,
+        0.78837216777287
+      ],
+      [
+        0.47449081725998854,
+        -0.749273890480767
+      ]
+    ],
+    "canonical_mixed_norm_residual_GeV_minus2": 2.175948865534849e-10,
+    "original_Noether_mixed_norm_residual_GeV_minus2": 2.0377754023851846e-10,
+    "omitting_D_velocity_norm_defect_GeV_minus2": 4.484296688015777e-05
+  },
+  "differentiable_shared_map": {
+    "direction_matrix": [
+      [
+        1.0,
+        0.2
+      ],
+      [
+        0.2,
+        0.0
+      ]
+    ],
+    "parameter_units": [
+      "GeV^2",
+      "GeV^-2",
+      "GeV^-4"
+    ],
+    "response_units": "GeV^-3 before parameter differentiation",
+    "state_projection_units": "GeV^-2 before parameter differentiation",
+    "gradients": {
+      "response": [
+        7.762976029702253,
+        0.0487138570845768,
+        -0.028701752872088683
+      ],
+      "state": [
+        -1.2798788605349736,
+        0.0016703103816762966,
+        -0.00040739489850598104
+      ]
+    }
+  },
+  "reassessment": {
+    "time_dependent_canonical_frame_and_direct_terms_required": true,
+    "all_declared_source_matrices_and_complex_phases_retained": true,
+    "mixed_two_source_order_complete_on_declared_routes": true,
+    "independent_quark_loop_LF_minus_transverse_currents_supplied": false,
+    "zero_plus_or_pair_creation_crossings_resolved": false,
+    "exact_finite_source_or_nonquadratic_LF_Fock_dynamics_supplied": false,
+    "source_free_physics_or_fitted_matrices_changed": false,
+    "known_loops_requantized": false,
+    "physical_nucleon_or_nucleus_generated": false,
+    "production_model_selected": false,
+    "public_push": false,
+    "next": "Rejoin preserved graded quark/color and canonical LF operator leaves: pre-evaluate their normalized finite wavepacket/state coupling and linked source response, retaining all spin/flavor/color and physically defined connectivity. Do not invent a mode measure, substitute the reference into nucleon binding or rebuild BLFQ/H2."
+  }
+}

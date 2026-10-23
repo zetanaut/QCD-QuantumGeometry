@@ -1,0 +1,115 @@
+{
+  "scope": "Exact analytic simulator parity for the represented M2 system; nonphysical",
+  "python": "3.11.16",
+  "platform": "Darwin-arm64",
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.4.1",
+    "PennyLane": "0.38.0",
+    "PennyLane-Lightning": "0.38.0",
+    "autoray": "0.6.12"
+  },
+  "device": "lightning.qubit",
+  "qubits": 9,
+  "shots": null,
+  "seed": 20260905,
+  "absolute_tolerance": 8e-13,
+  "actions": "Polarization of backend-measured quadratic forms, including all 512 output rows",
+  "physical_activation": false,
+  "cases": [
+    {
+      "target": "PROTON",
+      "transfer_GeV": [
+        0.2,
+        0.0
+      ],
+      "state_residual": 0.0,
+      "state_padding_probability": 0.0,
+      "hamiltonian_action_residual_GeV2": 9.33153019400189e-15,
+      "quadrature_action_residual": 1.1249196891430896e-15,
+      "expectation_residual": 8.900929997803629e-16,
+      "complex_transition_residual": 1.5819612883965853e-15,
+      "action_padding_residual": 0.0,
+      "directed_current_action_norms": {
+        "current_x": 0.8129557244210988,
+        "current_y": 0.0
+      },
+      "directed_and_reversed_action_residual": 1.126240410113859e-15,
+      "continuity_action_residual_GeV2": 2.323817335362124e-16,
+      "nonzero_spectral_Jx_magnitude_GeV": 1.0415089555197712,
+      "spectral_transition_residual_GeV": 6.661338147750961e-16,
+      "ground_energy_residual_GeV2": 2.886579864025407e-15
+    },
+    {
+      "target": "PROTON",
+      "transfer_GeV": [
+        0.12,
+        0.16
+      ],
+      "state_residual": 0.0,
+      "state_padding_probability": 0.0,
+      "hamiltonian_action_residual_GeV2": 9.33153019400189e-15,
+      "quadrature_action_residual": 1.1900367412908235e-15,
+      "expectation_residual": 8.900929997803629e-16,
+      "complex_transition_residual": 1.5819612883965853e-15,
+      "action_padding_residual": 0.0,
+      "directed_current_action_norms": {
+        "current_x": 0.4915549551779752,
+        "current_y": 0.655406606903967
+      },
+      "directed_and_reversed_action_residual": 1.1909761048120482e-15,
+      "continuity_action_residual_GeV2": 3.180156263324803e-16,
+      "nonzero_spectral_Jx_magnitude_GeV": 0.624905373311862,
+      "spectral_transition_residual_GeV": 3.552713682198756e-15,
+      "ground_energy_residual_GeV2": 2.886579864025407e-15
+    },
+    {
+      "target": "NEUTRON",
+      "transfer_GeV": [
+        0.2,
+        0.0
+      ],
+      "state_residual": 0.0,
+      "state_padding_probability": 0.0,
+      "hamiltonian_action_residual_GeV2": 8.635508522760763e-15,
+      "quadrature_action_residual": 1.2401999039817156e-15,
+      "expectation_residual": 1.7766317555017525e-15,
+      "complex_transition_residual": 2.612012026770126e-16,
+      "action_padding_residual": 0.0,
+      "directed_current_action_norms": {
+        "current_x": 0.8100404313183629,
+        "current_y": 0.0
+      },
+      "directed_and_reversed_action_residual": 1.2396089260404667e-15,
+      "continuity_action_residual_GeV2": 2.057684620993359e-16,
+      "nonzero_spectral_Jx_magnitude_GeV": 1.0415089555197716,
+      "spectral_transition_residual_GeV": 3.530509218307998e-14,
+      "ground_energy_residual_GeV2": 4.440892098500626e-16
+    },
+    {
+      "target": "NEUTRON",
+      "transfer_GeV": [
+        0.12,
+        0.16
+      ],
+      "state_residual": 0.0,
+      "state_padding_probability": 0.0,
+      "hamiltonian_action_residual_GeV2": 8.635508522760763e-15,
+      "quadrature_action_residual": 1.2289876154321856e-15,
+      "expectation_residual": 1.7766317555017525e-15,
+      "complex_transition_residual": 3.6580872043795734e-16,
+      "action_padding_residual": 0.0,
+      "directed_current_action_norms": {
+        "current_x": 0.48945800612513485,
+        "current_y": 0.6526106748335132
+      },
+      "directed_and_reversed_action_residual": 1.2295078270346166e-15,
+      "continuity_action_residual_GeV2": 2.449417876753271e-16,
+      "nonzero_spectral_Jx_magnitude_GeV": 0.6249053733118628,
+      "spectral_transition_residual_GeV": 2.797767365928092e-14,
+      "ground_energy_residual_GeV2": 4.440892098500626e-16
+    }
+  ]
+}

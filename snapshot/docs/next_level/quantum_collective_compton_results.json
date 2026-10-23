@@ -1,0 +1,181 @@
+{
+  "inputs": {
+    "quark_mass_GeV": 0.2843478671310942,
+    "external_mass_GeV": 0.13957039,
+    "yukawa_squared": 9.245548275808696,
+    "colors": 3,
+    "flavor_charges": [
+      0.6666666666666666,
+      -0.3333333333333333
+    ],
+    "reference": "same two-multiplet local action, old tree kinematics/potential/couplings; not a solved quantum pion",
+    "loop_order": "one free-quark loop plus tree potential-linked scalar exchange; no gluon/collective loops or resummation",
+    "subtraction": "same zero-invariant wave subtraction; common prescribed external pole and order-by-order external normalization; scalar source holds photon subtraction scale fixed",
+    "scope": "electric e^2 stripped from amplitudes, restored in polarizabilities and absorption; no finite local C/D fit"
+  },
+  "low_energy_scan_fm3": [
+    {
+      "photon_energy_GeV": 0.02,
+      "alpha_plus_beta": 2.3974912533997376e-05,
+      "alpha_minus_beta": -0.00012140392102715633,
+      "alpha": -4.871450424657948e-05,
+      "beta": 7.268941678057686e-05
+    },
+    {
+      "photon_energy_GeV": 0.01,
+      "alpha_plus_beta": 2.3973433346504272e-05,
+      "alpha_minus_beta": -0.00012174211618738891,
+      "alpha": -4.888434142044232e-05,
+      "beta": 7.285777476694659e-05
+    },
+    {
+      "photon_energy_GeV": 0.005,
+      "alpha_plus_beta": 2.397306360209589e-05,
+      "alpha_minus_beta": -0.00012183928086135805,
+      "alpha": -4.893310862963108e-05,
+      "beta": 7.290617223172698e-05
+    },
+    {
+      "photon_energy_GeV": 0.0025,
+      "alpha_plus_beta": 2.3972971166267627e-05,
+      "alpha_minus_beta": -0.00012186548761523633,
+      "alpha": -4.894625822448435e-05,
+      "beta": 7.291922939075198e-05
+    },
+    {
+      "photon_energy_GeV": 0.00125,
+      "alpha_plus_beta": 2.3972948038657808e-05,
+      "alpha_minus_beta": -0.00012187230518891817,
+      "alpha": -4.894967857513018e-05,
+      "beta": 7.292262661378799e-05
+    }
+  ],
+  "extrapolated_quark_box_Born_fm3": {
+    "alpha_plus_beta": 2.397294032779651e-05,
+    "alpha_minus_beta": -0.00012187463139093914,
+    "alpha": -4.895084553157132e-05,
+    "beta": 7.292378585936783e-05,
+    "method": "last three energies, quadratic in forward omega^2 or backward omega*omega_prime; not physical-data fitting"
+  },
+  "scalar_partner": {
+    "coefficient_matrix_GeV_minus2": [
+      [
+        0.9954736809176891,
+        0.0
+      ],
+      [
+        0.0,
+        0.33481498936427545
+      ]
+    ],
+    "matrix_rank": 2,
+    "b_sigma_GeV_minus2": 0.784841735114416,
+    "scalar_mass_squared_GeV2": [
+      0.331987594305454,
+      0.8341218609594236
+    ],
+    "scalar_mode_b_GeV_minus2": [
+      0.3241131988651534,
+      0.4607285362492626
+    ],
+    "alpha_fm3": 0.0006305848505083067,
+    "beta_fm3": -0.0006305848505083067,
+    "alpha_plus_beta_fm3": 0.0,
+    "unit_sigma_photon_coefficient_GeV_minus1": 0.024745018766930818
+  },
+  "combined_reference_loop_fm3": {
+    "alpha": 0.0005816340049767354,
+    "beta": -0.0005576610646489389,
+    "alpha_plus_beta": 2.397294032779651e-05,
+    "alpha_minus_beta": 0.0011392950696256742,
+    "NOT_a_physical_prediction": true,
+    "local_source_terms_not_included": true
+  },
+  "independent_absorption": {
+    "threshold_photon_energy_GeV": 1.0888231536906128,
+    "convergence": [
+      {
+        "radial_order": 48,
+        "angular_order": 96,
+        "alpha_plus_beta_fm3": 2.3972958560560188e-05
+      },
+      {
+        "radial_order": 96,
+        "angular_order": 192,
+        "alpha_plus_beta_fm3": 2.3972941523390417e-05
+      },
+      {
+        "radial_order": 192,
+        "angular_order": 384,
+        "alpha_plus_beta_fm3": 2.3972940433730452e-05
+      }
+    ],
+    "forward_loop_difference_fm3": 1.0593394176726563e-13,
+    "cross_sections": [
+      {
+        "s_GeV2": 0.35,
+        "sigma_GeV_minus2": 0.02386929275230968
+      },
+      {
+        "s_GeV2": 0.5,
+        "sigma_GeV_minus2": 0.07108221325378819
+      },
+      {
+        "s_GeV2": 1.0,
+        "sigma_GeV_minus2": 0.09885186837843446
+      },
+      {
+        "s_GeV2": 3.0,
+        "sigma_GeV_minus2": 0.07059974793563568
+      },
+      {
+        "s_GeV2": 10.0,
+        "sigma_GeV_minus2": 0.03423839733704133
+      }
+    ],
+    "scope": "gamma plus reference pion to unconfined u/dbar; canonical final spinors and three tree source attachments. Not physical hadron photoabsorption or a QCD lower bound."
+  },
+  "amplitude_controls": {
+    "unit_original": {
+      "tree": -0.9071922428511546,
+      "box": -0.005730607269615663,
+      "born": 2.163444543810652e-19,
+      "external_norm": 0.0057461328212296174,
+      "normalized_loop": 1.5525551613954774e-05
+    },
+    "unit_gauge_shifted": {
+      "tree": -0.9071922428511545,
+      "box": -0.005315413659436817,
+      "born": -0.0004151936101788289,
+      "external_norm": 0.005746132821229617,
+      "normalized_loop": 1.5525551613970387e-05
+    },
+    "gauge_difference": 1.5612511283791264e-17,
+    "omitted_Born_gauge_difference": 0.0004151936101788453,
+    "Lorentz_difference": 1.5612511283791264e-17,
+    "quadrature_difference": 5.204170427930421e-18,
+    "scalar_trace_difference_GeV": 7.521652571618187e-19,
+    "scalar_mass_source_difference_GeV": 1.8355759620614087e-14,
+    "offshell_box_Ward": -0.00037319367406286695,
+    "offshell_triangle_difference": -0.0003731936740628674,
+    "offshell_Ward_difference": 4.336808689942018e-19,
+    "projected_box_Born": 0.0001435422369553785,
+    "scalar_amplitude": -0.0009749074374305394,
+    "combined_reference_loop": -0.0008313652004751609
+  },
+  "reassessment": {
+    "local_tree_C_D_cannot_independently_change_alpha_plus_beta": true,
+    "explicit_finite_mass_loop_already_supplies_nonzero_sum": true,
+    "local_C_D_changed": false,
+    "physical_polarizability_refit": false,
+    "prior_COMPASS_input_assumed_alpha_equals_minus_beta": true,
+    "next": "qualify an independent higher-derivative two-source structure and parameterized joint radius/alpha/beta matching; audit conditional data interpretation before any fit. Do not erase the verified positive reference absorption sum or select a production quark-meson model.",
+    "unresolved": [
+      "full QCD/chiral/source finite matching",
+      "all gluon/collective loops",
+      "independent quantum LF minus/transverse Compton",
+      "quantum state/vacuum matching",
+      "generated proton/neutron and modular nuclear states"
+    ]
+  }
+}
